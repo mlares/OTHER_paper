@@ -428,8 +428,8 @@ right=14mm]{geometry}
 
 % Form of the numbers
 %\newcommand\thepage{\arabic{page}}
-\renewcommand\thesection{\Roman{section}}
-%\renewcommand\thesubsection{{\Alph{subsection}}}
+\renewcommand\thesection{\arabic{section}.}
+\renewcommand\thesubsection{{\arabic{section}.\arabic{subsection}.}}
 %\renewcommand\thesubsubsection{{\arabic{subsubsection}}}
 %\renewcommand\theparagraph{\thesubsubsection.\arabic{paragraph}}
 %\renewcommand\thesubparagraph{\theparagraph.\arabic{subparagraph}}
@@ -727,6 +727,171 @@ right=14mm]{geometry}
   \@startsection{section}{1}{\z@}
   {-12\p@ plus -2\p@ minus -1\p@}{0.0001\p@}
   {\fontsize{11.5}{13.5}\selectfont\itshape}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%  ****************************************
+%  *               SECTIONS               *
+%  ****************************************
+%
+% \@startsection modified to leave less space before \subsection
+%    if it immediately follows \section
+
+% \@startsection {NAME}{LEVEL}{INDENT}{BEFORESKIP}{AFTERSKIP}{STYLE}
+
+\newif\if@levelone
+
+\def\@startsection#1#2#3#4#5#6{\if@noskipsec \leavevmode \fi
+   \par \@tempskipa #4\relax
+   \@afterindenttrue
+   \ifnum #2=\@ne  % if level=1 ie. section
+     \global\@levelonetrue
+   \else
+     \global\@levelonefalse
+   \fi
+   \ifdim \@tempskipa <\z@ \@tempskipa -\@tempskipa \@afterindentfalse\fi
+   \if@nobreak
+     \everypar{}\ifnum#2=2 \vskip 0pt plus1pt\fi % was 6pt
+   \else
+     \addpenalty{\@secpenalty}\addvspace{\@tempskipa}
+   \fi \@ifstar
+     {\@ssect{#3}{#4}{#5}{#6}}{\@dblarg{\@sect{#1}{#2}{#3}{#4}{#5}{#6}}}}
+
+\def\SFB@hangraggedright{\rightskip=\@flushglue \let\\=\@centercr \parindent=0pt}
+
+\newif\if@firstsection
+\@firstsectiontrue
+%\def\section{%
+% \if@firstsection \fixfootnotes\@firstsectionfalse \fi%
+% \@startsection{section}{1}{\z@}
+% {-24pt plus -12pt minus -1pt}{6pt}
+% {\SFB@hangraggedright\reset@font\normalsize\bf}}
+
+\def\section{%
+% \if@firstsection \fixfootnotes\@firstsectionfalse \fi%
+ \@startsection{section}{1}{\z@}
+ {-24pt plus -12pt minus -1pt}{6pt}
+ {\SFB@hangraggedright\reset@font\normalsize\bf}}
+
+\def\subsection{\@startsection{subsection}{2}{\z@}
+ {-18pt plus -9pt minus -1pt}{6pt}
+ {\SFB@hangraggedright\reset@font\normalsize\bf}}
+
+\def\subsubsection{\@startsection{subsubsection}{3}{\z@}
+ {-18pt plus -9pt minus -1pt}{6pt}
+ {\SFB@hangraggedright\reset@font\normalsize\it}}
+
+\def\paragraph{\@startsection{paragraph}{4}{\z@}
+ {12pt plus 2.25pt minus 1pt}{-0.5em}{\reset@font\normalsize\bf}}
+
+\def\subparagraph{\@startsection{subparagraph}{5}{\parindent}
+ {12pt plus 2.25pt minus 1pt}{-0.5em}{\reset@font\normalsize\it}}
+
+\setcounter{secnumdepth}{4} % SFB 0.1.01
+
+
+%
+% \@sect{NAME}{LEVEL}{INDENT}{BEFORESKIP}{AFTERSKIP}{STYLE}[ARG1]{ARG2}
+\def\@sect#1#2#3#4#5#6[#7]#8{%
+  \ifnum #2>\c@secnumdepth
+    \def\@svsec{}%
+  \else
+    \refstepcounter{#1}%
+    \if@levelone % is it a \section or \section*
+      \ifSFB@appendix
+        \edef\@svsec{}%
+      \else
+        \edef\@svsec{\csname the#1\endcsname\hskip 1em}%
+      \fi
+    \else
+      \edef\@svsec{\csname the#1\endcsname\hskip 1em}%
+    \fi
+  \fi
+  \@tempskipa #5\relax
+  \ifdim \@tempskipa>\z@
+    \begingroup #6\relax
+    \if@levelone
+      \ifSFB@appendix
+        \@hangfrom{\hskip #3\relax\@svsec}{\interlinepenalty \@M
+        APPENDIX \csname the#1\endcsname:\hskip 0.5em\uppercase{#8}\par}%
+      \else
+        \@hangfrom{\hskip #3\relax\@svsec}{\interlinepenalty \@M
+        \uppercase{#8}\par}%
+      \fi
+    \else
+      \@hangfrom{\hskip #3\relax\@svsec}{\interlinepenalty \@M #8\par}%
+    \fi
+  \endgroup
+   \csname #1mark\endcsname{#7}%
+   \addcontentsline{toc}{#1}{\ifnum #2>\c@secnumdepth \else %ajw
+   \protect\numberline{\csname the#1\endcsname}\fi #7}%ajw
+ \else
+  \def\@svsechd{#6\hskip #3\@svsec \if@levelone \uppercase{#8}\else #8\fi
+  \csname #1mark\endcsname{#7}
+  \addcontentsline{toc}{#1}{\ifnum #2>\c@secnumdepth \else %ajw
+  \protect\numberline{\csname the#1\endcsname}\fi#7}%ajw
+  }\fi
+ \@xsect{#5}}
+
+% % from latex.tex
+% %   \@ssect{INDENT}{BEFORESKIP}{AFTERSKIP}{STYLE}{ARG}
+% \def\@ssect#1#2#3#4#5{%
+%   \@tempskipa #3\relax
+%     \ifdim \@tempskipa>\z@
+%       \begingroup #4\@hangfrom{\hskip #1}{%
+%       \interlinepenalty \@M
+%       \if@levelone
+%         \uppercase{#5}%
+%       \else {#5}%
+%       \fi\par}%
+%      \endgroup
+%     \else
+%       \def\@svsechd{#4\hskip #1\relax
+%       \if@levelone
+%         \uppercase{#5}%
+%       \else {#5}%
+%       \fi}
+%     \fi
+%   \@xsect{#3}%
+% }
+
+\newif\ifSFB@appendix
+\def\appendix{\par
+ \SFB@appendixtrue
+ \@addtoreset{equation}{section}
+ \@addtoreset{table}{section}
+ \@addtoreset{figure}{section}
+ \setcounter{section}{0}
+ \setcounter{equation}{0}
+ \setcounter{figure}{0}
+ \setcounter{table}{0}
+ \def\thesection{\Alph{section}}
+ \renewcommand\thesubsection{\thesection\arabic{subsection}}
+ \renewcommand\theequation{\thesection\arabic{equation}}
+  \renewcommand\thefigure{\thesection\@arabic\c@figure}
+  \renewcommand\thetable{\thesection\@arabic\c@table}
+}    
+
+
+
+
+
+
 
 
 

@@ -102,8 +102,8 @@ Discrete Event, GHZ: Galactic Habitable Zone}
 
 
 
-\section{Motivations: Uncertainties and the non detection problem for
-ETI contact}
+\section{Motivations}
+%\section{Motivations: Uncertainties and the non detection problem for ETI contact}
 %{{{
 
 A common approach to discuss the possible number of extraterrestrial
@@ -136,9 +136,7 @@ as well as efforts on considering the stochastic nature of the Drake equation
 The simulation approach has also benn considered
 \citep{Forgan2008, Forgan2010}.
 %New numerical determination of habitability in the Galaxy: the SETI connection
-
-
-
+%
 Since the factors in the Drake equation are uncertain, we propose to
 avoid the frequentist approach of this equation
 and to explore a parameter space, where instead of computing a final
@@ -239,8 +237,10 @@ directions.
 
 
 
-\section{Methods: accounting for causal contacts with 
-discrete event simulation process}\label{S_methods}
+\section{Methods and working hypotheses}
+
+%: accounting for causal contacts with 
+%discrete event simulation process}\label{S_methods}
 %{{{
 
 Some complex stochastic processes can be efficiently modeled with the
@@ -429,13 +429,7 @@ external factors.
 
 
 
-
-
-
-
 \subsection{Power laws vs. exponential laws}
- 
-
 
 The exponential distribution of lifespan and waiting times is
 justified by considering that the process of appeareance of life in
@@ -487,8 +481,6 @@ unit area in ecology \citep{garcia_origin_2006, frank_common_2009}.
 
 
 
-              
-
 \subsection{Age distribution of civilizations}
 
 
@@ -500,12 +492,17 @@ unit area in ecology \citep{garcia_origin_2006, frank_common_2009}.
 
                       
 
-\subsection{Exploration of the hypothesis space}
+
+\subsection{Discrete event process}
+
+Given a set of parameters $(\tau_a, \tau_s, D_{max})$, the functional
+forms of the statistical distributions and fixed values
+for the hypotheses, a discrete
+event simulation is performed by keeping track of a set of variables
+that change each time a meaningful event is produced.
 
 
-Zipf law.
 
-The adopted values for the GHZ are XX and XX \citep{Lineweaver2004}.
 
         
 
@@ -553,6 +550,15 @@ The variables that can be deduced from the previous ones are:
       successfully deliver an answer.
    \item Number distribution of waiting time to receive a message
 \end{itemize}
+
+
+
+
+\subsection{Exploration of the hypothesis space}
+
+
+
+
 
 
 %========================================================================
@@ -618,12 +624,13 @@ zone (GHZ).
 %
 On a first approach, the GHZ is a 2-dimensional annular region.
 %
+The adopted values for the GHZ are XX and XX \citep{Lineweaver2004}.
+%
 This simple model does not take into accont the variations in stellar
 density given by the spiral structure.
 %
 Although there are several possible approaches, we chose to follow the
 evolution of the system according to the following events:
-
 
 \begin{enumerate}
    \item[(A)] A new CETI appears (Awakening)
@@ -631,7 +638,6 @@ evolution of the system according to the following events:
    \item[(C)] A new causal contact is stablished (Contact)
    \item[(B)] An existing causal contact is interrupted (Blackout)
 \end{enumerate}
-
 
 The event of type B is produced when one of the two CETIs halts in its
 capability of emmiting and receiving signals.
