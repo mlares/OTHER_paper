@@ -101,7 +101,7 @@
 
 \newcommand{\abstractfont}{\@setfontsize\abstractfont{9.25bp}{11.25\p@}\selectfont\hsize=\majorcolumn}
 
-\newcommand{\sectionfont}{\@setfontsize\sectionfont{9.50bp}{11\p@}\fontfamily{\sfdefault}\selectfont\sf\bfseries}
+\newcommand{\sectionfont}{\@setfontsize\sectionfont{10.0bp}{12\p@}\fontfamily{\sfdefault}\selectfont\sf\bfseries}
 
 \newcommand{\boxtextfont}{\@setfontsize\boxtextfont{8.50bp}{11\p@}\fontfamily{\sfdefault}\selectfont\sf}
 
@@ -109,7 +109,7 @@
 
 \newcommand{\appendixfontsize}{\@setfontsize\appendixfontsize{8bp}{10\p@}\selectfont}
 
-\newcommand{\subsectionfont}{\@setfontsize\subsectionfont{9.50bp}{11\p@}\fontfamily{\sfdefault}\selectfont\sf\bfseries\itshape}
+\newcommand{\subsectionfont}{\@setfontsize\subsectionfont{10.0bp}{12\p@}\fontfamily{\sfdefault}\selectfont\sf\itshape}
 
 \newcommand{\subsubsectionfont}{\@setfontsize\subsubsectionfont{9.50bp}{11\p@}\fontfamily{\sfdefault}\selectfont\sf\itshape}
 
@@ -365,19 +365,11 @@ right=14mm]{geometry}
 
 \def\@journame{}
 
-\def\jname#1{\gdef\@journame{\fontsize{11.50bp}{15pt}\selectfont\sf\itshape\raggedright\textcolor{jourcolor}{#1}}}\jname{Journal name}%
+\def\jname#1{\gdef\@journame{\fontsize{10.50bp}{14pt}\selectfont\sf\itshape\raggedright\textcolor{jourcolor}{Submitted to #1}}}\jname{Journal name}%
 
 %%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%History %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\def\@received{}%
-\def\received#1{\gdef\@received{\mincolfont\raggedright{Received:\ }#1}}%
-
-\def\@revised{}%
-\def\revised#1{\gdef\@revised{\mincolfont\raggedright{Revised:\ }#1}}%
-
-\def\@accepted{}%
-\def\accepted#1{\gdef\@accepted{\mincolfont\raggedright{Accepted:\ }#1}}%
 
 \def\surname#1{#1}
 
@@ -387,20 +379,15 @@ right=14mm]{geometry}
 \def\mincolumndefns{%
 \vtop{\vbox to 249mm{\hsize=\minorcolumn\parindent0pt%
 \@journame\par\vskip21pt%
-\cambridgeurl\par\vskip41pt%
- \ifx\@supertitle\@empty\relax\else{\arttypefont\textcolor{jourcolor}{\@supertitle}}\par\vskip\mincolaftskip\fi%
-\ifx\@selfcitation\@empty\relax\else\@selfcitation\par\vskip\mincolaftskip\fi%
-\ifx\@received\empty\relax\else\@received\par\fi%
-\ifx\@revised\empty\relax\else\@revised\par\fi%
-\ifx\@accepted\empty\relax\else\@accepted\par\vskip\mincolaftskip\fi%
+ %\ifx\@supertitle\@empty\relax\else{\arttypefont\textcolor{jourcolor}{\@supertitle}}\par\vskip\mincolaftskip\fi%
+%\ifx\@selfcitation\@empty\relax\else\@selfcitation\par\vskip\mincolaftskip\fi%
  \ifx\@keywords\@empty\relax\else{\mincolfont\raggedright\textbf{\keywordsname:}\break\@keywords}\par\vskip\mincolaftskip\fi%
 \ifx\@JELcode\@empty\relax\else{\mincolfont\raggedright\textbf{JEL classification:}\break\@JELcode}\par\vskip\mincolaftskip\fi%
 \ifx\@MSCcode\@empty\relax\else{\mincolfont\raggedright\textbf{MSC Codes:}\break\@MSCcode}\par\vskip\mincolaftskip\fi%
 \ifx\@Abbrev\@empty\relax\else{\mincolfont\raggedright\textbf{Abbreviations:}\break\@Abbrev}\par\vskip\mincolaftskip\fi%
 \ifx\@corres\empty\relax\else\@corres\fi%
 \vfill%
-\copyright@line\par\vskip\mincolaftskip\vskip10pt%
-{\includegraphics{shcup_black_mono}}}}}
+}}}
 
 
 \def\ps@titlepage{%
@@ -441,7 +428,7 @@ right=14mm]{geometry}
 
 % Form of the numbers
 %\newcommand\thepage{\arabic{page}}
-%\renewcommand\thesection{\Roman{section}}
+\renewcommand\thesection{\Roman{section}}
 %\renewcommand\thesubsection{{\Alph{subsection}}}
 %\renewcommand\thesubsubsection{{\arabic{subsubsection}}}
 %\renewcommand\theparagraph{\thesubsubsection.\arabic{paragraph}}
@@ -523,7 +510,7 @@ right=14mm]{geometry}
 \def\dedi#1{\def\@dedi{#1}\global\@dedi@providedtrue}
 \def\keywords#1{\gdef\@keywords{#1}\global\@keywords@providedtrue}
 \def\subtitle#1{\def\@subtitle{{#1}}\global\@subtitle@providedtrue}
-\def\supertitle#1{\def\@supertitle{{\noindent #1}}\global\@supertitle@providedtrue}
+\def\supertitle#1{\def\@supertitle{{\noindent \small{#1}}}\global\@supertitle@providedtrue}
 \def\specialissue#1{\def\@specialissue{{\noindent SPECIAL ISSUE:~#1}}\global\@specialissue@providedtrue}
 \def\guesteditor#1{\def\@guesteditor{{\noindent \guestname:~#1}}\global\@guesteditor@providedtrue}
 
@@ -740,6 +727,23 @@ right=14mm]{geometry}
   \@startsection{section}{1}{\z@}
   {-12\p@ plus -2\p@ minus -1\p@}{0.0001\p@}
   {\fontsize{11.5}{13.5}\selectfont\itshape}}
+
+
+
+
+
+
+
+
+%- - - - - -
+
+
+%\newcounter {section}
+%\newcounter {subsection}[section]
+%\def\thesection {\arabic{section}}
+%\def\thesubsection    {\thesection.\arabic{subsection}}
+ 
+%- - - - - -
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1222,7 +1226,7 @@ right=14mm]{geometry}
 \renewcommand{\notesname}{{Notes}}
 
 \newenvironment{notes}[1][Notes]{\par
-\setcounter{secnumdepth}{0}
+%\setcounter{secnumdepth}{0}
 \section{{#1}}%
 }{\par}
 
@@ -1230,7 +1234,7 @@ right=14mm]{geometry}
 \providecommand{\nomenname}{Nomenclature}
 \newcommand{\nomen}[1][\nomenname]{%
   \setcounter{savesecnumdepth}{\value{secnumdepth}}%
-  \setcounter{secnumdepth}{0}%
+  %\setcounter{secnumdepth}{0}%
   \refsection{#1}%
 \vspace*{5pt}
   \setcounter{secnumdepth}{\value{savesecnumdepth}}%
@@ -1328,20 +1332,20 @@ right=14mm]{geometry}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% Appendix %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newif\ifappend % Are we in the Appendix?
-\def\appendix{\par\appendixfontsize%
-  \setcounter{secnumdepth}{0}%
-  \renewcommand{\thesection}{\Alph{section}}
-  \renewcommand{\@seccntformat}[1]{{\csname
-  the##1\endcsname}\quad}
-\def\thetable{\thesection\@arabic\c@table}
-\def\thefigure{\thesection\@arabic\c@figure}
-\renewcommand\theequation{\thesection\arabic{equation}}
-        \setcounter{section}{0}
-        \setcounter{table}{0}
-        \setcounter{equation}{0}
-        \setcounter{subsection}{0}
-        \appendtrue}
+%\newif\ifappend % Are we in the Appendix?
+%\def\appendix{\par\appendixfontsize%
+%  \setcounter{secnumdepth}{0}%
+%  \renewcommand{\thesection}{\Alph{section}}
+%  \renewcommand{\@seccntformat}[1]{{\csname
+%  the##1\endcsname}\quad}
+%\def\thetable{\thesection\@arabic\c@table}
+%\def\thefigure{\thesection\@arabic\c@figure}
+%\renewcommand\theequation{\thesection\arabic{equation}}
+%        \setcounter{section}{0}
+%        \setcounter{table}{0}
+%        \setcounter{equation}{0}
+%        \setcounter{subsection}{0}
+%        \appendtrue}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Override settings in MathTime back to TeX defaults
