@@ -118,10 +118,6 @@ Some modifications to the original idea of the equation have tried to
 imprint a stochastic nature, or to propose a probabilistic approach,
 or to consider the temporal structure which is missing in the
 equation.
-
-
-
-
 %
 Temporal aspects of the distribution of communicating civilizations
 and their contacts have also been explored by several authors
@@ -183,13 +179,6 @@ structure in the Drake equation.
 
 
 
-
-
-
-%Our results highlight the necessity, which has been noted
-%elsewhere (Ćirković, 2004), of modeling 
-%
-%
 %While the Drake equation remains a very useful
 %guide in identifying and analyzing the various factors in-
 %volved in the problem and their relative probabilities, our
@@ -209,8 +198,6 @@ structure in the Drake equation.
 %vestigation in which an integrated evolutionary (and coevo-
 %lutionary) approach to the problem would be a central focus
 %of interest (for more on this perspective, see, e.g., Chaisson
-
-
 
 
 
@@ -259,11 +246,52 @@ events on a time line and process these events in chronological order
 \citep{ptolemaeus_system_2014, chung_simulation_2003,
 simulation_ross_2012}.
 %
-On the particular case of the difusion of signals of intelligence in
-the Galaxy, the discrete events method can be performed taking into
-account a small number of variables.
+This method is well suited for the 
+particular case of the difusion of intelligence signals in
+the Galaxy.
 %
-The temporal structure is defined by two distribution parameters that
+Assuming some simple hypotheses, 
+the discrete events method can be performed taking into
+account a small number of variables, which allows to analyze the
+results as a function of those variables.
+
+
+In what follows, we describe the experimental setup chosen to estimate
+the probabilities of causal contacts and several derived quantities in
+terms of three independent parameters, namely, the mean time span
+between the appeareance of consecutive communicating civilizations
+($\tau_a$), their mean lifetime ($\tau_s$), and the maximum distance a
+signal can be detected by another civilization ($D_{max}$).
+%
+Intuitively, the shorter $\tau_a$ and the larger $\tau_s$ and
+$D_{max}$, there is a greater probability of the existence of causal
+contacts between pairs of intelligent civilizations in the Galaxy
+(Table \ref{T_simu}).
+%
+The causal connection can be produced without the need of the two
+civilizations being concurrent or active at the same time.
+%
+Each CETI will fill an annular region of the Galaxy, limited by two
+surfaces.
+%
+The leading front, or surface of first contact (SFC) grows from the
+central CETI until it reaches the distance $D_{max}$.
+%
+The trailing front, or surface of last contact (SLC) also grows from
+the central CETI, with a delay with respect to the SFC equivalent to
+the lifetime of the CETI, and produces an annular region that shrinks
+until it reaches $D_{max}$, when all signal from the central CETI is
+lost.
+%
+In the 2D simulation only the intersection of these spheres with the
+plane of the galaxy is relevant, and produce the corresponding
+circumferences.
+
+
+
+
+
+The temporal structure of the process is defined by two distribution parameters that
 represent the mean time interval that an intelligent civilization can
 emit and receive signals, and the mean time interval between the
 emergence of an intelligent comunicating civilization and the next
@@ -274,12 +302,13 @@ of the Galactic Habitable Zone and the maximum distance a signal can
 travel to be detected.
 %
 The parameters for the temporal distributions also determine the
-spatial properties.
-%
-For example, the density of active cetis in the Galaxy depend on these
+spatial properties since the density of active cetis in the Galaxy depend on these
 two parameters.
 %
-Also, some hypothesis must be made in order to complete the
+For example, a small $\tau_a$ and a large $\tau_s$ will produce a
+Galaxy densely populated woth CETIs, and viceversa.
+%
+Also, some hypotheses must be made in order to complete the
 simulation.
 %
 Firstly, we assume that the distribution of the appeareance of new
@@ -330,12 +359,28 @@ appeareance of life as we know it.
 \centering
 \begin{tabular}{cl}
 \hline
-   $\tau_{a}$ & Mean temporal separation between consecutive awakenings \\
+   \multicolumn{2}{l}{independent variables} \\
+\hline
+   $\tau_{a}$ & Mean temporal separation between\\
+              & consecutive awakenings \\
    $\tau_{s}$ & Mean lifetime of a CETI \\
    D$_{max}$ & Maximum reach of a message \\
 \hline
+\multicolumn{2}{l}{fixed variables and assumptions} \\
+\hline
+   & All CETIs share the same statistical properties\\
+   & The process is homogeneous \\
+   & The scan of the sly is fully efficient\\
+   & Absence of panspermia or colonization \\
+   & The GHZ is a 2--dimensional ring \\
+20000ly    & Inner radius of the GHZ \\
+60000ly    & Outer radius of the GHZ \\
+1.e6 y    & Time span of the simulation \\
+
+\hline
 \end{tabular}
-\caption{Definition of variables that are part of the simulation.}
+\caption{Definition of independent variables and fixed paramenters 
+   that are part of the simulation.}
 \label{T_simu}
 \end{table}
  
@@ -480,19 +525,6 @@ analysing connectivity patterns in metabolic networks
 unit area in ecology \citep{garcia_origin_2006, frank_common_2009}.
 
 
-
-\subsection{Age distribution of civilizations}
-
-
-
-
-\subsection{Rate of appeareance of civilizations}
-
-
-
-                      
-
-
 \subsection{Discrete event process}
 
 Given a set of parameters $(\tau_a, \tau_s, D_{max})$, the functional
@@ -502,9 +534,6 @@ event simulation is performed by keeping track of a set of variables
 that change each time a meaningful event is produced.
 
 
-
-
-        
 
 \setlength{\tabcolsep}{10pt}
 \begin{table}
