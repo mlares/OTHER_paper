@@ -927,18 +927,20 @@ reaching a first contact within the first XX years.
 \setlength{\tabcolsep}{10pt}
 \begin{table*}
 \centering
-\begin{tabular}{cccccc}
+\begin{tabular}{ccccc}
 \hline
-Model subset & D$_{max}$ & $\tau_a$ & $\tau_s$ & size & description  \\
-M1 & $<$5000 & $<$15000 & $<$15000 &800  &dense awakening and short lifetime\\
-M2 & $<$5000 & $>$20000 & $>$50000 &1050 &sparse awakening and long lifetime\\
-M3 & $<$5000 & $<$5000  & $>$15000 &1350 &dense awakening and long lifetime \\
-M4 & $<$5000 & $>$15000 & $<$26000 &1200 &sparse awakening and short lifetime\\
+Model subset & D$_{max}$ & $\tau_a$ & $\tau_s$ & description  \\
+\hline
+M1 & 40000 & [10000, 30000]   & [10000, 50000]   &dense, short lifetime\\
+M2 & 40000 & [170000, 190000] & [10000, 50000]   &sparse, short lifetime\\
+M3 & 40000 & [10000, 30000]   & [400000, 440000] &dense, long lifetime \\
+M4 & 40000 & [170000, 190000] & [400000, 440000] &sparse, long lifetime\\
 
-M5 & $>$20000 & $<$15000 & $<$15000 &800  &dense awakening and short lifetime\\
-M6 & $>$20000 & $>$20000 & $>$50000 &1050 &sparse awakening and long lifetime\\
-M7 & $>$20000 & $<$5000  & $>$15000 &1350 &dense awakening and long lifetime \\
-M8 & $>$20000 & $>$15000 & $<$26000 &1200 &sparse awakening and short lifetime\\
+M5 & 80000 & [10000, 30000]   & [10000, 50000]   &dense, short lifetime\\
+M6 & 80000 & [170000, 190000] & [10000, 50000]   &sparse, short lifetime\\
+M7 & 80000 & [10000, 30000]   & [400000, 440000] &dense, long lifetime \\
+M8 & 80000 & [170000, 190000] & [400000, 440000] &sparse, long lifetime\\
+
 \hline
 \end{tabular}
 \caption{Selected models to analize the behevior of some variables.}
@@ -950,7 +952,7 @@ M8 & $>$20000 & $>$15000 & $<$26000 &1200 &sparse awakening and short lifetime\\
   
 \begin{figure} \centering
    %
-   \includegraphics[width=0.5\textwidth]{Figure_1.png}
+   \includegraphics[width=0.5\textwidth]{F1.pdf}
    %
    \caption{Empirical cumulative distributions of the number contacts
    for CETIs in four different samplas (M5, M6, M7, M8) with long
@@ -962,44 +964,52 @@ M8 & $>$20000 & $>$15000 & $<$26000 &1200 &sparse awakening and short lifetime\\
    
 \begin{figure} % Distribution
    \centering
-   \includegraphics[width=0.5\textwidth]{Figure_2.png}
+   \includegraphics[width=0.5\textwidth]{F2.pdf}
    \caption{Rate of CETIs that make no contact as a function of
    $\tau_a$ and $\tau_s$}
    \label{F_res_2}
 \end{figure}
  
+
+
+
+
+
+ 
+\begin{figure*} % 2D color plot
+   \centering
+   \includegraphics[width=0.3\textwidth]{m1d2.png}%
+   \includegraphics[width=0.3\textwidth]{m1d3.png}%
+   \includegraphics[width=0.3\textwidth]{m1d4.png}
+   \caption{Rate of CETIs that never make contact (listening) as a
+   function of $\tau_a$ and $\tau_s$, for 
+   $D_{max}$=10000 (left panel),
+   $D_{max}$=40000 (middle panel), and
+   $D_{max}$=80000 (right panel)}
+   \label{F_res_3}
+\end{figure*}
+
+  
+\begin{figure*} % 2D color plot
+   \centering
+   \includegraphics[width=0.3\textwidth]{m2d2.png}%
+   \includegraphics[width=0.3\textwidth]{m2d3.png}%
+   \includegraphics[width=0.3\textwidth]{m2d4.png}
+   \caption{Rate of CETIs that listen at the moment of the
+   awakening, as a funcion of $\tau_a$ and $\tau_s$}
+   \label{F_res_4}
+\end{figure*}
+
+
+
 \begin{figure}
    \centering
-   \includegraphics[width=0.5\textwidth]{Figure_3.png}
-   \caption{Distribution of number of contacts as a function of
+   \includegraphics[width=0.5\textwidth]{radial.png}
+   \caption{Fraction of CETIs making cero, one, two or three contacts as a function of
    galactocentric distance.}
    \label{F_res_5}
 \end{figure}
- 
-
-
-
-
-  
-\begin{figure} % 2D color plot
-   \centering
-   \includegraphics[width=0.5\textwidth]{Figure_4.png}
-   \caption{}
-   \label{F_res_4}
-\end{figure}
- 
- \begin{figure} % 2D color plot
-   \centering
-   \includegraphics[width=0.5\textwidth]{Figure_5.png}
-   \caption{Rate of CETIs that listen at least one time, and make its
-   first contact at the moment of the awakening, as a funcion of
-   $\tau_a$ and $\tau_s$}
-   \label{F_res_3}
-\end{figure}
- 
- 
- 
-
+           
  
 
 \section{Discusion}\label{S_discussion}
@@ -1065,6 +1075,39 @@ of CETIs and different efficiencies for the sphere of the causal
 region of each CETI, resembling different searching strategies.
  
 %}}}
+
+
+
+\begin{figure*}
+   \centering
+   \includegraphics[width=0.33\textwidth]{waiting_a_acum_log.png}%
+   \includegraphics[width=0.33\textwidth]{waiting_a_acum_lin.png}%
+   \includegraphics[width=0.33\textwidth]{waiting_a_dif.png}
+
+   \includegraphics[width=0.33\textwidth]{waiting_s_acum_log.png}%
+   \includegraphics[width=0.33\textwidth]{waiting_s_acum_lin.png}%
+   \includegraphics[width=0.33\textwidth]{waiting_s_dif.png}
+
+   \includegraphics[width=0.33\textwidth]{prob1_10k.png}%
+   \includegraphics[width=0.33\textwidth]{prob1_40k.png}%
+   \includegraphics[width=0.33\textwidth]{prob1_80k.png}
+
+   \caption{Fraction of the CETIs that have made at least one contact  
+   as a funtion of the elapsed time since the awakening, given that
+   they make at least one contact on their lifetime.}
+   \label{F_}
+\end{figure*}
+
+\begin{figure*}
+   \centering
+   \caption{}
+   \label{F_}
+\end{figure*}
+
+ 
+
+
+
 
 
 \ack[Acknowledgement]{
