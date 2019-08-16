@@ -903,21 +903,32 @@ outputs for each simulation experiment.
 In this section we analyze the distribution of the waiting times for
 a first contact.
 %
-Such distribution can be considered to compute the probability of
-reaching a first contact within the first XX years of a SETI project,
-assuming the methods are correct and the hypotheses of the experiment.
+Such distribution can be considered to compute the probability for a
+random CETI to carry out a SETI project and spend a given time until
+the first contact is made.
+%
+Reaching a first contact within the first $t_1$ years of a SETI project,
+requires assuming that the methods are correct and the hypotheses of
+the experiment fullfil.
+%
+This values can be considered as upper limits, since the efficiency of
+a SETI initiative could be smaller than the ideal.
+%
+Also, a civilization could consider itself as "awakened" before it
+discovers the right technology to perform a communication.
+
 
 
 In the Fig.~\ref{F_waiting} we show the fraction of the CETIs that
-have made at least one contact  as a funtion of the elapsed time since
+have made at least one contact as a funtion of the elapsed time since
 the awakening, given that they make at least one contact on their
 lifetime, for different models.
 %
-From a frequentist approach, the normalizaed cumulative counts are
+From a frequentist approach, the normalized cumulative counts are
 related to the estimation of the probability of observing a given time
 with no success.
 %             
-XX panels show the histograms of the waiting times for the first
+Both panels show the histograms of the waiting times for the first
 contact, for all the CETIs that make at least one contact along their
 lifetime.
 %
@@ -939,12 +950,39 @@ contacts on the different models.
 ... but not in the case of different values of $\tau_s$.
 
 
+%    \caption{Fraction of the CETIs that have made at least one contact  
+%   as a funtion of the elapsed time since the awakening, given that they make at least one contact on their lifetime.
+%   %
+%   From a frequentist approach, this fraction is the estimation of the
+%   probability}
+ 
+
+
 %}}}
 
 
 
 \subsection{Location within the Galaxy}
 %{{{
+
+On the Figure~\ref{F_radial} we show the fraction of CETIs that make
+zero, one, two or three contacts, as a function of the galactocentric
+distance.
+%
+For this model, which corresponds to XXX, the majority of CETIs do not
+make any contact during all the time period in which they are active.
+%
+As expected, the fractions of CETIs making at least one contact
+diminishes as the number of contacts rises.
+%
+The shape of this distribution is a result of the geometry of the GHZ.
+%
+In general, a closer position to the center of the Galaxy slightly favours 
+the posibility of a contact.
+%
+This would indicate that the position of the Earth is suitable for the
+odds of making a contact.
+
 
 %}}}
 
@@ -970,7 +1008,9 @@ M8 & 80000 & [170000, 190000] & [400000, 440000] &sparse, long lifetime\\
 
 \hline
 \end{tabular}
-\caption{Selected models to analize the behevior of some variables.}
+\caption{Selected models to analize the behevior of simulation outputs
+   and their dependence on simulation outputs and their dependence on
+   simulation parameters..}
 \label{T_SelectedModels}
 \end{table*}
 
@@ -1028,6 +1068,16 @@ M8 & 80000 & [170000, 190000] & [400000, 440000] &sparse, long lifetime\\
 \end{figure*}
 
 
+
+\begin{figure}
+   \centering
+   \includegraphics[width=0.5\textwidth]{radial.png}
+   \caption{Fraction of CETIs making cero, one, two or three contacts as a function of
+   galactocentric distance.}
+   \label{F_radial}
+\end{figure}
+           
+ 
 
 \section{Discusion}\label{S_discussion}
 %{{{
@@ -1094,34 +1144,10 @@ region of each CETI, resembling different searching strategies.
 %}}}
 
 
-
-\begin{figure*}
-   \centering
-   \includegraphics[width=0.33\textwidth]{waiting_a_acum_log.png}%
-   \includegraphics[width=0.33\textwidth]{waiting_a_acum_lin.png}%
-   \includegraphics[width=0.33\textwidth]{waiting_a_dif.png}
-
-   \includegraphics[width=0.33\textwidth]{waiting_s_acum_log.png}%
-   \includegraphics[width=0.33\textwidth]{waiting_s_acum_lin.png}%
-   \includegraphics[width=0.33\textwidth]{waiting_s_dif.png}
-
-   \caption{Fraction of the CETIs that have made at least one contact  
-   as a funtion of the elapsed time since the awakening, given that
-   they make at least one contact on their lifetime.
-   %
-   From a frequentist approach, this fraction is the estimation of the
-   probability    
-   }
-   \label{F_waiting}
-\end{figure*}
-
-                
-
-
 \begin{figure*}
    \centering
    \includegraphics[width=0.5\textwidth]{Figure_taua.png}%
-   \includegraphics[width=0.5\textwidth]{Figure_taus.png}%
+   \includegraphics[width=0.5\textwidth]{Figure_taus.png}
    %
    \caption{Histograms of the mean waiting times for the first contact, for
    several models.
@@ -1136,35 +1162,7 @@ region of each CETI, resembling different searching strategies.
    modified, but significantly changes when $\tau_s$ is modified.
    }
    \label{F_waiting}
-\end{figure*}
-
-                   
-
-
-\begin{figure*}
-   \centering
-   \includegraphics[width=0.33\textwidth]{prob1_10k.png}%
-   \includegraphics[width=0.33\textwidth]{prob1_40k.png}%
-   \includegraphics[width=0.33\textwidth]{prob1_80k.png}
-   %
-   \caption{F}
-   \label{F_waiting}
-\end{figure*}
-
-
-           
-
-\begin{figure}
-   \centering
-   \includegraphics[width=0.5\textwidth]{radial.png}
-   \caption{Fraction of CETIs making cero, one, two or three contacts as a function of
-   galactocentric distance.}
-   \label{F_res_5}
-\end{figure}
-           
-              
-
-                       
+\end{figure*}             
 
 
 \ack[Acknowledgement]{
@@ -1172,7 +1170,7 @@ region of each CETI, resembling different searching strategies.
 This work was partially supported by the Consejo Nacional de
 Investigaciones Cient\'{\i}ficas y T\'ecnicas (CONICET, Argentina),
 the Secretar\'{\i}a de Ciencia y Tecnolog\'{\i}a, Universidad Nacional
-de C\'ordoba, Argentina, and the Universidad Católica de Córdoba,
+de C\'ordoba, Argentina, and the Universidad Cat\'olica de C\'ordoba,
 Argentina.
 %
 This research has made use of NASA's Astrophysics Data System.
