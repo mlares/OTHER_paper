@@ -58,27 +58,44 @@ contact between interstellar civilizations through MonteCarlo simulations}
    %
 }
 
+
 \begin{abstract}
 %
 The abundance of intelligent civilizations in the galaxy is a
 longstanding question, which is often conceptualized as the problem
-of the lack of received communication of the Fermi paradox.
+of the lack of received communication or the Fermi paradox.
 %
 Most efforts on the estimation of a number of intelligent
 civilizations are centered on the Drake equation, although 
 its factors are affected by large uncertainties, and it lacks a
 temporal nature.
 %
+A different approach uses detailed numerical simulations of the galaxy
+and recipes for the rates of the formation of stars and planets, and
+even for the origin of life.
+%
 Here we present numerical simulations of stochastic processes of
-emergence of civilizations with communication capabilities, and
-the causal contacts among them.
+emergence of civilizations with communication capabilities, based
+on minimal asumptions, and analyze the causal connections among them.
 %
-We analyze the rate of causal contacts as a function of the mean
-number of civilizations and the mean lifetime span distribution.
+The analysis of the rate of causal contacts as a function of the mean
+number of civilizations, the mean lifetime span distribution and the
+maximum distance a civilization can send signals is presented, and
+used as a framework to discuss the spatial and temporal structure
+of a populated galaxy within several different scenarios.
 %
-Our results indicate that, given the large distances involved, in
-the odds to obtain a contact in a few years of monitoring, assuming a
-perfect detection rate, are very rare.                                 
+Our results indicate that, given the large distances involved, causal
+contacts between civilizations are very rare.
+%
+Additionally, the odds to make a contact in a few years of monitoring, 
+assuming a perfect detection rate, are low for most models, with the
+exception of models which propose a galaxy densely populated with
+long lived civilizations.
+%
+The probability of causal contacts increases with the increase of the 
+mean lifetime of civilizations much more signifficantly than with
+the increase in the mean number of active civilizations for a given
+time window.
 %
 \end{abstract}
 
@@ -100,10 +117,7 @@ Discrete Event, GHZ: Galactic Habitable Zone}
 
 
 
-
-
-\section{Motivations}
-%\section{Motivations: Uncertainties and the non detection problem for ETI contact}
+\section{Motivations}\label{S_motivations}
 %{{{
 
 A common approach to discuss the possible number of extraterrestrial
@@ -205,29 +219,24 @@ In this work we address the problem of the temporal and spatial
 structure of the distribution of communicating civilizations, by
 exploring the hypothesis space over a minimal set of parameters.
 %
-In Sec.~\ref{S_methods} we introduce the methods and discuss the candidate
-distributions for the statistical aspects of the times involved in the
-communication process.
+In Sec.~\ref{S_methods} we introduce the methods and discuss the
+candidate distributions for the statistical aspects of the times
+involved in the communication process.
 %
-Then, we present our results in Sec~\ref{S_results}, with special emphasis on
-the statistical distributions of the duration of causal contacts in one or
-both directions, the possible differences on the position of a
-civilization on the Galaxy and the distribution of time intervals for
-the waiting of the first contact, always as a function of the three
-simulation parameters.
+Then, we present our results in Sec~\ref{S_results}, with special
+emphasis on the statistical distributions of the duration of causal
+contacts in one or both directions, the possible differences on the
+position of a civilization on the Galaxy and the distribution of time
+intervals for the waiting of the first contact, always as a function
+of the three simulation parameters.
 %
-Finally, in Sec.~\ref{S_discussion} we discuss our results and future research
-directions.
-
+Finally, in Sec.~\ref{S_discussion} we discuss our results and future
+research directions.
 
 %}}}
 
 
-
-\section{Methods and working hypotheses}
-
-%: accounting for causal contacts with 
-%discrete event simulation process}\label{S_methods}
+\section{Methods and working hypotheses}\label{S_methods}
 %{{{
 
 Some complex stochastic processes can be efficiently modeled with the
@@ -246,14 +255,12 @@ events on a time line and process these events in chronological order
 \citep{ptolemaeus_system_2014, chung_simulation_2003,
 simulation_ross_2012}.
 %
-This method is well suited for the 
-particular case of the difusion of intelligence signals in
-the Galaxy.
+This method is well suited for the particular case of the difusion of
+intelligence signals in the Galaxy.
 %
-Assuming some simple hypotheses, 
-the discrete events method can be performed taking into
-account a small number of variables, which allows to analyze the
-results as a function of those variables.
+Assuming some simple hypotheses, the discrete events method can be
+performed taking into account a small number of variables, which
+allows to analyze the results as a function of those variables.
 
 
 In what follows, we describe the experimental setup chosen to estimate
@@ -266,7 +273,7 @@ signal can be detected by another civilization ($D_{max}$).
 Intuitively, the shorter $\tau_a$ and the larger $\tau_s$ and
 $D_{max}$, there is a greater probability of the existence of causal
 contacts between pairs of intelligent civilizations in the Galaxy
-(Table \ref{T_simu}).
+(Table \ref{T_simu_hypotheses}).
 %
 The causal connection can be produced without the need of the two
 civilizations being concurrent or active at the same time.
@@ -286,24 +293,55 @@ lost.
 In the 2D simulation only the intersection of these spheres with the
 plane of the galaxy is relevant, and produce the corresponding
 circumferences.
+%
+We illustrate in the Fig.~\ref{F_growing_sphere} the schematic
+representation of the growing communicating sphere, over the
+space–time diagrams, where time is represented on the horizontal
+direction, and space is represented in the vertical direction.
+%
+In the upper panel (a), the sphere is growing as the surface of first
+contact has not reached the maximum distance.
+%
+In the middle panel (b) it has reached the maximum distance, so that
+it remains at the same size.
+%
+After a Doomsday event (bottom panel, b), the signals can still be
+observed, but the surface of last contact grows.
+%
+In the Fig.~\ref{F_abcd}, we show a schematic representation of two
+emitters, E$_1$ and E$_2$, that reach each other at different times.
+%
+The time span for E$_i$ is (A$_i$ , D$_i$) , for $i = {1, 2}$.
+%
+Emitter $i$ can listen to emitter $j$ between C$_{ij}$ and B$_{ij}$.
+%
+The type and length of causal contact in both directions depend on the
+distance and time lag between the awakening events, the maximum
+distance that a signal can reach and the time period in which each
+emitter is active.
+%
+In the Fig.~\ref{F_messages} we show a schematic representation of the
+possible cases in which a CETI A can be in causal contact with a CETI
+B which appears later.
+%
+The duration of the causal contact in one direction depends on several
+factors, mainly $\Delta$t~A , $\Delta$t~C , and $\Delta$X.
 
 
 
-
-
-The temporal structure of the process is defined by two distribution parameters that
-represent the mean time interval that an intelligent civilization can
-emit and receive signals, and the mean time interval between the
-emergence of an intelligent comunicating civilization and the next
-one.
+The temporal structure of the process is defined by two distribution
+parameters that represent the mean time interval that an intelligent
+civilization can emit and receive signals, and the mean time interval
+between the emergence of an intelligent comunicating civilization and
+the next one.
 %
 The spatial structure of the simulation is given by the size and shape
 of the Galactic Habitable Zone and the maximum distance a signal can
 travel to be detected.
 %
 The parameters for the temporal distributions also determine the
-spatial properties since the density of active cetis in the Galaxy depend on these
-two parameters.
+spatial properties since the density of active cetis in the Galaxy
+depend on these two parameters.
 %
 For example, a small $\tau_a$ and a large $\tau_s$ will produce a
 Galaxy densely populated woth CETIs, and viceversa.
@@ -381,7 +419,7 @@ appeareance of life as we know it.
 \end{tabular}
 \caption{Definition of independent variables and fixed paramenters 
    that are part of the simulation.}
-\label{T_simu}
+\label{T_simu_hypotheses}
 \end{table}
  
 
@@ -555,7 +593,7 @@ that change each time a meaningful event is produced.
 \caption{Adopted values for simulation parameters. Fixed parameters
    define the GHZ.  Variable parameters define the temporal structure
    of the process and the reach of messages.}
-\label{T_parameters}
+\label{T_range_parameters}
 \end{table}
 
 
@@ -606,7 +644,7 @@ The variables that can be deduced from the previous ones are:
    distance.  In (b) it has reached the maximum distance, so that it
    remains at the same size.  After a Doomsday event, the signals can
    still be observed, but the surface of last contact grows }
-   \label{F_sphere}
+   \label{F_growing_sphere}
 \end{figure}
 
   
@@ -765,9 +803,6 @@ available\footnote{https://github.com/mlares/simu\_contact}
 \end{figure*}
 
 
- 
-
-
 \section{Results: exploring the parameter space}\label{S_results}
 %{{{
 
@@ -845,12 +880,13 @@ short/large range reach of the signal, including all possible
 combinations.
 %
 The details of each model are summarized in the
-Table~\ref{T_SelectedModels}.
+Table~\ref{T_selected_models}.
 
 
-In Fig.~\ref{F_res_1} we show the Empirical cumulative distributions
-of the number contacts for CETIs in four different samplas (M5, M6,
-M7, M8) with long range signal reach (D$_{max}$=10000). 
+In Fig.~\ref{F_number_of_contacts} we show the Empirical cumulative
+distributions of the number contacts for CETIs in four different
+samples (M5, M6, M7, M8) with long range signal reach
+(D$_{max}$=10000). 
 %
 The lifetime is more determinant than the awakening rate in increasing
 the number of contacts.
@@ -884,7 +920,7 @@ communication (Sec. X).
 %}}}
 
 
-\subsection{Duration of contacts}
+\subsection{Multiplicity and duration of contacts}\label{SS_multiplicity}
 %{{{
 
 The duration of each contact for a single receiving CETI is given by the
@@ -897,7 +933,7 @@ outputs for each simulation experiment.
 %}}}
 
 
-\subsection{Waiting time for a first contact}
+\subsection{Waiting time for a first contact}\label{SS_waiting}
 %{{{
 
 In this section we analyze the distribution of the waiting times for
@@ -911,10 +947,10 @@ random CETI to carry out a SETI project and spend a given time until
 the first contact is made. 
 
 
-In the Fig.~\ref{F_waiting} we show the fraction of the CETIs that
-have made at least one contact as a funtion of the elapsed time since
-the awakening, given that they make at least one contact on their
-lifetime, for different models.
+In the Fig.~\ref{F_waiting_time} we show the fraction of the CETIs
+that have made at least one contact as a funtion of the elapsed time
+since the awakening, given that they make at least one contact on
+their lifetime, for different models.
 %
 From a frequentist approach, the normalized cumulative counts are
 related to the estimation of the probability of observing a given time
@@ -925,26 +961,42 @@ contact, for all the CETIs that make at least one contact along their
 lifetime.
 %
 We show separately the histograms for several values of $\tau_a$ and a
-fixed value of $(\tau_s, D_{max})$, and for several values of $\tau_s$ and a
-fixed value of $(\tau_a, D_{max})$.
+fixed value of $(\tau_s, D_{max})$, and for several values of $\tau_s$
+and a fixed value of $(\tau_a, D_{max})$.
 %
 For different values of $\tau_a$, the shape of the distribution is
 similar, and the main difference given by the different number of
 contacts on the different models.
 %
-Conversely, 
- For different values of $\tau_a$, the shape of the distribution is
-similar, and the main difference given by the different number of
-contacts on the different models. 
+Conversely, for different values of $\tau_a$, the shape of the
+distribution is similar, and the main difference given by the
+different number of contacts on the different models. 
+%
+We show the 2D maps of the rate of CETIs that never make contact and
+the rate of CETIs that make contact at the moment of the awakening,
+inf the Figs.~\ref{F_never_contact} and \ref{F_C_at_A}, respectively,
+as a function of $\tau_s$ and $\tau_s$.
+%
+In the Fig.~\ref{F_waiting_for_1C} we show the histograms of the mean
+waiting times for the first contact, for several models.
+%
+Left panel shows the histograms for several values of $\tau_a$, and
+$\tau_s$ in the range 17000-24000 yr.
+%
+Right panel shows the histograms for several values of $\tau_s$, and
+$\tau_a$ in the range 68000-100000 yr.
+%
+The shape of the histograms does not change when $\tau_a$ is modified,
+but significantly changes when $\tau_s$ is modified.
+
 
 %}}}
 
 
-
-\subsection{Location within the Galaxy}
+\subsection{Location within the Galaxy}\label{SS_location}
 %{{{
     
-On the Figure~\ref{F_radial} we show the fraction of CETIs that make
+On the Figure~\ref{F_radial_frac} we show the fraction of CETIs that make
 zero, one, two or three contacts, as a function of the galactocentric
 distance.
 %
@@ -964,8 +1016,6 @@ odds of making a contact.
 
 %}}}
 
-
-
  
 \setlength{\tabcolsep}{10pt}
 \begin{table*}
@@ -978,18 +1028,18 @@ M1 & 40000 & [10000, 30000]   & [10000, 50000]   &dense, short lifetime\\
 M2 & 40000 & [170000, 190000] & [10000, 50000]   &sparse, short lifetime\\
 M3 & 40000 & [10000, 30000]   & [400000, 440000] &dense, long lifetime \\
 M4 & 40000 & [170000, 190000] & [400000, 440000] &sparse, long lifetime\\
-
+%
 M5 & 80000 & [10000, 30000]   & [10000, 50000]   &dense, short lifetime\\
 M6 & 80000 & [170000, 190000] & [10000, 50000]   &sparse, short lifetime\\
 M7 & 80000 & [10000, 30000]   & [400000, 440000] &dense, long lifetime \\
 M8 & 80000 & [170000, 190000] & [400000, 440000] &sparse, long lifetime\\
-
+%
 \hline
 \end{tabular}
 \caption{Selected models to analize the behevior of simulation outputs
    and their dependence on simulation outputs and their dependence on
    simulation parameters.}
-\label{T_SelectedModels}
+\label{T_selected_models}
 \end{table*}
 
 
@@ -1000,26 +1050,21 @@ M8 & 80000 & [170000, 190000] & [400000, 440000] &sparse, long lifetime\\
    \includegraphics[width=0.5\textwidth]{F1.pdf}
    %
    \caption{Empirical cumulative distributions of the number contacts
-   for CETIs in four different samplas (M5, M6, M7, M8) with long
+   for CETIs in four different samples (M5, M6, M7, M8) with long
    range signal reach (D$_{max}$=10000).
    %
    }
    % 
-\label{F_res_1} \end{figure}
+\label{F_number_of_contacts} \end{figure}
    
 \begin{figure} % Distribution
    \centering
    \includegraphics[width=0.5\textwidth]{F2.pdf}
    \caption{Rate of CETIs that make no contact as a function of
    $\tau_a$ and $\tau_s$}
-   \label{F_res_2}
+   \label{F_waiting_time}
 \end{figure}
  
-
-
-
-
-
  
 \begin{figure*} % 2D color plot
    \centering
@@ -1031,7 +1076,7 @@ M8 & 80000 & [170000, 190000] & [400000, 440000] &sparse, long lifetime\\
    $D_{max}$=10000 (left panel),
    $D_{max}$=40000 (middle panel), and
    $D_{max}$=80000 (right panel)}
-   \label{F_res_3}
+   \label{F_never_contact}
 \end{figure*}
 
   
@@ -1042,9 +1087,8 @@ M8 & 80000 & [170000, 190000] & [400000, 440000] &sparse, long lifetime\\
    \includegraphics[width=0.3\textwidth]{m2d4.png}
    \caption{Rate of CETIs that listen at the moment of the
    awakening, as a funcion of $\tau_a$ and $\tau_s$}
-   \label{F_res_4}
+   \label{F_C_at_A}
 \end{figure*}
-
 
 
 \section{Discusion}\label{S_discussion}
@@ -1112,11 +1156,10 @@ region of each CETI, resembling different searching strategies.
 %}}}
 
 
-
 \begin{figure}
+   %
    \centering
-   %\includegraphics[width=0.5\textwidth]{Figure_taua.png}%
-   %\includegraphics[width=0.5\textwidth]{Figure_taus.png}
+   %
    \includegraphics[width=0.5\textwidth]{waiting_s+a_dif_ylog.pdf}
    %
    \caption{Histograms of the mean waiting times for the first contact, for
@@ -1131,17 +1174,24 @@ region of each CETI, resembling different searching strategies.
    The shape of the histograms does not change when $\tau_a$ is
    modified, but significantly changes when $\tau_s$ is modified.
    }
-   \label{F_waiting}
+   %
+   \label{F_waiting_for_1C}
+   %
 \end{figure}
 
 
                    
 \begin{figure}
+   %
    \centering
+   %
    \includegraphics[width=0.5\textwidth]{radial.png}
-   \caption{Fraction of CETIs making cero, one, two or three contacts as a function of
-   galactocentric distance.}
-   \label{F_res_5}
+   %
+   \caption{Fraction of CETIs making cero, one, two or three contacts
+   as a function of galactocentric distance.}
+   %
+   \label{F_radial_frac}
+   %
 \end{figure}
            
               
@@ -1167,9 +1217,11 @@ using R and python languajes, plots were postprocessed with inkscape.
 
 \bibliography{biblio_seti}
 
-
-
 \end{document}
+
+
+
+
 
 DEVELOPMENT DEVELOPMENT  DEVELOPMENT  DEVELOPMENT  DEVELOPMENT  DEVELOPMENT  
 
