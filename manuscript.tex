@@ -756,7 +756,7 @@ available\footnote{https://github.com/mlares/simu\_contact}
  
 \begin{figure*}
    \centering
-   \includegraphics[width=\textwidth]{Messages_01.pdf}
+   \includegraphics[width=0.8\textwidth]{Messages_01.pdf}
    \caption{Schematic representation of the possible cases in which a
    ceti A can be in causal contact with a ceti B which appears later.
    The duration of the causal contact in one direction depends on
@@ -903,20 +903,12 @@ outputs for each simulation experiment.
 In this section we analyze the distribution of the waiting times for
 a first contact.
 %
+%Such distribution can be considered to compute the probability of
+%reaching a first contact within the first XX years of a SETI project,
+%assuming the methods are correct and the hypotheses of the experiment.
 Such distribution can be considered to compute the probability for a
 random CETI to carry out a SETI project and spend a given time until
-the first contact is made.
-%
-Reaching a first contact within the first $t_1$ years of a SETI project,
-requires assuming that the methods are correct and the hypotheses of
-the experiment fullfil.
-%
-This values can be considered as upper limits, since the efficiency of
-a SETI initiative could be smaller than the ideal.
-%
-Also, a civilization could consider itself as "awakened" before it
-discovers the right technology to perform a communication.
-
+the first contact is made. 
 
 
 In the Fig.~\ref{F_waiting} we show the fraction of the CETIs that
@@ -945,26 +937,13 @@ Conversely,
 similar, and the main difference given by the different number of
 contacts on the different models. 
 
-
-
-... but not in the case of different values of $\tau_s$.
-
-
-%    \caption{Fraction of the CETIs that have made at least one contact  
-%   as a funtion of the elapsed time since the awakening, given that they make at least one contact on their lifetime.
-%   %
-%   From a frequentist approach, this fraction is the estimation of the
-%   probability}
- 
-
-
 %}}}
 
 
 
 \subsection{Location within the Galaxy}
 %{{{
-
+    
 On the Figure~\ref{F_radial} we show the fraction of CETIs that make
 zero, one, two or three contacts, as a function of the galactocentric
 distance.
@@ -982,7 +961,6 @@ the posibility of a contact.
 %
 This would indicate that the position of the Earth is suitable for the
 odds of making a contact.
-
 
 %}}}
 
@@ -1010,7 +988,7 @@ M8 & 80000 & [170000, 190000] & [400000, 440000] &sparse, long lifetime\\
 \end{tabular}
 \caption{Selected models to analize the behevior of simulation outputs
    and their dependence on simulation outputs and their dependence on
-   simulation parameters..}
+   simulation parameters.}
 \label{T_SelectedModels}
 \end{table*}
 
@@ -1068,16 +1046,6 @@ M8 & 80000 & [170000, 190000] & [400000, 440000] &sparse, long lifetime\\
 \end{figure*}
 
 
-
-\begin{figure}
-   \centering
-   \includegraphics[width=0.5\textwidth]{radial.png}
-   \caption{Fraction of CETIs making cero, one, two or three contacts as a function of
-   galactocentric distance.}
-   \label{F_radial}
-\end{figure}
-           
- 
 
 \section{Discusion}\label{S_discussion}
 %{{{
@@ -1144,10 +1112,12 @@ region of each CETI, resembling different searching strategies.
 %}}}
 
 
-\begin{figure*}
+
+\begin{figure}
    \centering
-   \includegraphics[width=0.5\textwidth]{Figure_taua.png}%
-   \includegraphics[width=0.5\textwidth]{Figure_taus.png}
+   %\includegraphics[width=0.5\textwidth]{Figure_taua.png}%
+   %\includegraphics[width=0.5\textwidth]{Figure_taus.png}
+   \includegraphics[width=0.5\textwidth]{waiting_s+a_dif_ylog.pdf}
    %
    \caption{Histograms of the mean waiting times for the first contact, for
    several models.
@@ -1162,7 +1132,21 @@ region of each CETI, resembling different searching strategies.
    modified, but significantly changes when $\tau_s$ is modified.
    }
    \label{F_waiting}
-\end{figure*}             
+\end{figure}
+
+
+                   
+\begin{figure}
+   \centering
+   \includegraphics[width=0.5\textwidth]{radial.png}
+   \caption{Fraction of CETIs making cero, one, two or three contacts as a function of
+   galactocentric distance.}
+   \label{F_res_5}
+\end{figure}
+           
+              
+
+                       
 
 
 \ack[Acknowledgement]{
@@ -1223,5 +1207,3 @@ by M.J. Fogg
 %## Detalles de la simulacion
 Galactic civilizations: Population dynamics and interstellar diffusion
 by W.I. Newman, C. Sagan
-
-
