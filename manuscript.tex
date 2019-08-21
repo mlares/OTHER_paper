@@ -691,7 +691,10 @@ zone (GHZ).
 %
 On a first approach, the GHZ is a 2-dimensional annular region.
 %
-The adopted values for the GHZ are XX and XX \citep{Lineweaver2004}.
+The adopted values for the GHZ are 20 kly and 60 kly, for the inner
+and outer radius, respectively \citep{Lineweaver2004}.
+% ojo, ese paper dice 7-9 kpc, o sea tiene un limite superior mucho
+% mas chico...
 %
 This simple model does not take into accont the variations in stellar
 density given by the spiral structure.
@@ -742,12 +745,8 @@ galactic disk is neglected compared to the radial size.
 The two radii are measured in light years, with the aim to maintain a
 single and comprehensive unit for both space and time coordinates. 
 
-
-
 The simulation was implemented on a python code, which is publically
 available\footnote{https://github.com/mlares/simu\_contact}
-
-
 
 
 %Variables en el programa
@@ -806,18 +805,21 @@ available\footnote{https://github.com/mlares/simu\_contact}
 \section{Results: exploring the parameter space}\label{S_results}
 %{{{
 
-
-We implemented the simulation of a regular grid of models varying over the
-hypothesis space, which covers XXX different models.
+We implemented the simulation of a regular grid of models varying over
+the hypothesis space, which covers 15000 different models.
 %
-For each model, we simulated XXX realizations with different random
+For each model, we simulated 50 realizations with different random
 seeds, in order to estimate the variance.
 %
-The simulated parameters, $\lambda_1$, $\lambda_2$ and $D_{max}$ cover
-the range XX-XX, XX-XX and XX-XX, respectively, with a partition of XX
+The simulated parameters, $\tau_a$, $\tau_s$ cover the ranges
+4000-200000 and 10000-500000, respectively, with a partition of 50
 values for each parameter.
-
-
+%
+For the D$_{max}$ parameter, we chose the values 500, 1000, 10000,
+20000, 40000 and 80000 lyr.
+%
+This setup makes a total of 750000 simulations, each covering a time
+range of one million years.
 
 
 
@@ -870,9 +872,6 @@ or the lifespan of a ceti vs. max number of contacts.
 All these quantities can be analyzed as a function of the simulation
 parameters.
 %
-
-
-
 We chose eight models that are on fairly oposed regions of the
 explored parameter space, and cover short/long lifetimes, short/long
 waiting times for the next CETI to appear in the Galaxy and
@@ -906,19 +905,14 @@ First, it has a logarithmic scale on the x-axis, and second it is the
 cumulative, not differential, empirical distribution.
  
 
-
-
 In what follows, we focus on the analysis of the duration of contacts
-(Sec. X), the waiting time for the first contact (Sec. X) the
+(Sec.~\ref{SS_multiplicity}), the waiting time for the first contact
+(Sec.~\ref{SS_waiting}) and the
 variations of contact posibilities as a function of the position of
-the CETI in the Galaxy (Sec. X) and the occurrence of reciprocal
-communication (Sec. X).
- 
-
+the CETI in the Galaxy (Sec.~\ref{SS_location}).
 
 
 %}}}
-
 
 \subsection{Multiplicity and duration of contacts}\label{SS_multiplicity}
 %{{{
@@ -998,9 +992,10 @@ but significantly changes when $\tau_s$ is modified.
     
 On the Figure~\ref{F_radial_frac} we show the fraction of CETIs that make
 zero, one, two or three contacts, as a function of the galactocentric
-distance.
+distance, for model M1.
+% VERIFICAR!  M1?
 %
-For this model, which corresponds to XXX, the majority of CETIs do not
+For this model, the majority of CETIs do not
 make any contact during all the time period in which they are active.
 %
 As expected, the fractions of CETIs making at least one contact
