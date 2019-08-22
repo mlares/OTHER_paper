@@ -99,6 +99,8 @@ time window.
 %
 \end{abstract}
 
+
+
 \selfcitation{Lares M, Funes J (XXXX).  Estimating the probability of
 causal contact between civilizations through MonteCarlo simulations,
 International Journal of Astrobiology}
@@ -114,7 +116,6 @@ Discrete Event, GHZ: Galactic Habitable Zone}
 \maketitle
 
 \Fpagebreak
-
 
 
 \section{Motivations}\label{S_motivations}
@@ -185,9 +186,7 @@ the occurrence of causal contacts between civilizations in the Galaxy.
 The author highlights the effect of evolutionary processes when
 attempting to estimate the number of communicating civilizations that
 might be in causal contact with an observer located on the Earth.
-
-
-
+%
 \citet{cirkovic_temporal_2004} also emphasize the lack of temporal
 structure in the Drake equation.
 
@@ -236,8 +235,10 @@ research directions.
 %}}}
 
 
+
 \section{Methods and working hypotheses}\label{S_methods}
 %{{{
+
 
 Some complex stochastic processes can be efficiently modeled with the
 discrete--event (DE) simulation approach.
@@ -255,12 +256,19 @@ events on a time line and process these events in chronological order
 \citep{ptolemaeus_system_2014, chung_simulation_2003,
 simulation_ross_2012}.
 %
-This method is well suited for the particular case of the difusion of
+In the case of study, the actors are the communicating civilizations
+(CETIs), and the events are all meaningfull that produce a change in
+the simulation variables, i.e., in the arrangement of CETIs and their
+causal contacts.
+%
+Since it allows to explore several models easily, 
+this method is well suited for the particular case of the difusion of
 intelligence signals in the Galaxy.
 %
 Assuming some simple hypotheses, the discrete events method can be
 performed taking into account a small number of variables, which
-allows to analyze the results as a function of those variables.
+allow to analyze the variation of the results in the model parameter space.
+
 
 
 In what follows, we describe the experimental setup chosen to estimate
@@ -275,28 +283,59 @@ $D_{max}$, there is a greater probability of the existence of causal
 contacts between pairs of intelligent civilizations in the Galaxy
 (Table \ref{T_simu_hypotheses}).
 %
-The causal connection can be produced without the need of the two
-civilizations being concurrent or active at the same time.
+We also need to propose theoretical distribution functions for both the
+distribution of lifespans and the distribution of the number of CETIs
+per unit time.
 %
-Each CETI will fill an annular region of the Galaxy, limited by two
+The shapes of these distributions are discussed in Sec.~\ref{SS_PDF_shape}.
+%
+A causal connection can be produced without the need of the two
+involved civilizations being concurrent or active at the same time.
+%
+This is a fundamental property of the system which arises as a
+consecuence of the large spatial and temporal scales, where a message
+is transmited at light speed.
+%
+As a consecuence of their finite lifetime,
+each CETI will fill a spherical shell region of the Galaxy, limited by two
 surfaces.
 %
 The leading front, or surface of first contact (SFC) grows from the
-central CETI until it reaches the distance $D_{max}$.
+central CETI until it reaches the maximum distance $D_{max}$.
+%
+Although a CETI could be old enough to transmit a message at large
+distances, the limited power of the message and the dilution that runs
+as the squared distance from the source, imposes a
+detectability limit.
+%
+Thus, the volume reached causally by a CETI is initially a growing
+sphere.
+%
+Following the end of the civilization, there is still a region which
+is covered with the emited signals.
 %
 The trailing front, or surface of last contact (SLC) also grows from
 the central CETI, with a delay with respect to the SFC equivalent to
-the lifetime of the CETI, and produces an annular region that shrinks
-until it reaches $D_{max}$, when all signal from the central CETI is
-lost.
+the lifetime of the CETI, and produces a spherical shell region.
+%
+Any other CETI within this region will be aware of the originating CETI,
+even if it has disapeared before the time of contact.
+%
+This region will grow if the SFC has not reached $D_{max}$, and
+will shrink otherwise, until the SLC reaches $D_{max}$.
+%
+A that point, all signal from the central CETI is lost.
 %
 In the 2D simulation only the intersection of these spheres with the
 plane of the galaxy is relevant, and produce the corresponding
-circumferences.
+circles for the filled spheres or annular regions for the spherical
+shells.
 %
 We illustrate in the Fig.~\ref{F_growing_sphere} the schematic
-representation of the growing communicating sphere, over the
-space–time diagrams, where time is represented on the horizontal
+representation of the region causally connected to the central CETI.
+%
+The initially growing communicating sphere, is shown over
+space--time diagrams, where time is represented on the horizontal
 direction, and space is represented in the vertical direction.
 %
 In the upper panel (a), the sphere is growing as the surface of first
@@ -328,9 +367,6 @@ The duration of the causal contact in one direction depends on several
 factors, mainly $\Delta$t~A , $\Delta$t~C , and $\Delta$X.
 
 
-
- 
-
 \begin{figure}
    \centering
    \includegraphics[width=0.5\textwidth]{growingsphere.pdf}
@@ -360,8 +396,6 @@ factors, mainly $\Delta$t~A , $\Delta$t~C , and $\Delta$X.
    \label{F_abcd}
 \end{figure}
                                
-
-
 
 The temporal structure of the process is defined by two distribution
 parameters that represent the mean time interval that an intelligent
@@ -399,7 +433,6 @@ astrophysical and biological processes.
 
 
 
-
 There is no a temporal window for the model, i.e., the simulation
 starts when the process is already stable, and ends before any
 galactic effect could modify or affect of fixed variables.
@@ -427,40 +460,49 @@ appeareance of life as we know it.
 
  
 \setlength{\tabcolsep}{10pt}
-\begin{table}
+\begin{table*}
 \centering
-\begin{tabular}{cl}
+\begin{tabular}{clccc}
 \hline
-   \multicolumn{2}{l}{independent variables} \\
+   \multicolumn{2}{l}{independent variables} &min&max&Nbins\\
 \hline
-   $\tau_{a}$ & Mean temporal separation between\\
-              & consecutive awakenings \\
-   $\tau_{s}$ & Mean lifetime of a CETI \\
-   D$_{max}$ & Maximum reach of a message \\
+   $\tau_{a}$ & Mean temporal separation between consecutive awakenings & 4000 y & 200000 y & 50\\ 
+   $\tau_{s}$ & Mean lifetime of a CETI                                 & 10000 y & 500000 y& 50\\ 
+   D$_{max}$ & Maximum reach of a message  &  \multicolumn{3}{l}{500, 1000, 10000, 20000, 40000, 80000 lyr}  \\
 \hline
-\multicolumn{2}{l}{fixed variables and assumptions} \\
+   \multicolumn{4}{l}{fixed variables and assumptions} &value \\
 \hline
-   & All CETIs share the same statistical properties\\
-   & The process is homogeneous \\
-   & The scan of the sly is fully efficient\\
-   & Absence of panspermia or colonization \\
-   & The GHZ is a 2--dimensional ring \\
-20000ly    & Inner radius of the GHZ \\
-60000ly    & Outer radius of the GHZ \\
-1.e6 y    & Time span of the simulation \\
+   & statistical properties of all CETIs &equally distributed&&\\
+   & Point process for the distribution in time & homogeneous &&\\
+   f$_s$ & The scan of the sky & fully efficient&&1\\
+   f$_p$ & panspermia or colonization &absent&&0\\
+   & shape of the Galactic Habitable Zone & 2--dimensional ring &&\\
+   R$_{SFC}$   & Inner radius of the GHZ     &&&20000 ly\\
+   R$_{SLC}$   & Outer radius of the GHZ     &&&60000 ly\\
+   t$_{max}$ & Time span of the simulation  &&&1.e6 y\\
+\hline
+   \multicolumn{5}{l}{discrete events}\\
+\hline
+   A & Awakening: a civilization starts a SETI program  &&&\\
+   B & Blackout: the end of the communication chanel stops &&&\\
+   C & Contact: a new causal contact is produced &&&\\
+   D & Doomsday: a civilization ends its communication capabilities&&&\\
+\hline
 
 \hline
 \end{tabular}
-\caption{Definition of independent variables and fixed paramenters 
-   that are part of the simulation.}
+\caption{Definition of independent variables and adopted values for 
+   fixed paramenters 
+   that are part of the simulation.  Variable parameters define the
+   spatial and temporal structure
+   of the process and the maximum reach of the messages.}
 \label{T_simu_hypotheses}
-\end{table}
- 
+\end{table*}
+
 
 While the aforementioned assumptions are basic conditions for most of
-the stochastic processes observed in nature, 
-we need to make stronger assumptions related to the nature of the
-message.
+the stochastic processes observed in nature, we need to make stronger
+assumptions related to the nature of the message.
 %
 The most simple assumption about the message itself, is that it
 travels at light speed.
@@ -471,9 +513,9 @@ appart messages sent with mechanical means or physical objects, or
 through some unknown technology that violates the known so far laws of
 physics.
 % 
-For the communication of CETIs through messages sent isotropically, 
-we assume that the capacity to emit signals and to receive
-signals ocurr at the same time.
+For the communication of CETIs through messages sent isotropically, we
+assume that the capacity to emit signals and to receive signals ocurr
+at the same time.
 %
 This means that the ability to find another civilization develops at
 the same time that the ability and intention to emit a signal in all
@@ -483,7 +525,9 @@ Although there are several reasons to think that this could not be the
 case, at large time scales it can be considered that both abilities
 occurr roughly at coincident epochs.
 %
-Another essential assumption is that all CETIs use the same signal power, so that there is a maximum distance out to which it can be detected.
+Another essential assumption is that all CETIs use the same signal
+power, so that there is a maximum distance out to which it can be
+detected.
 %
 It is worth mentioning that we are considering in our experimental
 setup a system composed by several emmiters and receivers across the
@@ -558,11 +602,10 @@ artificial).
 %
 The lifetime of a civilization can be caused by autodestruction or by
 external factors.
+%}}}
 
-        
-
-
-\subsection{Power laws vs. exponential laws}
+\subsection{Power laws vs. exponential laws}\label{SS_PDF_shape}
+%{{{
 
 The exponential distribution of lifespan and waiting times is
 justified by considering that the process of appeareance of life in
@@ -612,65 +655,32 @@ analysing connectivity patterns in metabolic networks
 \citep{jeong_large_2000} and in the number of species observed per
 unit area in ecology \citep{garcia_origin_2006, frank_common_2009}.
 
-
-
-
-
+%}}}
 
 \subsection{Discrete event process}
+%{{{
 
-Given a set of parameters $(\tau_a, \tau_s, D_{max})$, the functional
-forms of the statistical distributions and fixed values
-for the hypotheses, a discrete
-event simulation is performed by keeping track of a set of variables
-that change each time a meaningful event is produced.
-
-
-
-\setlength{\tabcolsep}{10pt}
-\begin{table}
-\centering
-\begin{tabular}{cccc}
-\hline
-   fixed parameter & \multicolumn{3}{c}{adopted value}\hfill \\
-\hline
-   inner GHZ radius\hfill & \multicolumn{3}{c}{20000 ly}\\
-   outer GHZ radius & \multicolumn{3}{c}{60000 ly}\\ \\
-\hline
-   variable parameter & min & max & N \\
-\hline
-   D$_{max}$ & 1000 ly & 20000 ly & 20\\
-   $\tau_{a}$ & 1000 y & 20000 y & 20\\
-   $\tau_{s}$ & 1000 y & 20000 y & 20\\
-\hline
-\end{tabular}
-\caption{Adopted values for simulation parameters. Fixed parameters
-   define the GHZ.  Variable parameters define the temporal structure
-   of the process and the reach of messages.}
-\label{T_range_parameters}
-\end{table}
+Given a parametric model $M(\tau_a, \tau_s, D_{max})$, which includes the
+functional forms of the statistical distributions and fixed values for the
+hypotheses, a discrete event simulation is performed by keeping track of a set
+of variables that change each time a meaningful event is produced.
+%
+The main variables that follow the evolution of the simulation are the positions
+of stars, which are sampled randomly within the GHZ, the time of the awakening
+of each CETI (A event), and the time of the vanishing of each CETI (D event).
+%
+The variables that can be deduced from the previous ones include the number of
+CETIs in casual contact with at least another CETI at a given time, the number
+of CETIs as a function of time, the number of CETIs that receive a message at
+least one time, the number of CETIs that receive a message at least one time and
+successfully deliver an answer and the number distribution of waiting time to
+receive a message.
+%
+All these quantities are updated each time one of the four events (A, B, C, D)
+is produced.
 
 
 
-The main variables that follow the evolution of the simulation are:
-
-\begin{itemize}
-   \item Position of stars.  Sampled randomly within the GHZ
-   \item Time of the awakening of each CETI
-   \item Time of the vanishing of each CETI
-\end{itemize}
-
-The variables that can be deduced from the previous ones are:
-
-\begin{itemize}
-   \item Number of CETIs in casual contact with at least another CETI
-      at a given time.
-   \item Number of CETIs as a function of time
-   \item Number of CETIs that receive a message at least one time
-   \item Number of CETIs that receive a message at least one time and
-      successfully deliver an answer.
-   \item Number distribution of waiting time to receive a message
-\end{itemize}
 
                  
 \begin{figure} \centering
@@ -693,27 +703,13 @@ The variables that can be deduced from the previous ones are:
    \label{F_waiting_time}
 \end{figure}                       
  
+%}}}
 
-
-\subsection{Exploration of the hypothesis space}                    
-
-Possible hypothesis improvements are:
-
-\begin{itemize}
-   \item Dmax is different for different CETIs.  For example a power
-      law where powerfull emmisions are rare and weak emssions are
-      common.
-   \item The probability of the rising of a new CETI vary within the
-      GHZ.
-   \item Correction by coverage ratio in the detection and by
-      targetting ratio in the emission.
-   \item Spiritual factor.  Explore the role of the S factor: message
-      contents, influence on the lifespan of a CETI that receives a
-      message, mean lifespan of a CETI that emits a message.
-\end{itemize}
+%\subsection{Exploration of the hypothesis space}                    
 
 
 \subsection{Model for CETIs}
+%{{{
 
 
 Since the method is based on events, the first step is to define an
@@ -749,9 +745,6 @@ capability of emmiting and receiving signals.
                                  
 \begin{figure*} % 2D color plot
    \centering
-   %\includegraphics[width=0.3\textwidth]{m1d2.png}%
-   %\includegraphics[width=0.3\textwidth]{m1d3.png}%
-   %\includegraphics[width=0.3\textwidth]{m1d4.png}
    \includegraphics[width=\textwidth]{matrix_1.pdf}
    \caption{Rate of CETIs that never make contact (listening) as a
    function of $\tau_a$ and $\tau_s$, for 
@@ -764,94 +757,45 @@ capability of emmiting and receiving signals.
   
 \begin{figure*} % 2D color plot
    \centering
-   %\includegraphics[width=0.3\textwidth]{m2d2.png}%
-   %\includegraphics[width=0.3\textwidth]{m2d3.png}%
-   %\includegraphics[width=0.3\textwidth]{m2d4.png}
    \includegraphics[width=\textwidth]{matrix_2.pdf}
    \caption{Rate of CETIs that listen at the moment of the
-   awakening, as a funcion of $\tau_a$ and $\tau_s$}
+   awakening, as a funcion of $\tau_a$ and $\tau_s$, for
+   $D_{max}$=10000 (left panel),
+   $D_{max}$=40000 (middle panel), and
+   $D_{max}$=80000 (right panel)}
    \label{F_C_at_A}
 \end{figure*}
                          
-%======================================================================
-%======================================================================
-%======================================================================
-
 
 The system is updated each time an event is produced.
 %
-The time marks for each event (A and D for each CETI and C and B for
-each causal contact) are stored as a result of the simulation.
+The time marks for each event (A and D for each CETI and C and B for each causal
+contact) are stored as a result of the simulation.
 %
 Also, the list of active CETIs is obtained as a function of time.
 %
-Some fixed variables must be set in order to carry out the simulation,
-namely:
+Some fixed variables must be set in order to carry out the simulation: the size
+of the Galactic Habitable Zone, the mean lifetime of a CETI, $\tau_s$, the mean
+waiting time for the appeareance of another CETI, $\tau_a$, and the maximum
+distance a message can be detected.
 
-\begin{itemize}
-   \item Size of the Galactic Habitable Zone,
-   \item mean lifetime of a CETI, $\lambda_1$,
-   \item mean waiting time for the appeareance of another CETI,
-      $\lambda_2$, and
-   \item maximum distance a message can be detected.
-\end{itemize}
 
-The Galactic Habitable Zone is the only one of the four parameters
-that is barely known, is set at fixed values of the inner and
-outer radii, radial symetry is assumed, and the with of the
-galactic disk is neglected compared to the radial size.
+
+The Galactic Habitable Zone is the only one of the four parameters that is
+barely known, is set at fixed values of the inner and outer radii, radial
+symetry is assumed, and the with of the galactic disk is neglected compared to
+the radial size.
 %
-The two radii are measured in light years, with the aim to maintain a
-single and comprehensive unit for both space and time coordinates. 
+The two radii are measured in light years, with the aim to maintain a single and
+comprehensive unit for both space and time coordinates. 
 
-The simulation was implemented on a python code, which is publically
+The simulation was implemented on a python 3 code, which is publically
 available\footnote{https://github.com/mlares/simu\_contact}
 
-
-%Variables en el programa
-%\begin{itemize}
-%   \item Nact: Número de CETIs activas
-%   \item Nsee: Número de contactos por cada CETI
-%   \item Nccc: CETIs en contacto causal. Notar que una CETI puede tener múltiples
-%contactos de otras CETIs. Para cada una de ellas, guardar:
-%   \item ID: ID de la CETI emisora
-%   \item ID: ID de la CETI receptora
-%   \item t\_hola: tiempo del primer contacto
-%   \item t\_chau: tiempo del último contacto
-%\end{itemize}
-%
-%
-%Caso 1: aparece una nueva CETI
-%Modificaciones al estado del sistema:
-%\begin{itemize}
-%   \item Agregar la CETI “A” a la lista de CETIs activas
-%   \item Sortear la duración de la actividad de comunicación de la CETI “A”
-%   \item Sortear el intervalo de tiempo hasta la aparición de la próxima CETI:
-%t\_WakeUp\_next
-%   \item Agregar la CETI “A” al árbol
-%   \item Identificar todas las CETIs que están a menos de D max de la nueva CETI, y
-%actualizar la lista de tiempos
-%\end{itemize}
-%
-%Caso 2: desaparece una CETI
-%Modificaciones al estado del sistema:
-%\begin{itemize}
-%   \item Eliminar la CETI a la lista de CETIs activas
-%\end{itemize}
-%
-%
-%Caso 3: una nueva CETI entra en contacto causal
-%Modificaciones al estado del sistema:
-%\begin{itemize}
-%   \item Agregar la CETI B a la lista de contactos de la CETI A
-%\end{itemize}
-%
 
 
 %}}}
                    
-  
-                
 
 \begin{figure}
    %
@@ -989,11 +933,6 @@ the CETI in the Galaxy (Sec.~\ref{SS_location}).
 
 %}}}
 
-         
- 
-                              
-                                
-
 \subsection{Multiplicity and duration of contacts}\label{SS_multiplicity}
 %{{{
 
@@ -1005,7 +944,6 @@ outputs for each simulation experiment.
 
 
 %}}}
-
 
 \subsection{Waiting time for a first contact}\label{SS_waiting}
 %{{{
@@ -1065,7 +1003,6 @@ but significantly changes when $\tau_s$ is modified.
 
 
 %}}}
-         
                    
 \begin{figure}
    %
@@ -1080,8 +1017,6 @@ but significantly changes when $\tau_s$ is modified.
    %
 \end{figure}
            
-              
-                 
 
 \subsection{Location within the Galaxy}\label{SS_location}
 %{{{
@@ -1107,7 +1042,6 @@ odds of making a contact.
 
 %}}}
 
- 
 \setlength{\tabcolsep}{10pt}
 \begin{table*}
 \centering
@@ -1132,7 +1066,6 @@ M8 & 80000 & [170000, 190000] & [400000, 440000] &sparse, long lifetime\\
    simulation parameters.}
 \label{T_selected_models}
 \end{table*}
-
 
 
 \section{Discusion}\label{S_discussion}
@@ -1196,10 +1129,25 @@ They include a spatial distribution that actually resembles the shape
 of the Galaxy, different distribution functions for the mean lifetime
 of CETIs and different efficiencies for the sphere of the causal
 region of each CETI, resembling different searching strategies.
+
+
+Possible hypothesis improvements are:
+
+\begin{itemize}
+   \item Dmax is different for different CETIs.  For example a power
+      law where powerfull emmisions are rare and weak emssions are
+      common.
+   \item The probability of the rising of a new CETI vary within the
+      GHZ.
+   \item Correction by coverage ratio in the detection and by
+      targetting ratio in the emission.
+   \item Spiritual factor.  Explore the role of the S factor: message
+      contents, influence on the lifespan of a CETI that receives a
+      message, mean lifespan of a CETI that emits a message.
+\end{itemize} 
+
  
 %}}}
-
-                       
 
 
 \ack[Acknowledgement]{
@@ -1213,7 +1161,7 @@ Argentina.
 This research has made use of NASA's Astrophysics Data System.
 %
 Plots and simulations were made with software developed by the authors
-using R and python languajes, plots were postprocessed with inkscape.
+using R and python languajes. Plots were postprocessed with inkscape.
 %
 }
 
