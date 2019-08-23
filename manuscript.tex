@@ -157,6 +157,11 @@ probabilities.
 The only fact that can be stated with certainty is that for the number
 of years SETI projects have been working we have not received any
 signal within the conditions stablished by SETI.
+%
+This, by some astonishing result, has lead to the Fermi paradox, which
+states an apparent contradiction between the high estimation of the
+abundance of life in the Galaxy and the lack of their detection
+\citep{Anchordoqui2017}.
 
 
 
@@ -695,14 +700,6 @@ is produced.
    % 
 \label{F_number_of_contacts} \end{figure}
    
-\begin{figure} % Distribution
-   \centering
-   \includegraphics[width=0.5\textwidth]{F2.pdf}
-   \caption{Rate of CETIs that make no contact as a function of
-   $\tau_a$ and $\tau_s$}
-   \label{F_waiting_time}
-\end{figure}                       
- 
 %}}}
 
 %\subsection{Exploration of the hypothesis space}                    
@@ -1004,26 +1001,26 @@ but significantly changes when $\tau_s$ is modified.
 
 %}}}
                    
-\begin{figure}
-   %
-   \centering
-   %
-   \includegraphics[width=0.45\textwidth]{galactocentric_frac.pdf}
-   %
-   \caption{Fraction of CETIs making cero, one, two or three contacts
-   as a function of galactocentric distance.}
-   %
-   \label{F_radial_frac}
-   %
-\end{figure}
+%   \begin{figure}
+%      %
+%      \centering
+%      %
+%      \includegraphics[width=0.45\textwidth]{galactocentric_frac.pdf}
+%      %
+%      \caption{Fraction of CETIs making cero, one, two or three contacts
+%      as a function of galactocentric distance.}
+%      %
+%      \label{F_radial_frac}
+%      %
+%   \end{figure}
            
 
 \subsection{Location within the Galaxy}\label{SS_location}
 %{{{
     
-On the Figure~\ref{F_radial_frac} we show the fraction of CETIs that make
-zero, one, two or three contacts, as a function of the galactocentric
-distance, for model M1.
+%On the Figure~\ref{F_radial_frac} we show the fraction of CETIs that make
+%zero, one, two or three contacts, as a function of the galactocentric
+%distance, for model M1.
 % VERIFICAR!  M1?
 %
 For this model, the majority of CETIs do not
@@ -1071,9 +1068,11 @@ M8 & 80000 & [170000, 190000] & [400000, 440000] &sparse, long lifetime\\
 \section{Discusion}\label{S_discussion}
 %{{{
 
-We have implemented a simulation approach to explore the hypothesis
-space about the causal connections between communicating
-extraterrestrial civilizations.
+We have implemented a suite of simulations following a stochastic
+approach, to explore the hypothesis
+space of a simple model that accounts for
+the causal connections between communicating
+civilizations on an simplified galaxy.
 %
 The different models can be generated with a minimal number of free
 parameters and some fixed assumptions.
@@ -1084,7 +1083,7 @@ very rare, to a Galaxy populated with plenty of civilizations in
 causal contact.
 %
 We explored the consecuences of different models using mensurable
-quantities.
+quantities, that arise as by-products of the simulations.
 %
 With this approach, we can estimate several quantities as a function
 of the parameters on the hypothesis space.
@@ -1092,7 +1091,26 @@ of the parameters on the hypothesis space.
 For instance, it is possible to estimate the timescale for an
 uninterrupted SETI effort to reach success, in terms of different
 model parameters that reflect different, so far unknown, scenarios
-for the spread if intelligent life on the Galaxy.
+for the spread of intelligent life on the galaxy.
+
+
+Although the simulations use a number of speculative assumptions, we
+argue that the degree of knowledge about the origin and persistence of
+life in the Galaxy does not worth the implementation of more detailed
+or sophisticated models.
+%
+Instead, we take advantadge of the simplicity of the model to explore
+the hypothesis space, i.e., the three--dimensional parameter space of
+the parametric model, in order to gain insight on the consecuences of
+different scenarios for the search of intelligent life.
+%
+Our analysis is not centered in obtaining the odds for the Earth
+making contact with another extraterrestrial civilization, but in 
+obtaining a statistical, parameter dependent description of the
+communication system consisting of a group of broadcasting
+civilizations which arise sparsely both in time and space in the
+Galaxy.
+
 
 
 Under the hypotheses of our experiments, we conclude that
@@ -1106,20 +1124,36 @@ making the posibility of a contact with a message that
 could be deciphered highly rare.
 
 
-Future work can be performed following this framework, in order to
-explore possible implications of the results for more detailed 
-configurations of the experiment.
+Taking into account the caveat mentioned previously about the
+trade--off between the simplicity and complexity of the experiment,
+future work can be performed following this framework in order to
+explore possible implications of the results for more detailed
+configurations.
 %
 For example, the communication method (isotropic, colimated,
 serendipitous) can affect the observables.
+%
+Since we analyze the causal contacts, effective contacts depend on the
+efficiency of both the emitter and the receiver.
+%
+A correction by coverage ratio in the detection and by a targetting
+ratio in the emission could be easily implemented in the simulation,
+although the effect would be to reduce the probability of contact by
+an efficiency ratio.
+%
+Thus, such implementation is not really necessary, since the values of
+probabilities could modified by a constant correction factor equal to
+the combined emission/reception efficiency.
+%
+If we consider a statistical distribution for this factor, then the
+results could change, and this could be studied with the DE approach.
 %
 Also the nature of the message carrier, electromagnetic or another.
 %
 It is also possible to explore the effects of alignments or the use of
 stars as sources or amplifiers.
 %
-%energetic markers
-%Spiritual markers
+%energetic markers Spiritual markers
 %
 As a future work, we will explore several improvements to the
 simulation, and analyze the impact on the final results of these
@@ -1139,8 +1173,6 @@ Possible hypothesis improvements are:
       common.
    \item The probability of the rising of a new CETI vary within the
       GHZ.
-   \item Correction by coverage ratio in the detection and by
-      targetting ratio in the emission.
    \item Spiritual factor.  Explore the role of the S factor: message
       contents, influence on the lifespan of a CETI that receives a
       message, mean lifespan of a CETI that emits a message.
@@ -1169,44 +1201,3 @@ using R and python languajes. Plots were postprocessed with inkscape.
 \bibliography{biblio_seti}
 
 \end{document}
-
-
-
-
-
-DEVELOPMENT DEVELOPMENT  DEVELOPMENT  DEVELOPMENT  DEVELOPMENT  DEVELOPMENT  
-
-% Papers para citar y discutir:
-
-%## GHZ
-
-
-%## D_max
-
-
-%## exponential distribution
-
-
-%## Lifetime
-
-
-%## Simulations: cosmological
-
-Forgan2015
-
-%## Simulations: stochastic
-
-grimaldi_signal_2017
-
-
-%## Temporal aspects
-Temporal aspects of the interaction among the first galactic civilizations: The 'interdict hypothesis'
-by M.J. Fogg
-
-
-%## Drake equation
-
-
-%## Detalles de la simulacion
-Galactic civilizations: Population dynamics and interstellar diffusion
-by W.I. Newman, C. Sagan
