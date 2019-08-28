@@ -125,9 +125,24 @@ A common approach to discuss the possible number of extraterrestrial
 intelligent civilizations (ETI) has been the use of the Drake equation
 \citep{gleiser_drake_2010, prantzos_joint_2013, haqq-misra_drake_2017}.
 %
+The abundance of intelligent civilizations in the galaxy is a
+longstanding question, which is often conceptualized as the problem of
+the lack of received communication or the Fermi paradox
+\citep{barlow_galactic_2012, Sotos_biotechnology_2019, 
+forgan_galactic_2016}.
+There are many proposals intended to resolve this paradox, which make
+use of statistical \citep{solomonides_probabilistic_2016,
+vanhouten_isthere_2017, horvat_calculating_2007, maccone_statistical_2015} or
+stochastic approaches \citep{forgan_numerical_2009,
+bloetscher_using_2019, glade_stochastic_2011, forgan_numerical_2010},
+analytical interpretations of the Drake equation \citep{prantzos_joint_2013, smith_broadcasting_2009}
+or more speculative proposals
+\citep{barlow_galactic_2013, lampton_information_2013, conway_three_2018, forgan_galactic_2017}.
+%
 However, the uncertainties in the factors make it less prone to a
 formal application to define searching strategies or to compute
-actual numbers, but is used to organize the discussion instead.
+numbers, but is used to organize the discussion instead
+\citep{hinkel_interdisciplinary_2019}.
 %
 Some modifications to the original idea of the equation have tried to
 imprint a stochastic nature, or to propose a probabilistic approach,
@@ -136,7 +151,8 @@ equation.
 %
 Temporal aspects of the distribution of communicating civilizations
 and their contacts have also been explored by several authors
-\citep{fogg_temporal_1987,forgan_spatiotemporal_2011, balbi_impact_2018},
+\citep{fogg_temporal_1987, forgan_spatiotemporal_2011,
+balbi_impact_2018, balb_spatiotemporal_2018, horvat_impact_2011},
 %The Impact of the Temporal Distribution of Communicating Civilizations on Their Detectability
 %Temporal dispersion of the emergence of intelligence: an inter-arrival time analysis
 %The spatiotemporal aspects of SETI
@@ -150,19 +166,26 @@ murante_simulating_2015, forgan_numerical_2009, forgan_galactic_2017}
 %New numerical determination of habitability in the Galaxy: the SETI connection
 %
 Since the factors in the Drake equation are uncertain, we propose to
-avoid the frequentist approach of this equation
-and to explore a parameter space, where instead of computing a final
-number, we provide a statistical distribution that gives conditional
-probabilities.
+avoid the frequentist approach of this equation and to explore a
+parameter space, where instead of computing a final number, we provide
+a statistical distribution that gives conditional probabilities.
 %
 The only fact that can be stated with certainty is that for the number
 of years SETI projects have been working we have not received any
-signal within the conditions stablished by SETI.
+signal within the conditions stablished by SETI \citep{tarter_search_2001}.
 %
+This lack of detection has lead to a number of alternative proposals
+for new SETI strategies \citep{forgan_exoplanet_2017,
+balbi_impact_2018, loeb_eavesdropping_2006, maccone_KLT_2010,
+tarter_advancing_2009, enriquez_breakthrough_2017, loeb_relative_2016,
+maccone_SETI_2011,  lingam_relative_2019, wright_theGsearch_2015,
+maccone_SETI_2013, maccone_lognormals_2014, harp_application_2018,
+forgan_possibility_2013, forgan_galactic_2017, funes_searching_2019}
+ 
 This, by some astonishing result, has lead to the Fermi paradox, which
 states an apparent contradiction between the high estimation of the
 abundance of life in the Galaxy and the lack of their detection
-\citep{anchordoqui_isthere_2017}.
+\citep{vanhouten_isthere_2017}.
 
 
 
@@ -291,7 +314,7 @@ contacts between pairs of intelligent civilizations in the Galaxy
 %
 We also need to propose theoretical distribution functions for both the
 distribution of lifespans and the distribution of the number of CETIs
-per unit time.
+per unit time \citep{maccone_evolution_2014,Sotos_biotechnology_2019}.
 %
 The shapes of these distributions are discussed in Sec.~\ref{SS_PDF_shape}.
 %
@@ -458,7 +481,13 @@ could be considered as pesimist for the stablishment of a contact with
 our planet.
 %
 We also limit the posibilities of life or other types of civilizations
-to the hypothesis usually stated for the definition of the GHZ.
+to the hypothesis usually stated for the definition of the GHZ
+\citep{dayal_habitability_2016,gonzalez_galactic_2001,lineweaver_galactic_2004,gonzalez_habitable_2005,morrison_extending_2015,haqq-misra_evolution_2019,rahvar_cosmic_2016,gobat_evolution_2016,
+rahvar_cosmic_2016}.
+%
+\citet{vukotic_astrobiological_2012} propose probabilistic cellular
+automata model to explain the astrobiological history of the Milky
+Way.
 %
 This means that we set aside possibel civilizations that could survive
 in severe conditions or unstable systems, which would prevent the
@@ -590,7 +619,9 @@ In our simulations we also assume the simplest situations for the
 growth of ETIs.
 %
 For example, we discard the possibility of stellar colonization
-(Walters 1980) and assume that the communication aim is performed to
+\citep[e.g.][]{newman_galactic_1981, walters_interstellar_1980,
+starling_virulence_2013, barlow_galactic_2012, jeong_large_2000, maccone_mathematical_2011}
+and assume that the communication aim is performed to
 all directions with the same power and the same probability, i.e.,
 strongly assume isotropic communication in all cases.
 %
@@ -660,6 +691,12 @@ Power laws have also been widely used in biological sciences, e.g., in
 analysing connectivity patterns in metabolic networks
 \citep{jeong_large_2000} and in the number of species observed per
 unit area in ecology \citep{martin_origin_2006, frank_common_2009}.
+% 
+More examples can be found in the literature
+\citep{martin_origin_2006, maccone_KLT_2010, barabasi_scale_2009,
+maccone_evolution_2014, maccone_lognormals_2014,
+benguigui_classificacion_2016}
+ 
 
 %}}}
 
@@ -703,7 +740,6 @@ is produced.
    
 %}}}
 
-%\subsection{Exploration of the hypothesis space}                    
 
 
 \subsection{Model for CETIs}
@@ -957,7 +993,7 @@ random CETI to carry out a SETI project and spend a given time until
 the first contact is made. 
 
 
-In the Fig.~\ref{F_waiting_time} we show the fraction of the CETIs
+In the Fig.~\ref{F_waiting_for_1C} we show the fraction of the CETIs
 that have made at least one contact as a funtion of the elapsed time
 since the awakening, given that they make at least one contact on
 their lifetime, for different models.
@@ -1124,7 +1160,6 @@ accomplished without any previous agreement,
 making the posibility of a contact with a message that
 could be deciphered highly rare.
 
-
 Taking into account the caveat mentioned previously about the
 trade--off between the simplicity and complexity of the experiment,
 future work can be performed following this framework in order to
@@ -1144,7 +1179,8 @@ an efficiency ratio.
 %
 Thus, such implementation is not really necessary, since the values of
 probabilities could modified by a constant correction factor equal to
-the combined emission/reception efficiency.
+the combined emission/reception efficiency
+\citep{smith_broadcasting_2009, anchordoqui_upper_2019, forgan_collimated_2014}.
 %
 If we consider a statistical distribution for this factor, then the
 results could change, and this could be studied with the DE approach.
@@ -1154,7 +1190,8 @@ Also the nature of the message carrier, electromagnetic or another.
 It is also possible to explore the effects of alignments or the use of
 stars as sources or amplifiers.
 %
-%energetic markers Spiritual markers
+%energetic markers
+%Spiritual markers
 %
 As a future work, we will explore several improvements to the
 simulation, and analyze the impact on the final results of these
@@ -1163,7 +1200,8 @@ changes.
 They include a spatial distribution that actually resembles the shape
 of the Galaxy, different distribution functions for the mean lifetime
 of CETIs and different efficiencies for the sphere of the causal
-region of each CETI, resembling different searching strategies.
+region of each CETI, resembling different searching strategies
+\citep{hippke_interstellar_2017}.
 
 
 Possible hypothesis improvements are:
@@ -1174,6 +1212,8 @@ Possible hypothesis improvements are:
       common.
    \item The probability of the rising of a new CETI vary within the
       GHZ.
+   \item Correction by coverage ratio in the detection and by
+      targetting ratio in the emission.
    \item Spiritual factor.  Explore the role of the S factor: message
       contents, influence on the lifespan of a CETI that receives a
       message, mean lifespan of a CETI that emits a message.
@@ -1197,64 +1237,6 @@ Plots and simulations were made with software developed by the authors
 using R and python languajes. Plots were postprocessed with inkscape.
 %
 }
-
-
-
-
-
-\nocite{barabasi_scale_2009}
-\nocite{barlow_galactic_2012}
-\nocite{bloetscher_using_2019}
-\nocite{burchell_whither_2006}
-\nocite{conway_three_2018}
-\nocite{dayal_habitability_2016}
-\nocite{enriquez_breakthrough_2017}
-\nocite{forgan_exoplanet_2017}
-\nocite{forgan_possibility_2013}
-\nocite{forgan_collimated_2014}
-\nocite{forgan_numerical_2010}
-\nocite{funes_searching_2019}
-\nocite{glade_stochastic_2012}
-\nocite{gonzalez_habitable_2005}
-\nocite{gonzalez_galactic_2001}
-\nocite{grimaldi_signal_2017}
-\nocite{haqq-misra_evolution_2019}
-\nocite{harp_application_2018}
-\nocite{hinkel_interdisciplinary_2019}
-\nocite{hippke_interstellar_2017}
-\nocite{horvat_calculating_2007}
-\nocite{horvat_impact_2011}
-\nocite{lampton_information_2013}
-\nocite{lingam_relative_2019}
-\nocite{loeb_relative_2016}
-\nocite{loeb_eavesdropping_2006}
-\nocite{maccone_SETI_2013}
-\nocite{maccone_evolution_2014}
-\nocite{maccone_mathematical_2011}
-\nocite{maccone_statistical_2015}
-\nocite{maccone_KLT_2010}
-\nocite{maccone_statistical_2010}
-\nocite{maccone_SETI_2011}
-\nocite{morrison_extending_2015}
-\nocite{morrison_extending_2015}
-\nocite{newman_galactic_1981}
-\nocite{peters_outer_2018}
-\nocite{rahvar_cosmic_2016}
-\nocite{seager_search_2018}
-\nocite{shostak_what_2010}
-\nocite{smith_broadcasting_2009}
-\nocite{solomonides_probabilistic_2016}
-\nocite{starling_virulence_2013}
-\nocite{tarter_search_2001}
-\nocite{tarter_advancing_2009}
-\nocite{vukotic_astrobiological_2012}
-\nocite{walters_interstellar_1980}
-\nocite{wright_theGsearch_2015}
-\nocite{anchordoqui_upper_2019}
-\nocite{balb_spatiotemporal_2018}
-\nocite{forgan_galactic_2016}
-\nocite{gobat_evolution_2016} 
-
 
 
 \bibliography{biblio_seti}
