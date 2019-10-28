@@ -193,6 +193,12 @@ abundance of life in the Galaxy and the lack of their detection
 
 
 
+
+
+
+
+
+
 The discrete events method for simulating a stochastic process is an
 approximation that allows to study the behaviour of complex
 systems, by considering a sequence of well defined discrete events.
@@ -246,6 +252,67 @@ structure in the Drake equation.
 %of interest (for more on this perspective, see, e.g., Chaisson
 
 
+\citet{bloetscher_using_2019} uses a probabilistic approach, though
+still strongly motivated by the Drake equation, to obtain a
+propbabilistic measure for the number of civilizations in the Galaxy.
+To that end, perform MonteCarlo Markov Chains over each factor of the
+Drake equation, and combine the means to obtain a probabilistic
+result. It is worth mentioning that the author proposes a lof-normal
+target distribution to compute the posterior probabilities. This
+approach, which assigns probability distributions to the Drake
+factors. This study concludes that there is a very low probability for
+Earth to make contact with another extraterrestrail civilization.    
+
+\citet{smith_broadcasting_2009} uses a analytical model to compute the
+probabilities of contact between two randomly located civilizations,
+and the waiting time for the first contact, assuming a fixed maximum
+broadcasting distance.
+ 
+\citet{balbi_impact_2018} investigate the chance of communicating
+civilizations making causal contact within a volume surrounding the
+location of the Earth, using a statistical model to compute the
+occurrence of causal contacts. The author stresses the fact that the
+causal contact requirement involves the distance between
+civilizations, their lifespan and their times of appeareance.  This is
+important since the time it takes the light to travel across the
+Galaxy is much lesser than the lifetime of the Galaxy.
+
+\citet{balbi_impact_2018} fix the total number of civilizations and
+explore the parameter space that comprise three parameters, namely,
+the distance to the Earth, the time of appeareance and the lifespan of
+the communicating civilization. Each of these three variables are
+drawn from a random distribution. The distribution of the distances
+results from a uniform distribution of civilization within the plane
+of the Galaxy. For the distribution of the characteristic time of
+appeareance, the author explores and exponential and a trucated
+Gaussian distributions. For the distribution of the lifespans, the
+author choses an exponential distribution. The radius of influence is
+set to 1000 ly.
+
+\citet{balbi_impact_2018} finds that the fraction of communicating
+civilizations vary with the choice of the statistical distribution for
+the time of appeareance. For all analyzed distributions, the fraction
+corresponding to a mean lifetime of 10$^9$ years and for a maximu
+radius for the detection of the signal of 1000 ys, is roughly 0.1.
+
+\citet{vukotic_astrobiological_2012} propose a simulation approach
+based on probabilistic cellular automata (PCA) modeling. In this
+framework, a complex system is modeled by a lattice of cells which
+evolve at discrete time steps, acording to transition rules that take
+into account for each cell the states of its neighbour cells.
+
+The authors implement a PCA model to a network of cells which
+represent life complexity on a 2-dimensional annular ring resembling
+the GHZ. The authors set the GHZ between a minimum radius of 6 kpc and
+a maximum radius of 10 kpc. Within this framework, the authors also
+make several MonteCarlo simulations and analyze ensemble-averaged
+results.
+
+This work aims at analyzing the evolution of life, although it does
+not account for the network of causal contacts among technological
+civilizations.
+
+%- - - -
 
 In this work we address the problem of the temporal and spatial
 structure of the distribution of communicating civilizations, by
@@ -265,9 +332,11 @@ of the three simulation parameters.
 Finally, in Sec.~\ref{S_discussion} we discuss our results and future
 research directions.
 
+
 %}}}
 
-HACER DISCUSION FUERTE DE ESTOS PAPERS: \cite{balbi_impact_2018,cirkovic_temporal_2004,grimaldi_signal_2017,smith_broadcasting_2009}
+% HACER DISCUSION FUERTE DE ESTOS PAPERS: \cite{balbi_impact_2018,cirkovic_temporal_2004,grimaldi_signal_2017,smith_broadcasting_2009}
+
 
 \section{Methods and working hypotheses}\label{S_methods}
 %{{{
