@@ -125,28 +125,35 @@ Discrete Event, GHZ: Galactic Habitable Zone}
 \section{Motivations}\label{S_motivations}
 %{{{
 
-A common approach to discuss the possible number of extraterrestrial
-intelligent civilizations (ETI) has been the use of the Drake equation
-\citep{gleiser_drake_2010, prantzos_joint_2013, haqq-misra_drake_2017}.
+A common approach to discussing the estimations of the number of
+extraterrestrial intelligent civilizations (ETI) in the Galaxy has
+been the use of the Drake equation \citep{gleiser_drake_2010,
+prantzos_joint_2013, haqq-misra_drake_2017}.
 %
 The abundance of intelligent civilizations in the galaxy is a
 longstanding question, which is often conceptualized as the problem of
 the lack of received communication or the Fermi paradox
-\citep{barlow_galactic_2012, Sotos_biotechnology_2019, 
+\citep{barlow_galactic_2012, Sotos_biotechnology_2019,
 forgan_galactic_2016}.
-There are many proposals intended to resolve this paradox, which make
-use of statistical \citep{solomonides_probabilistic_2016,
-vanhouten_isthere_2017, horvat_calculating_2007, maccone_statistical_2015} or
-stochastic approaches \citep{forgan_numerical_2009,
-bloetscher_using_2019, glade_stochastic_2011, forgan_numerical_2010},
-analytical interpretations of the Drake equation \citep{prantzos_joint_2013, smith_broadcasting_2009}
-or more speculative proposals
-\citep{barlow_galactic_2013, lampton_information_2013, conway_three_2018, forgan_galactic_2017}.
 %
-However, the uncertainties in the factors make it less prone to a
-formal application to define searching strategies or to compute
-numbers, but is used to organize the discussion instead
-\citep{hinkel_interdisciplinary_2019}.
+There are many proposals aimed at solving this paradox, which make use
+of statistical \citep{solomonides_probabilistic_2016,
+vanhouten_isthere_2017, horvat_calculating_2007,
+maccone_statistical_2015} or stochastic approaches
+\citep{forgan_numerical_2009, bloetscher_using_2019,
+glade_stochastic_2011, forgan_numerical_2010}, analytical
+interpretations of the Drake equation \citep{prantzos_joint_2013,
+smith_broadcasting_2009} or more speculative proposals
+\citep{barlow_galactic_2013, lampton_information_2013,
+conway_three_2018, forgan_galactic_2017}.
+%
+The uncertainties in the factors of the Drake equation make it less
+prone to a formal application in order to define searching strategies
+or to compute the actual number of ETIs, but is a key tool to organize
+the discussion around the problem of the population of ETIs in the
+Galaxy \citep{hinkel_interdisciplinary_2019}, which is noticeable
+dominated by the fact that despite decades of effort not a single ETI,
+if any, has been detected so far.
 %
 Some modifications to the original idea of the equation have tried to
 imprint a stochastic nature, or to propose a probabilistic approach,
@@ -166,37 +173,52 @@ as well as efforts on considering the stochastic nature of the Drake equation
 %
 The simulation approach has also benn considered
 \citep{forgan_evaluating_2015, vukotic_grandeur_2016,
-murante_simulating_2015, forgan_numerical_2009, forgan_galactic_2017}
+murante_simulating_2015, forgan_numerical_2009, forgan_galactic_2017},
+although with a similar problem that consists on the large number of
+parameters which are either unknown or largely uncertain.
+%
 %New numerical determination of habitability in the Galaxy: the SETI connection
 %
-Since the factors in the Drake equation are uncertain, we propose to
-avoid the frequentist approach of this equation and to explore a
+%Since the factors in the Drake equation are uncertain,
+%
+In this work, we propose to
+avoid the frequentist approach of the Drake equation and to explore a
 parameter space, where instead of computing a final number, we provide
 a statistical distribution that gives conditional probabilities.
 %
+This is an exploratory analysis that aims at providing a numerical 
+tool to discuss not the several theoretical problems summarized by the
+Drake equation factors, 
+but the different scenarios on the basis of statistical heuristics.
+%
+The approach proposed here shold be considered as a compromise between
+the uncertainties of the frequentist approach and the detailed recipes
+required on the simulation approach.
+%
+We then provide a numerical framework to explore via simulations a
+parameter space of unknown observables in order to discuss different
+scenarios and their consecuences in terms of the probability con
+making contacts.
+%
 The only fact that can be stated with certainty is that for the number
 of years SETI projects have been working we have not received any
-signal within the conditions stablished by SETI \citep{tarter_search_2001}.
+signal, at least
+within the technical posibilities and the 
+conditions stablished by SETI \citep{tarter_search_2001}.
 %
-This lack of detection has lead to a number of alternative proposals
+This arguably astonishing result has lead to the Fermi paradox, which
+states an apparent contradiction between the high estimation of the
+abundance of life in the Galaxy and the lack of their detection
+\citep{vanhouten_isthere_2017}.
+%
+The lack of detection has also ispired to a number of alternative proposals
 for new SETI strategies \citep{forgan_exoplanet_2017,
 balbi_impact_2018, loeb_eavesdropping_2006, maccone_KLT_2010,
 tarter_advancing_2009, enriquez_breakthrough_2017, loeb_relative_2016,
 maccone_SETI_2011,  lingam_relative_2019, wright_theGsearch_2015,
 maccone_SETI_2013, maccone_lognormals_2014, harp_application_2018,
-forgan_possibility_2013, forgan_galactic_2017, funes_searching_2019}
+forgan_possibility_2013, forgan_galactic_2017, funes_searching_2019}.
  
-This, by some astonishing result, has lead to the Fermi paradox, which
-states an apparent contradiction between the high estimation of the
-abundance of life in the Galaxy and the lack of their detection
-\citep{vanhouten_isthere_2017}.
-
-
-
-
-
-
-
 
 
 The discrete events method for simulating a stochastic process is an
