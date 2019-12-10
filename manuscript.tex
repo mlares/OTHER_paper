@@ -364,9 +364,6 @@ research directions.
 %{{{
 
 
-Some complex stochastic processes can be efficiently modeled with the
-discrete--event (DE) simulation approach.
-%
 Simulations are suitable tools to analyze systems that evolve with
 time and involve randomness.
 %
@@ -374,24 +371,33 @@ In general, simulations require less assumptions and simplifications
 than theoretical approaches, and can be applied to systems where a
 theoretical model can not be found.
 %
+Certain complex stochastic processes can be efficiently modeled with
+the discrete--event (hereafter, DE) simulation approach.
+%
 A system described with the DE paradigm is characterized by a set of
 actors and events, where actors interact causally through a series of
 events on a time line and process these events in chronological order
 \citep{ptolemaeus_system_2014, chung_simulation_2003,
 ross_simulation_2012}.
 %
-In the case of study, the actors are the communicating civilizations
-(CETIs), and the events are all meaningfull that produce a change in
-the simulation variables, i.e., in the arrangement of CETIs and their
-causal contacts.
+We follow this approach to simulate the statistical properties of a
+set of intelligent civilizations (CETIs) in the Galaxy that have the
+ability of emitting and communicating messages at light speed.
 %
-Since it allows to explore several models easily, 
-this method is well suited for the particular case of the difusion of
-intelligence signals in the Galaxy.
+Since this method to explore several models easily, it is well suited
+for the particular case of the difusion of intelligence signals in the
+Galaxy and its dependence on the statistical properties proposed for
+the rise and fall of the communicating capacity in the galactic
+intelligent civilizations.
+%
+The system is defined by a number of actors that represent CETIs and
+appear at different instants in time, generating events that produce
+meaningful changes in the variables that describe the system, i.e., in
+the arrangement of CETIs and their network of causal contacts.
 %
 Assuming some simple hypotheses, the discrete events method can be
-performed taking into account a small number of variables, which
-allow to analyze the variation of the results in the model parameter space.
+performed taking into account a small number of variables, which allow
+to analyze the variation of the results in the model parameter space.
 
 
 
@@ -407,11 +413,13 @@ $D_{max}$, there is a greater probability of the existence of causal
 contacts between pairs of intelligent civilizations in the Galaxy
 (Table \ref{T_simu_hypotheses}).
 %
-We also need to propose theoretical distribution functions for both the
-distribution of lifespans and the distribution of the number of CETIs
-per unit time \citep{maccone_evolution_2014,Sotos_biotechnology_2019}.
+We also need to propose theoretical distribution functions for both
+the distribution of lifespans and the distribution of the number of
+CETIs per unit time \citep{maccone_evolution_2014,
+Sotos_biotechnology_2019}.
 %
-The shapes of these distributions are discussed in Sec.~\ref{SS_PDF_shape}.
+The shapes of these distributions are discussed in
+Sec.~\ref{SS_PDF_shape}.
 %
 A causal connection can be produced without the need of the two
 involved civilizations being concurrent or active at the same time.
@@ -420,45 +428,98 @@ This is a fundamental property of the system which arises as a
 consecuence of the large spatial and temporal scales, where a message
 is transmited at light speed.
 %
-As a consecuence of their finite lifetime,
-each CETI will fill a spherical shell region of the Galaxy, limited by two
-surfaces.
+Although a CETI could be old enough to transmit a message at large
+distances, the limited power of the message and the dilution that runs
+as the squared distance from the source, imposes a detectability
+limit.
+%
+As a consecuence of this limitation and of their finite lifetime,
+considered as the period of time between the aquisition and loss of
+communicating capacity, each CETI will fill a spherical shell region
+of the Galaxy, limited by two surfaces.
 %
 The leading front, or surface of first contact (SFC) grows from the
 central CETI until it reaches the maximum distance $D_{max}$.
-%
-Although a CETI could be old enough to transmit a message at large
-distances, the limited power of the message and the dilution that runs
-as the squared distance from the source, imposes a
-detectability limit.
 %
 Thus, the volume reached causally by a CETI is initially a growing
 sphere.
 %
 Following the end of the civilization, there is still a region which
-is covered with the emited signals.
+is filled with the emited signals.
 %
 The trailing front, or surface of last contact (SLC) also grows from
 the central CETI, with a delay with respect to the SFC equivalent to
 the lifetime of the CETI, and produces a spherical shell region.
 %
-Any other CETI within this region will be aware of the originating CETI,
-even if it has disapeared before the time of contact.
+Any other CETI within this region will be aware of the originating
+CETI, even if it has disapeared before the time of contact.
 %
-This region will grow if the SFC has not reached $D_{max}$, and
-will shrink otherwise, until the SLC reaches $D_{max}$.
+This region will grow if the surface of first contact has not yet
+reached the maximum distance $D_{max}$, and will shrink otherwise
+until the surface of last contact reaches $D_{max}$, and producing as
+a result the loss of all signal from the central CETI.
 %
-A that point, all signal from the central CETI is lost.
+In our approach, we consider a model Galaxy where the width of the
+disk is negligigle with respect to the radius of the disk, so that
+CETIs are placed on a 2D plane disk.
 %
-In the 2D simulation only the intersection of these spheres with the
-plane of the galaxy is relevant, and produce the corresponding
-circles for the filled spheres or annular regions for the spherical
-shells.
+In the 2D simulation only the intersection of the communicating
+spherical shells with the plane of the galaxy is relevant, and produce
+the corresponding circles or rings for the filled spheres or annular
+regions of the spherical shells, respectively.
 %
-We illustrate in the Fig.~\ref{F_scheme} the schematic
-representation of the region causally connected to the central CETI.
+We illustrate in the Fig.~\ref{F_scheme} the schematic representation
+of the region causally connected to the central CETI.
 %
+To this end, we use space--time diagrams, where time is represented on
+the horizontal axis, and space is represented in the vertical axis.
 %
+A growing surface of first contact in this diagram is represented as a
+growing circle, centered on a point in the time axis, which shifts
+towards the right at the same rate the radius of the circle increases.
+%
+The maximum distance of the message limits the radius of the circles,
+so that once this distance is reached, the circle continues its shift
+towards the right, but maintaining a constant radius.
+%
+At the end of the lifetime of a CETI, a growing surface of last
+contact is represented by a circle that covers the inner part of the
+causal region, producing a ring of diminishig area (panel (a)).
+%
+In this scheme, the entire lifetime of a CETI can then be represented
+by a polygon, limited in the spatial axis by the maximum distance of
+the signal $D_{max}$ and in the time axis by the time span between the
+starting time (concave vertex) and the ending time (convex vertex).
+%
+This representation allows to easily visualize the important events
+that result from the existence and communications of two CETIs (panel (b)).
+%
+The points in time where the CETIs aquire their communicating
+capacity (CC) are dubbed ''awakening'' events ($A_1$ and $A_2$ in the
+Figure).
+%
+Simmilarly, the points in time where the CETIs loss their communicating
+capacity are dubbed ''doomsday'' events ($D_1$ and $D_2$ in the
+Figure).
+%
+The points in space--time where the first contact is produced for each
+one of the CETIs, are defined as ''contact'' events, shown as $C_1$
+and $C_2$ in the Figure.
+%
+Finally, the two points where the contact is lost for each one the
+CETIs, are denominated ''blackout'' events, shown as $B_1$ and $B_2$
+in the Figure.
+%
+It is important to notice that there is a time delay between the contact
+events of the two CETIs involved in this analysis, and also a time
+delay between the two blackout events, so that the time range when a
+bidirectional contact is possible occurs between the maximum time of
+the contact points and the minimum time between the blackout points.
+
+
+
+
+
 %
 % Schematic representation of the growing communicating
 %   sphere, over the space--time diagrams, where time is represented on
