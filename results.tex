@@ -1,0 +1,235 @@
+\section{Results: exploring the parameter space}\label{S_results}
+%{{{
+
+We implemented the simulation of a regular grid of models varying over
+the hypothesis space, which covers 15000 different models.
+%
+For each model, we simulated 50 realizations with different random
+seeds, in order to estimate the variance.
+%
+The simulated parameters, $\tau_a$, $\tau_s$ cover the ranges
+4000-200000 and 10000-500000, respectively, with a partition of 50
+values for each parameter.
+%
+For the D$_{max}$ parameter, we chose the values 500, 1000, 10000,
+20000, 40000 and 80000 lyr.
+%
+This setup makes a total of 750000 simulations, each covering a time
+range of one million years.
+%
+In Table \ref{T_simu_hypotheses} we show the range of values of these parameters explored 
+in our numerical experiments.
+
+
+As a product of the simulations, several quantities are obtained.
+%
+Some quantities are directly derived from the discrete events, namely,
+the ID of emitting MPL, the ID of emitting (receiving) MPL, the
+position in the galaxy, the time of Awakening (Contact) and the time
+of Doomsday  (Blackout) for each MPL.
+%
+This structure is always for the A-D cycle of each emitting MPL, and
+repeats for each contact (C-B).
+%
+We can also derive the additional quantities.
+%
+The age of a MPL is the time elapsed from A to D.
+%
+%
+%given time, ceti\_e is the MPL emitting signals (emiter), ceti\_r is
+%the MPL receiving signals (receiver), ceti\_c is the ceti that
+%listen at least another ceti (citizen) and ceti\_h is the MPL ceti
+%that is lestened by at least another MPL.
+%
+The time span of a MPL listening another or being listened by another
+can also be easily derived from the results of a realization.
+%
+This way we can also compute the distribution in the galaxy of cetis
+that reach contact and the waiting time until the first contact or the
+waiting time until the next contact.
+%
+Regarding the properties of the population of MPLs and its evolution,
+we analyze the fraction of awaken time a ceti is listening at least
+another ceti, the age of contacted MPLs at first contact, the
+distribution of time to wait until next contact, the fraction of cetis
+where the first contact is given at the awakening, the distribution of
+the number of contacts for each MPL, the distribution of the maximum
+number of contacts for each MPL, the distribution of the number of
+contacts as a function of MPL age, the number of contacts as a
+function of time in the galaxy, the rate of MPLs that succeed in
+contact, and the distribution of distances between contacted MPLs.
+%
+Usefull derived quantity is the duration of two-way communication
+channels the or the fraction of contacts that admit a response.
+% 
+We also analyze the relations between the distance to ceti vs. time of
+double communication, the distance to ceti vs. age of contacted ceti,
+the age of a ceti and the maximum number of contacted cetis before D,
+or the lifespan of a ceti vs. max number of contacts.
+%
+All these quantities can be analyzed as a function of the simulation
+parameters.
+%
+We chose eight models that are on fairly oposed regions of the
+explored parameter space, and cover short/long lifetimes, short/long
+waiting times for the next MPL to appear in the Galaxy and
+short/large range reach of the signal, including all possible
+combinations.
+%
+The details of each model are summarized in the
+Table~\ref{T_selected_models}.
+
+
+In Fig.~\ref{F_number_of_contacts} we show the Empirical cumulative
+distributions of the number contacts for MPLs in four different
+samples (M5, M6, M7, M8) with long range signal reach
+(D$_{max}$=10000). 
+%
+The lifetime is more determinant than the awakening rate in increasing
+the number of contacts.
+%
+As expected, of the four samples, the sample M7, which corresponds to
+a dense awakening in the timeline and a long lifetime, is the model
+that maximizes the number of contacts, reaching a maximum of order 100
+contacts for a single MPL.
+%
+This is considerable larger than any model with a shorter lifetime,
+which produce a number of contacts of at most the order of ten
+contacts per MPL.
+%
+A couple of comments are worth to mention about this plot.
+%
+First, it has a logarithmic scale on the x-axis, and second it is the
+cumulative, not differential, empirical distribution.
+ 
+
+In what follows, we focus on the analysis of the duration of contacts
+(Sec.~\ref{SS_multiplicity}), the waiting time for the first contact
+(Sec.~\ref{SS_waiting}) and the
+variations of contact posibilities as a function of the position of
+the MPL in the Galaxy (Sec.~\ref{SS_location}).
+
+%}}}
+
+\subsection{Multiplicity and duration of contacts}\label{SS_multiplicity}
+%{{{
+
+The duration of each contact for a single receiving MPL is given by the
+time difference between a C event and a B event, which are direct
+outputs for each simulation experiment.
+
+
+
+
+%}}}
+
+\subsection{Waiting time for a first contact}\label{SS_waiting}
+%{{{
+
+In this section we analyze the distribution of the waiting times for
+a first contact.
+%
+%Such distribution can be considered to compute the probability of
+%reaching a first contact within the first XX years of a SETI project,
+%assuming the methods are correct and the hypotheses of the experiment.
+Such distribution can be considered to compute the probability for a
+random MPL to carry out a SETI project and spend a given time until
+the first contact is made. 
+
+
+In the Fig.~\ref{F_waiting_for_1C} we show the fraction of the MPLs
+that have made at least one contact as a funtion of the elapsed time
+since the awakening, given that they make at least one contact on
+their lifetime, for different models.
+%
+From a frequentist approach, the normalized cumulative counts are
+related to the estimation of the probability of observing a given time
+with no success.
+%             
+Both panels show the histograms of the waiting times for the first
+contact, for all the MPLs that make at least one contact along their
+lifetime.
+%
+We show separately the histograms for several values of $\tau_a$ and a
+fixed value of $(\tau_s, D_{max})$, and for several values of $\tau_s$
+and a fixed value of $(\tau_a, D_{max})$.
+%
+For different values of $\tau_a$, the shape of the distribution is
+similar, and the main difference given by the different number of
+contacts on the different models.
+%
+Conversely, for different values of $\tau_a$, the shape of the
+distribution is similar, and the main difference given by the
+different number of contacts on the different models. 
+%
+We show the 2D maps of the rate of MPLs that never make contact and
+the rate of MPLs that make contact at the moment of the awakening,
+inf the Figs.~\ref{F_never_contact} and \ref{F_C_at_A}, respectively,
+as a function of $\tau_s$ and $\tau_s$.
+%
+In the Fig.~\ref{F_waiting_for_1C} we show the histograms of the mean
+waiting times for the first contact, for several models.
+%
+Left panel shows the histograms for several values of $\tau_a$, and
+$\tau_s$ in the range 17000-24000 yr.
+%
+Right panel shows the histograms for several values of $\tau_s$, and
+$\tau_a$ in the range 68000-100000 yr.
+%
+The shape of the histograms does not change when $\tau_a$ is modified,
+but significantly changes when $\tau_s$ is modified.
+
+
+%}}}
+                   
+          
+
+\subsection{Location within the Galaxy}\label{SS_location}
+%{{{
+    
+%On the Figure~\ref{F_radial_frac} we show the fraction of MPLs that
+%make zero, one, two or three contacts, as a function of the
+%galactocentric distance, for model M1.  VERIFICAR!  M1?
+%
+For this model, the majority of MPLs do not make any contact during
+all the time period in which they are active.
+%
+As expected, the fractions of MPLs making at least one contact
+diminishes as the number of contacts rises.
+%
+The shape of this distribution is a result of the geometry of the GHZ.
+%
+In general, a closer position to the center of the Galaxy slightly
+favours the posibility of a contact.
+%
+This would indicate that the position of the Earth is suitable for the
+odds of making a contact.
+
+%}}}
+
+\setlength{\tabcolsep}{10pt}
+\begin{table*}
+\centering
+\begin{tabular}{ccccc}
+\hline
+Model subset & D$_{max}$ & $\tau_a$ & $\tau_s$ & description  \\
+\hline
+M1 & 40000 & [10000, 30000]   & [10000, 50000]   &dense, short lifetime\\
+M2 & 40000 & [170000, 190000] & [10000, 50000]   &sparse, short lifetime\\
+M3 & 40000 & [10000, 30000]   & [400000, 440000] &dense, long lifetime \\
+M4 & 40000 & [170000, 190000] & [400000, 440000] &sparse, long lifetime\\
+%
+M5 & 80000 & [10000, 30000]   & [10000, 50000]   &dense, short lifetime\\
+M6 & 80000 & [170000, 190000] & [10000, 50000]   &sparse, short lifetime\\
+M7 & 80000 & [10000, 30000]   & [400000, 440000] &dense, long lifetime \\
+M8 & 80000 & [170000, 190000] & [400000, 440000] &sparse, long lifetime\\
+%
+\hline
+\end{tabular}
+\caption{Selected models to analize the behavior of simulation outputs
+   and their dependence on simulation outputs and their dependence on
+   simulation parameters.}
+\label{T_selected_models}
+\end{table*}
+
+ 

@@ -1,0 +1,156 @@
+% #1 is the caption name, #2 is the caption text
+\newcommand{\definecaption}[2]{%
+   \expandafter\newcommand\csname caption@#1\endcsname{#2}}
+
+\newcommand{\usecaption}[1]{%
+   \caption{\csname caption@#1\endcsname\label{#1}}}
+
+% Now the captions
+
+%_______________________________________________________________
+\definecaption{F_scheme}{%
+%
+Space--time diagrams showing a schematic representation of the
+different stages in the development of a communicating civilization,
+the growing communicating sphere (a) and the temporal intervals for
+the communication between two civilizations (b).
+%
+In the upper panel (a), the sphere the encloses the region which is
+causally connected to the emitter grows until it reaches the
+$D_{max}$ distance.  After the $D$ event, that region is limited by
+the surface of last contact.
+%
+The scheme in the lower panel (b) represents two communicating
+civilizations that have causal contact in both directions
+%
+}
+
+%_______________________________________________________________
+\definecaption{F_messages}{%
+%   
+Schematic representation of the possible cases in which a
+ceti A can be in causal contact with a ceti B which appears later.
+%   
+The duration of the causal contact in one direction depends on
+several factors, mainly $\Delta t_A$, $\Delta t_C$, and $\Delta X$.
+%   
+}
+
+%_______________________________________________________________
+\definecaption{F_number_of_contacts}{%
+%
+Empirical cumulative distributions of the number contacts
+for MPLs in four different samples (M5, M6, M7, M8) with long
+range signal reach (D$_{max}$=10000).
+%
+}
+
+
+%_______________________________________________________________
+\definecaption{F_never_contact}{%
+%
+Rate of MPLs that never make contact (listening) as a
+function of $\tau_a$ and $\tau_s$, for 
+$D_{max}$=10000 (left panel),
+$D_{max}$=40000 (middle panel), and
+$D_{max}$=80000 (right panel)
+%
+}
+
+
+
+%_______________________________________________________________
+\definecaption{F_C_at_A}{%
+%
+Rate of MPLs that listen at the moment of the
+awakening, as a funcion of $\tau_a$ and $\tau_s$, for
+$D_{max}$=10000 (left panel),
+$D_{max}$=40000 (middle panel), and
+$D_{max}$=80000 (right panel)
+%
+} 
+
+
+%_______________________________________________________________
+\definecaption{F_waiting_for_1C}{%
+%
+Histograms of the mean waiting times for the first contact, for
+several models.
+%
+Left panel shows the histograms for several values of $\tau_a$, and
+$\tau_s$ in the range 17000-24000 yr.
+%
+Right panel shows the histograms for several values of $\tau_s$, and
+$\tau_a$ in the range 68000-100000 yr.
+%
+The shape of the histograms does not change when $\tau_a$ is
+modified, but significantly changes when $\tau_s$ is modified.
+}
+ 
+
+
+%{{{ 
+%\begin{figure}
+%   \centering
+%   \includegraphics[width=0.5\textwidth]{growingsphere.pdf}
+%   \caption{Schematic representation of the growing communicating
+%   sphere, over the space--time diagrams, where time is represented on
+%   the horizontal direction, and space is represented in the vertical
+%   direction.  In (a) the sphere is
+%   growing as the surface of first contact has not reached the maximum
+%   distance.  In (b) it has reached the maximum distance, so that it
+%   remains at the same size.  After a Doomsday event, the signals can
+%   still be observed, but the surface of last contact grows }
+%   \label{F_growing_sphere}
+%\end{figure}
+%
+%  
+%\begin{figure}
+%   \centering
+%   \includegraphics[width=0.5\textwidth]{abcd.pdf}
+%   \caption{Schematic representation of two emitters, $E_1$ and $E_2$,
+%   that reach each other at different times.  The time span for $E_i$
+%   is $(A_i, D_i)$, for $i=\{1,2\}$.  Emitter $i$ can listen to
+%   emitter $j$ between $C_{ij}$ and $B_{ij}$.
+%   The type and length of causal contact in both directions depend on
+%   the distance and time lag between the awakening events, the maximum
+%   distance that a signal can reach and the time period in which each
+%   emitter is active.}
+%   \label{F_abcd}
+%\end{figure}
+
+% Schematic representation of the growing communicating
+%   sphere, over the space--time diagrams, where time is represented on
+%   the horizontal direction, and space is represented in the vertical
+%   direction.  In (a) the sphere is
+%   growing as the surface of first contact has not reached the maximum
+%   distance.  In (b) it has reached the maximum distance, so that it
+%   remains at the same size.  After a Doomsday event, the signals can
+%   still be observed, but the surface of last contact grows.
+%   %
+%   Schematic representation of two emitters, $E_1$ and $E_2$,
+%   that reach each other at different times.  The time span for $E_i$
+%   is $(A_i, D_i)$, for $i=\{1,2\}$.  Emitter $i$ can listen to
+%   emitter $j$ between $C_{ij}$ and $B_{ij}$.
+%   The type and length of causal contact in both directions depend on
+%   the distance and time lag between the awakening events, the maximum
+%   distance that a signal can reach and the time period in which each
+%   emitter is active.
+%
+%
+%
+%   \begin{figure}
+%      %
+%      \centering
+%      %
+%      \includegraphics[width=0.45\textwidth]{galactocentric_frac.pdf}
+%      %
+%      \caption{Fraction of MPLs making cero, one, two or three contacts
+%      as a function of galactocentric distance.}
+%      %
+%      \label{F_radial_frac}
+%      %
+%   \end{figure}
+%}}} 
+
+
