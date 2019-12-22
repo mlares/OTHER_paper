@@ -319,47 +319,6 @@ This means that we set aside possible civilizations that could survive
 in severe conditions or unstable systems, which would prevent the
 appeareance of life as we know it.
 
- 
-\setlength{\tabcolsep}{10pt}
-\begin{table*}
-\centering
-\begin{tabular}{clccc}
-\hline
-   \multicolumn{2}{l}{independent variables} &min&max&Nbins\\
-\hline
-   $\tau_{a}$ & Mean temporal separation between consecutive awakenings & 4000 y & 200000 y & 50\\ 
-   $\tau_{s}$ & Mean lifetime of a MPL                                 & 10000 y & 500000 y& 50\\ 
-   D$_{max}$ & Maximum reach of a message  &  \multicolumn{3}{l}{500, 1000, 10000, 20000, 40000, 80000 lyr}  \\
-\hline
-   \multicolumn{4}{l}{fixed variables and assumptions} &value \\
-\hline
-   & statistical properties of all MPLs &equally distributed&&\\
-   & Point process for the distribution in time & homogeneous &&\\
-   f$_s$ & The scan of the sky & fully efficient&&1\\
-   f$_p$ & panspermia or colonization &absent&&0\\
-   & shape of the Galactic Habitable Zone & 2--dimensional ring &&\\
-   R$_{SFC}$   & Inner radius of the GHZ     &&&20000 ly\\
-   R$_{SLC}$   & Outer radius of the GHZ     &&&60000 ly\\
-   t$_{max}$ & Time span of the simulation  &&&1.e6 y\\
-\hline
-   \multicolumn{5}{l}{discrete events}\\
-\hline
-   A & Awakening: a civilization starts a SETI program  &&&\\
-   B & Blackout: the end of the communication chanel stops &&&\\
-   C & Contact: a new causal contact is produced &&&\\
-   D & Doomsday: a civilization ends its communication capabilities&&&\\
-\hline
-
-\hline
-\end{tabular}
-\caption{Definition of independent variables and adopted values for 
-   fixed paramenters 
-   that are part of the simulation.  Variable parameters define the
-   spatial and temporal structure
-   of the process and the maximum reach of the messages.}
-\label{T_simu_hypotheses}
-\end{table*}
-
 
 While the aforementioned assumptions are basic conditions for most of
 the stochastic processes observed in nature, we need to make stronger
@@ -428,7 +387,7 @@ upper limits.
 
 
 In our simulations we also assume the simplest situations for the
-growth of ETIs.
+growth of the sphere of first contact.
 %
 For example, we discard the possibility of stellar colonization
 \citep[e.g.][]{newman_galactic_1981, walters_interstellar_1980,
@@ -441,8 +400,11 @@ cases.
 More detailed simulations could be produced considering different
 efficiency of communication or detection methods.
 %
-Also, a mixed paranoid/pronoid population of intelligent civilizations
-could be implemented easily.
+%Also, a mixed paranoid/pronoid population of intelligent civilizations
+%could be implemented easily.
+%
+% EXPLICARLO O SACARLO
+% O PONER EN LA DISCUSION
 %
 However, in this case we also would complicate the experimental setup,
 make the results less evident.
@@ -489,7 +451,9 @@ languajes is known to follow a Zipf law (which is a power law).
 %
 Zipf law also describes population ranks of cities in various
 countries, corporation sizes, income rankings, ranks of number of
-people watching the same TV channel (Zipf's law entry on Wikipedia).
+people watching the same TV channel (Zipf's law).
+%
+% CITAR ALGO DE LA LEY DE ZIPF
 %
 The magnitudes of earthquakes, hurricanes, volcanic eruptions and
 floods; the sizes of meteorites or the losses caused by business
@@ -610,6 +574,3 @@ The simulation was implemented on a python 3 code, which is publically
 available\footnote{https://github.com/mlares/simu\_contact}
 
 %}}}
-                                  
-
-

@@ -11,7 +11,7 @@
 \title[Probabilities of SETI contacts]{Probability of causal
 contact between interstellar civilizations through MonteCarlo simulations}
 
-\author[Lares, Funes \& Gramajo]{Lares M$^{1, 2}$, Funes J$^{1, 3}$ \& Gramajo
+\author[Lares, Funes \& Gramajo]{Lares M$^{1, 2}$, Funes J.~G.$^{1, 3}$ \& Gramajo
 L$^{1, 2}$}
 
 \corres{\name{Lares M} \email{marcelo.lares@unc.edu.ar}}
@@ -49,7 +49,7 @@ civilizations are centered on the Drake equation, although
 its factors are affected by large uncertainties, and it lacks a
 temporal nature.
 %
-A different approach uses detailed numerical simulations of the galaxy
+A alternative approach uses detailed numerical simulations of the galaxy
 and recipes for the rates of the formation of stars and planets, and
 even for the origin of life.
 %
@@ -71,9 +71,9 @@ assuming a perfect detection rate, are low for most models, with the
 exception of models which propose a galaxy densely populated with
 long lived civilizations.
 %
-The probability of causal contacts increases with the increase of the 
+The probability of causal contacts increases with the 
 mean lifetime of civilizations much more signifficantly than with
-the increase in the mean number of active civilizations for a given
+the mean number of active civilizations for a given
 time window.
 %
 \end{abstract}
@@ -81,254 +81,11 @@ time window.
 \maketitle
 
 
-
 %%% S E C T I O N - - - - - - - - - - - - - - - - - - - - - - -
-\section{Motivations}\label{S_motivations}
-%{{{
-
-A common approach to discussing the estimations of the number of
-extraterrestrial intelligent civilizations (ETI) in the Galaxy has
-been the use of the Drake equation \citep{gleiser_drake_2010,
-prantzos_joint_2013, haqq-misra_drake_2017}.
-%
-The abundance of intelligent civilizations in the galaxy is a
-longstanding question, which is often conceptualized as the problem of
-the lack of received communication or the Fermi paradox
-\citep{barlow_galactic_2012, Sotos_biotechnology_2019,
-forgan_galactic_2016}.
-%
-There are many proposals aimed at solving this paradox, which make use
-of statistical \citep{solomonides_probabilistic_2016,
-vanhouten_isthere_2017, horvat_calculating_2007,
-maccone_statistical_2015} or stochastic approaches
-\citep{forgan_numerical_2009, bloetscher_using_2019,
-glade_stochastic_2011, forgan_numerical_2010}, analytical
-interpretations of the Drake equation \citep{prantzos_joint_2013,
-smith_broadcasting_2009} or more speculative proposals
-\citep{barlow_galactic_2013, lampton_information_2013,
-conway_three_2018, forgan_galactic_2017}.
-%
-The uncertainties in the factors of the Drake equation make it less
-prone to a formal application in order to define searching strategies
-or to compute the actual number of ETIs, but is a key tool to organize
-the discussion around the problem of the population of ETIs in the
-Galaxy \citep{hinkel_interdisciplinary_2019}, which is noticeable
-dominated by the fact that despite decades of effort not a single ETI,
-if any, has been detected so far.
-%
-Some modifications to the original idea of the equation have tried to
-imprint a stochastic nature, or to propose a probabilistic approach,
-or to consider the temporal structure which is missing in the
-equation.
-%
-
-
-\Fpagebreak
-
-
-Temporal aspects of the distribution of communicating civilizations
-and their contacts have also been explored by several authors
-\citep{fogg_temporal_1987, forgan_spatiotemporal_2011,
-balbi_impact_2018, balb_spatiotemporal_2018, horvat_impact_2011},
-%The Impact of the Temporal Distribution of Communicating Civilizations on Their Detectability
-%Temporal dispersion of the emergence of intelligence: an inter-arrival time analysis
-%The spatiotemporal aspects of SETI
-%
-as well as efforts on considering the stochastic nature of the Drake equation
-\citep{glade_stochastic_2011}.
-%
-The simulation approach has also benn considered
-\citep{forgan_evaluating_2015, vukotic_grandeur_2016,
-murante_simulating_2015, forgan_numerical_2009, forgan_galactic_2017},
-although with a similar problem that consists on the large number of
-parameters which are either unknown or largely uncertain.
-%
-%New numerical determination of habitability in the Galaxy: the SETI connection
-%
-%Since the factors in the Drake equation are uncertain,
-%
-In this work, we propose to
-avoid the frequentist approach of the Drake equation and to explore a
-parameter space, where instead of computing a final number, we provide
-a statistical distribution that gives conditional probabilities.
-%
-This is an exploratory analysis that aims at providing a numerical 
-tool to discuss not the several theoretical problems summarized by the
-Drake equation factors, 
-but the different scenarios on the basis of statistical heuristics.
-%
-The approach proposed here shold be considered as a compromise between
-the uncertainties of the frequentist approach and the detailed recipes
-required on the simulation approach.
-%
-We then provide a numerical framework to explore via simulations a
-parameter space of unknown observables in order to discuss different
-scenarios and their consecuences in terms of the probability con
-making contacts.
-%
-The only fact that can be stated with certainty is that for the number
-of years SETI projects have been working we have not received any
-signal, at least
-within the technical posibilities and the 
-conditions stablished by SETI \citep{tarter_search_2001}.
-%
-This arguably astonishing result has lead to the Fermi paradox, which
-states an apparent contradiction between the high estimation of the
-abundance of life in the Galaxy and the lack of their detection
-\citep{vanhouten_isthere_2017}.
-%
-The lack of detection has also ispired to a number of alternative proposals
-for new SETI strategies \citep{forgan_exoplanet_2017,
-balbi_impact_2018, loeb_eavesdropping_2006, maccone_KLT_2010,
-tarter_advancing_2009, enriquez_breakthrough_2017, loeb_relative_2016,
-maccone_SETI_2011,  lingam_relative_2019, wright_theGsearch_2015,
-maccone_SETI_2013, maccone_lognormals_2014, harp_application_2018,
-forgan_possibility_2013, forgan_galactic_2017, funes_searching_2019}.
- 
-
-
-The discrete events method for simulating a stochastic process is an
-approximation that allows to study the behaviour of complex
-systems, by considering a sequence of well defined discrete events.
-%
-The simulation os carried out by following all the variables that
-describe the system, that constitute the state of the system.
-%
-The evolution of the process, then, is described as a set of changes
-in the state of the system.
-%
-In this context, an event produces a specific change in the state,
-that can be triggered by random variables that encode the stochastic
-nature of the physical phenomenon.
-%
-The process involves following the changes on the state of the system,
-definig the initial and final states, defining a method that allows to
-keep track of time progress, and maintaining a list of relevant
-events.
-
-
-In a recent work, \citep{balbi_impact_2018} use a statistical model to analyze
-the occurrence of causal contacts between civilizations in the Galaxy.
-%
-The author highlights the effect of evolutionary processes when
-attempting to estimate the number of communicating civilizations that
-might be in causal contact with an observer located on the Earth.
-%
-\citet{cirkovic_temporal_2004} also emphasize the lack of temporal
-structure in the Drake equation.
-
-
-
-%While the Drake equation remains a very useful
-%guide in identifying and analyzing the various factors in-
-%volved in the problem and their relative probabilities, our
-%approach could provide a better framework with which to
-%perform a statistical analysis when taking into account evo-
-%lutionary processes. In particular, we have shown that the
-%Drake equation can misestimate the number of detectable
-%communicating species if spatial and temporal dependencies
-%are important. This should suggest some caution in the un-
-%critical application of such an equation. In this paper, we offer
-%an exemplificative illustration of the effect of different
-%probability distributions for the typical timescales involved
-%in the problem. Ideally, it would be desirable to arrive at a
-%mathematical description of such distributions based on a
-%modeling of the underlying astrophysical and biological
-%processes. This points out a possible future direction of in-
-%vestigation in which an integrated evolutionary (and coevo-
-%lutionary) approach to the problem would be a central focus
-%of interest (for more on this perspective, see, e.g., Chaisson
-
-
-\citet{bloetscher_using_2019} uses a probabilistic approach, though
-still strongly motivated by the Drake equation, to obtain a
-propbabilistic measure for the number of civilizations in the Galaxy.
-To that end, perform MonteCarlo Markov Chains over each factor of the
-Drake equation, and combine the means to obtain a probabilistic
-result. It is worth mentioning that the author proposes a lof-normal
-target distribution to compute the posterior probabilities. This
-approach, which assigns probability distributions to the Drake
-factors. This study concludes that there is a very low probability for
-Earth to make contact with another extraterrestrail civilization.    
-
-\citet{smith_broadcasting_2009} uses a analytical model to compute the
-probabilities of contact between two randomly located civilizations,
-and the waiting time for the first contact, assuming a fixed maximum
-broadcasting distance.
- 
-\citet{balbi_impact_2018} investigate the chance of communicating
-civilizations making causal contact within a volume surrounding the
-location of the Earth, using a statistical model to compute the
-occurrence of causal contacts. The author stresses the fact that the
-causal contact requirement involves the distance between
-civilizations, their lifespan and their times of appeareance.  This is
-important since the time it takes the light to travel across the
-Galaxy is much lesser than the lifetime of the Galaxy.
-
-\citet{balbi_impact_2018} fix the total number of civilizations and
-explore the parameter space that comprise three parameters, namely,
-the distance to the Earth, the time of appeareance and the lifespan of
-the communicating civilization. Each of these three variables are
-drawn from a random distribution. The distribution of the distances
-results from a uniform distribution of civilization within the plane
-of the Galaxy. For the distribution of the characteristic time of
-appeareance, the author explores and exponential and a trucated
-Gaussian distributions. For the distribution of the lifespans, the
-author choses an exponential distribution. The radius of influence is
-set to 1000 ly.
-
-\citet{balbi_impact_2018} finds that the fraction of communicating
-civilizations vary with the choice of the statistical distribution for
-the time of appeareance. For all analyzed distributions, the fraction
-corresponding to a mean lifetime of 10$^9$ years and for a maximu
-radius for the detection of the signal of 1000 ys, is roughly 0.1.
-
-\citet{vukotic_astrobiological_2012} propose a simulation approach
-based on probabilistic cellular automata (PCA) modeling. In this
-framework, a complex system is modeled by a lattice of cells which
-evolve at discrete time steps, acording to transition rules that take
-into account for each cell the states of its neighbour cells.
-
-The authors implement a PCA model to a network of cells which
-represent life complexity on a 2-dimensional annular ring resembling
-the GHZ. The authors set the GHZ between a minimum radius of 6 kpc and
-a maximum radius of 10 kpc. Within this framework, the authors also
-make several MonteCarlo simulations and analyze ensemble-averaged
-results.
-
-This work aims at analyzing the evolution of life, although it does
-not account for the network of causal contacts among technological
-civilizations.
-
-%- - - -
-
-In this work we address the problem of the temporal and spatial
-structure of the distribution of communicating civilizations, by
-exploring the hypothesis space over a minimal set of parameters.
-%
-In Sec.~\ref{S_methods} we introduce the methods and discuss the
-candidate distributions for the statistical aspects of the times
-involved in the communication process.
-%
-Then, we present our results in Sec~\ref{S_results}, with special
-emphasis on the statistical distributions of the duration of causal
-contacts in one or both directions, the possible differences on the
-position of a civilization on the Galaxy and the distribution of time
-intervals for the waiting of the first contact, always as a function
-of the three simulation parameters.
-%
-Finally, in Sec.~\ref{S_discussion} we discuss our results and future
-research directions.
-
-
-% HACER DISCUSION FUERTE DE ESTOS PAPERS: \cite{balbi_impact_2018,cirkovic_temporal_2004,grimaldi_signal_2017,smith_broadcasting_2009}
-
-%}}}
-
+\input{motivations}
 
 %%% S E C T I O N - - - - - - - - - - - - - - - - - - - - - - -
 \input{methods}                      
-
 
 %%% S E C T I O N - - - - - - - - - - - - - - - - - - - - - - -
 \input{results}
@@ -446,7 +203,7 @@ Possible hypothesis improvements are:
    \item The probability of the rising of a new MPL vary within the GHZ.
    \item Correction by coverage ratio in the detection and by
       targetting ratio in the emission.
-   \item Spiritual factor.  Explore the role of the S factor: message
+   \item Explore the role of the message
       contents, influence on the lifespan of a MPL that receives a
       message, mean lifespan of a MPL that emits a message.
 \end{itemize} 
