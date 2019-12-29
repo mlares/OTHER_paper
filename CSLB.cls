@@ -1383,7 +1383,7 @@ right=14mm]{geometry}
 \providecommand{\ackname}{{\fontsize{8bp}{10pt}\fontfamily{\sfdefault}\selectfont\sf\bfseries\textcolor{jourcolor}{Acknowledgements.\ }}}
 
 \newcommand{\ack}[2][]{\bgroup\par\vskip12pt plus2pt\parindent0pt{\fontsize{8bp}{10pt}\fontfamily{\sfdefault}\selectfont\sf\bfseries\textcolor{jourcolor}{#1.\ }} \fontsize{8bp}{10pt}\selectfont{#2}\egroup}
-
+ 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \ifnote@end\let\footnote\endnote\fi%
