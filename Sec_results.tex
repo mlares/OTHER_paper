@@ -163,31 +163,6 @@ The details of each model are summarized in the
 Table~\ref{T_selected_models}.
 
 
-\ffn{3}
-%
-In Fig.~\ref{F_number_of_contacts} we show the Empirical cumulative
-distributions of the number contacts for \cetis{} in four different
-samples (M5, M6, M7, M8) with long range signal reach
-(D$_{max}$=10000). 
-%
-The lifetime is more determinant than the awakening rate in increasing
-the number of contacts.
-%
-As expected, of the four samples, the sample M7, which corresponds to
-a dense awakening in the timeline and a long lifetime, is the model
-that maximizes the number of contacts, reaching a maximum of order 100
-contacts for a single \ceti{}.
-%
-This is considerable larger than any model with a shorter lifetime,
-which produce a number of contacts of at most the order of ten
-contacts per \ceti{}.
-%
-A couple of comments are worth to mention about this plot.
-%
-First, it has a logarithmic scale on the x-axis, and second it is the
-cumulative, not differential, empirical distribution.
- 
-
 In what follows, we focus on the analysis of the duration of contacts
 (Sec.~\ref{SS_multiplicity}), the waiting time for the first contact
 (Sec.~\ref{SS_waiting}) and the
@@ -200,14 +175,103 @@ the \ceti{} in the Galaxy (Sec.~\ref{SS_location}).
 \subsection{Membership to the network of connected \cetis{}}\label{SS_members}
 
 %{{{
-\ffn{4, 5}
+
+\ffn{3}
 %
-We show the 2D maps of the rate of \cetis{} that never make contact and
-the rate of \cetis{} that make contact at the moment of the awakening,
-in the Figs.~\ref{F_never_contact} and \ref{F_C_at_A}, respectively,
-as a function of $\tau_s$ and $\tau_s$.
+In Fig.~\ref{F_number_of_contacts} we show the empirical cumulative
+distributions of the number contacts for \cetis{} in eight different
+samples, including short and long lifetimes
+$\left(\,\left<\tau_s\right>=\right.$10000~yr and  $\left<\tau_s\right>$=100000~yr,
+respectively$\left.\right)$, dense and sparse spatial distribution
+$\left(\,\left<\tau_a\right>=\right.$10000~yr and $\left<\tau_a\right>$= 100000~yr,
+respectively$\left.\right)$, and two different signal reach ranges (D$_{max}$=40000
+lyr and D$_{max}$=80000~lyr). 
 %
-DISCUTIR LAS FIGURAS 4 Y 5 !!!
+The areas between models with the same mean lifetime and mean
+awakening time are shaded for visualization purposes.
+%
+As it can be seen from this Figure, the mean lifetime is more
+determinant than the mean awakening rate for the number of contacts.
+%
+As expected, of the four samples with the longest $D_{max}$ the model
+with a dense awakening in the timeline (low $\left<\tau_a\right>$) and
+a long lifetime (high $\left<\tau_s\right>$), is the model that
+maximizes the number of contacts, reaching a maximum of order 20
+contacts for a single \ceti{}.
+%
+Similarly, for the models with long signal range
+($D_{max}=80000\,lyr$), the one which is dense and with long lifetime
+has the maximum number of contacts, reaching nearly 100 contacts for
+each \ceti{} in its entire lifetime.
+%
+This is considerable larger than any model with a shorter lifetime,
+which produce a number of contacts of at most the order of ten
+contacts per \ceti{}.
+%
+A couple of comments are worth to mention about this plot.
+%
+First, it has a logarithmic scale on the x-axis, and second it is the
+cumulative, not differential, empirical distribution, so that the
+differences in the number of contacts for different models is quite
+large.
+%
+Another interesting feature observed in this Figure, is that for the
+eight models analyzed, there are \cetis{} that have no causal contacts
+with any other \ceti{} during their whole lifetime.
+%
+The fraction of \cetis{} with no contact ranges from nearly 20\% up to
+nearly 90\%, except for the dense and long lifetime models, for which
+almost all \cetis{} make at least one contact.
+%
+Since these results depend on just eight models, we analyze the
+properties of the frequency of contacts as a function of both the mean
+lifetime and the mean awakening time.
+%
+\ffn{4}
+%
+On Fig.~\ref{F_never_contact} we show 2D color maps with the fraction
+of \cetis{} in the simulations that never make contact (i.e., never
+listen to another \ceti{}), as a function of the mean lifetime
+($\left<\tau_s\right>$, in the range 0--500 yr) and the mean awakening
+time ($\left<\tau_a\right>$, in the range 0--200 yr), for three
+different values of the maximum signal range, $D_{max}=10000$~yr (left
+panel), $D_{max}=40000$~yr (middle panel), and $D_{max}=80000$~yr
+(right panel).
+%
+A clear pattern emerges in this Figure, showing that the probability
+for a \ceti{} of making causal contact with at least another \ceti{}
+during their entire lifetime, increases with increasing $D_{max}$,
+increasing $\left<\tau_s\right>$ and decreasing $\left<\tau_a\right>$,
+following a roughly linear dependence with the three parameters.
+
+
+While the number of \cetis{} that do not succeed in reaching the
+causal contact regions of other node is a useful indicator of
+degree of isolation, there is also the chance that a number of
+\cetis{} are already in the causal contact region of other nodes,
+which shows a somewhat oposite situation.
+%
+\ffn{5}
+%
+The fraction of \cetis{} that make the first contact at the awakening
+event is shown in the Fig.~\ref{F_C_at_A}, 
+as a function of the mean lifetime
+($\left<\tau_s\right>$, in the range 0--500 yr) and the mean awakening
+time ($\left<\tau_a\right>$, in the range 0--200 yr), for three
+different values of the maximum signal range, $D_{max}=10000$~yr (left
+panel), $D_{max}=40000$~yr (middle panel), and $D_{max}=80000$~yr
+(right panel).
+%
+These probabilities are consistent with the ones on the previous
+Figure.
+%
+Although they are not complementary, it is clear that the dependence
+with the three parameters is roughly linear in both cases.
+%
+DISCUTIR ESTOS RESUOLTADOS SEGUN LA LITERATURA
+
+
+%
 
 %}}}
  
@@ -217,12 +281,9 @@ DISCUTIR LAS FIGURAS 4 Y 5 !!!
 \subsection{Waiting time for a first contact}\label{SS_waiting}
 %{{{
 
-In this section we analyze the distribution of the waiting times for
+In this subsection we analyze the distribution of the waiting times for
 a first contact.
 %
-%Such distribution can be considered to compute the probability of
-%reaching a first contact within the first XX years of a SETI project,
-%assuming the methods are correct and the hypotheses of the experiment.
 Such distribution can be considered to compute the probability for a
 random \ceti{} to carry out a SETI project and spend a given time until
 the first contact is made. 
@@ -232,41 +293,44 @@ the first contact is made.
 In the Fig.~\ref{F_waiting_for_1C} we show the histograms of the mean
 waiting times for the first contact, for several models.
 %
-Left panel shows the histograms for several values of $\tau_a$, and
-$\tau_s$ in the range 17000-24000 yr.
+Upper panel (a) panel shows the histograms for several values of the
+mean survival time $\tau_s$, and the mean awakening time $\tau_a$ in
+the range 68000-100000 yr.
 %
-Right panel shows the histograms for several values of $\tau_s$, and
-$\tau_a$ in the range 68000-100000 yr.
+Lower panel (b) shows the histograms for several values of $\tau_a$,
+and $\tau_s$ in the range 17000-24000 yr.
 %
-The shape of the histograms does not change when $\tau_a$ is modified,
-but significantly changes when $\tau_s$ is modified. 
-
-
-In the Fig.~\ref{F_waiting_for_1C} we show the fraction of the
-\cetis{}
-that have made at least one contact as a function of the elapsed time
-since the awakening, given that they make at least one contact on
-their lifetime, for different models.
-%
-From a frequentist approach, the normalized cumulative counts are
-related to the estimation of the probability of observing a given time
-with no success.
-%             
-Both panels show the histograms of the waiting times for the first
-contact, for all the \cetis{} that make at least one contact along their
-lifetime.
-%
-We show separately the histograms for several values of $\tau_a$ and a
-fixed value of $(\tau_s, D_{max})$, and for several values of $\tau_s$
-and a fixed value of $(\tau_a, D_{max})$.
+As it can be seen, the shape of the histograms is almost the same when
+$\tau_a$ is modified (panel (b)), but significantly changes when
+$\tau_s$ is modified (panel (a)). 
 %
 For different values of $\tau_a$, the shape of the distribution is
-similar, and the main difference given by the different number of
+similar, and the main difference is given by the different number of
 contacts on the different models.
 %
 Conversely, for different values of $\tau_a$, the shape of the
 distribution is similar, and the main difference given by the
 different number of contacts on the different models. 
+ 
+
+The fraction of the \cetis{} that have made at least one contact as a
+function of the elapsed time since the awakening, is computed with
+respect to the total number of nodes that make causal contact at least
+one time in the time range from the Awakening up to the Doomsday
+events.
+%
+From a frequentist approach, the total counts from the awakening
+($t=$0~yr) up to a given time are related to the estimation of the
+probability of listening during that time interval and reaching to
+causal contact region of at least another node.
+%
+The complement of this value is the probability of observing in a time
+interval with no success, i.e., without ever happening a Contact
+event.
+%
+Clearly, this probability diminishes with time and tends to zero for
+large time periods.
+%             
 
 
 
