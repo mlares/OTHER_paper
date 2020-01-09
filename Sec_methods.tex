@@ -114,13 +114,8 @@ in Sec.~\ref{SS_PDF_shape}.
    \includegraphics[width=0.5\textwidth]{F_scheme.pdf}
    \usecaption{F_scheme} \label{F_scheme}
 \end{figure}
- 
-\begin{figure*}
-   \centering
-   \includegraphics[width=0.8\textwidth]{F_messages.pdf}
-   \usecaption{F_messages} \label{F_messages}
-\end{figure*}  
- 
+
+
 
 %{{{   
        
@@ -168,9 +163,66 @@ Similarly,
 the receiver \ceti{} E$_2$ can listen signals from the emiter \ceti{} E$_1$,
 from t=C$_{21}$ up to t=B$_{21}$.
 
+%}}} 
+      
+  
+\begin{figure*}
+   \centering
+   \includegraphics[width=\textwidth]{F_messages.pdf}
+   \usecaption{F_messages} \label{F_messages}
+\end{figure*}  
+ 
+\setlength{\tabcolsep}{10pt}
+\begin{table*}
+\centering
+\begin{tabular}{cllll}
+\hline
+   \multicolumn{2}{l}{independent variables (hypothesis space)}
+   &min. value&max. value&Nbins\\
+\hline
+   $\tau_{a}$ & Mean temporal separation between consecutive
+   awakenings & 4000 yr & 200\,000 yr & 50\\ 
+   $\tau_{s}$ & Mean lifetime of a \ceti{}
+   & 10000 yr & 500\,000 yr& 50\\ 
+   D$_{max}$ & Maximum reach of a message  &  \multicolumn{2}{l}{(500,
+   1000, 10000, 20000, 40000, 80000) lyr} & 6  \\
+\hline
+   \multicolumn{2}{l}{fixed variables} & \multicolumn{2}{c}{assumptions} &value \\
+\hline
+   & statistical properties of all \cetis{} &equally distributed&&\\
+   & Point process for the distribution in time & homogeneous &&\\
+   f$_s$ & The scan of the sky & fully efficient&&1\\
+   f$_p$ & panspermia or colonization &absent&&0\\
+   & shape of the Galactic Habitable Zone & 2--dimensional ring &&\\
+   R$_{GHZ}^{min}$   & Inner radius of the GHZ     & & &20\,000 lyr\\
+   R$_{GHZ}^{max}$   & Outer radius of the GHZ     &&&60\,000 lyr\\
+   t$_{max}$ & Time span of the simulation  &&&1.e6 yr\\
+    & \multicolumn{3}{l}{number of random realizations for each point in the hypothesis space} &50\\
+\hline
+   \multicolumn{2}{l}{discrete events} &
+   \multicolumn{3}{l}{affected variables}\\
+\hline
+   A event & Awakening: a \ceti{} starts its communication
+   capabilities &Number of active \cetis{}\\
+   B event & Blackout: the end of the communication channel stops
+   &Number causal channels\\
+   C event & Contact: a new causal contact is produced &Number of causal channels\\
+   D event & Doomsday: a \ceti{} ends its communication capabilities&Number of active \cetis{}\\
+\hline
 
+\hline
+\end{tabular}
+\caption{Definition of independent variables and adopted values for 
+   fixed parameters 
+   that are part of the simulation.  Variable parameters define the
+   spatial and temporal structure
+   of the process and the maximum reach of the messages.}
+\label{T_simu_hypotheses}
+\end{table*}
+ 
+ 
 
-
+%{{{     
 In this scheme, the entire lifetime of a \ceti{} can then be represented
 by a polygon, limited in the spatial axis by the maximum distance of
 the signal $D_{max}$ and in the time axis by the time span between the
@@ -203,12 +255,6 @@ when a bidirectional contact is possible occurs between the maximum
 time of the contact points and the minimum time between the blackout
 points.   
  
-%}}} 
-
-
-%{{{     
-          
-
 
 A causal connection can be produced without the need of the two
 involved locations being concurrent or active at the same time.
@@ -476,9 +522,9 @@ artificial).
 The lifetime of a civilization can be caused by auto destruction or by
 external factors.
 %}}}
-     
 
 
+ 
 \subsection{Power laws vs. exponential laws}\label{SS_PDF_shape}
 %{{{
 
@@ -538,10 +584,84 @@ are assumed as part of the working hypothesis, and instead of
 analyzing results from a particular parameter chosen ad--hoc, we
 explore the hypothesis space and analyze the impact of the values of
 these parameters on the results.
-                                                           
+%}}}
+ 
+ 
+\begin{figure} \centering
+   \includegraphics[width=0.5\textwidth]{F_number_of_contacts.pdf}
+   \usecaption{F_number_of_contacts} \label{F_number_of_contacts}
+\end{figure}
+        
+ 
 
+\subsection{Complexity of the model}
+%{{{
+
+The odds of a causal contact between two \cetis{} should not be
+considered as the odds of a contact between two intelligent
+civilizations, and in fact the later could be much lesser than the
+former.
+%
+Indeed, in order to stablish a contact between
+any two entities, a minimum degree of compatibility must be
+accomplished without any previous agreement, making the posibility of
+a contact with a message that could be deciphered highly rare.
+%
+There is a
+trade--off between the simplicity and the complexity of the
+experiments, and
+further analysis could be performed following this framework in order to
+explore possible implications of the results for more detailed
+configurations.
+%
+For example, the communication method (isotropic, colimated,
+serendipitous) can affect the observables, making it neccesary to
+implement a correction factor.
+%
+Taking this into account, our results regarding the probability of
+causal contact should be considered as upper limits for effective
+contacts, since they depend on the
+efficiency of both the emitter and the receiver to broadcast and scan
+the sky for intelligent signals, respectively.
+%
+A correction by coverage ratio in the detection and by a targetting
+ratio in the emission could be easily implemented in the simulation,
+although the effect of reducing the probability of contact
+is basically the product of the efficiency rations and thus 
+such implementation is not necessary.
+%
+Therefore, the values of the
+probabilities could be modified by a constant correction factor equal to
+the combined emission/reception efficiency
+\citep{smith_broadcasting_2009, anchordoqui_upper_2019,
+forgan_collimated_2014}.
+%
+Other considerations include the effects of alignments, the use of
+stars as sources or amplifiers, the nature of the message carrier,
+the use of a spatial distribution that actually resembles the spiral shape
+and the width of the disc of the Galaxy, different distribution functions for the mean lifetime
+of \cetis{}, and different efficiencies for the sphere of the causal region
+of each \ceti{} resembling different searching strategies
+\citep{hippke_interstellar_2017}.
+%
+It is also possible to consider that D$_{max}$ is different for
+different \cetis{}.  For example a power law where powerfull emmisions
+are rare and weak emissions are common could be an improvement to the
+model.
+%
+In this work we chose not to implement this for the sake of
+simplicity.
+%
+Finally, the role of the message contents could influence on the 
+lifespan of a \ceti{} that receives a message, although the
+implementation of such behaviour would increase the number of free
+parameters and would be highly speculative.
+ 
 
 %}}}
+
+
+
 
 \subsection{Discrete event process}
 %{{{
@@ -574,11 +694,6 @@ B, C, D) is produced.
 %}}}
 
            
-\begin{figure} \centering
-   \includegraphics[width=0.5\textwidth]{F_number_of_contacts.pdf}
-   \usecaption{F_number_of_contacts} \label{F_number_of_contacts}
-\end{figure}
-        
 
 \subsection{Model for \cetis{}}
 %{{{

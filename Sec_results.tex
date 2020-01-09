@@ -1,54 +1,31 @@
-
+ 
 \setlength{\tabcolsep}{10pt}
 \begin{table*}
 \centering
-\begin{tabular}{cllll}
+\begin{tabular}{ccccc}
 \hline
-   \multicolumn{2}{l}{independent variables (hypothesis space)}
-   &min. value&max. value&Nbins\\
+   Model subset & D$_{max}$ [lyr] & $\tau_a$ interval [yr] & $\tau_s$ interval 
+   [yr]& description  \\
 \hline
-   $\tau_{a}$ & Mean temporal separation between consecutive
-   awakenings & 4000 yr & 200\,000 yr & 50\\ 
-   $\tau_{s}$ & Mean lifetime of a \ceti{}
-   & 10000 yr & 500\,000 yr& 50\\ 
-   D$_{max}$ & Maximum reach of a message  &  \multicolumn{2}{l}{(500,
-   1000, 10000, 20000, 40000, 80000) lyr} & 6  \\
-\hline
-   \multicolumn{2}{l}{fixed variables} & \multicolumn{2}{c}{assumptions} &value \\
-\hline
-   & statistical properties of all \cetis{} &equally distributed&&\\
-   & Point process for the distribution in time & homogeneous &&\\
-   f$_s$ & The scan of the sky & fully efficient&&1\\
-   f$_p$ & panspermia or colonization &absent&&0\\
-   & shape of the Galactic Habitable Zone & 2--dimensional ring &&\\
-   R$_{GHZ}^{min}$   & Inner radius of the GHZ     & & &20\,000 lyr\\
-   R$_{GHZ}^{max}$   & Outer radius of the GHZ     &&&60\,000 lyr\\
-   t$_{max}$ & Time span of the simulation  &&&1.e6 yr\\
-    & \multicolumn{3}{l}{number of random realizations for each point in the hypothesis space} &50\\
-\hline
-   \multicolumn{2}{l}{discrete events} &
-   \multicolumn{3}{l}{affected variables}\\
-\hline
-   A event & Awakening: a \ceti{} starts its communication
-   capabilities &Number of active \cetis{}\\
-   B event & Blackout: the end of the communication channel stops
-   &Number causal channels\\
-   C event & Contact: a new causal contact is produced &Number of causal channels\\
-   D event & Doomsday: a \ceti{} ends its communication capabilities&Number of active \cetis{}\\
-\hline
-
+M1 & 40000 & [10000, 30000]   & [10000, 50000]   &dense, short lifetime\\
+M2 & 40000 & [170000, 190000] & [10000, 50000]   &sparse, short lifetime\\
+M3 & 40000 & [10000, 30000]   & [400000, 440000] &dense, long lifetime \\
+M4 & 40000 & [170000, 190000] & [400000, 440000] &sparse, long lifetime\\
+%
+M5 & 80000 & [10000, 30000]   & [10000, 50000]   &dense, short lifetime\\
+M6 & 80000 & [170000, 190000] & [10000, 50000]   &sparse, short lifetime\\
+M7 & 80000 & [10000, 30000]   & [400000, 440000] &dense, long lifetime \\
+M8 & 80000 & [170000, 190000] & [400000, 440000] &sparse, long lifetime\\
+%
 \hline
 \end{tabular}
-\caption{Definition of independent variables and adopted values for 
-   fixed parameters 
-   that are part of the simulation.  Variable parameters define the
-   spatial and temporal structure
-   of the process and the maximum reach of the messages.}
-\label{T_simu_hypotheses}
+\caption{Selected models to analyze the behavior of simulation outputs
+   and their dependence on simulation outputs and their dependence on
+   simulation parameters.}
+\label{T_selected_models}
 \end{table*}
 
  
-
 
 \begin{figure*} % 2D color plot
    \centering
@@ -179,23 +156,30 @@ the \ceti{} in the Galaxy (Sec.~\ref{SS_location}).
 \ffn{3}
 %
 In Fig.~\ref{F_number_of_contacts} we show the empirical cumulative
-distributions of the number contacts for \cetis{} in eight different
+distributions of the number contacts for \cetis{} in six different
 samples, including short and long lifetimes
-$\left(\,\left<\tau_s\right>=\right.$10000~yr and  $\left<\tau_s\right>$=100000~yr,
-respectively$\left.\right)$, dense and sparse spatial distribution
-$\left(\,\left<\tau_a\right>=\right.$10000~yr and $\left<\tau_a\right>$= 100000~yr,
-respectively$\left.\right)$, and two different signal reach ranges (D$_{max}$=40000
-lyr and D$_{max}$=80000~lyr). 
+$\left(\,\left<\tau_s\right>=\right.$10000~yr and
+$\left<\tau_s\right>$=100000~yr, respectively$\left.\right)$, dense
+and sparse spatial distribution
+$\left(\,\left<\tau_a\right>=\right.$10000~yr and
+$\left<\tau_a\right>$= 100000~yr, respectively$\left.\right)$, and two
+different signal reach ranges (D$_{max}$=40000 lyr and
+D$_{max}$=80000~lyr).
+%
+The models M1 and M5 are not shown, since in both cases the total
+number of contacts is different from zero for less than the five per
+cent of the \cetis{}.
 %
 The areas between models with the same mean lifetime and mean
 awakening time are shaded for visualization purposes.
 %
 As it can be seen from this Figure, the mean lifetime is more
-determinant than the mean awakening rate for the number of contacts.
+determinant than the mean awakening rate (dense and sparse,
+represented by a different shade) for the number of contacts.
 %
-As expected, of the four samples with the longest $D_{max}$ the model
-with a dense awakening in the timeline (low $\left<\tau_a\right>$) and
-a long lifetime (high $\left<\tau_s\right>$), is the model that
+As expected, of the samples with the longest $D_{max}$ the model with
+a dense awakening in the timeline (low $\left<\tau_a\right>$) and a
+long lifetime (high $\left<\tau_s\right>$), is the model that
 maximizes the number of contacts, reaching a maximum of order 20
 contacts for a single \ceti{}.
 %
@@ -204,24 +188,23 @@ Similarly, for the models with long signal range
 has the maximum number of contacts, reaching nearly 100 contacts for
 each \ceti{} in its entire lifetime.
 %
-This is considerable larger than any model with a shorter lifetime,
+This is considerably larger than any model with a shorter lifetime,
 which produce a number of contacts of at most the order of ten
 contacts per \ceti{}.
 %
-A couple of comments are worth to mention about this plot.
-%
-First, it has a logarithmic scale on the x-axis, and second it is the
-cumulative, not differential, empirical distribution, so that the
-differences in the number of contacts for different models is quite
-large.
+A couple of comments are worth to mention about this plot, namely, it
+has a logarithmic scale on the x-axis, and it is the cumulative, not
+differential, empirical distribution, so that the differences in the
+number of contacts for different models is quite large.
 %
 Another interesting feature observed in this Figure, is that for the
-eight models analyzed, there are \cetis{} that have no causal contacts
-with any other \ceti{} during their whole lifetime.
+models analyzed, there are \cetis{} that have no causal contacts with
+any other \ceti{} during their whole lifetime.
 %
 The fraction of \cetis{} with no contact ranges from nearly 20\% up to
-nearly 90\%, except for the dense and long lifetime models, for which
-almost all \cetis{} make at least one contact.
+nearly 90\% (models M1 and M5, not shown), except for the dense and
+long lifetime models, for which almost all \cetis{} make at least one
+contact.
 %
 Since these results depend on just eight models, we analyze the
 properties of the frequency of contacts as a function of both the mean
@@ -268,7 +251,7 @@ Figure.
 Although they are not complementary, it is clear that the dependence
 with the three parameters is roughly linear in both cases.
 %
-DISCUTIR ESTOS RESUOLTADOS SEGUN LA LITERATURA
+%% DISCUTIR ESTOS RESUOLTADOS SEGUN LA LITERATURA
 
 
 %
@@ -331,61 +314,50 @@ event.
 Clearly, this probability diminishes with time and tends to zero for
 large time periods.
 %             
-
-
+The diferential probability of making a causal contact reach its
+maximum at the awakening event for all models.
+%
+That is, for a short period of time like the nearly 50 years SETI
+programs have been active, the initial moment is the most promising
+for making a (causal) contact, at least for a given technology.
+%
+This consideration offers a new approach for SETI programs, where the
+search for new communication technologies has a fundamental role.
+%
+Moreover, as it can be seen in the Fig.~\ref{F_waiting_for_1C}, there
+is a maximum probability of making the first causal contact at nearly
+100000 years.
+%
+Remarkably, the probability of such a contact does not grows linearly
+with the observing time, but is greater during the first 100
+millennia.
 
 
 
 %}}}
 
-\subsection{Location within the Galaxy}\label{SS_location}
-%{{{
-    
-%On the Figure~\ref{F_radial_frac} we show the fraction of \cetis{} that
-%make zero, one, two or three contacts, as a function of the
-%galactocentric distance, for model M1.  VERIFICAR!  M1?
+%\subsection{Location within the Galaxy}\label{SS_location}
+%%{{{
+%    
+%%On the Figure~\ref{F_radial_frac} we show the fraction of \cetis{} that
+%%make zero, one, two or three contacts, as a function of the
+%%galactocentric distance, for model M1.  VERIFICAR!  M1?
+%%
+%For this model, the majority of \cetis{} do not make any contact during
+%all the time period in which they are active.
+%%
+%As expected, the fractions of \cetis{} making at least one contact
+%diminishes as the number of contacts rises.
+%%
+%The shape of this distribution is a result of the geometry of the GHZ.
+%%
+%In general, a closer position to the center of the Galaxy slightly
+%favours the possibility of a contact.
+%%
+%This would indicate that the position of the Earth is suitable for the
+%odds of making a contact.
 %
-For this model, the majority of \cetis{} do not make any contact during
-all the time period in which they are active.
+%%}}}
 %
-As expected, the fractions of \cetis{} making at least one contact
-diminishes as the number of contacts rises.
 %
-The shape of this distribution is a result of the geometry of the GHZ.
-%
-In general, a closer position to the center of the Galaxy slightly
-favours the possibility of a contact.
-%
-This would indicate that the position of the Earth is suitable for the
-odds of making a contact.
 
-%}}}
-
-
-
-\setlength{\tabcolsep}{10pt}
-\begin{table*}
-\centering
-\begin{tabular}{ccccc}
-\hline
-   Model subset & D$_{max}$ [lyr] & $\tau_a$ [yr] & $\tau_s$ [yr] & description  \\
-\hline
-M1 & 40000 & [10000, 30000]   & [10000, 50000]   &dense, short lifetime\\
-M2 & 40000 & [170000, 190000] & [10000, 50000]   &sparse, short lifetime\\
-M3 & 40000 & [10000, 30000]   & [400000, 440000] &dense, long lifetime \\
-M4 & 40000 & [170000, 190000] & [400000, 440000] &sparse, long lifetime\\
-%
-M5 & 80000 & [10000, 30000]   & [10000, 50000]   &dense, short lifetime\\
-M6 & 80000 & [170000, 190000] & [10000, 50000]   &sparse, short lifetime\\
-M7 & 80000 & [10000, 30000]   & [400000, 440000] &dense, long lifetime \\
-M8 & 80000 & [170000, 190000] & [400000, 440000] &sparse, long lifetime\\
-%
-\hline
-\end{tabular}
-\caption{Selected models to analyze the behavior of simulation outputs
-   and their dependence on simulation outputs and their dependence on
-   simulation parameters.}
-\label{T_selected_models}
-\end{table*}
-
- 
