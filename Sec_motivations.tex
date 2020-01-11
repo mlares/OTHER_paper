@@ -11,8 +11,8 @@ civilization in the Milky Way.
 The equation quantifies the number of
 civilizations from whom we might receive an electromagnetic signal.
 %
-For a comprehensive review and analysis of each term of the equation
-see \citet{vakoch_drake_2015}.
+A comprehensive review and analysis of each term of the equation
+is presented in \citet{vakoch_drake_2015}.
 %
 \citet{prantzos_joint_2013}
 proposes a unified framework
@@ -50,23 +50,29 @@ conway_three_2018, forgan_galactic_2017}.
 %%%%% agregar Carroll-Nellenback, 2019).
 \Fpagebreak
 %
-However,
-the uncertainties in the factors of the Drake equation make
+The Drake equation is a key tool
+to organize the discussion around the problem of the abundance
+of civilizations 
+in the Galaxy \citep{hinkel_interdisciplinary_2019}.
+%
+However, the uncertainties in the factors of this equation make
 it less prone to a formal application in order to define searching
 strategies or to compute the actual number of extraterrestrial
-intelligences, but is a key tool
-to organize the discussion around the problem of their abundance
-in the Galaxy \citep{hinkel_interdisciplinary_2019}, which is
-noticeable dominated by the fact that despite decades of effort not a
-single extraterrestrial intelligence, if any, has been detected so far.
+intelligences.
 %
+The optimistic estimation from the Drake equation contrast with
+the 
+SETI initiatives,
+noticeable overshadowed by the fact that despite decades of effort, not a
+single extraterrestrial intelligence, if any, has been detected.
+
+
+
 Some modifications to the original idea of the equation have tried to
 imprint a stochastic nature, or to propose a probabilistic approach,
 or to consider the temporal structure which is missing in the
 equation.
-
-
-
+%
 Temporal aspects of the distribution of communicating civilizations
 and their contacts have also been explored by several authors
 \citep{fogg_temporal_1987, forgan_spatiotemporal_2011,
@@ -130,23 +136,25 @@ forgan_possibility_2013, forgan_galactic_2017, funes_searching_2019}.
 
 
 The discrete events method for simulating a stochastic process is an
-approximation that allows to study the behaviour of complex systems,
+approximation that allows to study the behavior of complex systems,
 by considering a sequence of well defined discrete events.
 %
 The simulation is carried out by following all the variables that
-describe the system, that constitute the state of the system.
-%
-The evolution of the process, then, is described as a set of changes
-in the state of the system.
+describe and constitute the state of the system, and the evolution of
+the process is described as a set of changes in that state.
 %
 In this context, an event produces a specific change in the state,
 that can be triggered by random variables that encode the stochastic
 nature of the physical phenomenon.
 %
-The process involves following the changes on the state of the system,
-defining the initial and final states, defining a method that allows to
-keep track of time progress, and maintaining a list of relevant
-events. (REESCRIBIR!!)
+For example, when a new contact is produced between two entities in
+the simulated galaxy, the numbers of active communication lines and of
+active communicated nodes change.
+%
+The process involves then following the changes on the state of the
+system, defining the initial and final states, defining a method that
+allows to keep track of the time progress in steps, and maintaining a
+list of relevant events.
 
 
 In a recent work, \citep{balbi_impact_2018} use a statistical model to
@@ -159,30 +167,7 @@ might be in causal contact with an observer located on the Earth.
 %
 \citet{cirkovic_temporal_2004} also emphasize the lack of temporal
 structure in the Drake equation.
-
-
-
-%While the Drake equation remains a very useful
-%guide in identifying and analyzing the various factors in-
-%volved in the problem and their relative probabilities, our
-%approach could provide a better framework with which to
-%perform a statistical analysis when taking into account evo-
-%lutionary processes. In particular, we have shown that the
-%Drake equation can misestimate the number of detectable
-%communicating species if spatial and temporal dependencies
-%are important. This should suggest some caution in the un-
-%critical application of such an equation. In this paper, we offer
-%an exemplificative illustration of the effect of different
-%probability distributions for the typical timescales involved
-%in the problem. Ideally, it would be desirable to arrive at a
-%mathematical description of such distributions based on a
-%modeling of the underlying astrophysical and biological
-%processes. This points out a possible future direction of in-
-%vestigation in which an integrated evolutionary (and coevo-
-%lutionary) approach to the problem would be a central focus
-%of interest (for more on this perspective, see, e.g., Chaisson
-
-
+%
 \citet{bloetscher_using_2019} uses a probabilistic approach, though
 still strongly motivated by the Drake equation, to obtain a
 probabilistic measure for the number of civilizations in the Galaxy.
@@ -212,19 +197,23 @@ occurrence of causal contacts. The author stresses the fact that the
 causal contact requirement involves the distance between
 civilizations, their lifespan and their times of appearance.  This is
 important since the time it takes the light to travel across the
-Galaxy is much lesser than the lifetime of the Galaxy.
+Galaxy is much lesser than its lifetime.
 %
 \citet{balbi_impact_2018} fix the total number of civilizations and
 explore the parameter space that comprise three parameters, namely,
 the distance to the Earth, the time of appearance and the lifespan of
-the communicating civilization. Each of these three variables are
-drawn from a random distribution. The distribution of the distances
-results from a uniform distribution of civilization within the plane
-of the Galaxy. For the distribution of the characteristic time of
-appearance, the author explores and exponential and a truncated
-Gaussian distributions. For the distribution of the lifespans, the
-author chooses an exponential distribution. The radius of influence is
-set to 1000 ly.
+the communicating civilization.
+%
+Each of these three variables are drawn from a random distribution.
+The distribution of the distances results from a uniform distribution
+of civilization within the plane of the Galaxy.
+%
+For the distribution of the characteristic time of appearance, the
+author explores and exponential and a truncated Gaussian
+distributions. For the distribution of the lifespans, the author
+chooses an exponential distribution.
+%
+The radius of influence is set to 1000 lyr.
 %
 \citet{balbi_impact_2018} finds that the fraction of communicating
 civilizations vary with the choice of the statistical distribution for
@@ -236,7 +225,7 @@ radius for the detection of the signal of 1000 yr, is roughly 0.1.
 based on probabilistic cellular automata (PCA) modeling. In this
 framework, a complex system is modeled by a lattice of cells which
 evolve at discrete time steps, according to transition rules that take
-into account for each cell the states of its neighbour cells.
+into account for each cell the states of its neighbor cells.
 %
 The authors implement a PCA model to a network of cells which
 represent life complexity on a 2-dimensional annular ring resembling
@@ -249,7 +238,6 @@ This work aims at analyzing the evolution of life, although it does
 not account for the network of causal contacts among technological
 civilizations.
 
-%- - - -
 
 In this work we address the problem of the temporal and spatial
 structure of the distribution of communicating civilizations, by
