@@ -41,56 +41,85 @@ GHZ: Galactic Habitable Zone}
 
 \begin{abstract}
 %
-The abundance of intelligent civilizations in the Galaxy is a
-   longstanding question, which is often conceptualized as the problem
-   of the lack of received communication or the Fermi paradox.
+The abundance of intelligent civilizations in the Galaxy is a longstanding
+question, often conceptualized as the problem of the lack of received
+communication. Most efforts on the estimation of a number of civilizations are
+focused on the Drake equation, although its factors are affected by large
+uncertainties and it lacks a temporal nature.  Alternative approaches use
+detailed numerical simulations of the galaxy and recipes for the stars and
+planets formation rates and for the origin of life, and rely on highly
+uncertain parameters. We present a statistical model for the abundance and
+duration of civilizations, implemented through Monte Carlo simulations.  We
+explore the hypothesis space of the model by a suite of simulations for the
+emergence of communicating nodes, and analyze their
+causal connections.  This is based on minimal assumptions and three
+free parameters, with focus on the statistical properties of empirical
+models instead of an interpretable model with variables to be determined by
+observation. The analysis of the rate of causal contacts as a function of the
+mean number of civilizations, the mean lifespan distribution and the maximum
+distance a civilization can send signals is presented, and used as a framework
+to discuss the spatial and temporal structure of a populated galaxy within
+several scenarios. We find that, given the large distances involved,
+causal contacts between civilizations are very rare. Additionally, the odds to
+make a contact in a few years of monitoring are low for most models, with the
+exception of those of a galaxy densely populated with long lived
+civilizations. The probability of causal contacts increases with the
+lifetime of civilizations much more significantly than with the number of
+active civilizations for a given time window. Finally, we show that the
+maximum probability of making a contact occurs when a civilization acquires
+the required communication technology.
+% %
+% The abundance of intelligent civilizations in the Galaxy is a
+%    longstanding question, which is often conceptualized as the problem
+%    of the lack of received communication or the Fermi paradox.
+% %
+% Most efforts on the estimation of a number of intelligent
+%    civilizations are focused on the Drake equation, although its
+%    factors are affected by large uncertainties, and it lacks a
+%    temporal nature.
+% %
+% An alternative approach uses detailed numerical simulations of the
+%    galaxy and recipes for the rates of the formation of stars and
+%    planets, and even for the origin of life.
+% %
+% These two opposite approaches rely on a large number of highly
+%    uncertain parameters.
+% %
+% Here we present a statistical model for the abundance and duration of
+%    intelligent civilizations, implemented through Monte Carlo
+%    numerical simulations.
+% %
+% Using computer experiments, we explore the hypothesis space of the
+%    model by a suite of simulations which represent stochastic
+%    processes for the emergence of nodes with communication
+%    capabilities, and then analyze the causal connections among them.
+% %
+% This is based on minimal assumptions and three free parameters, with a
+%    focus on the statistical properties of empirical population models
+%    instead of an interpretable model with variables to be determined
+%    by observation.
+% %
+% The analysis of the rate of causal contacts as a function of the mean
+%    number of civilizations, the mean lifespan distribution and the
+%    maximum distance a civilization can send signals is presented, and
+%    used as a framework to discuss the spatial and temporal structure
+%    of a populated galaxy within several different scenarios.
+% %
+% Our results indicate that, given the large distances involved, causal
+%    contacts between civilizations are very rare.
+% %
+% Additionally, the odds to make a contact in a few years of monitoring,
+%    assuming a perfect detection rate, are low for most models, with
+%    the exception of models which propose a galaxy densely populated
+%    with long lived civilizations.
+% %
+% The probability of causal contacts increases with the mean lifetime of
+%    civilizations much more significantly than with the mean number of
+%    active civilizations for a given time window.
+% %
+% Finally, we show that maximum probability of making a contact occurs
+% when a civilization acquires the required communication technology.
 %
-Most efforts on the estimation of a number of intelligent
-   civilizations are focused on the Drake equation, although its
-   factors are affected by large uncertainties, and it lacks a
-   temporal nature.
-%
-An alternative approach uses detailed numerical simulations of the
-   galaxy and recipes for the rates of the formation of stars and
-   planets, and even for the origin of life.
-%
-These two opposite approaches rely on a large number of highly
-   uncertain parameters.
-%
-Here we present a statistical model for the abundance and duration of
-   intelligent civilizations, implemented through Monte Carlo
-   numerical simulations.
-%
-Using computer experiments, we explore the hypothesis space of the
-   model by a suite of simulations which represent stochastic
-   processes for the emergence of nodes with communication
-   capabilities, and then analyze the causal connections among them.
-%
-This is based on minimal assumptions and three free parameters, with a
-   focus on the statistical properties of empirical population models
-   instead of an interpretable model with variables to be determined
-   by observation.
-%
-The analysis of the rate of causal contacts as a function of the mean
-   number of civilizations, the mean lifespan distribution and the
-   maximum distance a civilization can send signals is presented, and
-   used as a framework to discuss the spatial and temporal structure
-   of a populated galaxy within several different scenarios.
-%
-Our results indicate that, given the large distances involved, causal
-   contacts between civilizations are very rare.
-%
-Additionally, the odds to make a contact in a few years of monitoring,
-   assuming a perfect detection rate, are low for most models, with
-   the exception of models which propose a galaxy densely populated
-   with long lived civilizations.
-%
-The probability of causal contacts increases with the mean lifetime of
-   civilizations much more significantly than with the mean number of
-   active civilizations for a given time window.
-%
-Finally, we show that maximum probability of making a contact occurs
-when a civilization acquires the required communication technology.
 \end{abstract}
 
 \maketitle
@@ -198,22 +227,40 @@ mean value and distribution of the lifetime, $\left<\tau_s\right>$.
 %
 Other strategies could also increase the probability of contacts, for
 example panspermia \citep[e.g.,][]{starling_virulence_2013} or
-self--replicating probes \citep[e.g.,][]{barlow_galactic_2013}, although they
-would be too slow to make a significant impact on the communication
-network among intelligent civilizations.
+self--replicating probes \citep[e.g.,][]{barlow_galactic_2013},
+although they would be too slow to make a significant impact on the
+communication network among intelligent civilizations.
+%
+Our results are also consistent with those presented by
+\citet{grimaldi_signal_2017}, who estimate an upper bound for the mean
+number of extraterrestrial civilizations that could contact Earth
+using Monte Carlo simulations, from a statistical model where the with
+of the Galactic disk is not negligible.
+%
+On the other hand, taking into account the probability of contact with
+radio signals not sent intentionally \citep{horvat_calculating_2007},
+our analysis would imply a highly populated solar neighborhood.
+%
+Remarkably, most of the studies using statistical models or
+simulations are based on the Drake equation
+\citep{cirkovic_temporal_2004, smith_broadcasting_2009,
+bloetscher_using_2019}.
+%
+Our approach does not relay on the Drake equation, and thus is not
+motivated by the detailed physical processes that give rise to
+intelligent life.
+%
+However, we argue that it is a valid empirical formulation to discuss
+the probabilities of contact, and mainly time scales involed in the
+problem.
+%
+Ours is an alternative to the method proposed by
+\citet{balbi_impact_2018}, who perform an analysis based on the Earth
+and use a different model, although our results agree in general.
 
 
-% 
-% panspermia
-% 
-% probes
-% 
-% 
-% \citet{grimaldi_signal_2017}
-% \citep{balbi_impact_2018}
-% \citet{cirkovic_temporal_2004}
-% \citet{bloetscher_using_2019}
-% \citet{smith_broadcasting_2009}
+
+
 
 %%%%%%%%%%%%%%%
 

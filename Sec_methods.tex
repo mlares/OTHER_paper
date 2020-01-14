@@ -204,55 +204,7 @@ points.
    \usecaption{F_messages} \label{F_messages}
 \end{figure*}  
  
-\setlength{\tabcolsep}{10pt}
-\begin{table*}
-\centering
-\begin{tabular}{cllll}
-\hline
-   \multicolumn{2}{l}{independent variables (hypothesis space)}
-   &min. value&max. value&Nbins\\
-\hline
-   $\tau_{a}$ & Mean temporal separation between consecutive
-   awakenings & 4000 yr & 200\,000 yr & 50\\ 
-   $\tau_{s}$ & Mean lifetime of a \ceti{}
-   & 10000 yr & 500\,000 yr& 50\\ 
-   D$_{max}$ & Maximum reach of a message  &  \multicolumn{2}{l}{(500,
-   1000, 10000, 20000, 40000, 80000) lyr} & 6  \\
-\hline
-   \multicolumn{2}{l}{fixed variables} & \multicolumn{2}{c}{assumptions} &value \\
-\hline
-   & statistical properties of all \cetis{} &equally distributed&&\\
-   & Point process for the distribution in time & homogeneous &&\\
-   f$_s$ & The scan of the sky & fully efficient&&1\\
-   f$_p$ & panspermia or colonization &absent&&0\\
-   & shape of the Galactic Habitable Zone & 2--dimensional ring &&\\
-   R$_{GHZ}^{min}$   & Inner radius of the GHZ     & & &20\,000 lyr\\
-   R$_{GHZ}^{max}$   & Outer radius of the GHZ     &&&60\,000 lyr\\
-   t$_{max}$ & Time span of the simulation  &&&1.e6 yr\\
-    & \multicolumn{3}{l}{number of random realizations for each point in the hypothesis space} &50\\
-\hline
-   \multicolumn{2}{l}{discrete events} &
-   \multicolumn{3}{l}{affected variables}\\
-\hline
-   A event & Awakening: a \ceti{} starts its communication
-   capabilities &Number of active \cetis{}\\
-   B event & Blackout: the end of the communication channel stops
-   &Number causal channels\\
-   C event & Contact: a new causal contact is produced &Number of causal channels\\
-   D event & Doomsday: a \ceti{} ends its communication capabilities&Number of active \cetis{}\\
-\hline
 
-\hline
-\end{tabular}
-\caption{Definition of independent variables and adopted values for 
-   fixed parameters 
-   that are part of the simulation.  Variable parameters define the
-   spatial and temporal structure
-   of the process and the maximum reach of the messages.}
-\label{T_simu_hypotheses}
-\end{table*}
- 
- 
 
 %{{{     
 
@@ -377,7 +329,7 @@ lineweaver_galactic_2004, gonzalez_habitable_2005,
 morrison_extending_2015, haqq-misra_evolution_2019,
 rahvar_cosmic_2016, gobat_evolution_2016, rahvar_cosmic_2016} and
 consider that habitability remains constant \citep[see, however,
-][]{dayal_habitability_2016, gobat_evolution_2016}.
+][]{gonzalez_habitable_2005, dayal_habitability_2016, gobat_evolution_2016}.
 %
 For example, \citet{vukotic_astrobiological_2012} propose
 probabilistic cellular automata model to explain the astrobiological
@@ -397,7 +349,7 @@ travels at light speed.
 %
 With this, we are considering messages sent through, for example,
 electromagnetic radiation or even gravitational radiation or neutrino
-communication \citep{wright_how_2018}, but we set
+communication \citep{hippke_interstellar_2017, wright_how_2018}, but we set
 apart messages sent with mechanical means or physical objects
 \citep[e.g., ][]{Armstrong2013, barlow_galactic_2013}, or through some unknown technology
 that violates the known laws of physics.
@@ -477,7 +429,55 @@ The lifetime of a civilization can be caused by auto destruction or by
 external factors.
 %}}}
 
+ \setlength{\tabcolsep}{10pt}
+\begin{table*}
+\centering
+\begin{tabular}{cllll}
+\hline
+   \multicolumn{2}{l}{independent variables (hypothesis space)}
+   &min. value&max. value&Nbins\\
+\hline
+   $\tau_{a}$ & Mean temporal separation between consecutive
+   awakenings & 4000 yr & 200\,000 yr & 50\\ 
+   $\tau_{s}$ & Mean lifetime of a \ceti{}
+   & 10000 yr & 500\,000 yr& 50\\ 
+   D$_{max}$ & Maximum reach of a message  &  \multicolumn{2}{l}{(500,
+   1000, 10000, 20000, 40000, 80000) lyr} & 6  \\
+\hline
+   \multicolumn{2}{l}{fixed variables} & \multicolumn{2}{c}{assumptions} &value \\
+\hline
+   & statistical properties of all \cetis{} &equally distributed&&\\
+   & Point process for the distribution in time & homogeneous &&\\
+   f$_s$ & The scan of the sky & fully efficient&&1\\
+   f$_p$ & panspermia or colonization &absent&&0\\
+   & shape of the Galactic Habitable Zone & 2--dimensional ring &&\\
+   R$_{GHZ}^{min}$   & Inner radius of the GHZ     & & &20\,000 lyr\\
+   R$_{GHZ}^{max}$   & Outer radius of the GHZ     &&&60\,000 lyr\\
+   t$_{max}$ & Time span of the simulation  &&&1.e6 yr\\
+    & \multicolumn{3}{l}{number of random realizations for each point in the hypothesis space} &50\\
+\hline
+   \multicolumn{2}{l}{discrete events} &
+   \multicolumn{3}{l}{affected variables}\\
+\hline
+   A event & Awakening: a \ceti{} starts its communication
+   capabilities &Number of active \cetis{}\\
+   B event & Blackout: the end of the communication channel stops
+   &Number causal channels\\
+   C event & Contact: a new causal contact is produced &Number of causal channels\\
+   D event & Doomsday: a \ceti{} ends its communication capabilities&Number of active \cetis{}\\
+\hline
 
+\hline
+\end{tabular}
+\caption{Definition of independent variables and adopted values for 
+   fixed parameters 
+   that are part of the simulation.  Variable parameters define the
+   spatial and temporal structure
+   of the process and the maximum reach of the messages.}
+\label{T_simu_hypotheses}
+\end{table*}
+ 
+    
  
 \subsection{Power laws vs. exponential laws}\label{SS_PDF_shape}
 %{{{
@@ -693,6 +693,21 @@ B, C, D) is produced.
 
 %}}}
            
+  
+\begin{figure*} % 2D color plot
+   \centering
+   \includegraphics[width=\textwidth]{F_never_contact.pdf}
+   \usecaption{F_never_contact}
+   \label{F_never_contact}
+\end{figure*}
+ 
+\begin{figure*} % 2D color plot
+   \centering
+   \includegraphics[width=\textwidth]{F_C_at_A.pdf}
+   \usecaption{F_C_at_A}
+   \label{F_C_at_A}
+\end{figure*}
+ 
 
 \subsection{Model for \cetis{}}
 %{{{
