@@ -1,0 +1,27 @@
+The abundance of intelligent civilizations in the Galaxy is a longstanding
+question, often conceptualized as the problem of the lack of received
+communication. Most efforts on the estimation of a number of civilizations are
+focused on the Drake equation, although its factors are affected by large
+uncertainties and it lacks a temporal nature.  Alternative approaches use
+detailed numerical simulations of the galaxy and recipes for the stars and
+planets formation rates and for the origin of life, and rely on highly
+uncertain parameters. We present a statistical model for the abundance and
+duration of civilizations, implemented through Monte Carlo simulations.  We
+explore the hypothesis space of the model by a suite of simulations for the
+emergence of communicating nodes, and analyze their
+causal connections.  This is based on minimal assumptions and three
+free parameters, with focus on the statistical properties of empirical
+models instead of an interpretable model with variables to be determined by
+observation. The analysis of the rate of causal contacts as a function of the
+mean number of civilizations, the mean lifespan distribution and the maximum
+distance a civilization can send signals is presented, and used as a framework
+to discuss the spatial and temporal structure of a populated galaxy within
+several scenarios. We find that, given the large distances involved,
+causal contacts between civilizations are very rare. Additionally, the odds to
+make a contact in a few years of monitoring are low for most models, with the
+exception of those of a galaxy densely populated with long lived
+civilizations. The probability of causal contacts increases with the
+lifetime of civilizations much more significantly than with the number of
+active civilizations for a given time window. Finally, we show that the
+maximum probability of making a contact occurs when a civilization acquires
+the required communication technology.

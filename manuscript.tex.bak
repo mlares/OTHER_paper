@@ -1,0 +1,343 @@
+\documentclass[crop]{CSLB}
+
+\usepackage{MySettings}
+
+\input{captions}
+
+\begin{document}
+
+\supertitle{Research Paper}
+
+\title[Probabilities of SETI contacts]{Probability of causal
+contact between interstellar civilizations through MonteCarlo simulations}
+
+\author[Lares, Funes \& Gramajo]{Lares M.$^{1, 2}$, Funes J.~G.$^{1,
+3}$ \& Gramajo L.$^{1, 2}$}
+
+\corres{\name{Lares M} \email{marcelo.lares@unc.edu.ar}}
+
+\address{
+   \add{1}{CONICET, Argentina}
+
+   \add{2}{Universidad Nacional de C\'ordoba, Observatorio
+           Astron\'omico de C\'ordoba, Argentina}
+
+   \add{3}{Universidad Cat\'olica de C\'ordoba, Argentina}
+}
+ 
+
+\keywords{SETI, Computer simulations, Statistics}
+
+%\JELclassification{XX; XX}
+%\MSCcodes{XX; XX}
+
+\Abbreviations{SETI: Search for Extraterrestrial Intelligence,\\
+CCN: causally connected node,\\
+SFC: surface of first contact,\\
+SLC: surface of last contact,\\
+DE: Discrete Event,\\
+GHZ: Galactic Habitable Zone}
+ 
+
+\begin{abstract}
+%
+The abundance of intelligent civilizations in the Galaxy is a longstanding
+question, often conceptualized as the problem of the lack of received
+communication. Most efforts on the estimation of a number of civilizations are
+focused on the Drake equation, although its factors are affected by large
+uncertainties and it lacks a temporal nature.  Alternative approaches use
+detailed numerical simulations of the galaxy and recipes for the stars and
+planets formation rates and for the origin of life, and rely on highly
+uncertain parameters. We present a statistical model for the abundance and
+duration of civilizations, implemented through Monte Carlo simulations.  We
+explore the hypothesis space of the model by a suite of simulations for the
+emergence of communicating nodes, and analyze their
+causal connections.  This is based on minimal assumptions and three
+free parameters, with focus on the statistical properties of empirical
+models instead of an interpretable model with variables to be determined by
+observation. The analysis of the rate of causal contacts as a function of the
+mean number of civilizations, the mean lifespan distribution and the maximum
+distance a civilization can send signals is presented, and used as a framework
+to discuss the spatial and temporal structure of a populated galaxy within
+several scenarios. We find that, given the large distances involved,
+causal contacts between civilizations are very rare. Additionally, the odds to
+make a contact in a few years of monitoring are low for most models, with the
+exception of those of a galaxy densely populated with long lived
+civilizations. The probability of causal contacts increases with the
+lifetime of civilizations much more significantly than with the number of
+active civilizations for a given time window. Finally, we show that the
+maximum probability of making a contact occurs when a civilization acquires
+the required communication technology.
+% %
+% The abundance of intelligent civilizations in the Galaxy is a
+%    longstanding question, which is often conceptualized as the problem
+%    of the lack of received communication or the Fermi paradox.
+% %
+% Most efforts on the estimation of a number of intelligent
+%    civilizations are focused on the Drake equation, although its
+%    factors are affected by large uncertainties, and it lacks a
+%    temporal nature.
+% %
+% An alternative approach uses detailed numerical simulations of the
+%    galaxy and recipes for the rates of the formation of stars and
+%    planets, and even for the origin of life.
+% %
+% These two opposite approaches rely on a large number of highly
+%    uncertain parameters.
+% %
+% Here we present a statistical model for the abundance and duration of
+%    intelligent civilizations, implemented through Monte Carlo
+%    numerical simulations.
+% %
+% Using computer experiments, we explore the hypothesis space of the
+%    model by a suite of simulations which represent stochastic
+%    processes for the emergence of nodes with communication
+%    capabilities, and then analyze the causal connections among them.
+% %
+% This is based on minimal assumptions and three free parameters, with a
+%    focus on the statistical properties of empirical population models
+%    instead of an interpretable model with variables to be determined
+%    by observation.
+% %
+% The analysis of the rate of causal contacts as a function of the mean
+%    number of civilizations, the mean lifespan distribution and the
+%    maximum distance a civilization can send signals is presented, and
+%    used as a framework to discuss the spatial and temporal structure
+%    of a populated galaxy within several different scenarios.
+% %
+% Our results indicate that, given the large distances involved, causal
+%    contacts between civilizations are very rare.
+% %
+% Additionally, the odds to make a contact in a few years of monitoring,
+%    assuming a perfect detection rate, are low for most models, with
+%    the exception of models which propose a galaxy densely populated
+%    with long lived civilizations.
+% %
+% The probability of causal contacts increases with the mean lifetime of
+%    civilizations much more significantly than with the mean number of
+%    active civilizations for a given time window.
+% %
+% Finally, we show that maximum probability of making a contact occurs
+% when a civilization acquires the required communication technology.
+%
+\end{abstract}
+
+\maketitle
+
+
+%%% S E C T I O N - - - - - - - - - - - - - - - - - - - - - - -
+\input{Sec_motivations}
+
+%%% S E C T I O N - - - - - - - - - - - - - - - - - - - - - - -
+\input{Sec_methods}                      
+
+%%% S E C T I O N - - - - - - - - - - - - - - - - - - - - - - -
+\input{Sec_results}
+
+
+%%% S E C T I O N - - - - - - - - - - - - - - - - - - - - - - -
+\section{Discussion}\label{S_discussion}
+%{{{
+
+We have implemented a suite of simulations following a stochastic
+approach, to explore the hypothesis space of a simple model that
+accounts for the causal connections between communicating
+civilizations on a simplified galaxy.
+%
+The different models can be generated with a minimal number of free
+parameters and some fixed assumptions.
+%
+We argue that three parameters can be used to describe a variety of
+situations, ranging from a galaxy model where an intelligent civilization is
+very rare, to a galaxy model populated with plenty of civilizations in
+causal contact.
+%
+With this approach, we can estimate several quantities as a function
+of the parameters on the hypothesis space,
+so we explored the outcomes of different models 
+that arise as by-products of the simulations.
+%
+For instance, it is possible to estimate the timescale for an
+uninterrupted SETI effort to reach success, in terms of different
+model parameters that reflect different, so far unknown, scenarios for
+the appearance of intelligent life on the Galaxy.
+
+
+
+
+
+
+Although the simulations use a number of speculative assumptions, we
+argue that the degree of knowledge about the origin and persistence of
+life in the Galaxy does not worth the implementation of more detailed
+or sophisticated models.
+%
+Instead, we take advantage of the simplicity of the model to explore
+the hypothesis space, i.e., the three--dimensional parameter space of
+the parametric model, in order to gain insight on the consequences of
+different scenarios for the search of intelligent life.
+%
+Our analysis is not centered in obtaining the odds for the Earth
+to make contact with another intelligent civilization.
+%
+Instead, we focus on obtaining a statistical, parameter dependent
+description of the possible properties of the communication networks
+that comprise sets of nodes with broadcasting and reception
+capabilities.
+%
+This causally connected nodes are sparsely distributed in both space
+and time, making it difficult the analytical treatment and justifying
+the simulation approach.
+
+
+Under the hypotheses of our experiments, we conclude that a causal
+contact is extremely unlikely unless the galaxy is heavily populated
+by intelligent civilizations with large average lifetimes.
+%
+Roughly, in order to have at least one contact in the entire lifetime
+of the \ceti{}, there should appear a mean of at least one \ceti{}
+every $\sim$20000 yr, with a mean active period of at least
+$\sim$30000 yr.
+%
+This result is qualitatively similar to the results presented by
+several authors, which state that a contact between the Earth and
+another intelligent civilization in the Galaxy is quite unlikely,
+provided the maximum distance of the signal and the lifetime of the
+emitter are not large enough.
+%
+This analysis supports the idea that, in order to increase the
+possibilities of a contact, more active strategies of the emitter
+would be required.
+%
+Some proposals in this direction include intertellar exploration,
+colonization and settlement \citep{brin_great_1983, Dosovic2019,
+galera_invasion_2019}, although it would require large temporal
+scales.
+%
+\citet{Dosovic2019} use probabilistic cellular automaton simulations
+to explore the parameter space of a model with colonization and
+catastrophic events.
+%
+According to the timescales involved, the results could explain the
+Fermi paradox.
+%
+Although our work does not take into account the colonization
+hypothesis, it does consider catastrophic events implicitly in the
+mean value and distribution of the lifetime, $\left<\tau_s\right>$.
+%
+Other strategies could also increase the probability of contacts, for
+example panspermia \citep[e.g.,][]{starling_virulence_2013} or
+self--replicating probes \citep[e.g.,][]{barlow_galactic_2013},
+although they would be too slow to make a significant impact on the
+communication network among intelligent civilizations.
+%
+Our results are also consistent with those presented by
+\citet{grimaldi_signal_2017}, who estimate an upper bound for the mean
+number of extraterrestrial civilizations that could contact Earth
+using Monte Carlo simulations, from a statistical model where the with
+of the Galactic disk is not negligible.
+%
+On the other hand, taking into account the probability of contact with
+radio signals not sent intentionally \citep{horvat_calculating_2007},
+our analysis would imply a highly populated solar neighborhood.
+%
+Remarkably, most of the studies using statistical models or
+simulations are based on the Drake equation
+\citep{cirkovic_temporal_2004, smith_broadcasting_2009,
+bloetscher_using_2019}.
+%
+Our approach does not relay on the Drake equation, and thus is not
+motivated by the detailed physical processes that give rise to
+intelligent life.
+%
+However, we argue that it is a valid empirical formulation to discuss
+the probabilities of contact, and mainly time scales involed in the
+problem.
+%
+Ours is an alternative to the method proposed by
+\citet{balbi_impact_2018}, who perform an analysis based on the Earth
+and use a different model, although our results agree in general.
+
+
+
+
+
+%%%%%%%%%%%%%%%
+
+There is a balance between the density of \cetis{} and the mean
+lifetime since, as expected, a lower density can be compensated by a
+longer active time period.
+%
+However, a large number of nodes does not easily compensate their
+short lives to reach the same probability of causal contact than in
+the case of a less populated galaxy but with very ancient
+civilizations.
+%
+In all cases, for a short period of time (for instance, the time SETI
+programs have been active on Earth), the maximum probability of making
+a contact occurs at the moment of the awakening.
+%
+This suggests the possibility that an alternative SETI strategy could
+be the search for alternative message carriers, for the case in which
+the search has not been performed on the adequate channels.
+%
+Then, if a contact is produced for the first time, the origin of the
+signal is more likely to be very old.
+%
+Also, the chances of entering the causal connected zone of a \ceti{}
+does not grow linearly, but favours the first period of 100000 years.
+
+
+
+
+
+
+In the approach of this work, we used computer simulations to address
+the problem of the probabilities of causal contacts between location
+in the galaxy the possibility of sending and receiving messages.
+%
+Instead of making a number of assumptions, we have explored the
+hypothesis space, reducing the problem to only three parameters and a
+few simple hypothesis to perform a complete model for the population and
+communication network in the galaxy.
+%
+This allows to consider the Fermi paradox from a new perspective, and
+to propose an alternative treatment for the number of intelligent
+emitter/receivers with emphasis on the temporal dimension which limits
+the probabilities of contacts due to the short time interval for
+rise and fall of civilizations compared to the age and extension of
+our Galaxy.
+
+
+%}}}
+
+
+\ack[Acknowledgement]{
+%
+This work was partially supported by the Consejo Nacional de
+Investigaciones Cient\'{\i}ficas y T\'ecnicas (CONICET, Argentina),
+the Secretar\'{\i}a de Ciencia y Tecnolog\'{\i}a, Universidad Nacional
+de C\'ordoba, Argentina, and the Universidad Cat\'olica de C\'ordoba,
+Argentina.
+%
+This research has made use of NASA's Astrophysics Data System.
+%
+Plots and simulations were made with software developed by the authors
+using R and python languajes. Plots were postprocessed with inkscape.
+%
+}
+
+
+\ack[Disclosure statement]{
+%
+No competing financial interests exist.
+%
+}
+
+
+\bibliographystyle{mn2e}
+\setlength{\bibsep}{0.0pt}
+
+\bibliography{biblio_seti}
+
+\end{document}

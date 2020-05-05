@@ -16,10 +16,13 @@
    height="480pt"
    viewBox="0 0 640 640"
    sodipodi:docname="F_scheme.svg"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"><metadata
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   inkscape:export-filename="/home/mlares/all/Research/draft/OTHER_paper/Figs_SVG/F_scheme.svg.png"
+   inkscape:export-xdpi="134.8"
+   inkscape:export-ydpi="134.8"><metadata
      id="metadata8"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
      id="defs6"><marker
    inkscape:isstock="true"
    style="overflow:visible"
@@ -136,7 +139,7 @@
      id="namedview4"
      showgrid="false"
      inkscape:zoom="1.0429825"
-     inkscape:cx="472.27376"
+     inkscape:cx="311.67663"
      inkscape:cy="262.30221"
      inkscape:window-x="0"
      inkscape:window-y="29"
@@ -403,6 +406,7 @@
 
 
 
+
 <text
    transform="scale(1,-1)"
    id="text1912"
@@ -415,6 +419,7 @@
      x="434.55392"
      id="tspan1910"
      sodipodi:role="line">(a)</tspan></text>
+
 
 
 
@@ -441,6 +446,7 @@
 
 
 
+
 <text
    transform="matrix(0.70276876,0.71141835,0.71141835,-0.70276876,0,0)"
    xml:space="preserve"
@@ -457,6 +463,7 @@
 
 
 
+
 <text
    transform="scale(1,-1)"
    id="text3415"
@@ -469,6 +476,7 @@
      x="63.571602"
      id="tspan3413"
      sodipodi:role="line">A</tspan></text>
+
 
 
 
@@ -496,6 +504,7 @@
 
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.00000045px;line-height:1.25;font-family:'Nimbus Roman No9 L';-inkscape-font-specification:'Nimbus Roman No9 L, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:0.54015803;"
@@ -510,6 +519,7 @@
      style="stroke-width:0.54015803;-inkscape-font-specification:'Nimbus Roman No9 L, Normal';font-family:'Nimbus Roman No9 L';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:18.00000045px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;fill:#4d4d4d;fill-opacity:1;">D<tspan
    style="font-size:18.00000045px;baseline-shift:sub;stroke-width:0.54015803;-inkscape-font-specification:'Nimbus Roman No9 L, Normal';font-family:'Nimbus Roman No9 L';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;fill:#4d4d4d;fill-opacity:1;"
    id="tspan3537">max</tspan></tspan></text>
+
 
 
 
@@ -565,6 +575,7 @@
 
 
 
+
 <g
    transform="matrix(0.84850624,0,0,-0.84850624,101.95046,632.64931)"
    id="g54-8"
@@ -604,6 +615,7 @@
 
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'Nimbus Roman No9 L';-inkscape-font-specification:'Nimbus Roman No9 L, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75"
@@ -618,6 +630,7 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'Nimbus Roman No9 L';-inkscape-font-specification:'Nimbus Roman No9 L, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.75">E<tspan
    style="font-size:65%;baseline-shift:sub"
    id="tspan1076">2</tspan></tspan></text>
+
 
 
 
@@ -644,6 +657,7 @@
 
 
 
+
 <g
    id="g1379"
    transform="matrix(1.1781361,0,0,1.1781361,37.211128,7.736772)"
@@ -662,6 +676,7 @@
 
 
 
+
 <text
    transform="scale(1,-1)"
    id="text1217-9-7"
@@ -674,6 +689,7 @@
      x="103.0017"
      id="tspan1215-7-2"
      sodipodi:role="line">21</tspan></text>
+
 
 
 
@@ -695,6 +711,7 @@
 
 
 
+
 <text
    transform="scale(1,-1)"
    id="text1217-9-7-0"
@@ -707,6 +724,7 @@
      x="127.85835"
      id="tspan1215-7-2-1"
      sodipodi:role="line">12</tspan></text>
+
 
 
 
@@ -728,6 +746,7 @@
 
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:1.25;font-family:'Nimbus Roman No9 L';-inkscape-font-specification:'Nimbus Roman No9 L, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.63659883"
@@ -740,6 +759,7 @@
      x="187.54295"
      y="-141.53963"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:'Nimbus Roman No9 L';-inkscape-font-specification:'Nimbus Roman No9 L, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.63659883">12</tspan></text>
+
 
 
 
@@ -761,6 +781,7 @@
 
 
 
+
 <text
    transform="scale(1,-1)"
    id="text1217-9-7-1"
@@ -776,6 +797,7 @@
 
 
 
+
 </g><text
    xml:space="preserve"
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.00000045px;line-height:1.25;font-family:'Nimbus Roman No9 L';-inkscape-font-specification:'Nimbus Roman No9 L, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:0.75;"
@@ -788,6 +810,7 @@
      y="-176.24704"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.00000045px;font-family:'Nimbus Roman No9 L';-inkscape-font-specification:'Nimbus Roman No9 L, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr;text-anchor:start;fill:#4d4d4d;stroke-width:0.75;"
      id="tspan1391">distance between</tspan></text>
+
 
 
 
@@ -816,6 +839,7 @@
 
 
 
+
 <text
    id="text3415-1"
    y="-371.82428"
@@ -828,6 +852,7 @@
      x="53.102318"
      id="tspan3413-0"
      sodipodi:role="line">E</tspan></text>
+
 
 
 <g
@@ -849,6 +874,7 @@
      x="415.2955"
      y="-21.440119"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.00000045px;font-family:'Nimbus Roman No9 L';-inkscape-font-specification:'Nimbus Roman No9 L, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr;text-anchor:start;stroke-width:0.54015803;">time [yr]</tspan></text>
+
 
 
 
@@ -876,6 +902,7 @@
      id="tspan1160">     connected to E)</tspan></text>
 
 
+
 <circle
    style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.20000005;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
    id="path6412-3-4"
@@ -900,6 +927,7 @@
      x="256.16156"
      id="tspan3483-6-0"
      sodipodi:role="line">.</tspan></text>
+
 
 
 <circle
@@ -941,6 +969,7 @@
    style="font-size:65%;baseline-shift:sub"
    id="tspan1068">2</tspan></tspan></text>
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'Nimbus Roman No9 L';-inkscape-font-specification:'Nimbus Roman No9 L, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75"
@@ -955,6 +984,7 @@
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'Nimbus Roman No9 L';-inkscape-font-specification:'Nimbus Roman No9 L, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.75">D<tspan
    style="font-size:65%;baseline-shift:sub"
    id="tspan1070">1</tspan></tspan></text>
+
 
 <text
    xml:space="preserve"
@@ -971,6 +1001,7 @@
    style="font-size:65%;baseline-shift:sub"
    id="tspan1072">2</tspan></tspan></text>
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'Nimbus Roman No9 L';-inkscape-font-specification:'Nimbus Roman No9 L, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75"
@@ -986,6 +1017,7 @@
    style="font-size:65%;baseline-shift:sub"
    id="tspan1066">1</tspan></tspan></text>
 
+
 <text
    transform="scale(1,-1)"
    id="text1132"
@@ -998,6 +1030,7 @@
      x="415.2955"
      sodipodi:role="line"
      id="tspan1130">time [yr]</tspan></text>
+
 
 <text
    xml:space="preserve"
@@ -1017,6 +1050,7 @@
      y="56.520428"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'Nimbus Roman No9 L';-inkscape-font-specification:'Nimbus Roman No9 L, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#4d4d4d;stroke-width:0.54015803" /></text>
 
+
 <text
    transform="matrix(0,1,1,0,0,0)"
    id="text1159"
@@ -1034,5 +1068,6 @@
      x="38.064648"
      sodipodi:role="line"
      id="tspan1157" /></text>
+
 
 </g></svg>
