@@ -245,7 +245,107 @@ The author stresses the fact that the causal contact requirement involves the di
 Each of these three variables are drawn from a random distribution. The distribution of the distances results from a uniform distribution of civilizations within the plane of the Galaxy.
 %
 For the distribution of the characteristic time of appearance, the author explores an exponential and a truncated Gaussian distributions. For the distribution of the lifespans, the author chooses an exponential distribution.
+%
+\citet{balbi_impact_2018} finds that the fraction of communicating civilisations vary with the choice of the statistical distribution for the time of appearance. 
+%
+For all analysed distributions, the fraction corresponding to a mean lifetime of 10$^9$ years and for a maximum radius for the detection of the signal of 1000 yr, is roughly 0.1.
+%
+In another related approach, \citet{vukotic_astrobiological_2012} propose a probabilistic cellular automata (PCA) modelling. 
+%
+In this framework, a complex system is modelled by a lattice of cells which evolve at discrete time steps, according to transition rules that take into account for each cell the states of its neighbour cells.
+%
+The authors implement a PCA model to a network of cells which represent life complexity on a 2-dimensional region resembling the Galactic Habitable Zone (GHZ), 
+an annular ring set between a minimal radius of 6 kpc and a peak radius of 10 kpc. 
+%
+Within this framework, \citet{vukotic_astrobiological_2012} also make several Monte Carlo simulations and analyse ensemble-averaged results.
+%
+The work aims at analysing the evolution of life, although it does not account for the network of causal contacts among technological civilisations.
 
+
+In this work we address the problem of the temporal and spatial structure of the distribution of communicating civilisations.
+%
+To that end, we reduce and explore the hypothesis space over a set of three of parameters.
+%
+We propose to avoid the frequentist approach of the Drake equation to compute the number of civilisations, providing its statistical distribution instead.
+%
+This is an exploratory analysis that aims at providing a numerical tool to discuss the different scenarios based on statistical heuristics.
+%
+With this, we aim at avoiding the several theoretical problems summarised by the Drake equation factors.
+%
+The approach proposed here should be considered as a compromise between the uncertainties of the frequentist approach and the detailed recipes required on the simulation approach.
+%
+We provide a framework to explore, through a suite of numerical simulations, a parameter space of three unknown observables.
+%
+This allows to discuss possible scenarios and their consequences in terms of the probability of making contacts.
+%
+The method we use for simulating a stochastic process is an approximation that allows to study the behaviour of complex systems, by considering a sequence of well defined discrete events.
+%
+The simulation is carried out by following all the variables that describe and constitute the state of the system, and the evolution of the process is described as a set of changes in that state.
+%
+In this context, an event produces a specific change in the state that can be triggered by random variables that encode the stochastic nature of the physical phenomenon.
+%
+For example, when a new contact is produced between two entities in the simulated galaxy, the numbers of active communication lines and of communicated nodes does change.
+%
+The process involves following the changes on the state of the system, defining the initial and final states.
+%
+This is done by defining a method that allows to keep track of the time progress in steps, and maintaining a list of relevant events.
+%
+In Sec.~\ref{S_methods} we introduce the methods and discuss the candidate distributions for the statistical aspects of the times involved in the communication process.
+%
+We present our results in Sec~\ref{S_results}, with special emphasis on the statistical distributions of the duration of causal contacts in one or both directions and the distribution of time intervals for the waiting of the first contact.
+%
+This quantities are considered as a function of the three simulation parameters.
+%
+In Sec.~\ref{S_discussion} we discuss our results and future research directions. 
+ 
+%}}}
+
+
+%%% S E C T I O N - - - - - - - - - - - - - - - - - - - - - - -
+\section{Methods and working hypotheses}\label{S_methods}
+%{{{
+
+
+Simulations are suitable tools to analyse systems that evolve with time and involve randomness.
+%
+An advantage of a numerical approach is that usually require fewer assumptions and simplifications, and can be applied to systems where analytical models are not easily found.
+%
+In particular, a suitable tool to model complex stochastic processes through the changes in the state of a system is the discrete--event (hereafter, DE) simulation approach.
+%
+A system described with the DE paradigm is characterised by a set of actors and events.
+%
+Actors interact causally through a series of events on a timeline and process them in chronological order \citep{ptolemaeus_system_2014, chung_simulation_2003, ross_simulation_2012}.
+%
+Each event modify the variables that define the process, producing the corresponding change in the state of the simulated system.
+%
+This method is well suited for the particular case of the diffusion of intelligent signals in the galaxy and allows to explore several models easily.
+%
+We simulate the statistical properties of a set of points in space and time that have a causal connection at light speed, dubbed ‘’Causal Contact Nodes’’ (hereafter, \ceti{}).
+%
+We chose this generic name in order to stress the fact that in this analysis 
+only the causal contact is considered, independently of any broadcasting or lookout activity.
+%
+The system we propose is ideal, in the sense that it considers the special case of a fully efficient node that emits and receives isotropically.
+%
+A causal contact node, considered as a broadcasting station that has the ability to detect signals through an active lookout program, could have a lesser than one efficiency factor, which is not included in the current analysis.
+%
+Also, it is worth mentioning that this is a general approach, and not necessarily a \ceti{} is the host of an intelligent civilization.
+%
+For instance, it can be associated with a planet where life has developed, became intelligent, reached the skills required to find the right communication channel, sustain a search and establish a contact.
+%
+Alternative message processing entities could be considered, for example interstellar beacons where life has ceased to exist but continue with its emission, or communication stations established by probes or left by intelligent beings \citep[see, e.g., ][]{peters_outer_2018, barlow_galactic_2013}.
+%
+In principle, these strategies could affect our results since it would be easier to configure a cluster of \cetis{} that spread in time.
+%
+However, we do not consider these speculative alternatives at this point.
+%
+For the purpose of the present analysis, only the communication capability is relevant, since we study the causal contacts between the locations.
+%
+The system is defined by a number of actors that represent \cetis{} and appear at different instants in time, generating events that produce meaningful changes in the variables that describe the system, i.e., in the arrangement of \cetis{} and their network of causal contacts.
+%
+For example, the appearance of a new \ceti{} in a region filled with a signal emitted by another node, will increase the number of active \cetis{} and the number of pairs of \cetis{} in causal contact.
+%
+Assuming some simple hypotheses, the discrete events method can be performed taking into account a small number of variables, which allow to analyze the variation of the results in the model parameter space.
 
 
 %-------------------------------------------------------------------
@@ -257,200 +357,12 @@ For the distribution of the characteristic time of appearance, the author explor
 
 
 
-%%%%% SIGUE PUNTO Y SEGUIDO
-%
-%The radius of influence is set to 1000 lyr.
-%
-\citet{balbi_impact_2018} finds that the fraction of communicating
-civilizations vary with the choice of the statistical distribution for
-the time of appearance. For all analyzed distributions, the fraction
-corresponding to a mean lifetime of 10$^9$ years and for a maximum
-radius for the detection of the signal of 1000 yr, is roughly 0.1.
-%
-In another probabilistic approach,
-\citet{vukotic_astrobiological_2012} propose a probabilistic cellular
-automata (PCA) modeling. In this framework, a complex system is
-modeled by a lattice of cells which evolve at discrete time steps,
-according to transition rules that take into account for each cell the
-states of its neighbor cells.
-%
-The authors implement a PCA model to a network of cells which
-represent life complexity on a 2-dimensional annular ring resembling
-the Galactic Habitable Zone (GHZ). 
-%
-The authors set the GHZ between a minimum radius of 6 kpc and a
-maximum radius of 10 kpc. Within this framework, the authors also make
-several MonteCarlo simulations and analyze ensemble-averaged results.
-%
-This work aims at analyzing the evolution of life, although it does
-not account for the network of causal contacts among technological
-civilizations.
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-In this work we address the problem of the temporal and spatial
-structure of the distribution of communicating civilizations, by
-exploring the hypothesis space over a minimal set of parameters.
-%
-We propose to avoid the frequentist approach of the
-Drake equation and to explore a parameter space, where instead of
-computing a final number, we provide a statistical distribution that
-gives conditional probabilities.
-%
-This is an exploratory analysis that aims at providing a numerical
-tool to discuss not the several theoretical problems summarized by the
-Drake equation factors, but the different scenarios on the basis of
-statistical heuristics.
-%
-The approach proposed here should be considered as a compromise
-between the uncertainties of the frequentist approach and the detailed
-recipes required on the simulation approach.
-%
-We then provide a numerical framework to explore via simulations a
-parameter space of unknown observables in order to discuss different
-scenarios and their consequences in terms of the probability of
-making contacts.
-%
-The method we use for simulating a stochastic process is an
-approximation that allows to study the behavior of complex systems,
-by considering a sequence of well defined discrete events.
-%
-The simulation is carried out by following all the variables that
-describe and constitute the state of the system, and the evolution of
-the process is described as a set of changes in that state.
-%
-In this context, an event produces a specific change in the state,
-that can be triggered by random variables that encode the stochastic
-nature of the physical phenomenon.
-%
-For example, when a new contact is produced between two entities in
-the simulated galaxy, the numbers of active communication lines and of
-active communicated nodes change.
-%
-The process involves following the changes on the state of the
-system, defining the initial and final states, defining a method that
-allows to keep track of the time progress in steps, and maintaining a
-list of relevant events.
-%
-In Sec.~\ref{S_methods} we introduce the methods and discuss the
-candidate distributions for the statistical aspects of the times
-involved in the communication process.
-%
-Then, we present our results in Sec~\ref{S_results}, with special
-emphasis on the statistical distributions of the duration of causal
-contacts in one or both directions, the possible differences on the
-position of a civilization on the Galaxy and the distribution of time
-intervals for the waiting of the first contact, always as a function
-of the three simulation parameters.
-%
-Finally, in Sec.~\ref{S_discussion} we discuss our results and future
-research directions.
-
-%}}}
-
-
-%%% S E C T I O N - - - - - - - - - - - - - - - - - - - - - - -
-\section{Methods and working hypotheses}\label{S_methods}
-%{{{
-
-Simulations are suitable tools to analyze systems that evolve with
-time and involve randomness.
-%
-An advantage of simulations compared to theoretical approaches, is
-that the former usually require less assumptions and simplifications,
-and can be applied to systems where a theoretical model can not be
-found.
-%
-In particular, many complex stochastic processes that can be described
-by the evolution of the state of a system, can be efficiently modeled
-with the discrete--event (hereafter, DE) simulation approach.
-%
-A system described with the DE paradigm is characterized by a set of
-actors and events, where actors interact causally through a series of
-events on a timeline and process these events in chronological order
-\citep{ptolemaeus_system_2014, chung_simulation_2003,
-ross_simulation_2012}.
-%
-Each event yields modifications to the values of the variables that define
-the process, producing the corresponding change in the state of the
-simulated system.
-%
-This method is well suited for the particular case of the diffusion of
-intelligent signals in the galaxy, and allows to explore several
-models easily.
-%
-We simulate the statistical properties of a set of points in space and
-time that have a causal connection at light speed, hereafter dubbed
-''Causal Contact Nodes'' (hereafter, \ceti{}).
-%
-We chose this generic name in order to stress the fact that in this
-analysis no broadcasting or lookout activities are required, and
-therefore not actual messages are considered, only the causal contact.
-%
-For the special case of a fully efficient node that emits and receives
-isotropically, a causal contact node can be considered as a
-broadcasting station that has the ability to detect signals through an
-active lookout program.
-%
-Also, it is worth mentioning that this is a general approach, and not
-necessarily a \ceti{} is the host of an intelligent civilization.
-%
-For instance, it can be associated with a planet where life has developed, became
-intelligent, reached the skills required to find the right
-communication channel, sustain a search and establish a contact.
-%
-Alternative message processing entities could be considered, for
-example interstellar beacons where life has ceased to exist but
-continue with its emission, or communication stations established by
-probes or left intentionally by intelligent beings \citep[see, e.g.,
-][]{peters_outer_2018, barlow_galactic_2013}.
-%
-In principle, these strategies could affect our results since it would
-be easier to configure a cluster of \cetis{} that spread in time.
-%
-However, we do not consider these highly speculative alternatives at
-this point.
-%
-For the purpose of this analysis, only the communication capability is
-relevant, since we study the causal contacts between the locations.
-%
-The system is defined by a number of actors that represent \cetis{}
-and appear at different instants in time, generating events that
-produce meaningful changes in the variables that describe the system,
-i.e., in the arrangement of \cetis{} and their network of causal
-contacts.
-%
-For example, the appearance of a new \ceti{} in a region which is
-filled with a signal emitted by another node, will increase the
-number of active \cetis{} and the number of pairs of \cetis{} in
-causal contact.
-%
-Assuming some simple hypotheses, the discrete events method can be
-performed taking into account a small number of variables, which allow
-to analyze the variation of the results in the model parameter space.
 
 
 In what follows, we describe the experimental setup chosen to estimate
