@@ -348,44 +348,20 @@ For example, the appearance of a new \ceti{} in a region filled with a signal e
 Assuming some simple hypotheses, the discrete events method can be performed taking into account a small number of variables, which allow to analyze the variation of the results in the model parameter space.
 
 
-%-------------------------------------------------------------------
-%%%%%%%%%%%%%%%%%%%%%%%%%% FIRST CHECK %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%-------------------------------------------------------------------
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-In what follows, we describe the experimental setup chosen to estimate
-the probabilities of causal contacts and several derived quantities in
-terms of three independent parameters, namely, the mean time span
-between the appearance of consecutive \cetis{}, $\left<\tau_a\right>$,
-their mean lifetime $\left<\tau_s\right>$, and the maximum distance a
-signal can be detected by another \ceti{} ($D_{max}$).
+In what follows, we outline the experimental setup adopted to estimate the probabilities of causal contacts and several derived quantities.
 %
-Intuitively, the shorter the $\tau_a$ parameter and the larger the
-$\tau_s$ and $D_{max}$ parameters are, the greater the probability of
-the existence of causal contacts between pairs of \cetis{} would be.
+This is done in terms of three independent parameters, namely, the mean time span between the appearance of consecutive \cetis{}, $\left<\tau_a\right>$, their mean lifetime $\left<\tau_s\right>$, and the maximum distance a signal can be detected by another \ceti{} ($D_{max}$).
 %
-We also need to propose theoretical distribution functions for both
-the distribution of lifespans ($\tau_s$) and the distribution of the
-number of \cetis{} per unit time \citep{maccone_evolution_2014,
-Sotos_biotechnology_2019}, related to the time span between the
-appearance of consecutive \cetis{} (since when $\left<\tau_a\right>$
-is shorter, it produces a greater density of \cetis{}).
+Intuitively, the probability of the existence of causal contacts between pairs of \cetis{} would be larger for smaller $\tau_a$ parameters, higher $\tau_s$ or higher $D_{max}$ parameter values.
 %
-The shapes of these distributions are set to a fixed law, as discussed
-in Sec.~\ref{SS_PDF_shape}.
-     
+We also propose theoretical distribution functions for both the lifespans ($\tau_s$) and the number of \cetis{} per unit time \citep{maccone_evolution_2014, Sotos_biotechnology_2019}.
+%
+The later is related to the time span between the appearance of consecutive \cetis{} (since when $\left<\tau_a\right>$ is shorter, it produces a greater density of \cetis{}).
+%
+The analytical expresiones for these distributions are set to a fixed law, as discussed in Sec.~\ref{SS_PDF_shape}.  
+
+    
 %}}}
 
 \begin{figure}[!t]
@@ -431,14 +407,13 @@ from t=C$_{21}$ up to t=B$_{21}$.
 
 
 %{{{   
-       
 
-
-\ffn{1} We illustrate in the Fig.~\ref{F_scheme} the schematic
-representation of the region causally connected to a given \ceti{}.
+\ffn{1} Space—time diagrams, where time and space are represented on
+the horizontal and vertical axes, respectively, are suitable tools to
+describe the causal connections among different nodes.
 %
-To this end, we use space--time diagrams, where time is represented on
-the horizontal axis, and space is represented in the vertical axis.
+We illustrate in the Fig.~\ref{F_scheme} the schematic representation
+of the region causally connected to a given \ceti{}.
 %
 For the sake of simplicity, we show in the plot the light travel
 distance, i.e., the distance traversed by any signal spreading from
@@ -448,12 +423,14 @@ In this scheme, a light pulse would follow a trajectory represented by
 a line at 45 degrees from the axes, given the units of the time and
 space axes are years and light years, respectively.
 %
-Panel (a) of the Figure represents the region $R$ (shaded polygon) in
-space and time which is causally connected to the emitter (left
-vertex), following an event (hereafter A type event) in which the node
-acquires the communication capability, or becomes ''active''.
+Panel (a) of the Figure represents the region $R$ (shaded polygon)
+which is causally connected to the emitter (left vertex).
 %
-The sphere of first contact (SFC) is a sphere centered on the emitter,
+This region develops after an event (hereafter dubbed A-type event) in
+which the node acquires the communication capability, or becomes
+''active''.
+%
+The sphere of first contact (SFC) is centred on the emitter,
 represented in the Figure by the left angle of the region $R$.
 %
 This sphere grows until its radius reaches the D$_{max}$ distance, in
@@ -467,40 +444,41 @@ communication capability (D type event), and carries the last signal
 produced by the emitter.
 %
 The region which is causally connected to the emitter is then limited
-by these two spheres, and has the shape of a sphere (before the D
-event) or of a spherical shell (after the D event).
+by these two spheres and therefore has the shape of a filled sphere
+(before the D event) or of a spherical shell (after the D event).
 %
 The temporal intervals for the communication between two \cetis{} are
 represented in the panel (b) of the Figure.
 %
-In this scheme, the entire lifetime of a \ceti{} can then be
-represented by a polygon, limited in the spatial axis by the maximum
-distance of the signal $D_{max}$ and in the time axis by the time span
-between the starting time (A event, concave vertex) and the ending
-time (D event, convex vertex).
+In this scheme, the entire lifetime of a \ceti{} can be represented by
+a polygon, as shown in the Figure.
 %
-This representation allows to easily visualize the important events
-that result from the existence and communications of two \cetis{}.
+The polygon is limited in the spatial axis by the maximum distance of
+the signal $D_{max}$ and in the time axis by the time span between the
+A-type event (concave vertex) and the D-type event (convex vertex).
+%
+This representation allows to visualize the important events that
+result from the presence and communications of two \cetis{}.
 %
 The points in time where the \cetis{} acquire their communicating
-capacity are dubbed ''Awakening'' events ($A_1$ and $A_2$ in the
+capacity are dubbed ‘’Awakening’’ events ($A_1$ and $A_2$ in the
 Figure).
 %
-Similarly, the points in time where the \cetis{} loss their
-communicating capacity are dubbed ''Doomsday'' events ($D_1$ and $D_2$
+Similarly, the instants in time where the \cetis{} lose their
+communicating capacity are dubbed ‘’Doomsday’’ events ($D_1$ and $D_2$
 in the Figure).
 %
 The points in space--time where the first contact is produced for each
 one of the \cetis{}, are defined as ''Contact'' events, shown as $C_1$
-and $C_2$ in the Figure.
+and $C_2$.
 %
 Finally, the two points where the contact is lost for each one the
-\cetis{}, are denominated ''Blackout'' events, shown as $B_1$ and
+\cetis{}, are denominated ''Blackout'' events, presented as $B_1$ and
 $B_2$ in the Figure.
 %
 The receiver node E$_1$ can listen signals from the emitter node
-E$_2$, from the first contact event (t=C$_{12}$) up to the last
-contact event (t=B$_{12}$).
+E$_2$, from the first contact event (t=C$_{12}$) until the last
+one (t=B$_{12}$).
 %
 Similarly, the receiver node E$_2$ can listen signals from the emitter
 node E$_1$, from t=C$_{21}$ up to t=B$_{21}$.
@@ -508,12 +486,13 @@ node E$_1$, from t=C$_{21}$ up to t=B$_{21}$.
 The time intervals for the open communication channel are determined
 by the ''C'' and ''B'' type events.
 %
-It is important to notice that there is a time delay between the
+It is noteworthy the fact that there is a time delay between the
 contact events of the two \cetis{} involved in this analysis, and also
-a time delay between the two blackout events, so that the time range
-when a bidirectional contact is possible occurs between the maximum
-time of the contact points and the minimum time between the blackout
-points.
+a time delay between the two blackout events.
+%
+Therefore, the time range when a bidirectional contact is possible
+occurs between the maximum time of the contact points and the minimum
+time between the blackout points.
 
 %}}} 
       
@@ -548,98 +527,73 @@ indicated in double lines.
 %
    } \label{F_messages}
 \end{figure*}  
- 
 
 
 %{{{     
 
-The temporal structure that emerges naturally from the experimental
-setup implies that,
-as a fundamental property of the simulations,
-a causal connection can be produced without the need of the two
-involved locations being concurrent or active at the same time.
+The temporal structure that emerges from the experimental setup implies that, as a fundamental property of the simulations, a causal connection can be produced without 
+requiring that the two nodes are active at the same time.
 %
-This property of the system arises as a
-consequence of the large spatial and temporal scales, where a message
-is transmitted at the (relatively small) light speed.
+This property of the system arises as a consequence of the large spatial and temporal scales, where a message is transmitted at the (relatively small) light speed.
 %
-Although a \ceti{} could be active for enough time so as to transmit a
-message at large distances, the limited power of the message and the
-dilution that runs as the squared distance from the source, imposes a
-detectability limit.
+Although a \ceti{} could be active for a large enough period to transmit a message at large distances, the limited power of the message and the dilution that depends on the squared distance from the source imposes a detectability limit.
 %
-As a consequence of this limitation and of their finite lifetime,
-considered as the period of time between the acquisition and loss of
-communicating capacity, each \ceti{} will fill a spherical shell
-region of the galaxy, limited by two concentric spherical surfaces.
+As a consequence of this limitation and of their finite lifetime, considered as the period between the acquisition and loss of communicating capacity, each \ceti{} will fill a spherical shell region of the galaxy, limited by two concentric spherical surfaces.
 %
-The leading front, or surface of first contact (SFC) grows from the
-central \ceti{} until it reaches the maximum distance $D_{max}$.
+The leading front, or surface of first contact (SFC) grows from the central \ceti{} until it reaches the maximum distance $D_{max}$.
 %
-Thus, the volume reached causally by a \ceti{} is initially a growing
-sphere.
+Following the end of the civilization, there is still a region which is filled with the emitted signals.
 %
-Following the end of the civilization, there is still a region which
-is filled with the emitted signals.
+This approach has been also considered in other statistical models \citep[e.g., ][]{smith_broadcasting_2009, grimaldi_signal_2017, Grimaldi2018}.
 %
-This approach has been also considered other statistical models
-\citep[e.g., ][]{smith_broadcasting_2009, grimaldi_signal_2017, Grimaldi2018}.
+The trailing front, or surface of last contact (SLC) also grows from the central \ceti{}, with a delay with respect to the SFC equivalent to the lifetime of the node, and produces a spherical shell region.
 %
-The trailing front, or surface of last contact (SLC) also grows from
-the central \ceti{}, with a delay with respect to the SFC equivalent
-to the lifetime of the node, and produces a spherical shell region.
+Any other \ceti{} within this region will be aware of the originating node, even if it has disappeared before the time of contact.
 %
-Any other \ceti{} within this region will be aware of the originating
-node, even if it has disappeared before the time of contact.
+This region will grow if the surface of first contact has not yet reached the maximum distance $D_{max}$, and will shrink after a D-type event until the surface of last contact reaches $D_{max}$, producing as a result the loss of all signal from the central \ceti{}.
 %
-This region will grow if the surface of first contact has not yet
-reached the maximum distance $D_{max}$, and will shrink otherwise
-until the surface of last contact reaches $D_{max}$, producing as a
-result the loss of all signal from the central \ceti{}.
+In our approach, we consider a model galaxy where the width of the disk is negligible with respect to the radius of the disk.
 %
-In our approach, we consider a model galaxy where the width of the
-disk is negligible with respect to the radius of the disk.
+In the 2D simulation only the intersection of the communicating spherical shells with the plane of the galaxy is relevant, and produce the corresponding circles or rings for the filled spheres or annular regions of the spherical shells, respectively.
 %
-In the 2D simulation only the intersection of the communicating
-spherical shells with the plane of the galaxy is relevant, and produce
-the corresponding circles or rings for the filled spheres or annular
-regions of the spherical shells, respectively.
+The initially growing communicating sphere is shown over space--time diagrams, where time is represented on the horizontal direction, and space is represented in the vertical direction.
 %
-The initially growing communicating sphere, is shown over space--time
-diagrams, where time is represented on the horizontal direction, and
-space is represented in the vertical direction.
-%
-In the Fig.~\ref{F_scheme} the two
-emitters in panel (b), E$_1$ and E$_2$, reach each other at different times.
+In the Fig.~\ref{F_scheme} the two emitters in panel (b), E$_1$ and E$_2$, reach each other at different times.
 %
 The time span for E$_i$ is (A$_i$ , D$_i$) , for $i = {1, 2}$.
 %
-Emitter $i$ can listen to emitter $j$ between C$_{ij}$ and B$_{ij}$.
+Emitter $i$ can listen to emiter $j$ between C$_{ij}$ and B$_{ij}$.
 %
-The type and length of causal contact in both directions depend on the
-distance and time lag between the awakening events, the maximum
-distance that a signal can reach and the time period in which each
-emitter is active.
-%
+The type and length of causal contact in both directions depend on the distance and time lag between the awakening events, the maximum distance that a signal can reach and the time period in which each emitter is active.
+
+
+
+
+
+
+
+
+
+
+
+
+%-------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%% FIRST CHECK %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------------------------------------------------------------
+
+
+
 \ffn{2}
 %
-In the Fig.~\ref{F_messages} we show a schematic representation of the
-possible cases in which a \ceti{} E can be in causal contact with a
-\ceti{} R.
+In the Fig.~\ref{F_messages} we show a schematic representation of the possible cases in which a \ceti{} E can be in causal contact with a \ceti{} R.
 %
-The duration of the causal contact in one direction depends on several
-factors, mainly the lifetimes, the time period between the A events
-and the distance between the two nodes involved in the causal
-contact.
+The duration of the causal contact in one direction depends on several factors, mainly the lifetimes, the time period between the A events and the distance between the two nodes involved in the causal contact.
 %
-As it can be seen, the direction of the causal contact does not imply
-any ordering for the A events of the involved nodes.
+As it can be seen, the direction of the causal contact does not imply any ordering for the A events of the involved nodes.
 %
-In the implementation of the DE simulation, the six cases shown in the
-Figure determine the succession of events.
+In the implementation of the DE simulation, the six cases shown in the Figure determine the succession of events.
 %
-Each time an event is produced, the list of upcoming events is updated
-according to these cases.
+Each time an event is produced, the list of upcoming events is updated according to these cases.
 
 
 
