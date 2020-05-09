@@ -565,13 +565,46 @@ The time span for E$_i$ is (A$_i$ , D$_i$) , for $i = {1, 2}$.
 Emitter $i$ can listen to emiter $j$ between C$_{ij}$ and B$_{ij}$.
 %
 The type and length of causal contact in both directions depend on the distance and time lag between the awakening events, the maximum distance that a signal can reach and the time period in which each emitter is active.
+%
+\ffn{2}
+%
+In the Fig.~\ref{F_messages} we show a schematic representation of the possible cases in which a \ceti{} E (standing for Emiter) can be in causal contact with a \ceti{} R (receiver).
+%
+The duration of such a contact in one way depends on several factors, mainly the lifetimes, the time delay between the A-type events and the distance between the two nodes.
+%
+As it can be seen, the direction of the causal contact does not imply any ordering for the A-type events of the involved emitter/receiver pair.
+%
+For instance, a node can be in the light cone of another node that turned up later, i.e., the receiver is older than the emitter, like in the cases (e) and (f) of the Figure.
+%
+In the implementation of the DE simulation, all possibilities for causal contacts are reduced to the six cases shown in the Figure.
+%
+Once a pair of nodes become active and their properties have been assigned, it is possible to determine if and when they will get connected.
+%
+The times derived for such events are added to a stack of times so that they are visited in order, and in turn trigger further events.
+%
+% EJEMPLOS???
 
 
 
-
-
-
-
+In our experimental configuration the simulation starts assuming the stochastic process is already stable, and finishes before any galactic evolution effect could modify the fixed values of the variables.
+%
+Likewise, we assume that the probability for the appearance of a \ceti{} is homogeneous over the GHZ.
+%
+Although the Galaxy has a well-known spiral structure, the assumed sparsity of nodes (arguably, intelligent civilisations) does make that assumption tenable.
+%
+If the distribution of nodes is not sparse, as it could be the case if the spiral arms host most of the \cetis{}, then contacts would be more frequent between closely located nodes.
+%
+In such a case our results would underestimate the number of contacts between close pairs of nodes within the same spiral arm, and conversely, overestimate the number of contacts between separated nodes.
+%
+We also limit the possibilities of life or other types of civilisations to the usually stated hypothesis for the definition of
+the GHZ \citep{dayal_habitability_2016, gonzalez_galactic_2001, lineweaver_galactic_2004, gonzalez_habitable_2005,
+morrison_extending_2015, haqq-misra_evolution_2019, rahvar_cosmic_2016, gobat_evolution_2016, rahvar_cosmic_2016} and consider that habitability remains constant over time \citep[see, however, ][]{gonzalez_habitable_2005, dayal_habitability_2016, gobat_evolution_2016}.
+%
+For example, \citet{vukotic_astrobiological_2012} propose
+probabilistic cellular automata model to explain the astrobiological
+history of the Milky Way. % <<<< FEO
+%
+This means that we set aside civilisations that could survive in severe conditions or unstable systems, which would prevent the appearance of life as we know it.  
 
 
 
@@ -579,121 +612,42 @@ The type and length of causal contact in both directions depend on the distance 
 
 %-------------------------------------------------------------------
 %%%%%%%%%%%%%%%%%%%%%%%%%% FIRST CHECK %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%-------------------------------------------------------------------
+%-------------------------------------------------------------------    
+
+While the aforementioned assumptions are basic conditions for most of the stochastic processes observed in nature, we need to make stronger hypotheses related to the nature of the causal contact, which is not necessarily tied to any actual message.
+%
+The contact has, instead, the meaning of a belonging of a node to the light cone of another one.
+%
+We are considering messages sent through, for example, electromagnetic radiation, gravitational radiation or neutrino communication \citep{hippke_interstellar_2017, wright_how_2018}, but we set apart messages sent with mechanical means or physical objects \citep[e.g., ][]{Armstrong2013, barlow_galactic_2013}, or through some unknown technology that violates the known laws of physics.
+% 
+For the communication of \cetis{} through messages sent isotropically, we assume that the capacity to emit signals and to receive signals occur at the same time.
+%
+This means that the ability to find another civilization develops at the same time that the ability and intention to emit a signal in all directions, intended to be detected by an unknown civilization.
+%
+Although there are several reasons to think that this could not be the case, at large time scales it can be considered that both abilities occur roughly at coincident epochs.
+%
+Another essential assumption is that all \cetis{} use the same signal power, so that there is a maximum distance out to which it can be detected.
+%
+It is worth mentioning that we are considering in our experimental setup a system composed by several emitters and receivers across the galaxy, under the hypothesis proposed before.
+%
+In such a system we compute probabilities of a \ceti{} making contact with another node, and the results must be interpreted as for a randomly chosen \ceti{}, given certain conditions of homogeneity on an ensemble of equivalent galaxies.
+%
+Then, we stress the fact that we are not centered on the probabilities for the Earth itself, but on a generalized \ceti{}.
+%
+Regarding the extent of the signals, we know that the distance from which a signal from Earth could be detected using the current technology is of a few hundreds light years, given that the signal was sent to a specific direction.
+%
+It is straightforward to propose and implement a distribution of maximum distances, although this would increase the model complexity at the cost of a larger uncertainty or of another dimension on the hypothesis space.  
 
 
 
-\ffn{2}
-%
-In the Fig.~\ref{F_messages} we show a schematic representation of the possible cases in which a \ceti{} E can be in causal contact with a \ceti{} R.
-%
-The duration of the causal contact in one direction depends on several factors, mainly the lifetimes, the time period between the A events and the distance between the two nodes involved in the causal contact.
-%
-As it can be seen, the direction of the causal contact does not imply any ordering for the A events of the involved nodes.
-%
-In the implementation of the DE simulation, the six cases shown in the Figure determine the succession of events.
-%
-Each time an event is produced, the list of upcoming events is updated according to these cases.
 
 
 
 
- 
-
-
-In out experimental configuration, there is no a temporal window for
-the model, i.e., the simulation starts when the process is already
-stable, and ends before any galactic effect could modify or affect of
-fixed variables.
-%
-Also, we assume that the probability for the rise of a \ceti{} is
-homogeneous over the GHZ.
-%
-Although the Galaxy has a well known spiral structure, the assumed
-sparsity of nodes (intelligent civilizations) does make this
-assumption fairly reasonable.
-%
-Otherwise, if the distribution of nodes is not sparse, it could be the
-case that the spiral arms would host most of the \cetis{}, and
-contacts are frequent between closely located nodes.
-%
-In such a case we could expect that the interpretation of our results
-could be considered as pessimist for the establishment of a contact
-with our planet.
-%
-We also limit the possibilities of life or other types of
-civilizations to the hypothesis usually stated for the definition of
-the GHZ \citep{dayal_habitability_2016, gonzalez_galactic_2001,
-lineweaver_galactic_2004, gonzalez_habitable_2005,
-morrison_extending_2015, haqq-misra_evolution_2019,
-rahvar_cosmic_2016, gobat_evolution_2016, rahvar_cosmic_2016} and
-consider that habitability remains constant \citep[see, however,
-][]{gonzalez_habitable_2005, dayal_habitability_2016, gobat_evolution_2016}.
-%
-For example, \citet{vukotic_astrobiological_2012} propose
-probabilistic cellular automata model to explain the astrobiological
-history of the Milky Way.
-%
-This means that we set aside possible civilizations that could survive
-in severe conditions or unstable systems, which would prevent the
-appearance of life as we know it.
-
-
-While the aforementioned assumptions are basic conditions for most of
-the stochastic processes observed in nature, we need to make stronger
-assumptions related to the nature of the message.
-%
-The most simple assumption about the message itself, is that it
-travels at light speed.
-%
-With this, we are considering messages sent through, for example,
-electromagnetic radiation or even gravitational radiation or neutrino
-communication \citep{hippke_interstellar_2017, wright_how_2018}, but we set
-apart messages sent with mechanical means or physical objects
-\citep[e.g., ][]{Armstrong2013, barlow_galactic_2013}, or through some unknown technology
-that violates the known laws of physics.
-% 
-For the communication of \cetis{} through messages sent isotropically,
-we assume that the capacity to emit signals and to receive signals
-occur at the same time.
-%
-This means that the ability to find another civilization develops at
-the same time that the ability and intention to emit a signal in all
-directions, intended to be detected by an unknown civilization.
-%
-Although there are several reasons to think that this could not be the
-case, at large time scales it can be considered that both abilities
-occur roughly at coincident epochs.
-%
-Another essential assumption is that all \cetis{} use the same signal
-power, so that there is a maximum distance out to which it can be
-detected.
-%
-It is worth mentioning that we are considering in our experimental
-setup a system composed by several emitters and receivers across the
-galaxy, under the hypothesis proposed before.
-%
-In such a system we compute probabilities of a \ceti{} making contact
-with another node, and the results must be interpreted as for a
-randomly chosen \ceti{}, given certain conditions of homogeneity on an
-ensemble of equivalent galaxies.
-%
-Then, we stress the fact that we are not centered on the probabilities
-for the Earth itself, but on a generalized \ceti{}.
-%
-Regarding the extent of the signals, we know that the distance from
-which a signal from Earth could be detected using the current
-technology is of a few hundreds light years, given that the signal was
-sent to a specific direction.
-%
 %https://setiathome.berkeley.edu/forum_thread.php?id=80585&postid=1833000#1833000]
 %https://www.engadget.com/2017/05/25/listening-to-starlight-our-ongoing-search-for-alien-intelligenc/]
 %[from https://en.wikipedia.org/wiki/Fermi_paradox]
 %
-It is straightforward to propose and implement a distribution of
-maximum distances, although this would increase the model complexity
-at the cost of a larger uncertainty or of another dimension on the
-hypothesis space.
 %
 %This proposal is based on a pronoid scenario, and we do not consider
 %in this work the occurrence of paranoid or partially paranoid
