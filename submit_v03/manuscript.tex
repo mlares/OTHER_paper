@@ -841,26 +841,60 @@ nodes.
 \subsection{Power laws vs. exponential laws}\label{SS_PDF_shape}
 %{{{
 
-The temporal structure of the process is defined by two distribution parameters. One of them represent the mean time interval that a \ceti{} can emit and receive signals, and the other the mean time interval between the emergence of consecutive \cetis{}. The spatial structure of the simulation is given by the size and shape of the Galactic Habitable Zone and the maximum distance a signal can travel to be detected (D$_{max}$). The parameters for the temporal distributions also determine the spatial properties, since the density of active \cetis{} in the galaxy depend on these two parameters. For example, a small $\tau_a$ and a large $\tau_s$ will produce a galaxy densely populated with \cetis{}. Also, some hypotheses regarding the shapes of the distributions of the temporal parameters must be made in order to complete the simulation. \citet{forgan_spatiotemporal_2011} argues that the times at which different civilisations become intelligent follow a Gaussian distribution, and then the distribution of inter-arrival times is an inverse exponential. We assume that the distribution of the times of A events is a stationary Poisson process, and then the distribution of the times between the appearance of new consecutive \cetis{} is exponential. Regarding the duration of a \ceti{}, we propose that the distribution of the duration of \cetis{} is a stationary exponential distribution. There are no clear arguments to conclude a statistical law for the later distribution, so that we propose it as a working hipothesis.  A theoretical statistical distribution of the lifespan of civilisations would rely preferentially on the basis of the underlying astrophysical and biological processes \citep{balbi_impact_2018}. For example, \citet{maccone_lognormals_2014} argues that this distribution should be a log normal. 
+The temporal structure of the process is defined by two distribution parameters. One of them represent the mean time
+interval that a \ceti{} can emit and receive signals, and the other the mean time interval between the emergence of
+consecutive \cetis{}. The spatial structure of the simulation is given by the size and shape of the Galactic Habitable
+Zone and the maximum distance a signal can travel to be detected (D$_{max}$). The parameters for the temporal
+distributions also determine the spatial properties, since the density of active \cetis{} in the galaxy depend on these
+two parameters. For example, a small $\tau_a$ and a large $\tau_s$ will produce a galaxy densely populated with
+\cetis{}. Also, some hypotheses regarding the shapes of the distributions of the temporal parameters must be made in
+order to complete the simulation. \citet{forgan_spatiotemporal_2011} argues that the times at which different
+civilisations become intelligent follow a Gaussian distribution, and then the distribution of inter-arrival times is an
+inverse exponential. We assume that the distribution of the times of A events is a stationary Poisson process, and then
+the distribution of the times between the appearance of new consecutive \cetis{} is exponential. Regarding the duration
+of a \ceti{}, we propose that the distribution of the duration of \cetis{} is a stationary exponential distribution.
+There are no clear arguments to conclude a statistical law for the later distribution, so that we propose it as a
+working hipothesis.  A theoretical statistical distribution of the lifespan of civilisations would rely preferentially
+on the basis of the underlying astrophysical and biological processes \citep{balbi_impact_2018}. For example,
+\citet{maccone_lognormals_2014} argues that this distribution should be a log normal. 
 
 
 
-The power law and exponential statistical distributions are among the most common patterns found in natural phenomena. For example, the distribution of the frequency of words in many languages is known to follow a Zipf’s law (which is a  power law). These distributions arise any time a phenomenon is characterised by commonly occurring small events and rarely produced large events \citep[e.g. ][]{adamic_zipf_2000}. Zipf law also describes population ranks of cities in various countries, corporation sizes, income rankings, ranks of the number of people watching the same TV channel, etc. The magnitudes of earthquakes, hurricanes, volcanic eruptions and floods; the sizes of meteorites or the losses caused by business interruptions from accidents, are also well described by power laws \citep{sornette_critical_2006,  benguigui_classificacion_2016}. The power law behaviour has been observed in a variety of systems.  These include, for example, stock market fluctuations, sizes of computer files or word frequency in languages \citep{mitzenmacher_brief_2004, newman_power_2005, simkin_theory_2006}. Power laws have also been widely used in biological sciences.  Some examples are the analysis of connectivity patterns in metabolic networks \citep{jeong_large_2000} or the number of species observed per unit area in ecology \citep{martin_origin_2006, frank_common_2009}. More examples can be found in the literature \citep{martin_origin_2006, maccone_KLT_2010, barabasi_scale_2009, maccone_evolution_2014,  maccone_lognormals_2014, benguigui_classificacion_2016}.
-
-
+The power law and exponential statistical distributions are among the most common patterns found in natural phenomena.
+%
+For example, the distribution of the frequency of words in many languages is known to follow a Zipf’s law (which is a 
+power law).
+%
+These distributions arise any time a phenomenon is characterised by commonly occurring small events and rarely produced
+large events \citep[e.g. ][]{adamic_zipf_2000}.
+%
+Zipf law also describes population ranks of cities in various countries, corporation sizes, income rankings, ranks of
+the number of people watching the same TV channel, etc.
+%
+The magnitudes of earthquakes, hurricanes, volcanic eruptions and floods; the sizes of meteorites or the losses caused
+by business interruptions from accidents, are also well described by power laws
+\citep{sornette_critical_2006}.
+%
+%% , benguigui_classificacion_2016}.
+The power law behaviour has been observed in a variety of systems.
+%
+These include, for example, stock market fluctuations, sizes of computer files or word frequency in languages
+\citep{mitzenmacher_brief_2004, newman_power_2005, simkin_theory_2006}. 
+%
+Power laws have also been widely used in
+biological sciences.
+%
+Some examples are the analysis of connectivity patterns in metabolic networks \citep{jeong_large_2000} or the number of
+species observed per unit area in ecology \citep{martin_origin_2006, frank_common_2009}.
+%
+More examples can be found in the literature 
+\citep{martin_origin_2006, maccone_KLT_2010}
+\citep{barabasi_scale_2009, maccone_evolution_2014}
+\citep{maccone_lognormals_2014}
 
 
 In this work, the exponential distribution of lifespan and waiting times is justified by considering the hypothesis that the process of appearance of life in the galaxy is homogeneous and stationary. That is, there is not a preferred region within the GHZ for the spontaneous appearance of life, and the emergence of a \ceti{} is independent of the existence of previous nodes in the galaxy. This is equivalent to proposing a Poisson process for the emergence of \cetis{}, given the relation between the number of events in time or space and the waiting time or separation, respectively
 \citep[e.g., ][]{ross_simulation_2012}. That is, these are two alternative approaches to describing the same process, a Poisson distribution for the number of events implies an exponential distribution for their separations, and vice versa. It should be emphasised that the exponential laws used in this work are assumed as part of the working hypothesis, and instead of analysing results from a particular parameter chosen ad hoc, we explore the hypothesis space and analyse the impact of the values of these parameters on the results.
-
-
-
-%-------------------------------------------------------------------
-%%%%%%%%%%%%%%%%%%%%%%%%%% FIRST CHECK %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%-------------------------------------------------------------------    
-\rule{8cm}{12pt} \bigskip
-
-
 
 
 
@@ -893,99 +927,80 @@ See Table \ref{T_selected_models} for model descriptions.
 \subsection{Complexity of the model}
 %{{{
 
-In this Section we discuss the degree of complexity in the model,
-considering a compromise between the accuracy of the model and the
-number of parameters that are free or with a high uncertainty.
+
+
+In this Section we discuss the degree of complexity in the model, considering a compromise between the accuracy of the
+model and the number of parameters that are free or with a high uncertainty.
 %
-Firstly, we emphasize that the odds of a causal contact between two
-\cetis{} should not be considered as the odds of a contact between two
-intelligent civilizations, and in fact the later could be much lesser
-than the former.
+Firstly, we emphasise that the odds of a causal contact between two \cetis{} should not be considered as the odds of a
+contact between two intelligent civilisations, and in fact the latter could be much lesser than the former.
 %
-Indeed, in order to establish a contact between any two entities, a
-minimum degree of compatibility must be accomplished without any
-previous agreement, making the possibility of a contact with a message
-that could be deciphered highly rare \citep[see e.g. ][]{forgan_collimated_2014}.
+Indeed, in order to establish a contact between any two entities, a minimum degree of compatibility must be accomplished
+without any previous agreement, making the possibility of a contact with a message that could be deciphered highly rare
+\citep[see e.g. ][]{forgan_collimated_2014}.
 %
-Besides the trade--off between the simplicity and the complexity of
-the experiments, further analysis could be performed following this
-framework in order to explore possible implications of the results for
-more detailed configurations.
+Besides the trade--off between the simplicity and the complexity of the experiments, further analysis could be performed
+following this framework in order to explore possible implications of the results for more detailed configurations.
 %
-For example, the communication method (isotropic, collimated,
-serendipitous) can affect the observables, making it necessary to
-implement a correction factor.
+For example, the communication method (isotropic, collimated, serendipitous) can affect the observables, making it
+necessary to implement a correction factor.
 %
-Taking this into account, our results regarding the probability of
-causal contact should be considered as upper limits for effective
-contacts, since they depend on the efficiency of both the emitter and
-the receiver to broadcast and scan the sky for intelligent signals,
-respectively \citep{grimaldi_signal_2017}.
+Taking this into account, our results regarding the probability of causal contact should be considered as upper limits
+for effective contacts, since they depend on the efficiency of both the emitter and the receiver to broadcast and scan
+the sky for intelligent signals, respectively \citep{grimaldi_signal_2017}.
 %
-A correction by coverage ratio in the detection and by a targeting
-ratio in the emission could be easily implemented in the simulation,
-although the effect of reducing the probability of contact is
-basically the product of the efficiency ratios and thus such
-implementation is not necessary.
+A correction by coverage ratio in the detection and by a targeting ratio in the emission could be easily implemented in
+the simulation, although the effect of reducing the probability of contact is basically the product of the efficiency
+ratios and thus such implementation is not necessary.
 %
-Therefore, the values of the probabilities could be modified by a
-constant correction factor equal to the combined emission/reception
-efficiency \citep{smith_broadcasting_2009, anchordoqui_upper_2019,
-forgan_collimated_2014} or for beam--like transmissions
-\citep{grimaldi_signal_2017}.
+Therefore, the values of the probabilities could be modified by a constant correction factor equal to the combined
+emission/reception efficiency \citep{smith_broadcasting_2009, anchordoqui_upper_2019, forgan_collimated_2014} or for
+beam-like transmissions \citep{grimaldi_signal_2017}. 
 %
-Other considerations include the effects of alignments, the use of
-stars as sources or amplifiers \citep{Edmondson2003, borra_searching_2012}, 
-the nature of the message carrier, the
-use of a spatial distribution that actually resembles the spiral shape
-and the width of the disc of the Galaxy, different distribution
-functions for the mean lifetime of \cetis{}, and different
-efficiencies for the sphere of the causal region of each \ceti{}
-resembling different searching strategies
-\citep{hippke_interstellar_2017}.
+Other considerations include the effects of alignments, the use of stars as sources or amplifiers \citep{Edmondson2003,
+borra_searching_2012}, the nature of the message carrier.
 %
-It is also possible to consider that D$_{max}$ is different for
-different \cetis{}.  For example a power law where powerful emissions
-are rare and weak emissions are common could be an improvement to the
+Another improvement could be the use of a spatial distribution that resembles the spiral shape and the width of the disc
+of the Galaxy.
+%
+Regarding the distributions of the parameters, different distribution functions for the mean lifetime of \cetis{} can be
+implemented as alternatives.
+%
+Finally, regarding the degree of idealisation, the model admits different efficiencies for the sphere of the causal
+region of each \ceti{}, featuring different searching strategies \citep{hippke_interstellar_2017}. 
+%
+It is also possible to consider that $D_{max}$ is different for different \cetis{}.
+%
+For example, a power law where powerful emissions are rare and low emissions are common could be an improvement to the
 model.
 %
-In this work we chose not to implement this for the sake of
-simplicity.
+In this work we chose not to implement this for the sake of simplicity.
 %
-Finally, the role of the message contents could influence on the
-lifespan of a \ceti{} that receives a message, although the
-implementation of such behavior would increase the number of free
-parameters and would be highly speculative.
+Finally, the role of the message contents could influence on the lifespan of a \ceti{} that receives a message, although
+the implementation of such behaviour would increase the number of free parameters and would be more speculative.     
 
 %}}}
-
+     
 
 
 
 \subsection{Discrete event process}
 %{{{
 
-Given a parametric model $M(\tau_a, \tau_s, D_{max})$, which includes
-the functional forms of the statistical distributions and fixed values
-for the hypotheses, a discrete event simulation is performed by
-keeping track of a set of variables that change each time a meaningful
-event is produced.
+A discrete event simulation is performed for a given model $M(\tau_a, \tau_s, D_{max})$ by keeping track of a set of variables that change each time an event happens. 
 %
-The main variables that follow the evolution of the simulation are the
-positions of stars, which are sampled randomly within the GHZ, the
-time of the awakening of each \ceti{} (A event), and the time of the
-vanishing of each \ceti{} (D event).
+In addition, the model comprises elements that are fixed for all simulations, for example, the functional forms of the statistical distributions and the adopted values of particular variables (see Table XXX).
 %
-The variables that can be deduced from the previous ones include the
-number of \cetis{} in casual contact with at least another \ceti{} at a given
-time, the number of \cetis{} as a function of time, the number of
-\cetis{}
-that receive a message at least one time, the number of \cetis{} that
-receive a message at least one time and successfully deliver an answer
-and the number distribution of waiting time to receive a message.
+The main variables that follow the evolution of the simulation are: the positions of stars, which are sampled randomly within the GHZ; the time of the awakening of each \ceti{} (A event); and the time of the vanishing of each \ceti{} (D event). 
 %
-All these quantities are updated each time one of the four events (A,
-B, C, D) is produced.
+The variables that can be deduced from the previous ones include: the number of \cetis{} in casual contact with at least another \ceti{} at a given time; the number of \cetis{} as a function of time; the number of \cetis{} that receive a message at least one time; the number of \cetis{} that receive a message at least one time and successfully deliver an answer; and the number distribution of waiting time to receive a message.
+%
+All these quantities are updated each time one of the four events (A, B, C, D) occurs.   
+
+
+
+
+
           
 %%% comparar con el stochsatic cellular automata
 % ver libro Solving Fermi paradox, sec. 27.3.1
@@ -1022,29 +1037,30 @@ $D_{max}$=80000 (right panel)
    }
    \label{F_C_at_A}
 \end{figure*}
- 
+        
+
+                     
 
 \subsection{Model for \cetis{}}
 %{{{
 
-Since the method is based on events, the first step is to define an
-architecture of events, the relationships between them and how events
-trigger changes on the state of the system,
-so that the system is updated each time an event is produced.
+Since the method is based on events, the first step is to define the relationships between them and how events trigger changes on the state of the system.
 %
-We consider a simulated system that represents the galactic habitable
-zone which, on a first approach, is a 2-dimensional annular region.
+Once an event is produced, the system is updated by saving the corresponding change in the related variables.
 %
-The adopted values for the geometry of the GHZ are 20 kly and 60 kly, for the inner
-and outer radius, respectively \citep{lineweaver_galactic_2004}.
+For example, a B-type event diminishes the number of active \cetis{} by one, and also could affect the number of ongoing communications.
+%
+We consider a first approach to the galactic habitable zone as a 2-dimensional annular region.
+%
+The adopted values for the geometry of the GHZ are 2 kpc and 8 kpc, for the inner and outer radius, respectively \citep{lineweaver_galactic_2004}. 
 % ojo, ese paper dice 7-9 kpc, o sea tiene un limite superior mucho
 % mas chico...
 %
-This simple model does not take into account the variations in stellar
-density given by the spiral structure.
+This simple model does not take into account the variations in stellar density given by the spiral structure of the Galaxy.
 %
-Although there are several possible approaches, we chose to follow the
-evolution of the system according to the following events:
+The main task in setting a DE simulation is to define the events and what changes do these events produce on the system.
+%
+Although there are several possible approaches, we chose to follow the evolution of the system according to the following events:
 
 \begin{enumerate}
    \item[(A)] Awakening: A new \ceti{} acquires the ability to emit
@@ -1059,7 +1075,7 @@ evolution of the system according to the following events:
 \end{enumerate}
 
 We have chosen this nomenclature so that it can be easily remembered
-from the initial A, B, C, D.
+from the initials A, B, C, D.
 %
 The \blackout is produced when one of the two \cetis{} halts in its
 capability of emitting and receiving signals.
@@ -1081,12 +1097,31 @@ Also, the list of active \cetis{} is obtained as a function of time.
 
 
 
-The Galactic Habitable Zone is set at fixed values of the inner and outer
-radii, radial symmetry is assumed, and the with of the galactic disk
-is neglected compared to the radial size.
-%
-The two radii are measured in light years, with the aim to maintain a
-single and comprehensive unit for both space and time coordinates. 
+  
+
+
+
+%-------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%% FIRST CHECK %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------------------------------------------------------------    
+\rule{8cm}{12pt} \bigskip
+
+        
+
+
+
+
+
+
+
+
+
+% The Galactic Habitable Zone is set at fixed values of the inner and outer
+% radii, radial symmetry is assumed, and the with of the galactic disk
+% is neglected compared to the radial size.
+% %
+% The two radii are measured in light years, with the aim to maintain a
+% single and comprehensive unit for both space and time coordinates. 
 %
 %}}}
 
@@ -1172,6 +1207,14 @@ Python Package Index (PyPI).
 %
 Since the simulation setup is configurable, the time required for a
 simulation to complete depends on the simulation parameters.
+%
+It also depends on the hardware that is used to make the run, and on whether the parallel option is set.
+%
+However, it is simple to make a local run of limited versions of the experiments to have a sense of the time required by
+the code to complete the simulations.
+%
+More information on this can be found on the documentation of the software, available at
+\url{https://hearsay.readthedocs.io/en/latest/}.
 
 
 
