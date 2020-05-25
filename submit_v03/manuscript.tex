@@ -68,7 +68,12 @@
 \supertitle{Research Paper}
 
 \title[Probabilities of SETI contacts]{Probability of causal
-contact between interstellar civilizations through MonteCarlo simulations}
+contacts between interstellar civilizations through Monte Carlo simulations}
+%
+%A network of constrained causal contacts in the Galaxy as a proxy for
+%the probability of 
+%
+% A model for constrained causal contacts between location in the GHZ
 
 \author[Lares, Funes \& Gramajo]{Lares M.$^{1, 2}$, Funes J.~G.$^{1,
 3}$ \& Gramajo L.$^{1, 2}$}
@@ -100,34 +105,27 @@ GHZ: Galactic Habitable Zone}
 
 \begin{abstract}
 %
-The abundance of intelligent civilizations in the Galaxy is a
-   longstanding question, often conceptualized as the problem of the
-   lack of received communication. Estimates of the number of
-   civilizations are generally guided by the Drake equation, despite
-   the large uncertainties in its factors and its lack of a temporal
-   nature. Alternative approaches use detailed numerical simulations
-   of the galaxy and recipes for the stars and planets formation
-   rates and for the origin of life, and rely on uncertain parameters.
-   We present a statistical model for the abundance and duration of
-   civilizations implemented through Monte Carlo simulations. We
-   explore the hypothesis space of the model by a suite of simulations
-   to analyze the emergence of communicating nodes and their causal
-   connections. We based this on minimal assumptions and three free
-   parameters, with focus on the proposed statistical properties of
-   empirical models. Our analysis of the dependence of the rate of
-   causal contacts on the mean number of civilizations, the mean
-   lifespan distribution and the maximum distance a civilization can
-   send signals, is considered to discuss the spatial and temporal
-   structure of a populated galaxy within several scenarios. We find
+The abundance of intelligent civilisations in the Galaxy is a
+   longstanding question related to the expected probability
+   of success for SETI programs.  Traditional approaches to quantify
+   this problem use either frequentist inferences or numerical
+   simulations. The key challenges in both cases are the proper
+   treatment of the time variable and the large uncertainties on the
+   intervening factors. Here we present a three-parametric
+   statistical model of the network of causally connected locations in
+   a simplified Galaxy, with the restriction of a maximum distance
+   range for any signal. We implement Monte Carlo simulations of this
+   model to explore the parameter space and analyse the probabilities
+   of causal contacts for random locations in the Galaxy. We find
    that, given the enormous distances involved, causal contacts
-   between civilizations are very rare. The odds to make a contact in
-   a few years of monitoring are low for most models, except for those
-   of a galaxy densely populated with long-lived civilizations. The
-   probability of causal contacts increases with the lifetime of
-   civilizations much more significantly than with the number of
-   active civilizations for a time window. We show that the maximum
-   probability of making a contact occurs when a civilization gains
-   the required communication technology.
+   between civilisations would be very rare. The odds to make a
+   contact in a few years of monitoring are low for most models,
+   except for those of a galaxy densely populated with ancient
+   civilisations. The probability of causal contacts increases with
+   the lifetime of civilisations more significantly than with the
+   number of active civilisations. We show that the maximum
+   probability of making a contact occurs when a civilization
+   discovers the required communication technology.
 %
 \end{abstract}
 
@@ -139,8 +137,8 @@ The abundance of intelligent civilizations in the Galaxy is a
 %{{{
 
 The Drake equation  \citep{drake_intelligent_1962} provides a truly
-helpful educated guess, a rational set of lenses –the factors in the
-equation– through which to look at future contacts with
+helpful educated guess, a rational set of lenses --the factors in the
+equation-- through which to look at future contacts with
 technologically advanced civilizations in the Milky Way. 
 %
 The equation quantifies the number of civilizations from whom we might
@@ -311,7 +309,7 @@ the time of appearance. 
 %
 For all analysed distributions, the fraction corresponding to a mean
 lifetime of 10$^9$ years and for a maximum radius for the detection of
-the signal of 1000 yr, is roughly 0.1.
+the signal of 1000~ly, is roughly 0.1.
 %
 In another related approach, \citet{vukotic_astrobiological_2012}
 propose a probabilistic cellular automata (PCA) modelling. 
@@ -397,6 +395,10 @@ parameters.
 %
 In Sec.~\ref{S_discussion} we discuss our results and future research
 directions.   
+%
+In this work we use the International System of units recommended by
+the International Astronomial Union, where the simbol for years is
+''a''.
 %}}}
 
 
@@ -806,9 +808,9 @@ nodes.
    &min. value&max. value&Nbins\\
 \hline
    $\tau_{a}$ & Mean temporal separation between consecutive
-   awakenings & 10$^2$~yr & 10$^6$~yr & 50\\ 
+   awakenings & 10$^2$~a & 10$^6$~a & 50\\ 
    $\tau_{s}$ & Mean lifetime of a \ceti{}
-   & 10$^2$yr & 10$^6$~yr& 50\\ 
+   & 10$^2$a & 10$^6$~a& 50\\ 
    D$_{\rm max}$ & Maximum reach of a message  & 30~pc & 10~kpc & 50 \\
 \hline
    \multicolumn{2}{l}{fixed variables} & \multicolumn{2}{c}{assumptions} &value \\
@@ -820,7 +822,7 @@ nodes.
    & shape of the Galactic Habitable Zone & 2--dimensional ring &&\\
    R$_{GHZ}^{\rm min}$   & Inner radius of the GHZ     & & & 7~kpc\\
    R$_{GHZ}^{\rm max}$   & Outer radius of the GHZ     &&& 9~kpc\\
-   t$_{\rm max}$ & Time span of the simulation  &&&1.e6 yr\\
+   t$_{\rm max}$ & Time span of the simulation  &&&1.e6~a\\
     & \multicolumn{3}{l}{number of random realizations for each point in the hypothesis space} &50\\
 \hline
    \multicolumn{2}{l}{discrete events} &
@@ -1219,10 +1221,10 @@ Histograms of the mean waiting times for the first contact, for
 several models.
 %
 Left panel shows the histograms for several values of $\tau_a$, and
-$\tau_s$ in the range 17000-24000 yr.
+$\tau_s$ in the range 17000-24000~a.
 %
 Right panel shows the histograms for several values of $\tau_s$, and
-$\tau_a$ in the range 68000-100000 yr.
+$\tau_a$ in the range 68000-100000~a.
 %
 The shape of the histograms does not change when $\tau_a$ is
 modified, but significantly changes when $\tau_s$ is modified. 
@@ -1236,8 +1238,8 @@ modified, but significantly changes when $\tau_s$ is modified.
 \centering
 \begin{tabular}{ccccc}
 \hline
-   Model subset & D$_{\rm max}$ [lyr] & $\tau_a$ interval [yr] & $\tau_s$ interval 
-   [yr]& description  \\
+   Model subset & D$_{\rm max}$ [lyr] & $\tau_a$ interval [a] & $\tau_s$ interval 
+   [a]& description  \\
 \hline
 M1 & 40000 & [10000, 30000]   & [10000, 50000]   &dense, short lifetime\\
 M2 & 40000 & [170000, 190000] & [10000, 50000]   &sparse, short lifetime\\
@@ -1271,8 +1273,7 @@ seeds, in order to perform a MonteCarlo estimation of the variance.
 %
 The parameters for the temporal aspects of the simulation (the mean
 waiting time for the next awakening, $\left<\tau_a\right>$, and the
-mean lifetime, $\left<\tau_s\right>$) cover the ranges 10$^2$-10$^6$
-yr, with a linear partition of 50 values for each parameter.
+mean lifetime, $\left<\tau_s\right>$) cover the ranges 10$^2$-10$^6$~a, with a linear partition of 50 values for each parameter.
 %
 For the D$_{\rm max}$ parameter, we take the range 30~pc to 10~kpc, on
 50 linear bins.
@@ -1380,11 +1381,11 @@ Table~\ref{T_selected_models}.
 In Fig.~\ref{F_number_of_contacts} we show the empirical cumulative
 distributions of the number contacts for \cetis{} in six different
 samples, including short and long lifetimes
-$\left(\,\left<\tau_s\right>=\right.$10000~yr and
-$\left<\tau_s\right>$=100000~yr, respectively$\left.\right)$, dense
+$\left(\,\left<\tau_s\right>=\right.$10000~a and
+$\left<\tau_s\right>$=100000~a, respectively$\left.\right)$, dense
 and sparse spatial distribution
-$\left(\,\left<\tau_a\right>=\right.$10000~yr and
-$\left<\tau_a\right>$= 100000~yr, respectively$\left.\right)$, and two
+$\left(\,\left<\tau_a\right>=\right.$10000~a and
+$\left<\tau_a\right>$= 100000~a, respectively$\left.\right)$, and two
 different signal reach ranges (D$_{\rm max}$=40000 lyr and
 D$_{\rm max}$=80000~lyr).
 %
@@ -1437,10 +1438,11 @@ lifetime and the mean awakening time.
 On Fig.~\ref{F_never_contact} we show 2D color maps with the fraction
 of \cetis{} in the simulations that never make contact (i.e., never
 listen to another \ceti{}), as a function of the mean lifetime
-($\left<\tau_s\right>$, in the range 0--500 yr) and the mean awakening
-time ($\left<\tau_a\right>$, in the range 0--200 yr), for three
-different values of the maximum signal range, $D_{\rm max}=10000$~yr (left
-panel), $D_{\rm max}=40000$~yr (middle panel), and $D_{\rm max}=80000$~yr
+($\left<\tau_s\right>$, in the range 0--500 a) and the mean awakening
+time ($\left<\tau_a\right>$, in the range 0--200 a), for three
+different values of the maximum signal range, $D_{\rm max}=10000$~a (left
+panel), $D_{\rm max}=40000$~a (middle panel), and $D_{\rm
+max}=80000$~a
 (right panel).
 %
 A clear pattern emerges in this Figure, showing that the probability
@@ -1464,15 +1466,16 @@ at the time of their A-type events.
 The fraction of \cetis{} that make the first contact at the awakening
 event is shown in the Fig.~\ref{F_C_at_A}, 
 as a function of the mean lifetime
-($\left<\tau_s\right>$, in the range 0--500 yr) and the mean awakening
-time ($\left<\tau_a\right>$, in the range 0--200 yr).
+($\left<\tau_s\right>$, in the range 0--500 a) and the mean awakening
+time ($\left<\tau_a\right>$, in the range 0--200 a).
 %
 The three panels correspond to different values of the maximum signal
 range ($D_{\rm max}$),
 as indicated in the Figure:
 %
-$D_{\rm max}=10000$~yr (left
-panel), $D_{\rm max}=40000$~yr (middle panel), and $D_{\rm max}=80000$~yr
+$D_{\rm max}=10000$~a (left
+panel), $D_{\rm max}=40000$~a (middle panel), and $D_{\rm
+max}=80000$~a
 (right panel).
 %
 These probabilities are consistent with the ones on the previous
@@ -1505,10 +1508,10 @@ waiting times for the first contact, for several models.
 %
 Upper panel (a) panel shows the histograms for several values of the
 mean survival time $\tau_s$, with the mean awakening time $\tau_a$ in
-the range 68000-100000 yr.
+the range 68000-100000 a.
 %
 Lower panel (b) shows the histograms for several values of $\tau_a$,
-with $\tau_s$ in the range 17000-24000 yr.
+with $\tau_s$ in the range 17000-24000 a.
 %
 As it can be seen, the shape of the histograms is almost the same when
 $\tau_a$ is modified (panel (b)), but significantly changes when
@@ -1532,7 +1535,7 @@ events.
 %
 From a frequentist approach, the cumulative fraction of contacts
 from the awakening
-($t=$0~yr) up to a given time are related to the estimation of the
+($t=$0~a) up to a given time are related to the estimation of the
 probability of listening during that time interval and reaching to
 causal contact region of at least another node.
 %
@@ -1573,19 +1576,68 @@ millennia.
 \section{Discussion}\label{S_discussion}
 %{{{
 
-
-We have implemented a suite of simulations, following a stochastic approach, to explore a three dimensional hypothesis space of a simple model that accounts for the causal connections between communicating civilisations in the Galaxy. The different models can be generated with a minimal number of assumptions. We argue that three parameters can describe a variety of situations, ranging from a galaxy model where an intelligent civilization is very rare, to a galaxy model populated with plenty of civilisations in causal contact. With this approach, we can estimate several quantities as a function of the parameters on the hypothesis space, so we explored the outcomes of different models that can be derived from the simulations. For instance, it is possible to estimate the timescale for an uninterrupted SETI-equivalent effort to reach success, in terms of different model parameters that reflect different, so far unknown, scenarios for the appearance of intelligent life on the Galaxy.
-
-
-
-Although the simulations use a number of speculative assumptions, we
-argue that the limited knowledge about the origin and persistence of
-life in the Galaxy does not worth the implementation of more detailed
-or sophisticated models.
+We presented a stochastic model (SC3Net) to analyse the network of
+constrained causally connected nodes in a simplified Galaxy.
 %
-Instead, we take advantage of the simplicity of the model to explore
-the hypothesis space, i.e., the three--dimensional parameter space of
-the parametric model, in order to gain insight on the consequences of
+It represents an idealised scenario of perfectly efficient emitters and
+receivers with the restriction of a maximum distance separation.
+%
+These emitters and receivers correspond to nodes that form a
+communication network whose properties depend on their density
+and mean survival time.
+%
+The statistical analysis of the model allows to estimate the
+probabilities for a random node and for a given model instance of
+making contacts with other nodes, along with the waiting times and
+durations of such contacts.
+%
+Using numerical simulations, we implemented this model to explore the
+three-dimensional parameter space, considering a grid of mean time
+separations between the activation of new nodes
+in the range 500--10$^6$~a.
+%
+Additionally, we explore a grid of the mean survival times between 
+500~a and 10$^6$~a, and values for the maximum distance range of signals 
+of 100~pc, 500~pc, 1~kpc, 5~kpc and 10~kpc.
+%
+The simulation of each parameter point was performed several times
+with different random seeds in order to improve the confidence of the
+derived quantities.
+%
+The full experiment comprises 46485 simulations for a total of 5184
+unique points in the parameter space.
+
+
+
+% We have implemented a suite of simulations, following a stochastic
+% approach, to explore a three dimensional hypothesis space of a simple
+% model that accounts for the causal connections between
+% communicating civilisations in the Galaxy. The different models can be
+% generated with a minimal number of assumptions. We argue that three
+% parameters can describe a variety of situations, ranging from a galaxy
+% model where an intelligent civilization is very rare, to a galaxy
+% model populated with plenty of civilisations in causal contact. With
+% this approach, we can estimate several quantities as a function of the
+% parameters on the hypothesis space, so we explored the outcomes of
+% different models that can be derived from the simulations. For
+% instance, it is possible to estimate the timescale for an
+% uninterrupted SETI-equivalent effort to reach success, in terms of
+% different model parameters that reflect different, so far unknown,
+% scenarios for the appearance of intelligent life on the Galaxy.
+
+
+
+Although the simulations use several hypotheses, we
+argue that the model is not worthy of further complexity,
+given the limited knowledge about the origin and persistence of
+life in the Galaxy.
+%
+The implementation of more detailed or sophisticated models
+would increase the number of free parameters without any 
+improvement in their predictive power.
+%
+Thus, we take advantage of the simplicity of the model to explore
+the parameter space in order to gain insight on the consequences of
 different scenarios for the search of intelligent life.
 %
 Our analysis is not centered in obtaining the odds for the Earth
@@ -1607,8 +1659,8 @@ by intelligent civilizations with large average lifetimes.
 %
 On average, in order to have at least one contact in the entire lifetime
 of the \ceti{}, there must appear a mean of at least one \ceti{}
-every $\sim$20000 yr, with a mean active period of at least
-$\sim$30000 yr.
+every $\sim$20000 a, with a mean active period of at least
+$\sim$30000 a.
 %
 This result is qualitatively similar to the results presented by
 several authors, which state that a contact between the Earth and
