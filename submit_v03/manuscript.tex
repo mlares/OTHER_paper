@@ -176,16 +176,15 @@ In general, also more speculative proposals
 \citep{barlow_galactic_2013, lampton_information_2013,
 conway_three_2018, forgan_galactic_2017} have been discussed.
 % 
-% 
-% 
-% 
-\Fpagebreak
+We stress the fact that the lack of detections of extraterrestrial intelligent signals
+is
+the only observational fact that can be taken
+for sure.
 %
-We stress the fact that the only observation that can be stated with
-certainty is that for the number of years projects for the Search of
-Extraterrestrial Intelligences (SETI) have been working; we have
-received no signal using the technical possibilities and the
-conditions established by them \citep{tarter_search_2001}.
+Indeed, for the number of years projects for the Search of
+Extraterrestrial Intelligences (SETI) have been working,
+no signal has been received using the technical possibilities 
+within their search criteria \citep{tarter_search_2001}.
 %
 The absence of detection has also motivated alternative ideas for new
 SETI strategies \citep{forgan_exoplanet_2017, balbi_impact_2018,
@@ -194,6 +193,8 @@ enriquez_breakthrough_2017, loeb_relative_2016, maccone_SETI_2011,
 lingam_relative_2019, wright_theGsearch_2015, maccone_SETI_2013,
 maccone_lognormals_2014, harp_application_2018,
 forgan_possibility_2013, forgan_galactic_2017, funes_searching_2019}.
+%
+\Fpagebreak
 %
 The Drake equation is a key tool to organise the discussion about the
 problem of the (unknown) abundance of civilisations in the Galaxy
@@ -204,9 +205,9 @@ less prone to a formal study to define searching strategies or to
 compute the actual number of extraterrestrial intelligences.
 %
 The optimistic estimations from the Drake equation also contrast with
-the SETI initiatives, noticeable overshadowed because despite decades
-of effort, not a single evidence for intelligent signals has been
-detected.
+the results from the SETI initiatives.
+%
+Notably, despite decades of effort not a single evidence for intelligent signals has been detected.
 %
 \citet{prantzos_joint_2013} proposes a unified framework for a joint
 analysis of the Drake equation and the Fermi paradox, concluding that
@@ -290,17 +291,19 @@ times of appearance. This is important since the time it takes the
 light to travel across the Galaxy is much lesser than its lifetime.
 %
 \citet{balbi_impact_2018} fix the total number of civilisations and
-explore the parameter space that comprise three parameters, namely,
+explore the parametric space that comprises three parameters, namely,
 the distance to the Earth, the time of appearance and the lifespan of
 the communicating civilization.
 %
 Each of these three variables are drawn from a random distribution.
-The distribution of the distances results from a uniform distribution
-of civilizations within the plane of the Galaxy.
+%
+The distribution of the distances results from a uniform model for the
+positions of civilizations within the plane of the Galaxy.
 %
 For the distribution of the characteristic time of appearance, the
-author explores an exponential and a truncated Gaussian distributions.
-For the distribution of the lifespans, the author chooses an
+author explores exponential and truncated Gaussian distributions.
+%
+Moreover, for the distribution of the lifespans, the author chooses an
 exponential distribution.
 %
 \citet{balbi_impact_2018} finds that the fraction of communicating
@@ -331,27 +334,39 @@ The work aims at analysing the evolution of life, although it does not
 account for the network of causal contacts among
 technological civilisations.
 
+% INTRODUCTION OF *THIS* WORK
 
 In this work we address the problem of the temporal and spatial
 structure of the distribution of communicating civilisations.
 %
-To that end, we reduce and explore the hypothesis space over a set of
-three of parameters.
+We make no asumptions about the origin of life, the development 
+of intelligence or the formation of habitable planets according to stellar type.
 %
-We propose to avoid the frequentist approach of the Drake equation to
+Instead, we assume monoparametric function families to model the
+appeareance of points in the disk of the Galaxy 
+
+
+
+
+
+%
+To that end, we propose a model which depends on a set of only
+three parameters.
+%
+We abandon the frequentist approach of the Drake equation to
 compute the number of civilisations, providing its statistical
 distribution instead.
 %
-This is an exploratory analysis that aims at providing a numerical
+This is an exploratory analysis that aims at developing a numerical
 tool to discuss the different scenarios based on statistical
 heuristics.
 %
-With this, we aim at avoiding the several theoretical problems
+With this, we avoid the several theoretical problems
 summarised by the Drake equation factors.
 %
 The approach proposed here should be considered as a compromise
-between the uncertainties of the frequentist approach and the detailed
-recipes required on the simulation approach.
+between the uncertainties of the frequentist estimations and the detailed
+recipes required on the numerical simulations.
 %
 We provide a framework to explore, through a suite of
 numerical simulations, a parameter space of three unknown observables.
@@ -400,6 +415,54 @@ In this work we use the International System of units recommended by
 the International Astronomial Union, where the simbol for years is
 ''a''.
 %}}}
+
+
+%}}}
+
+\begin{figure}[!t]
+   \centering
+   \includegraphics[width=0.5\textwidth]{F_scheme.pdf}
+   \caption{
+   %
+Space--time diagrams showing a schematic representation of the
+different stages in the development of causal contact node (\ceti{}).
+%
+Panel (a) represents the region $R$ in space and time which is causally
+connected to the emitter (left vertex), following an "A" type event
+("Awakening") in which the node acquires the communication capability.
+%
+The sphere of first contact (SFC) is a sphere centered on the emitter
+that grows until its radius reaches the D$_{\rm max}$ distance, in which
+the power of a signal would equal the detectability threshold.
+%
+In the Figure this sphere is represented by the left triangle of the
+region $R$.
+%
+The surface of last contact (SLC) is another sphere that grows from a
+"D" event ("Doomsday").
+%
+The region which is causally connected to the emitter is then limited
+by these two spheres, and has the shape of a sphere or of a spherical
+shell, depending on the time.
+%
+The temporal intervals for
+the communication between two \cetis{} are represented in he
+panel (b).
+%
+The receiver \ceti{} E$_1$ can listen signals from the emiter \ceti{} E$_2$,
+from the "Contact" event (t=C$_{12}$) up to the "Blackout" event (t=B$_{12}$).
+%
+Similarly, 
+the receiver \ceti{} E$_2$ can listen signals from the emiter \ceti{} E$_1$,
+from t=C$_{21}$ up to t=B$_{21}$. 
+%
+   } \label{F_scheme}
+\end{figure}
+
+%}}} 
+ 
+
+
 
 
 %%% S E C T I O N - - - - - - - - - - - - - - - - - - - - - - -
@@ -467,50 +530,7 @@ The later is related to the time span between the appearance of consecutive \ce
 %
 The analytical expresiones for these distributions are set to a fixed law, as discussed in Sec.~\ref{SS_PDF_shape}.  
     
-%}}}
-
-\begin{figure}[!t]
-   \centering
-   \includegraphics[width=0.5\textwidth]{F_scheme.pdf}
-   \caption{
-   %
-Space--time diagrams showing a schematic representation of the
-different stages in the development of causal contact node (\ceti{}).
-%
-Panel (a) represents the region $R$ in space and time which is causally
-connected to the emitter (left vertex), following an "A" type event
-("Awakening") in which the node acquires the communication capability.
-%
-The sphere of first contact (SFC) is a sphere centered on the emitter
-that grows until its radius reaches the D$_{\rm max}$ distance, in which
-the power of a signal would equal the detectability threshold.
-%
-In the Figure this sphere is represented by the left triangle of the
-region $R$.
-%
-The surface of last contact (SLC) is another sphere that grows from a
-"D" event ("Doomsday").
-%
-The region which is causally connected to the emitter is then limited
-by these two spheres, and has the shape of a sphere or of a spherical
-shell, depending on the time.
-%
-The temporal intervals for
-the communication between two \cetis{} are represented in he
-panel (b).
-%
-The receiver \ceti{} E$_1$ can listen signals from the emiter \ceti{} E$_2$,
-from the "Contact" event (t=C$_{12}$) up to the "Blackout" event (t=B$_{12}$).
-%
-Similarly, 
-the receiver \ceti{} E$_2$ can listen signals from the emiter \ceti{} E$_1$,
-from t=C$_{21}$ up to t=B$_{21}$. 
-%
-   } \label{F_scheme}
-\end{figure}
-
-
-
+     
 %{{{   
 
 \ffn{1} Space—time diagrams, where time and space are represented on
@@ -525,7 +545,7 @@ distance, i.e., the distance traversed by any signal spreading from
 the emitter at light speed (for example, any electromagnetic signal).
 %
 In this scheme, a light pulse would follow a trajectory represented by
-a line at 45 degrees from the axes, given the units of the time and
+a line at 45 degrees from the axes, given the units of time and
 space axes are years and light years, respectively.
 %
 Panel (a) of the Figure represents the region $R$ (shaded polygon)
@@ -599,42 +619,7 @@ Therefore, the time range when a bidirectional contact is possible
 occurs between the maximum time of the contact points and the minimum
 time between the blackout points.
 
-%}}} 
-      
-  
-\begin{figure*}
-   \centering
-   \includegraphics[width=\textwidth]{F_messages.pdf}
-   \caption{
-   %   
-Schematic representation on space--time diagrams of the possible cases in which a
-\ceti{} E (Emiter, solid line) can be in causal contact with a \ceti{} R
-(Receiver, dashed line).
-%
-Causal contact can be produced either if the emiter \ceti{} appears before
-(left) or after (right) the receiver \ceti{}.
-%
-The causal contact in which the receiver can have access to the signal 
-from the emiter is produced between the C event (Contact, open circles) and the B
-event (Blackout, filled circles).
-%
-The duration of the causal contact in one direction depends on
-several factors, mainly the time lag between the awakening events
-(horizontal separation in the space--time diagrams)
-and the distance between the \cetis (vertical separation in the
-space--time diagrams).
-%   
-The different configurations must be taken into account in order to 
-obtain the list of the upcomming events.
-%
-The time intervals for a two--way communication to be possible are
-indicated in double lines. 
-%
-   } \label{F_messages}
-\end{figure*}  
 
-
-%{{{     
 
 The temporal structure that emerges from the experimental setup implies that, as a fundamental property of the simulations, a causal connection can be produced without 
 requiring that the two nodes are active at the same time.
@@ -673,24 +658,8 @@ The time span for E$_i$ is (A$_i$ , D$_i$) , for $i = {1, 2}$.
 Emitter $i$ can listen to emiter $j$ between C$_{ij}$ and B$_{ij}$.
 %
 The type and length of causal contact in both directions depend on the distance and time lag between the awakening events, the maximum distance that a signal can reach and the time period in which each emitter is active.
-%
-\ffn{2}
-%
-In the Fig.~\ref{F_messages} we show a schematic representation of the possible cases in which a \ceti{} E (standing for Emiter) can be in causal contact with a \ceti{} R (receiver).
-%
-The duration of such a contact in one way depends on several factors, mainly the lifetimes, the time delay between the A-type events and the distance between the two nodes.
-%
-As it can be seen, the direction of the causal contact does not imply any ordering for the A-type events of the involved emitter/receiver pair.
-%
-For instance, a node can be in the light cone of another node that turned up later, i.e., the receiver is older than the emitter, like in the cases (e) and (f) of the Figure.
-%
-In the implementation of the DE simulation, all possibilities for causal contacts are reduced to the six cases shown in the Figure.
-%
-Once a pair of nodes become active and their properties have been assigned, it is possible to determine if and when they will get connected.
-%
-The times derived for such events are added to a stack of times so that they are visited in order, and in turn trigger further events.
-%
-% EJEMPLOS???
+
+
 
 
 
@@ -807,11 +776,13 @@ nodes.
    \multicolumn{2}{l}{independent variables (hypothesis space)}
    &min. value&max. value&Nbins\\
 \hline
-   $\tau_{a}$ & Mean temporal separation between consecutive
-   awakenings & 10$^2$~a & 10$^6$~a & 50\\ 
+   $\tau_{a}$ & Mean temporal separation between consecutive awakenings 
+	      & 500~a & 40500~a & 21\\ 
+	    & & 5$\cdot$10$^5$~a & 10$^6$~a & 51\\ 
    $\tau_{s}$ & Mean lifetime of a \ceti{}
-   & 10$^2$a & 10$^6$~a& 50\\ 
-   D$_{\rm max}$ & Maximum reach of a message  & 30~pc & 10~kpc & 50 \\
+	      & 500~a & 40500~a & 21\\ 
+	    & & 5$\cdot$10$^5$~a & 10$^6$~a & 51\\ 
+	D$_{\rm max}$ & Maximum reach of a message  & \multicolumn{3}{c}{100 pc, 500 pc, 1 kpc, 5 kpc, 10 kpc} \\
 \hline
    \multicolumn{2}{l}{fixed variables} & \multicolumn{2}{c}{assumptions} &value \\
 \hline
@@ -820,10 +791,10 @@ nodes.
    f$_s$ & The scan of the sky & fully efficient&&1\\
    f$_p$ & panspermia or colonization &absent&&0\\
    & shape of the Galactic Habitable Zone & 2--dimensional ring &&\\
-   R$_{GHZ}^{\rm min}$   & Inner radius of the GHZ     & & & 7~kpc\\
-   R$_{GHZ}^{\rm max}$   & Outer radius of the GHZ     &&& 9~kpc\\
-   t$_{\rm max}$ & Time span of the simulation  &&&1.e6~a\\
-    & \multicolumn{3}{l}{number of random realizations for each point in the hypothesis space} &50\\
+	R$_{GHZ}^{\rm min}$   & Inner radius of the GHZ  & \citet{lineweaver_galactic_2004} & & 7~kpc\\
+   R$_{GHZ}^{\rm max}$   & Outer radius of the GHZ       & \citet{lineweaver_galactic_2004} & & 9~kpc\\
+	t$_{\rm max}$ & Time span of the simulation  & & \multicolumn{2}{r}{5$\cdot$10$^6$~a, 10$^7$~a} \\
+    & \multicolumn{3}{l}{number of random realizations for each point in the hypothesis space} & 10, 5, 1 \\
 \hline
    \multicolumn{2}{l}{discrete events} &
    \multicolumn{3}{l}{affected variables}\\
