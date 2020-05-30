@@ -105,27 +105,24 @@ GHZ: Galactic Habitable Zone}
 
 \begin{abstract}
 %
-The abundance of intelligent civilisations in the Galaxy is a
-   longstanding question related to the expected probability
-   of success for SETI programs.  Traditional approaches to quantify
-   this problem use either frequentist inferences or numerical
-   simulations. The key challenges in both cases are the proper
-   treatment of the time variable and the large uncertainties on the
-   intervening factors. Here we present a three-parametric
-   statistical model of the network of causally connected locations in
-   a simplified Galaxy, with the restriction of a maximum distance
-   range for any signal. We implement Monte Carlo simulations of this
-   model to explore the parameter space and analyse the probabilities
-   of causal contacts for random locations in the Galaxy. We find
-   that, given the enormous distances involved, causal contacts
-   between civilisations would be very rare. The odds to make a
-   contact in a few years of monitoring are low for most models,
-   except for those of a galaxy densely populated with ancient
-   civilisations. The probability of causal contacts increases with
-   the lifetime of civilisations more significantly than with the
-   number of active civilisations. We show that the maximum
-   probability of making a contact occurs when a civilization
-   discovers the required communication technology.
+    In this work we address the problem of estimating the
+    probabilities of causal contacts between civilisations in the
+    Galaxy. We make no assumptions regarding the origin and
+    evolution of intelligent life.  We simply assume a network of
+    causally connected nodes.  These nodes refer somehow to
+    intelligent agents with the capacity of receiving and emitting
+    electromagnetic signals. Here we present a three-parametric
+    statistical Monte Carlo model of the network in a simplified
+    sketch of the Galaxy. Our goal, using Monte Carlo simulations, is
+    to explore the parameter space and analyse the probabilities of
+    causal contacts. We find that the odds to make a contact over
+    decades of monitoring are low for most models, except for those of
+    a galaxy densely populated with long-standing civilisations. We
+    also find that the probability of causal contacts increases with
+    the lifetime of civilisations more significantly than with the
+    number of active civilisations. We show that the maximum
+    probability of making a contact occurs when a civilisation
+    discovers the required communication technology.
 %
 \end{abstract}
 
@@ -149,15 +146,14 @@ A comprehensive review and analysis of each term of the equation are
 presented in \citet{vakoch_drake_2015}.
 %
 Optimistic estimates from the Drake equation contrast with the
-so-called Fermi paradox, which states the contradiction between the
+so-called Fermi paradox, which states the apparent contradiction between the
 expected abundance of life in the Galaxy and the lack of evidence for
 it \citep[e.g. ][]{hart_explanation_1975, brin_great_1983,
-barlow_galactic_2012, forgan_galactic_2016, vanhouten_isthere_2017,
+barlow_galactic_2012, forgan_galactic_2016, anchordoqui_is_2017,
 Sotos_biotechnology_2019, carroll_nellemback_fermi_2019}.
 %
 There are many propositions aimed at solving this paradox, which make
-use of statistical \citep{solomonides_probabilistic_2016,
-vanhouten_isthere_2017, horvat_calculating_2007,
+use of statistical \citep{solomonides_probabilistic_2016, horvat_calculating_2007,
 maccone_statistical_2015} or stochastic approaches
 \citep{forgan_numerical_2009, bloetscher_using_2019,
 glade_stochastic_2011, forgan_numerical_2010}.
@@ -167,43 +163,57 @@ Regarding the Drake equation, analytical interpretations
 \citep[][and references therein]{burchell_whither_2006} have also been
 proposed. 
 %
-The lack of contacts could be explained by the difficulty of life to
-appear due to astrophysical explanations
+The absence of detections of extraterrestrial intelligent signals
+could be explained by
+astrophysical phenomena that makes life difficult to develop
 \citep{annis_astrophysical_1999}.
 %
-In general, also more speculative proposals
+Besides the possible scarcity of life,
+alternative scenarios have also been discussed
 \citep{barlow_galactic_2013, lampton_information_2013,
-conway_three_2018, forgan_galactic_2017} have been discussed.
-% 
-We stress the fact that the lack of detections of extraterrestrial
-intelligent signals is the only observational fact that can be taken
-for sure.
+conway_three_2018, forgan_galactic_2017}.
 %
-Indeed, as \citep{tarter_search_2001} pointed out, according to our current technical
-capabilities for SETI, we have not received any signal yet.
+The large distances in the Galaxy and the likely limited lifetime of
+civilizations may play an important role in determining how difficult it
+would be to obtain evidence for other inhabited worlds.
+%
+%We stress the fact that the lack of detections of extraterrestrial
+%intelligent signals is the only observational fact that can be taken
+%for sure.
+The analysis of these scenarios is difficult due to the lack of data
+about the hypothetical extraterrestrial intelligences.
+%
+Indeed, as \citep{tarter_search_2001} pointed out, according to our
+current technical capabilities for the search of extraterrestrial
+intelligence (SETI), we have not received any signal yet.
 %
 %Indeed, for the number of years projects for the Search of
 %Extraterrestrial Intelligences (SETI) have been working, no signal has
 %been received using the technical possibilities within their search
 %criteria \citep{tarter_search_2001}.
 %
-The absence of detection has also motivated alternative ideas for new
+The absence of detections has also motivated alternative ideas for new
 SETI strategies \citep{forgan_exoplanet_2017, balbi_impact_2018,
 loeb_eavesdropping_2006, maccone_KLT_2010, tarter_advancing_2009,
 enriquez_breakthrough_2017, loeb_relative_2016, maccone_SETI_2011,
 lingam_relative_2019, wright_theGsearch_2015, maccone_SETI_2013,
 maccone_lognormals_2014, harp_application_2018,
 forgan_possibility_2013, forgan_galactic_2017, funes_searching_2019}.
-%
+
+
+
 \Fpagebreak
+
+
+The discussion about the problem of the (unknown)
+abundance of civilisations in the Galaxy has been organised around the
+factors in the Drake equation \citep{hinkel_interdisciplinary_2019}.
 %
-The Drake equation is a key tool to organise the discussion about the
-problem of the (unknown) abundance of civilisations in the Galaxy
-\citep{hinkel_interdisciplinary_2019}.
-%
-However, the uncertainties in the factors of this equation make it
-less suitable to a formal study to define searching strategies or to
-compute the actual number of extraterrestrial intelligences.
+However, the uncertainties in these factors, specially the ones
+representing biological processes, make it
+less suitable to a formal study with the purpose of defining
+searching strategies or
+computing the estimated number of extraterrestrial intelligences.
 %
 %The optimistic estimations from the Drake equation also contrast with
 %the results from the SETI initiatives.
@@ -214,20 +224,21 @@ compute the actual number of extraterrestrial intelligences.
 A number of studies propose alternative formalisms for the estimation of the
 likelihood of detecting intelligent signals from space.
 %
-\citet{prantzos_joint_2013} proposes a unified framework for a joint
+\citet{prantzos_joint_2013}, for example, proposes a unified framework for a joint
 analysis of the Drake equation and the Fermi paradox, concluding that
-for sufficiently long-lived civilisations, colonisation of the Galaxy
-is the only reasonable option to gain awareness about other life
-forms.
+for sufficiently long-lived civilisations, colonisation
+is the most promising strategy to find other life forms.
 %
 \citet{haqq-misra_drake_2017} discuss the dependence of the Drake
 equation parameters on the spectral type of the host stars and the
 time since the Galaxy formed, and examine trajectories for the
 emergence of communicative civilisations.
 %
-Some modifications to the original idea of the equation have tried to
-imprint a stochastic nature, to propose a probabilistic approach, or
-to consider the temporal structure missing in the equation.
+Some modifications to the original idea of the Drake equation have
+been proposed, in order to
+integrate a temporal structure, to
+reformulate it as a stochastic process or to propose alternative
+probabilistic expressions.
 %
 Temporal aspects of the distribution of communicating civilisations
 and their contacts have been explored by several authors
@@ -236,15 +247,16 @@ balbi_impact_2018, balb_spatiotemporal_2018, horvat_impact_2011}, as
 well as efforts on considering the stochastic nature of the Drake
 equation \citep{glade_stochastic_2011}.
 %
-The literature about this topic brings a number of works that consider
+The literature about this topic brings also a number of works that consider
 numerical simulations \citep{forgan_evaluating_2015,
 vukotic_grandeur_2016, murante_simulating_2015, forgan_numerical_2009,
 forgan_galactic_2017, ramirez_new_2017}.
 %
-Although this approach does not rely on observed quantities that could
-be modified with time (like, for instance, the fraction of stars with planets), 
-it also depend on the definition of a number of
-parameters which are unknown or uncertain, required to carry out
+Although this approach does not rely on values that can be measured
+from observations
+(like the fraction of stars with planets), 
+it depends on the definition of
+unknown or uncertain parameters required to carry out
 a the simulations.
 %
 \citet{grimaldi_signal_2017} considers a statistical model for the
@@ -253,7 +265,14 @@ taking into account the finite lifetime of signal emitters, and based
 on the fractional volume occupied by all signals reaching our planet.
 
 
-
+Several authors raise the distinction between causal contacts and
+actual contacts.
+%
+In the first case, the determinations of metrics for the likelihood of
+a contact are independent of considerations about the technological
+resources or the implicit coordination to decipher intelligent
+messages.
+%
 In a recent work, \citet{balbi_impact_2018} uses a statistical model to
 analyse the occurrence of causal contacts between civilisations in the
 Galaxy.
@@ -264,48 +283,53 @@ might be in causal contact with an observer on the Earth.
 %
 \citet{cirkovic_temporal_2004} also emphasises the lack of temporal
 structure in the Drake equation and, in particular, the limitations
-of this expresion to estimate the required timescale of a SETI
+of this expression to estimate the required timescale of a SETI
 program to succeed in the detection of intelligent signals.
-%
-Despite its shotcomming for a solid mathematical foundation of SETI, 
-the Drake equation has also motivated efforts to produce formal
-statistical results.
+
+
+
+
+The quest for a formal statistical theory has also lead 
+to important progress in the mathematical foundations of SETI.
 %
 Recently, \citet{bloetscher_using_2019} considers a Bayesian approach,
 still motivated by the Drake equation, to estimate
 the number of civilisations in the Galaxy.
 %
 To that end, the authors employ Monte Carlo Markov Chains over each factor
-of the Drake equation, and combine the means to reach a probabilistic
+of the Drake equation, and combine the mean values to reach a probabilistic
 result.
 %
 It is worth mentioning that the author proposes a log-normal target
 distribution to compute the posterior probabilities.
 %
-This study concludes that there is a tiny probability for Earth to
-contact another extraterrestrial civilization.    
+This study concludes that there is a small probability that the Galaxy
+is populated with a large number of communicating civilisations.
 %
 \citet{smith_broadcasting_2009} uses an analytical model to gauge the
-probabilities of contact between two randomly located civilisations,
-and the waiting time for the first contact, assuming a fixed maximum
-broadcasting distance.
-% 
-Different statistical modelings have been also proposed.
+probabilities of contact between two randomly located civilisations
+and the waiting time for the first contact.
 %
-A notable example of this es the work by \citet{balbi_impact_2018}, who investigates the
-chance of communicating civilisations making causal contact within a
-volume surrounding the location of the Earth, using a statistical
-model to compute the occurrence of causal contacts.
+The author stresses that 
+the maximum broadcasting distance and the lifetime of civilisations
+come into play to produce the possible network of connections.
+
+
+
+A notable example of statistica modeling is the work by
+\citet{balbi_impact_2018}, who investigates the chance of
+communicating civilisations making causal contact within a volume
+surrounding the location of the Earth.
 %
-The author stresses the fact that the causal contact requirement
-involves the distance between civilisations, their lifespan and their
-times of appearance.
+The author argues that the causal contact requirement involves mainly
+the distance between civilisations, their lifespan and their times of
+appearance.
 %
-This is important since the time it takes the
-light to travel across the Galaxy might be much lesser than its lifetime.
+This is important since the time the light takes to travel across the
+Galaxy might be much lesser than the lifetime of the emitter.
 %
 \citet{balbi_impact_2018} fixes the total number of civilisations and
-explore the parametric space that comprises three parameters, namely,
+explores the parametric space that comprises three parameters, namely,
 the distance to the Earth, the time of appearance and the lifespan of
 the communicating civilization.
 %
@@ -315,50 +339,57 @@ The distribution of the distances results from a uniform model for the
 positions of civilizations within the plane of the Galaxy.
 %
 For the distribution of the characteristic time of appearance, the
-author explores exponential and truncated Gaussian distributions.
+author explores exponential and truncated Gaussian distributions,
+while for the distribution of the lifespans chooses an exponential
+distribution.
 %
-Moreover, for the distribution of the lifespans, the author chooses an
-exponential distribution.
+It is important to consider that the estimation of the number of
+communicating civilisations vary with the choice of the statistical
+distribution for the time of appearance, as shown by
+\citet{balbi_impact_2018}.
 %
-It is important to consider that the fraction of communicating
-civilisations vary with the choice of the statistical distribution for
-the time of appearance, as shown by \citet{balbi_impact_2018}.
+For all analysed distributions, the author concludes that, the
+fraction of emitters that are listened is low if they are spreaded in
+time and with limited lifetimes.
 %
-For all analysed distributions, the author concludes that,
-the detectable fraction corresponding to 
-
-for a mean
-lifetime of 10$^9$ years and for a maximum radius for the detection of
-the signal of 1000~ly, the detectable civilizations
-are roughly the 10 per cent of the total, due to their spread in time and
-their limited lifetimes.
-%
-In another related approach, \citet{vukotic_astrobiological_2012}
-propose a probabilistic cellular automata (PCA) modelling. 
+In another numerical approach, \citet{vukotic_astrobiological_2012}
+propose a probabilistic cellular automata modelling. 
 %
 In this framework, a complex system is modelled by a lattice of cells
 which evolve at discrete time steps, according to transition rules
-that take into account for each cell the states of its neighbour
-cells.
+that take into account the neighbour cells.
 %
-The authors implement a PCA model to a network of cells which
-represent life complexity on a 2-dimensional region resembling the
-Galactic Habitable Zone (GHZ),  an annular ring set between a minimal
-radius of 6 kpc and a peak radius of 10 kpc. 
+The authors implement this model to a network of cells which represent
+life complexity on a 2-dimensional region resembling the Galactic
+Habitable Zone (GHZ), an annular ring set between a minimal radius of
+6 kpc and a peak radius of 10 kpc.
+%
+This simulations represent the spread if intelligence as an
+implementation of panspermia theories.
 %
 Within this framework, \citet{vukotic_astrobiological_2012} also make
 several Monte Carlo simulations and analyse ensemble-averaged results.
 %
-The work aims at analysing the evolution of life, although it does not
-account for the network of causal contacts among
-technological civilisations.
+Their work aims at analysing the evolution of life, and although it
+does not account for the network of causal contacts among
+technological civilisations, it offers a tool to think SETI searches
+from a novel point of view.
+
+
+
+
+
+
 
 % INTRODUCTION OF *THIS* WORK
 
-In this work we address the problem of the temporal and spatial structure of
+This study is conceived as an introduction to a simple probabilistic
+model and a numerical exploration of its parameter space.
+%
+With these tools, we address the problem of the temporal and spatial structure of
 the distribution of communicating civilisations.
 %
-We make no asumptions about, e.g., the origin of life, the development of
+This approach does not require asumptions about, e.g., the origin of life, the development of
 intelligence or the formation of habitable planets according to stellar type.
 %
 Instead, we assume monoparametric function families to model the appearance of
@@ -563,7 +594,7 @@ by a maximum distance.
 We refer to this nodes as ''Constrained Causal Contact Nodes``
 (hereafter, \ceti{}).
 %
-We chose this generic name in order to stress the fact that in this analysis 
+We choose this generic name in order to stress the fact that in this analysis 
 only the causal contact is considered, independently of any broadcasting or
 lookout activity.
 %
@@ -650,7 +681,7 @@ In this scheme, a light pulse would follow a trajectory represented by
 a line at 45 degrees from the axes, given the units of time and
 space axes are years and light years, respectively.
 %
-Panel (a) of the Figure represents the region $R$ (shaded polygon)
+Panel (a) of the represents the region $R$ (shaded polygon)
 which is causally connected to the emitter (left vertex).
 %
 This region develops after an event (hereafter dubbed A-type event) in
@@ -658,7 +689,7 @@ which the node acquires the communication capability, or becomes
 ''active''.
 %
 The sphere of first contact (SFC) is centred on the emitter,
-represented in the Figure by the left angle of the region $R$.
+represented by the left angle of the region $R$.
 %
 This sphere grows until its radius reaches the D$_{\rm max}$ distance, in
 which it would be no longer detectable due to the decrease in the
@@ -675,12 +706,12 @@ by these two spheres and therefore has the shape of a filled sphere
 (before the D event) or of a spherical shell (after the D event).
 %
 The temporal intervals for the communication between two \cetis{} are
-represented in the panel (b) of the Figure.
+represented in the panel (b) of the Fig.~\ref{F_scheme}.
 %
 In this scheme, the entire lifetime of a \ceti{} can be represented by
-a polygon, as shown in the Figure.
+a polygon.
 %
-The polygon is limited in the spatial axis by the maximum distance of
+This polygon is limited in the spatial axis by the maximum distance of
 the signal $D_{\rm max}$ and in the time axis by the time span between the
 A-type event (concave vertex) and the D-type event (convex vertex).
 %
@@ -688,12 +719,10 @@ This representation allows to visualize the important events that
 result from the presence and communications of two \cetis{}.
 %
 The points in time where the \cetis{} acquire their communicating
-capacity are dubbed ``Awakening'' events ($A_1$ and $A_2$ in the
-Figure).
+capacity are dubbed ``Awakening'' events ($A_1$ and $A_2$).
 %
 Similarly, the instants in time where the \cetis{} lose their
-communicating capacity are dubbed ‘’Doomsday’’ events ($D_1$ and $D_2$
-in the Figure).
+communicating capacity are dubbed ‘’Doomsday’’ events ($D_1$ and $D_2$).
 %
 The points in space--time where the first contact is produced for each
 one of the \cetis{}, are defined as ``Contact'' events, shown as $C_1$
@@ -701,7 +730,7 @@ and $C_2$.
 %
 Finally, the two points where the contact is lost for each one the
 \cetis{}, are denominated ``Blackout'' events, presented as $B_1$ and
-$B_2$ in the Figure.
+$B_2$.
 %
 The receiver node E$_1$ can listen signals from the emitter node
 E$_2$, from the first contact event (t=C$_{12}$) until the last
@@ -754,7 +783,7 @@ The trailing front, or surface of last contact (SLC) also grows from the
 central \ceti{}, with a delay with respect to the SFC equivalent to the
 lifetime of the node, and produces a spherical shell region.
 %
-Any other \ceti{} within this region will be aware of the originating node,
+Any other \ceti{} within this region will be in causal contact with the originating node,
 even if it has disappeared before the time of contact.
 %
 This region will grow if the surface of first contact has not yet reached the
@@ -928,26 +957,30 @@ the nodes (i.e., $\left< \tau_a \right>$).
 
 
 
-
-
-%}}}
-
  \setlength{\tabcolsep}{10pt}
 \begin{table*}
 \centering
 \begin{tabular}{cllll}
 \hline
-   \multicolumn{2}{l}{independent variables (hypothesis space)}
+   \multicolumn{2}{l}{independent variables (parameter space)}
    &min. value&max. value&Nbins\\
+%\hline
+%   $\tau_{a}$ & Mean temporal separation between consecutive awakenings 
+%	      & 500~a & 40500~a & 21\\ 
+%	    & & 5$\cdot$10$^5$~a & 10$^6$~a & 51\\ 
+%   $\tau_{s}$ & Mean lifetime of a \ceti{}
+%	      & 500~a & 40500~a & 21\\ 
+%	    & & 5$\cdot$10$^5$~a & 10$^6$~a & 51\\ 
+%	D$_{\rm max}$ & Maximum reach of a message  & \multicolumn{3}{c}{100 pc, 500 pc, 1 kpc, 5 kpc, 10 kpc} \\
 \hline
-   $\tau_{a}$ & Mean temporal separation between consecutive awakenings 
-	      & 500~a & 40500~a & 21\\ 
-	    & & 5$\cdot$10$^5$~a & 10$^6$~a & 51\\ 
+
+   $\tau_{a}$ & Mean temporal separation between consecutive
+   awakenings & 4000 yr & 200\,000 yr & 50\\ 
    $\tau_{s}$ & Mean lifetime of a \ceti{}
-	      & 500~a & 40500~a & 21\\ 
-	    & & 5$\cdot$10$^5$~a & 10$^6$~a & 51\\ 
-	D$_{\rm max}$ & Maximum reach of a message  & \multicolumn{3}{c}{100 pc, 500 pc, 1 kpc, 5 kpc, 10 kpc} \\
-\hline
+   & 10000 yr & 500\,000 yr& 50\\ 
+   D$_{max}$ & Maximum reach of a message  &  \multicolumn{2}{l}{3 kpc, 12 kpc, 25 kpc} & 3\\
+\hline 
+
    \multicolumn{2}{l}{fixed variables} & \multicolumn{2}{c}{assumptions} &value \\
 \hline
    & statistical properties of all \cetis{} &equally distributed&&\\
@@ -957,8 +990,9 @@ the nodes (i.e., $\left< \tau_a \right>$).
    & shape of the Galactic Habitable Zone & 2--dimensional ring &&\\
 	R$_{GHZ}^{\rm min}$   & Inner radius of the GHZ  & \citet{lineweaver_galactic_2004} & & 7~kpc\\
    R$_{GHZ}^{\rm max}$   & Outer radius of the GHZ       & \citet{lineweaver_galactic_2004} & & 9~kpc\\
-	t$_{\rm max}$ & Time span of the simulation  & & \multicolumn{2}{r}{5$\cdot$10$^6$~a, 10$^7$~a} \\
-    & \multicolumn{3}{l}{number of random realizations for each point in the hypothesis space} & 10, 5, 1 \\
+	t$_{\rm max}$ & Time span of the simulation  & & \multicolumn{2}{r}{10$^6$~yr} \\
+    & \multicolumn{3}{l}{number of random realizations for each point
+    in the parameter space} & 50 \\
 \hline
    \multicolumn{2}{l}{discrete events} &
    \multicolumn{3}{l}{affected variables}\\
@@ -984,7 +1018,6 @@ the nodes (i.e., $\left< \tau_a \right>$).
     
 
 \subsection{Power laws vs. exponential laws}\label{SS_PDF_shape}
-%{{{
 
 The temporal structure of the process is defined by two distribution
 parameters. One of them represent the mean time interval that a node can
@@ -1095,39 +1128,39 @@ their separations, and vice versa.
 It should be emphasised that the exponential
 laws used in this work are assumed as part of the working hypothesis, and
 instead of analysing results from a particular parameter chosen ad hoc, we
-explore the hypothesis space and analyse the impact of the values of these
+explore the parameter space and analyse the impact of the values of these
 parameters on the results.
 
 
-
-
-
-
-%}}}
- 
  
 \begin{figure} \centering
    \includegraphics[width=0.5\textwidth]{F_number_of_contacts.pdf}
    \caption{
    %
 Empirical cumulative distributions of the number contacts
-for \cetis in four different samples (M5, M6, M7, M8) with two
-values for the range of the signal reach: D$_{\rm max}$=40000 ly (blue),  and 
-D$_{\rm max}$=80000 ly (orange).
+   for \cetis in different samples and with D$_{\rm max}$=10~kpc.
 %
-Except for the models corresponding to a densely populated galaxy with
-long--living \cetis, the \cetis which receive more than 10 contacts
-are very unlikely.
+The upper panel shows the variation of the probability distribution
+   estimation as a function of the $\tau_a$ parameter.  All the curves
+   correspond to models with 
+   $\tau_s=40~kyr$ and D$_{\rm max}=10\,kpc$.
 %
-See Table \ref{T_selected_models} for model descriptions.
+The bottom panel corresponds to several values of $\tau_s$, with
+   $\tau_a=1~kyr$ and D$_{\rm max}=10\,kpc$.
 %
+   Cumulative distributions can be used to visualise the probability
+   of a random node in a model of having more than M contacts.  For
+   example, in the upper panel the probability of a random node having
+   more than 10 contacts is nearly one for the model with the
+   smallest $\tau_a$ value, and nearly zero for the model with the
+   largest $\tau_a$ value.
+   %
    } \label{F_number_of_contacts}
 \end{figure}
         
  
 
 \subsection{Complexity of the model}
-%{{{
 
 In this Section we discuss the degree of complexity in the model, considering a
 compromise between the accuracy of the model and the number of parameters that
@@ -1177,17 +1210,17 @@ the spiral shape and the width of the disc of the Galaxy.
 Regarding the distributions of the parameters, different distribution functions
 for the mean lifetime of \cetis{} can be implemented as alternatives.
 %
-Finally, regarding the degree of idealisation, the model admits different
+Regarding the degree of idealisation, the model admits different
 efficiencies for the sphere of the causal region of each \ceti{}, featuring
 different searching strategies \citep{hippke_interstellar_2017}. 
 %
 It is also possible to consider that $D_{\rm max}$ is different for different
 \cetis{}.
 %
-For example, a power law where powerful emissions are rare and low emissions
-are common could be an improvement to the model.
+For example, a power law where a powerful emission is rare and a low emission
+is common could be an improvement to the model.
 %
-In this work we chose not to implement this for the sake of simplicity.
+In this work we choose not to implement this for the sake of simplicity.
 %
 Finally, the role of the message contents could influence on the lifespan of a
 \ceti{} that receives a message, although the implementation of such behaviour
@@ -1200,10 +1233,10 @@ simulation, as described in detail in the next Section.
 
 
 \subsection{Discrete event process}
-%{{{
 
-A discrete event simulation is performed for a given model $M(\tau_a, \tau_s,
-D_{\rm max})$ by keeping track of a set of variables that change each time an
+A discrete event simulation is performed for a given model, in this
+work $M(\tau_a, \tau_s,
+D_{\rm max})$, by keeping track of a set of variables that change each time an
 event happens. 
 %
 In addition, the model comprises elements that are fixed for all simulations,
@@ -1227,8 +1260,6 @@ occurs.   
 %%% comparar con el stochsatic cellular automata
 % ver libro Solving Fermi paradox, sec. 27.3.1
 
-%}}}
-           
   
 \begin{figure*} % 2D color plot
    \centering
@@ -1237,9 +1268,9 @@ occurs.   
    %
 Rate of MPLs that never make contact (listening) as a
 function of $\tau_a$ and $\tau_s$, for 
-$D_{\rm max}$=10000 (left panel),
-$D_{\rm max}$=40000 (middle panel), and
-$D_{\rm max}$=80000 (right panel)
+$D_{\rm max}$=3~kpc (left panel),
+$D_{\rm max}$=12~kpc (middle panel), and
+$D_{\rm max}$=25~kpc (right panel)
 %
    }
    \label{F_never_contact}
@@ -1252,9 +1283,9 @@ $D_{\rm max}$=80000 (right panel)
    %
 Rate of MPLs that listen at the moment of the
 awakening, as a funcion of $\tau_a$ and $\tau_s$, for
-$D_{\rm max}$=10000 (left panel),
-$D_{\rm max}$=40000 (middle panel), and
-$D_{\rm max}$=80000 (right panel)
+$D_{\rm max}$=3~kpc (left panel),
+$D_{\rm max}$=12~kpc (middle panel), and
+$D_{\rm max}$=25~kpc (right panel)
 %
    }
    \label{F_C_at_A}
@@ -1264,7 +1295,6 @@ $D_{\rm max}$=80000 (right panel)
                      
 
 \subsection{Model for \cetis{}}
-%{{{
 
 Since the method is based on events, the first step is to define the
 relationships between them and how events trigger changes on the state of the
@@ -1288,15 +1318,14 @@ given by the spiral structure of the Galaxy.
 The main task in setting a DE simulation is to define the events and what
 changes do these events produce on the system.
 %
-Although there are several possible approaches, we chose to follow the
+Although there are several possible approaches, we choose to follow the
 evolution of the system according to the following events:
 
 \begin{enumerate}
    \item[(A)] Awakening: A new \ceti{} acquires the ability to emit
       and receive messages and starts to actively broadcast and
       lookout for messages.
-   \item[(C)] Contact: A new one-way causal contact is established
-      (does not require the awareness of the involved \cetis{}.)
+   \item[(C)] Contact: A new one-way causal contact is established.
    \item[(B)] Blackout: An existing causal contact is interrupted,
       with or without the occurrence of a doomsday event.
    \item[(D)] Doomsday: An old \ceti{} disappears, or halts its
@@ -1333,11 +1362,9 @@ Also, the list of active \cetis{} is obtained as a function of time.
 % The two radii are measured in light years, with the aim to maintain a
 % single and comprehensive unit for both space and time coordinates. 
 %
-%}}}
 
 
 \subsection{Model implementation}
-%{{{
 
 
 % hearsay 
@@ -1426,8 +1453,6 @@ simulations.
 %
 More information on this can be found on the documentation of the software.
 
-%}}}
-
 
 \begin{figure}
    \centering
@@ -1438,10 +1463,10 @@ Histograms of the mean waiting times for the first contact, for
 several models.
 %
 Left panel shows the histograms for several values of $\tau_a$, and
-$\tau_s$ in the range 17000-24000~a.
+$\tau_s$ in the range 17000-24000~yr.
 %
 Right panel shows the histograms for several values of $\tau_s$, and
-$\tau_a$ in the range 68000-100000~a.
+$\tau_a$ in the range 68000-100000~yr.
 %
 The shape of the histograms does not change when $\tau_a$ is
 modified, but significantly changes when $\tau_s$ is modified. 
@@ -1450,39 +1475,13 @@ modified, but significantly changes when $\tau_s$ is modified.
    \label{F_waiting_for_1C}
 \end{figure}
 
-\setlength{\tabcolsep}{10pt}
-\begin{table*}
-\centering
-\begin{tabular}{ccccc}
-\hline
-Model subset& D$_{\rm max}$ [lyr] & $\tau_a$ [a] & $\tau_s$ [a]&description\\
-\hline
-M1 & 40000 & 10$^4$   & 10$^4$  & dense, short lifetime\\
-M2 & 40000 & 10$^6$   & 10$^4$  & sparse, short lifetime\\
-M3 & 40000 & 10$^4$   & 10$^5$  & dense, long lifetime \\
-M4 & 40000 & 10$^6$   & 10$^5$  & sparse, long lifetime\\
-%                               
-M5 & 80000 & 10$^4$   & 10$^4$  & dense, short lifetime\\
-M6 & 80000 & 10$^6$   & 10$^4$  & sparse, short lifetime\\
-M7 & 80000 & 10$^4$   & 10$^6$  & dense, long lifetime \\
-M8 & 80000 & 10$^6$   & 10$^6$  & sparse, long lifetime\\
-%
-\hline
-\end{tabular}
-\caption{Selected models to analyze the behavior of simulation outputs
-   and their dependence on simulation parameters.}
-\label{T_selected_models}
-\end{table*}
-
- 
 
 
 %%% S E C T I O N - - - - - - - - - - - - - - - - - - - - - - -
 \section{Results: exploring the parameter space}\label{S_results}
-%{{{
 
 We implemented the simulation of a regular grid of models varying over
-the hypothesis space, which covers 15000 different models.
+the parameter space, which covers 15000 different models.
 %
 For each model, we simulated several realizations with different random
 seeds, in order to perform a MonteCarlo estimation of the variance.
@@ -1492,8 +1491,10 @@ up to 20 (for the sparsely populated models).
 %
 The parameters for the temporal aspects of the simulation (the mean
 waiting time for the next awakening, $\left<\tau_a\right>$, and the
-mean lifetime, $\left<\tau_s\right>$) cover the ranges 10$^2$-10$^6$~a, with 
-two linear partitions of 21 values (10$^2$-40500~a) and 51 values ($5\cdot10^5$-10$^6$~a)
+mean lifetime, $\left<\tau_s\right>$) cover the ranges
+10$^2$-10$^6$~yr, with 
+two linear partitions of 21 values (10$^2$-40500~yr) and 51 values
+($5\cdot10^5$-10$^6$~yr)
 for each parameter.
 %
 This partition was chosen after the requirement of the software to take linear bins, 
@@ -1502,7 +1503,7 @@ aiming at a better sampling of the low $\tau_a$ and low $\tau_s$ region of the p
 For the D$_{\rm max}$ parameter, we take the 
 values 100~pc, 500~pc, 1~kpc, 5~kpc and 10~kpc.
 %
-This setup makes a total of 40000 simulations, each covering a time
+This setup makes a total of 750000 simulations, each covering a time
 range of ten million years.
 %
 \ttn{1}
@@ -1572,33 +1573,26 @@ contacts.
 All these quantities can be analyzed as a function of the simulation
 parameters.
 %
-We chose eight models that are on opposed regions of the explored parameter
-space, and cover all possible combinations of short/long lifetimes, short/long
-waiting times for the next \ceti{} to appear in the galaxy and short/large
-range reach of the signal.
-%
-\ttn{2}
-%
-The details of each model are summarized in the Table~\ref{T_selected_models}.
 
-%}}}
+
+
+
 
 
 \subsection{Membership to the network of connected \cetis{}}\label{SS_members}
-%{{{
 
 \ffn{3}
 %
 In Fig.~\ref{F_number_of_contacts} we show the empirical cumulative
 distributions of the number contacts for \cetis{} in six different
 samples, including short and long lifetimes
-$\left(\,\left<\tau_s\right>=\right.$10000~a and
-$\left<\tau_s\right>$=100000~a, respectively$\left.\right)$, dense
+$\left(\,\left<\tau_s\right>=\right.$10000~yr and
+$\left<\tau_s\right>$=100000~yr, respectively$\left.\right)$, dense
 and sparse spatial distribution
-$\left(\,\left<\tau_a\right>=\right.$10000~a and
-$\left<\tau_a\right>$= 100000~a, respectively$\left.\right)$, and two
-different signal reach ranges (D$_{\rm max}$=40000 lyr and
-D$_{\rm max}$=80000~lyr).
+$\left(\,\left<\tau_a\right>=\right.$10000~yr and
+$\left<\tau_a\right>$= 100000~yr, respectively$\left.\right)$, and two
+different signal reach ranges (D$_{\rm max}$=12~kpc and
+D$_{\rm max}$=25~kpc).
 %
 The models M1 and M5 are not shown, since in both cases the total
 number of contacts is different from zero for less than the five per
@@ -1607,7 +1601,7 @@ cent of the \cetis{}.
 The areas between models with the same mean lifetime and mean
 awakening time are shaded for visualization purposes.
 %
-As it can be seen from this Figure, the mean lifetime is more
+As it can be seen, the mean lifetime is more
 determinant than the mean awakening rate (dense and sparse,
 represented by a different shade) for the number of contacts.
 %
@@ -1618,7 +1612,7 @@ maximizes the number of contacts, reaching a maximum of order 20
 contacts for a single \ceti{}.
 %
 Similarly, for the models with long signal range
-($D_{\rm max}=80000\,lyr$), the one which is dense and with long lifetime
+($D_{\rm max}=25$~kpc), the one which is dense and with long lifetime
 has the maximum number of contacts, reaching nearly 100 contacts for
 each \ceti{} in its entire lifetime.
 %
@@ -1631,7 +1625,7 @@ has a logarithmic scale on the x-axis, and it is the cumulative, not
 differential, empirical distribution, so that the differences in the
 number of contacts for different models are relatively large.
 %
-Another interesting feature observed in this Figure, is that for the
+Another interesting feature observed in the Fig.~\ref{F_number_of_contacts}, is that for the
 models analyzed, there are \cetis{} that have no causal contacts with
 any other \ceti{} during their whole lifetime.
 %
@@ -1651,12 +1645,11 @@ of \cetis{} in the simulations that never make contact (i.e., never
 listen to another \ceti{}), as a function of the mean lifetime
 ($\left<\tau_s\right>$, in the range 0--500 a) and the mean awakening
 time ($\left<\tau_a\right>$, in the range 0--200 a), for three
-different values of the maximum signal range, $D_{\rm max}=10000$~a (left
-panel), $D_{\rm max}=40000$~a (middle panel), and $D_{\rm
-max}=80000$~a
+different values of the maximum signal range, $D_{\rm max}$=3~kpc (left
+panel), $D_{\rm max}=12$~kpc (middle panel), and $D_{\rm max}=25$~kpc
 (right panel).
 %
-A clear pattern emerges in this Figure, showing that the probability
+A clear pattern emerges, showing that the probability
 for a \ceti{} of making causal contact with at least another \ceti{}
 during their entire lifetime, increases with increasing $D_{\rm max}$,
 increasing $\left<\tau_s\right>$ and decreasing $\left<\tau_a\right>$,
@@ -1681,16 +1674,11 @@ as a function of the mean lifetime
 time ($\left<\tau_a\right>$, in the range 0--200 a).
 %
 The three panels correspond to different values of the maximum signal
-range ($D_{\rm max}$),
-as indicated in the Figure:
+range ($D_{\rm max}$):
 %
-$D_{\rm max}=10000$~a (left
-panel), $D_{\rm max}=40000$~a (middle panel), and $D_{\rm
-max}=80000$~a
+$D_{\rm max}=3$~kpc (left
+panel), $D_{\rm max}=12$~kpc (middle panel), and $D_{\rm max}=25$~kpc
 (right panel).
-%
-These probabilities are consistent with the ones on the previous
-Figure.
 %
 Although they are not complementary, it is clear that the dependence
 with the three parameters is roughly linear in both cases.
@@ -1698,12 +1686,7 @@ with the three parameters is roughly linear in both cases.
 %% DISCUTIR ESTOS RESUOLTADOS SEGUN LA LITERATURA
 
 
-%
-
-%}}}
-
 \subsection{Waiting time for a first contact}\label{SS_waiting}
-%{{{
 
 In this subsection we analyze the distribution of the waiting times for
 a first contact.
@@ -1746,7 +1729,7 @@ events.
 %
 From a frequentist approach, the cumulative fraction of contacts
 from the awakening
-($t=$0~a) up to a given time are related to the estimation of the
+($t=$0~yr) up to a given time are related to the estimation of the
 probability of listening during that time interval and reaching to
 causal contact region of at least another node.
 %
@@ -1755,8 +1738,8 @@ interval with no success, i.e., without ever happening a C--type
 event.
 %
 Clearly, this probability diminishes with time and tends to zero for
-large time periods, meaning the a \ceti{} will eventually get aware of
-the presence of other \cetis{}
+large time periods, meaning the a \ceti{} will eventually enter into 
+the light cone of other \cetis{}
 
 
 Remarkably, the differential probability of making a causal contact reach its
@@ -1780,12 +1763,9 @@ The probability of such a contact does not grows linearly
 with the observing time, but is greater during the first 100
 millennia.
 
-%}}}
-
 
 %%% S E C T I O N - - - - - - - - - - - - - - - - - - - - - - -
 \section{Discussion}\label{S_discussion}
-%{{{
 
 We presented a stochastic model (SC3Net) to analyse the network of
 constrained causally connected nodes in a simplified Galaxy.
@@ -1805,10 +1785,10 @@ durations of such contacts.
 Using numerical simulations, we implemented this model to explore the
 three-dimensional parameter space, considering a grid of mean time
 separations between the activation of new nodes
-in the range 500--10$^6$~a.
+in the range 500--10$^6$~yr.
 %
 Additionally, we explore a grid of the mean survival times between 
-500~a and 10$^6$~a, and values for the maximum distance range of signals 
+500~yr and 10$^6$~yr, and values for the maximum distance range of signals 
 of 100~pc, 500~pc, 1~kpc, 5~kpc and 10~kpc.
 %
 The simulation of each parameter point was performed several times
@@ -1963,7 +1943,7 @@ the problem of the probabilities of causal contacts between locations
 in the galaxy with the possibility of sending and receiving messages.
 %
 Instead of making a number of assumptions, we have explored the
-hypothesis space, reducing the problem to only three parameters and a
+parameter space, reducing the problem to only three parameters and a
 few simple hypothesis to perform a complete model for the population and
 communication network in the galaxy.
 %
@@ -1979,7 +1959,6 @@ Thus, the temporal dimension, which is missing in the Drake
 equation, is a key factor to understand the network of contacts on
 different scenarios.
 
-%}}}
 
 \ack[Acknowledgement]{
 %
@@ -2004,6 +1983,361 @@ No competing financial interests exist.
 
 \bibliographystyle{mn2e}
 \setlength{\bibsep}{0.0pt}
-\bibliography{biblio_seti, biblio_software}
+%\bibliography{biblio_seti, biblio_software}
+
+\begin{thebibliography}{95}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{Adamic(2000)}]{adamic_zipf_2000}
+Adamic, L.A., 2000. Zipf, power-laws, and pareto-a ranking tutorial. Xerox Palo Alto Research Center, Palo Alto, CA, http://ginger. hpl. hp. com/shl/papers/ranking/ranking. html.
+
+\bibitem[{{Allen} {et~al}\mbox{.}(2020){Allen}, {Berriman}, {DuPrie}, {Mink},
+  {Nemiroff}, {Schmidt}, {Shamir}, {Shortridge}, {Taylor}, \&
+  {Teuben}}]{2020ASPC..522..731A}
+{Allen} A. {et~al.}, 2020, in Astronomical Society of the Pacific Conference
+  Series, Vol. 522, Astronomical Data Analysis Software and Systems XXVII,
+  {Ballester} P., {Ibsen} J., {Solar} M., {Shortridge} K., eds., p. 731
+
+\bibitem[{{Allen} \& {Schmidt}(2015)}]{2015JORS....3E..15A}
+{Allen} A., {Schmidt} J., 2015, Journal of Open Research Software, 3, E15
+
+\bibitem[{Anchordoqui \& Weber(2019)}]{anchordoqui_upper_2019}
+Anchordoqui L.~A., Weber S.~M., 2019, eprint arXiv:1908.01335
+
+\bibitem[{Annis(1999)}]{annis_astrophysical_1999}
+Annis J., 1999, JBIS - Journal of the British Interplanetary Society, 52, 19
+
+\bibitem[{Armstrong \& Sandberg(2013)}]{Armstrong2013}
+Armstrong S., Sandberg A., 2013, Acta Astronautica, 89, 1
+
+\bibitem[{Balb(2018)}]{balb_spatiotemporal_2018}
+Balb A., 2018, Mem. della Soc. Astron. Ital., 89, 425
+
+\bibitem[{Balbi(2018)}]{balbi_impact_2018}
+Balbi A., 2018, Astrobiology, 18, 54
+
+\bibitem[{Barab{\'{a}}si(2009)}]{barabasi_scale_2009}
+Barab{\'{a}}si A.~L., 2009, Science, 325, 412
+
+\bibitem[{Barlow(2013{\natexlab{a}})}]{barlow_galactic_2012}
+Barlow M.~T., 2013{\natexlab{a}}, Int. J. Astrobiol., 12, 63
+
+\bibitem[{Barlow(2013{\natexlab{b}})}]{barlow_galactic_2013}
+Barlow M.~T., 2013{\natexlab{b}}, Int. J. Astrobiol., 12, 63
+
+\bibitem[{Bloetscher(2019)}]{bloetscher_using_2019}
+Bloetscher F., 2019, Acta Astronaut., 155, 118
+
+\bibitem[{Borra(2012)}]{borra_searching_2012}
+Borra E.~F., 2012, AJ, 144, 181
+
+\bibitem[{Brin(1983)}]{brin_great_1983}
+Brin G., 1983, Quarterly Journal of the Royal Astronomical Society, 24, 283
+
+\bibitem[{Burchell(2006)}]{burchell_whither_2006}
+Burchell M.~J., 2006, Int. J. Astrobiol., 5, 243
+
+\bibitem[{Carroll-Nellenback {et~al}\mbox{.}(2019)Carroll-Nellenback, Frank,
+  Wright, \& Scharf}]{carroll_nellemback_fermi_2019}
+Carroll-Nellenback J., Frank A., Wright J., Scharf C., 2019, AJ, 158, 117
+
+\bibitem[{Chung(2003)}]{chung_simulation_2003}
+Chung C.~A., 2003, {Simulation Modeling Handbook: A Practical Approach
+  (Industrial and Manufacturing Engineering Series)}. CRC press
+
+\bibitem[{{\'{C}}irkovi{\'{c}}(2004)}]{cirkovic_temporal_2004}
+{\'{C}}irkovi{\'{c}} M.~M., 2004, Astrobiology, 4, 225
+
+\bibitem[{{Conway Morris}(2018)}]{conway_three_2018}
+{Conway Morris} S., 2018, Int. J. Astrobiol., 17, 287
+
+\bibitem[{Dayal {et~al}\mbox{.}(2016)Dayal, Ward, \&
+  Cockell}]{dayal_habitability_2016}
+Dayal P., Ward M., Cockell C., 2016, eprint arXiv:1606.09224
+
+\bibitem[{Do{\v{s}}ovi{\'{c}} {et~al}\mbox{.}(2019)Do{\v{s}}ovi{\'{c}},
+  Vukoti{\'{c}}, \& {\'{C}}irkovi{\'{c}}}]{Dosovic2019}
+Do{\v{s}}ovi{\'{c}} V., Vukoti{\'{c}} B., {\'{C}}irkovi{\'{c}} M.~M., 2019,
+  A\&A, 625, A98
+
+\bibitem[{Drake(1962)}]{drake_intelligent_1962}
+Drake F., 1962, ``Intelligent life in space'', Macmillan Ed.
+
+\bibitem[{Edmondson \& Stevens(2003)}]{Edmondson2003}
+Edmondson W.~H., Stevens I.~R., 2003, Int. J. Astrobiol., 2,
+  231
+
+\bibitem[{Enriquez {et~al}\mbox{.}(2017)Enriquez, Siemion, Foster, Gajjar,
+  Hellbourg, Hickish, Isaacson, Price, Croft, DeBoer, Lebofsky, MacMahon, \&
+  Werthimer}]{enriquez_breakthrough_2017}
+Enriquez J.~E. {et~al.}, 2017, ApJ, 849, 104
+
+\bibitem[{Fogg(1987)}]{fogg_temporal_1987}
+Fogg M.~J., 1987, Icarus, 69, 370
+
+\bibitem[{Forgan {et~al}\mbox{.}(2016)Forgan, Dayal, Cockell, \&
+  Libeskind}]{forgan_evaluating_2015}
+Forgan D., Dayal P., Cockell C., Libeskind N., 2016, Int. J. Astrobiol., 16, 60
+
+\bibitem[{Forgan(2009)}]{forgan_numerical_2009}
+Forgan D.~H., 2009, Int. J. Astrobiol., 8, 121
+
+\bibitem[{Forgan(2011)}]{forgan_spatiotemporal_2011}
+Forgan D.~H., 2011, Int. J. Astrobiol., 10, 341
+
+\bibitem[{Forgan(2013)}]{forgan_possibility_2013}
+Forgan D.~H., 2013, JBIS - J. Br. Interplanet. Soc., 66, 144
+
+\bibitem[{Forgan(2014)}]{forgan_collimated_2014}
+Forgan D.~H., 2014, JBIS - J. Br. Interplanet. Soc., 67, 232
+
+\bibitem[{Forgan(2017{\natexlab{a}})}]{forgan_galactic_2016}
+Forgan D.~H., 2017{\natexlab{a}}, Int. J. Astrobiol., 16, 349
+
+\bibitem[{Forgan(2017{\natexlab{b}})}]{forgan_galactic_2017}
+Forgan D.~H., 2017{\natexlab{b}}, Int. J. Astrobiol., 16, 349
+
+\bibitem[{Forgan(2019)}]{forgan_exoplanet_2017}
+Forgan D.~H., 2019, Int. J. Astrobiol., 18, 189
+
+\bibitem[{Forgan \& Rice(2010)}]{forgan_numerical_2010}
+Forgan D.~H., Rice K., 2010, Int. J. Astrobiol., 9, 73
+
+\bibitem[{Frank(2009)}]{frank_common_2009}
+Frank S.~A., 2009, {The common patterns of nature} Journal of Evolutionary Biology, 22: 1563-1585. doi:10.1111/j.1420-9101.2009.01775.x
+
+\bibitem[{Funes {et~al}\mbox{.}(2019)Funes, Florio, Lares, \&
+  Asla}]{funes_searching_2019}
+Funes J.~G., Florio L., Lares M., Asla M., 2019, Theol. Sci., 0, 1
+
+\bibitem[{Galera {et~al}\mbox{.}(2019)Galera, Galanti, \&
+  Kinouchi}]{galera_invasion_2019}
+Galera E., Galanti G.~R., Kinouchi O., 2019, Int. J. Astrobiol., 18, 316
+
+\bibitem[{Glade {et~al}\mbox{.}(2012)Glade, Ballet, \&
+  Bastien}]{glade_stochastic_2011}
+Glade N., Ballet P., Bastien O., 2012, Int. J. Astrobiol., 11, 103
+
+\bibitem[{Gobat \& Hong(2016)}]{gobat_evolution_2016}
+   Gobat R., Hong S.~E., 2016, A\&A, 592
+
+\bibitem[{Gonzalez(2005)}]{gonzalez_habitable_2005}
+Gonzalez G., 2005, Orig. Life Evol. Biosph., 35, 555
+
+\bibitem[{Gonzalez {et~al}\mbox{.}(2001)Gonzalez, Brownlee, \&
+  Ward}]{gonzalez_galactic_2001}
+Gonzalez G., Brownlee D., Ward P., 2001, Icarus, 152, 185
+
+\bibitem[{Grimaldi(2017)}]{grimaldi_signal_2017}
+Grimaldi C., 2017, Sci. Rep., 7, 46273
+
+\bibitem[{Grimaldi {et~al}\mbox{.}(2018)Grimaldi, Marcy, Tellis, \&
+  Drake}]{Grimaldi2018}
+Grimaldi C., Marcy G.~W., Tellis N.~K., Drake F., 2018, PASP, 130, 987, 054101
+
+\bibitem[{Haqq-Misra(2019)}]{haqq-misra_evolution_2019}
+Haqq-Misra J., 2019, Astrobiology, 19, 10, 1292
+
+\bibitem[{Haqq-Misra \& Kopparapu(2018)}]{haqq-misra_drake_2017}
+Haqq-Misra J., Kopparapu R.~K., 2018, preprint arXiv:1705.07816
+
+\bibitem[{Harp {et~al}\mbox{.}(2018)Harp, Ackermann, Astorga, Arbunich,
+  Barrios, Hightower, Meitzner, Barott, Nolan, Messerschmitt, Vakoch, Shostak,
+  \& Tarter}]{harp_application_2018}
+Harp G.~R. {et~al.}, 2018, ApJ, 869, 66
+
+\bibitem[{Hart(1975)}]{hart_explanation_1975}
+Hart M.~H., 1975, Quarterly Journal of the Royal Astronomical Society, 16, 128
+
+\bibitem[{Hinkel {et~al}\mbox{.}(2019)Hinkel, Hartnett, Lisse, \&
+  Young}]{hinkel_interdisciplinary_2019}
+Hinkel N., Hartnett H., Lisse C., Young P., 2019, Bull. Am. Astron. Soc., 51,
+  497
+
+\bibitem[{Hippke(2017)}]{hippke_interstellar_2017}
+Hippke, M., 2018. Benchmarking information carriers. Acta Astronautica, 151, pp.53-62.
+
+\bibitem[{Horvat(2006)}]{horvat_calculating_2007}
+Horvat M., 2006, Int. J. Astrobiol., 5, 143
+
+\bibitem[{Horvat {et~al}\mbox{.}(2011)Horvat, Naki{\'{c}}, \&
+  Oto{\v{c}}an}]{horvat_impact_2011}
+Horvat M., Naki{\'{c}} A., Oto{\v{c}}an I., 2011, Int. J. Astrobiol., 11, 51
+
+\bibitem[{{Jazayeri}(2007)}]{jazayeri_engeneering_2007}
+{Jazayeri} M., 2007, in Future of Software Engineering (FOSE '07), pp. 199--213
+
+\bibitem[{Jeong {et~al}\mbox{.}(2000)Jeong, Tombor, Albert, Oltvai, \&
+  Barabasi}]{jeong_large_2000}
+Jeong H., Tombor B., Albert R., Oltvai Z.~N., Barabasi A.~L., 2000, Nature,
+  407, 651
+
+\bibitem[{Lampton(2013)}]{lampton_information_2013}
+Lampton M., 2013, Int. J. Astrobiol., 12, 312
+
+\bibitem[{Lineweaver {et~al}\mbox{.}(2004)Lineweaver, Fenner, \&
+  Gibson}]{lineweaver_galactic_2004}
+Lineweaver C.~H., Fenner Y., Gibson B.~K., 2004, Science, 303, 59
+
+\bibitem[{Lingam \& Loeb(2018)}]{lingam_relative_2019}
+Lingam M., Loeb A., 2018, Astrobiology, 19, 28
+
+\bibitem[{Loeb {et~al}\mbox{.}(2016)Loeb, Batista, \&
+  Sloan}]{loeb_relative_2016}
+Loeb A., Batista R.~A., Sloan D., 2016, J. Cosmol. Astropart. Phys., 2016, 040
+
+\bibitem[{Loeb \& Zaldarriaga(2007)}]{loeb_eavesdropping_2006}
+Loeb A., Zaldarriaga M., 2007, J. Cosmol. Astropart. Phys., 1, id. 020
+
+\bibitem[{Maccone(2010)}]{maccone_KLT_2010}
+Maccone C., 2010, Acta Astronaut., 67, 1427
+
+\bibitem[{Maccone(2011)}]{maccone_mathematical_2011}
+Maccone C., 2011, Orig. Life Evol. Biosph., 41, 609
+
+\bibitem[{MacCone(2011)}]{maccone_SETI_2011}
+MacCone C., 2011, Acta Astronaut., 68, 63
+
+\bibitem[{MacCone(2013)}]{maccone_SETI_2013}
+MacCone C., 2013, Int. J. Astrobiol., 12, 218
+
+\bibitem[{Maccone(2014{\natexlab{a}})}]{maccone_evolution_2014}
+Maccone C., 2014{\natexlab{a}}, Int. J. Astrobiol., 13, 290
+
+\bibitem[{Maccone(2014{\natexlab{b}})}]{maccone_lognormals_2014}
+Maccone C., 2014{\natexlab{b}}, Acta Astronaut., 105, 538
+
+\bibitem[{Maccone(2015)}]{maccone_statistical_2015}
+Maccone C., 2015, Acta Astronaut., 115, 277
+
+\bibitem[{Mart{\'{i}}n \& Goldenfeld(2006)}]{martin_origin_2006}
+Mart{\'{i}}n H.~G., Goldenfeld N., 2006, Proc. Natl. Acad. Sci. U. S. A., 103,
+  10310
+
+\bibitem[{Miller \& Maloney(1963)}]{miller_testing_1963}
+Miller J.~C., Maloney C.~J., 1963, Commun. ACM, 6, 58–63
+
+\bibitem[{Mitzenmacher(2004)}]{mitzenmacher_brief_2004}
+Mitzenmacher M., 2004, Internet Math., 1, 226
+
+\bibitem[{Morrison \& Gowanlock(2015)}]{morrison_extending_2015}
+Morrison I.~S., Gowanlock M.~G., 2015, Astrobiology, 15, 683
+
+\bibitem[{Murante {et~al}\mbox{.}(2015)Murante, Monaco, Borgani, Tornatore,
+  Dolag, \& Goz}]{murante_simulating_2015}
+Murante G., Monaco P., Borgani S., Tornatore L., Dolag K., Goz D., 2015, Mon.
+  Not. R. Astron. Soc., 447, 178
+
+\bibitem[{Newman(2005)}]{newman_power_2005}
+Newman M., 2005, Contemp. Phys., 46, 323
+
+\bibitem[{Newman \& Sagan(1981)}]{newman_galactic_1981}
+Newman W.~I., Sagan C., 1981, Icarus, 46, 293
+
+\bibitem[{Oliphant(2006)}]{oliphant_numpy_2006}
+Oliphant T.~E., 2006, A guide to NumPy, Vol.~1. Trelgol Publishing USA
+
+\bibitem[{Peters(2018)}]{peters_outer_2018}
+Peters T., 2018, Int. J. Astrobiol., 17, 282
+
+\bibitem[{Prantzos(2013)}]{prantzos_joint_2013}
+Prantzos N., 2013, Int. J. Astrobiol., 12, 246
+
+\bibitem[{Ptolemaeus(2014)}]{ptolemaeus_system_2014}
+Ptolemaeus C., 2014, {System Design, Modeling, and Simulation. Using Ptolemy
+  II}. Ptolemy.org, Berkeley, p. 690
+
+\bibitem[{Rahvar(2017)}]{rahvar_cosmic_2016}
+Rahvar S., 2017, Mon. Not. R. Astron. Soc., 470, 3095
+
+\bibitem[{Ramirez {et~al}\mbox{.}(2017)Ramirez, G{\'{o}}mez-Mu{\~{n}}oz,
+  V{\'{a}}zquez, \& N{\'{u}}{\~{n}}ez}]{ramirez_new_2017}
+Ramirez R., G{\'{o}}mez-Mu{\~{n}}oz M.~A., V{\'{a}}zquez R., N{\'{u}}{\~{n}}ez
+  P.~G., 2017, Int. J. Astrobiol., 1, 34
+
+\bibitem[{Ross(2012)}]{ross_simulation_2012}
+Ross S.~M., 2012, {Simulation}. Elsevier Science Publishing Co Inc.
+
+\bibitem[{Simkin \& Roychowdhury(2006)}]{simkin_theory_2006}
+Simkin M.~V., Roychowdhury V.~P., 2006, J. Math. Sociol., 30, 33
+
+\bibitem[{Smith(2009)}]{smith_broadcasting_2009}
+Smith R.~D., 2009, Int. J. Astrobiol., 8, 101
+
+\bibitem[{Solomonides {et~al}\mbox{.}(2016)Solomonides, Kaltenegger, \&
+  Terzian}]{solomonides_probabilistic_2016}
+Solomonides E., Kaltenegger L., Terzian Y., 2016, 228th AAS, San Diego, 228, 1
+
+\bibitem[{Sornette(2006)}]{sornette_critical_2006}
+Sornette D., 2006, {Critical phenomena in natural sciences: Chaos, fractals,
+  selforganization and disorder: Concepts and tools}. Springer
+
+\bibitem[{Sotos(2019)}]{Sotos_biotechnology_2019}
+Sotos, J. (2019) Int. J. Astrobiol., 18(5), 445
+
+\bibitem[{Starling \& Forgan(2014)}]{starling_virulence_2013}
+Starling J., Forgan D.~H., 2014, Int. J. Astrobiol., 13, 45
+
+\bibitem[{Tarter(2001)}]{tarter_search_2001}
+Tarter J., 2001, Annu. Rev. Astron. Astrophys., 39, 511
+
+\bibitem[{Tarter {et~al}\mbox{.}(2009)Tarter, Backus, Blair, Cordes, Harp,
+  Henry, Horowitz, Howard, Kilsdonk, Korpela, Lasio, Levin, Shostack, \&
+  Werthimer}]{tarter_advancing_2009}
+Tarter J. {et~al.}, 2009, Astro2010 Astron. Astrophys. Decad. Surv. Sci. White
+  Pap. no. 294, 2010
+
+\bibitem[{Vakoch \& Dowd(2015)}]{vakoch_drake_2015}
+Vakoch D.~A., Dowd M.~F., 2015, {The drake equation: Estimating the prevalence
+  of extraterrestrial life through the ages}, Vakoch D.~A., Dowd M.~F., eds.
+  Cambridge University Press, Cambridge, pp. 1--319
+
+\bibitem[{{van der Walt} {et~al}\mbox{.}(2011){van der Walt}, {Colbert}, \&
+  {Varoquaux}}]{vanderwalt_numpy_2011}
+{van der Walt} S., {Colbert} S.~C., {Varoquaux} G., 2011, Computing in Science
+  Engineering, 13, 22
+
+\bibitem[\protect\citeauthoryear{Anchordoqui, Weber \& Fernandez
+   Soriano}{2017}]{anchordoqui_is_2017} Anchordoqui L.~A., Weber S.~M., Fernandez Soriano J., 2017, ICRC, 301, 254, ICRC...35
+
+\bibitem[{Vukoti{\'{c}} \&
+  {\'{C}}irkovi{\'{c}}(2012)}]{vukotic_astrobiological_2012}
+Vukoti{\'{c}} B., {\'{C}}irkovi{\'{c}} M.~M., 2012, Orig. Life Evol. Biosph.,
+  42, 347
+
+\bibitem[{Vukoti{\'{c}} {et~al}\mbox{.}(2016)Vukoti{\'{c}}, Steinhauser,
+  Martinez-Aviles, {\'{C}}irkovi{\'{c}}, Micic, \&
+  Schindler}]{vukotic_grandeur_2016}
+Vukoti{\'{c}} B., Steinhauser D., Martinez-Aviles G., {\'{C}}irkovi{\'{c}}
+  M.~M., Micic M., Schindler S., 2016, MNRAS, 459, 3512
+
+\bibitem[{Walters {et~al}\mbox{.}(1980)Walters, Hoover, \&
+  Kotra}]{walters_interstellar_1980}
+Walters C., Hoover R.~A., Kotra R., 1980, Icarus, 41, 193
+
+\bibitem[{Wright {et~al}\mbox{.}(2015)Wright, Cartier, Zhao, Jontof-Hutter, \&
+  Ford}]{wright_theGsearch_2015}
+Wright J.~T., Cartier K. M.~S., Zhao M., Jontof-Hutter D., Ford E.~B., 2015,
+  ApJ, 816, 17
+
+\bibitem[{Wright {et~al}\mbox{.}(2018)Wright, Kanodia, \&
+  Lubar}]{wright_how_2018}
+Wright J.~T., Kanodia S., Lubar E., 2018, AJ, 156, 260
+
+\end{thebibliography}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \end{document}
