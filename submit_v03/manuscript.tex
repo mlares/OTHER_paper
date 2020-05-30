@@ -67,16 +67,11 @@
 
 \supertitle{Research Paper}
 
-\title[Probabilities of SETI contacts]{Probability of causal
-contacts between interstellar civilizations through Monte Carlo simulations}
-%
-%A network of constrained causal contacts in the Galaxy as a proxy for
-%the probability of 
-%
-% A model for constrained causal contacts between location in the GHZ
+\title[Probability of causal contacts]{Monte Carlo estimation of the probability 
+of causal contacts between communicating civilisations}
 
-\author[Lares, Funes \& Gramajo]{Lares M.$^{1, 2}$, Funes J.~G.$^{1,
-3}$ \& Gramajo L.$^{1, 2}$}
+
+\author[Lares, Funes \& Gramajo]{Lares M.$^{1, 2}$, Funes J.~G.$^{1, 3}$ \& Gramajo L.$^{1, 2}$}
 
 \corres{\name{Lares M} \email{marcelo.lares@unc.edu.ar}}
 
@@ -129,7 +124,6 @@ GHZ: Galactic Habitable Zone}
 \maketitle
 
 
-%%% S E C T I O N - - - - - - - - - - - - - - - - - - - - - - -
 \section{Introduction}\label{S_motivations}
 
 The Drake equation  \citep{drake_intelligent_1962} provides a truly
@@ -177,20 +171,12 @@ The large distances in the Galaxy and the likely limited lifetime of
 civilizations may play an important role in determining how difficult it
 would be to obtain evidence for other inhabited worlds.
 %
-%We stress the fact that the lack of detections of extraterrestrial
-%intelligent signals is the only observational fact that can be taken
-%for sure.
 The analysis of these scenarios is difficult due to the lack of data
 about the hypothetical extraterrestrial intelligences.
 %
 Indeed, as \citep{tarter_search_2001} pointed out, according to our
 current technical capabilities for the search of extraterrestrial
 intelligence (SETI), we have not received any signal yet.
-%
-%Indeed, for the number of years projects for the Search of
-%Extraterrestrial Intelligences (SETI) have been working, no signal has
-%been received using the technical possibilities within their search
-%criteria \citep{tarter_search_2001}.
 %
 The absence of detections has also motivated alternative ideas for new
 SETI strategies \citep{forgan_exoplanet_2017, balbi_impact_2018,
@@ -205,7 +191,7 @@ forgan_possibility_2013, forgan_galactic_2017, funes_searching_2019}.
 \Fpagebreak
 
 
-The discussion about the problem of the (unknown)
+The discussion about the problem of the unknown
 abundance of civilisations in the Galaxy has been organised around the
 factors in the Drake equation \citep{hinkel_interdisciplinary_2019}.
 %
@@ -214,12 +200,6 @@ representing biological processes, make it
 less suitable to a formal study with the purpose of defining
 searching strategies or
 computing the estimated number of extraterrestrial intelligences.
-%
-%The optimistic estimations from the Drake equation also contrast with
-%the results from the SETI initiatives.
-%
-%Notably, despite decades of effort not a single evidence for
-%intelligent signals has been detected.
 %
 A number of studies propose alternative formalisms for the estimation of the
 likelihood of detecting intelligent signals from space.
@@ -247,7 +227,7 @@ balbi_impact_2018, balb_spatiotemporal_2018, horvat_impact_2011}, as
 well as efforts on considering the stochastic nature of the Drake
 equation \citep{glade_stochastic_2011}.
 %
-The literature about this topic brings also a number of works that consider
+On this topic a number of works consider
 numerical simulations \citep{forgan_evaluating_2015,
 vukotic_grandeur_2016, murante_simulating_2015, forgan_numerical_2009,
 forgan_galactic_2017, ramirez_new_2017}.
@@ -288,7 +268,6 @@ program to succeed in the detection of intelligent signals.
 
 
 
-
 The quest for a formal statistical theory has also lead 
 to important progress in the mathematical foundations of SETI.
 %
@@ -316,7 +295,7 @@ come into play to produce the possible network of connections.
 
 
 
-A notable example of statistica modeling is the work by
+A notable example of statistical modeling is the work by
 \citet{balbi_impact_2018}, who investigates the chance of
 communicating civilisations making causal contact within a volume
 surrounding the location of the Earth.
@@ -364,7 +343,7 @@ life complexity on a 2-dimensional region resembling the Galactic
 Habitable Zone (GHZ), an annular ring set between a minimal radius of
 6 kpc and a peak radius of 10 kpc.
 %
-This simulations represent the spread if intelligence as an
+These simulations represent the spread if intelligence as an
 implementation of panspermia theories.
 %
 Within this framework, \citet{vukotic_astrobiological_2012} also make
@@ -374,9 +353,6 @@ Their work aims at analysing the evolution of life, and although it
 does not account for the network of causal contacts among
 technological civilisations, it offers a tool to think SETI searches
 from a novel point of view.
-
-
-
 
 
 
@@ -429,8 +405,8 @@ The model presented here comprises the stochastic networks of constrained
 causally connected nodes, together with the three parameters and additional
 hypotheses.
 %
-Hereafter, we refeer to this model as the C3Net model, standing for
-''Constrained Causally Conencted Network``.
+Hereafter, we refer to this model as the SC3Net model, standing for
+''Stochastic Constrained Causally Connected Network``.
 
 
 
@@ -447,8 +423,10 @@ allows to study the behaviour of complex systems, by considering a sequence of
 well defined discrete events.
 %
 The simulation is carried out by following all the variables that describe and
-constitute the state of the system, and the evolution of the process is
-described as a set of changes in that state.
+constitute the state of the system.
+%
+The evolution of the process is then
+described as the set of changes in those variables. 
 %
 In this context, an event produces a specific change in the state that can be
 triggered by random variables that encode the stochastic nature of the physical
@@ -485,10 +463,10 @@ The approach proposed here should be considered as a compromise between the
 uncertainties of the frequentist estimations and the detailed recipes required
 on the numerical simulations.
 %
-It is worth noticing that the model is not intended for a formal fit at this
-stage due to the lack of data, but is can help to understand how unusual it
-would be to actively search for intelligente signal for 50 years without
-success.
+It is worth noticing that the SC3Net model is not intended for a formal fit at this
+stage due to the lack of data, but it can help to understand how unusual it
+would be to actively search for intelligent signals for 50 years without
+possitive detections.
 
 
 This paper is organized as follows.
@@ -507,10 +485,6 @@ parameters.
 %
 In Sec.~\ref{S_discussion} we discuss our results and future research
 directions.   
-%
-In this work we use the International System of units recommended by the
-International Astronomial Union, where the simbol for years is ''a''.
-
 
 
 \begin{figure}[!t]
@@ -529,7 +503,7 @@ connected to the emitter (E, left vertex), following an ``A'' type
 event (``Awakening'') in which the node acquires the communication
 capability.
 %
-The sphere of first contact (SFC) is the sphere centered on the emitter that
+The sphere of first contact (SFC) is the sphere centred on the emitter that
 grows until its radius reaches the D$_{\rm max}$ distance, in which the
 power of the signal would equal the detectability threshold.
 %
@@ -559,7 +533,6 @@ node E$_1$, from t=C$_{21}$ up to t=B$_{21}$.
 
 
 
-%%% S E C T I O N - - - - - - - - - - - - - - - - - - - - - - -
 \section{Methods and working hypotheses}\label{S_methods}
 
 
@@ -607,14 +580,14 @@ lesser than one efficiency factor, which is not included in the current
 analysis.
 %
 Also, it is worth mentioning that this is a general approach, and not
-necessarily a \ceti{} is the host of an intelligent civilization.
+necessarily a \ceti{} is the host of an intelligent civilisation.
 %
 It can be associated with a planet where life has developed,
 became intelligent, reached the skills required to find the right communication
 channel, sustained a search and established a contact.
 %
 Alternative message processing entities could be considered, for example
-interstellar beacons where life has ceased to exist but continue with its
+interstellar beacons where intelligent life has ceased to exist but continue with its
 emission, or communication stations established by probes or left by
 intelligent beings \citep[see, e.g., ][]{peters_outer_2018,
 barlow_galactic_2013}.
@@ -638,7 +611,7 @@ number of pairs of \cetis{} in causal contact.
 %
 Assuming some simple hypotheses, the discrete events method can be performed
 taking into account a small number of variables, which allow to analyze the
-variation of the results in the model parameter space.
+variation of the results in the SC3Net model parameter space.
 
 
 In what follows, we outline the experimental setup adopted to estimate the
@@ -773,7 +746,7 @@ concentric spherical surfaces.
 The leading front, or surface of first contact (SFC) grows from the central
 \ceti{} until it reaches the maximum distance $D_{\rm max}$.
 %
-Following the end of the civilization, there is still a region which is filled
+Following the end of the civilisation, there is still a region which is filled
 with the emitted signals.
 %
 This approach has been also considered in other statistical models \citep[e.g.,
@@ -865,7 +838,7 @@ The results must then be interpreted as the case of ideal nodes, with a perfect
 efficiency in the emision and reception of signals.
 %
 The probabilities of contacts presented here are then upper limits to the
-number of communications between civilizations in the Galaxy, given the
+number of communications between civilisations in the Galaxy, given the
 implemented hipotheses in the model.
 %
 The use of light cones as causal contact regions is inspired by the fact that
@@ -892,36 +865,18 @@ eficiency.
 Another essential assumption is that all \cetis{} use the same signal power, so
 that there is a maximum distance out to which it can be detected.
 %
-% It is worth mentioning that we are considering in our experimental setup a
-% system composed by several emitters and  receivers across the galaxy, under
-% the hypothesis proposed before.
-%
 In such a system we compute probabilities of a random node making contact with
 another node, i.e., they are not specific for the case of contacts with the
 Earth.
 %
 Regarding the extent of the signals, we know that the distance from which a
-signal from Earth could be detected using the current technology is of a few
+signal from Earth could be detected using the current technology is about few
 parsecs, given that the signal was sent to a specific direction.
 %
 It is straightforward to propose and implement a distribution of maximum
 distances, although this would increase the model complexity at the cost of a
 larger uncertainty.
 
-
-% For the communication of \cetis{} through messages sent isotropically, we assume that the capacity to emit signals and %to receive signals occur at the same time. This means that the ability to find another civilization develops at the same %time that the ability and intention to emit a signal in all directions, intended to be detected by an unknown civilization. 
-
-%https://setiathome.berkeley.edu/forum_thread.php?id=80585&postid=1833000#1833000]
-%https://www.engadget.com/2017/05/25/listening-to-starlight-our-ongoing-search-for-alien-intelligenc/]
-%[from https://en.wikipedia.org/wiki/Fermi_paradox]
-%
-%
-%This proposal is based on a pronoid scenario, and we do not consider
-%in this work the occurrence of paranoid or partially paranoid
-%civilizations.
-%%
-%If that would be the case, the results obtained here can be taken as
-%upper limits.
 
 
 In our simulations, we assume the simplest configuration for the
@@ -947,9 +902,13 @@ the results less clear.
 %
 The assumptions we accept imply that the
 results are independent of whether intelligent agents are organic or
-artificial. Moreover, the causes of the limited lifetime of a
-civilization can be natural (astrophysical phenomena), caused by auto
-destruction or by external factors, to name a few. However, we assume
+artificial.
+%
+Moreover, the causes of the limited lifetime of a
+civilisation can be natural (astrophysical phenomena), caused by auto
+destruction or by external factors, to name a few.
+%
+However, we assume
 that these events are sufficiently numerous in the Galaxy so that a
 statistical model is plausible. The failure of this hypothesis would
 imply extreme values for the parameters that represent the density of
@@ -975,9 +934,9 @@ the nodes (i.e., $\left< \tau_a \right>$).
 \hline
 
    $\tau_{a}$ & Mean temporal separation between consecutive
-   awakenings & 4000 yr & 200\,000 yr & 50\\ 
+   awakenings & 4 kyr & 200 kyr & 50\\ 
    $\tau_{s}$ & Mean lifetime of a \ceti{}
-   & 10000 yr & 500\,000 yr& 50\\ 
+   & 10 kyr & 500 kyr& 50\\ 
    D$_{max}$ & Maximum reach of a message  &  \multicolumn{2}{l}{3 kpc, 12 kpc, 25 kpc} & 3\\
 \hline 
 
@@ -1026,23 +985,35 @@ emergence of consecutive \cetis{}.
 %
 The spatial structure of the simulation is
 given by the size and shape of the Galactic Habitable Zone and the maximum
-distance a signal can travel to be detected (D$_{\rm max}$). The parameters for
+distance a signal can travel to be detected (D$_{\rm max}$).
+%
+The parameters for
 the temporal distributions also determine the spatial properties, since the
-density of active \cetis{} in the galaxy depend on these two parameters. For
+density of active \cetis{} in the galaxy depend on these two parameters.
+%
+For
 example, small $\tau_a$ and a large $\tau_s$ will produce a densely
 populated galaxy (in this context, a galaxy is an element in a 
 statistical ensemble, not the Milky Way).
 %
 Also, some hypotheses regarding the shapes of the
 distributions of the temporal parameters must be made in order to complete the
-simulation. \citet{forgan_spatiotemporal_2011} argues that the times at which
+simulation.
+%
+\citet{forgan_spatiotemporal_2011} argues that the times at which
 different civilisations become intelligent follow a Gaussian distribution, and
-then the distribution of inter-arrival times is an inverse exponential. We
+then the distribution of inter-arrival times is an inverse exponential.
+%
+We
 assume that the distribution of the times of A events is a stationary Poisson
 process, and then the distribution of the times between the appearance of new
-consecutive nodes is exponential. Regarding the duration of a node, we
+consecutive nodes is exponential.
+%
+Regarding the duration of a node, we
 propose that its distribution is a stationary
-exponential distribution.  There are no clear arguments to conclude a
+exponential distribution.
+%
+There are no clear arguments to conclude a
 statistical law for the later distribution, so that we propose it as a working
 hipothesis.  
 %
@@ -1190,7 +1161,7 @@ depend on the efficiency of both the emitter and the receiver to broadcast and
 scan the sky for intelligent signals, respectively
 \citep{grimaldi_signal_2017}.
 %
-A correction by coverage ratio in the detection and by a targeting ratio in the
+A correction by a coverage ratio in the detection and by a targeting ratio in the
 emission could be easily implemented in the simulation, although the effect of
 reducing the probability of contact is basically the product of the efficiency
 ratios and thus such implementation is not necessary.
@@ -1257,16 +1228,12 @@ of waiting times to receive a message.
 All these quantities are updated each time one of the four events (A, B, C, D)
 occurs.   
 
-%%% comparar con el stochsatic cellular automata
-% ver libro Solving Fermi paradox, sec. 27.3.1
-
-  
 \begin{figure*} % 2D color plot
    \centering
    \includegraphics[width=\textwidth]{F_never_contact.pdf}
    \caption{
    %
-Rate of MPLs that never make contact (listening) as a
+Rate of nodes that never make contact (listening) as a
 function of $\tau_a$ and $\tau_s$, for 
 $D_{\rm max}$=3~kpc (left panel),
 $D_{\rm max}$=12~kpc (middle panel), and
@@ -1281,7 +1248,7 @@ $D_{\rm max}$=25~kpc (right panel)
    \includegraphics[width=\textwidth]{F_C_at_A.pdf}
    \caption{
    %
-Rate of MPLs that listen at the moment of the
+Rate of nodes that listen at the moment of the
 awakening, as a funcion of $\tau_a$ and $\tau_s$, for
 $D_{\rm max}$=3~kpc (left panel),
 $D_{\rm max}$=12~kpc (middle panel), and
@@ -1306,7 +1273,7 @@ change in the related variables.
 For example, a B-type event diminishes the number of active \cetis{} by one,
 and also could affect the number of ongoing communications.
 %
-We consider a first approach to the galactic habitable zone as a 2-dimensional
+We consider a first approach to the galactic habitable zone as a two-dimensional
 annular region.
 %
 The adopted values for the geometry of the GHZ are 7~kpc and 9~kpc, for the
@@ -1352,9 +1319,7 @@ Also, the list of active \cetis{} is obtained as a function of time.
 %the size of the Galactic Habitable Zone, the mean lifetime of a
 %\ceti{}, $\tau_s$, the mean waiting time for the appearance of another
 %\ceti{}, $\tau_a$, and the maximum distance a message can be detected.
-
-
-
+%
 % The Galactic Habitable Zone is set at fixed values of the inner and outer
 % radii, radial symmetry is assumed, and the with of the galactic disk
 % is neglected compared to the radial size.
@@ -1381,16 +1346,19 @@ The project is in the process of registration with the ‘’Astrophysics
 Source Code Library’’ \citep[ASCL, ][]{2015JORS....3E..15A,
 2020ASPC..522..731A}
 %
-In order to achieve high performance we made use of vectorised methods
-and array broadcasting properties provided by the NumPy package
-\citep{oliphant_numpy_2006, vanderwalt_numpy_2011}
-%
-The combination of C-compiled Numpy routines for numerical
-computations with a high-level language allows to obtain an easily
-comprehensible and maintainable code.
-%
+% In order to achieve high performance we made use of vectorised methods
+% and array broadcasting properties provided by the NumPy package
+% \citep{oliphant_numpy_2006, vanderwalt_numpy_2011}
+% %
+% The combination of C-compiled Numpy routines for numerical
+% computations with a high-level language allows to obtain an easily
+% comprehensible and maintainable code.
+% %
 From the viewpoint of a user, \hs{} is an object-oriented package that
 exposes the main functionalities as classes and methods.
+%
+The code fulfills standar quality assurance metrics, that account for
+testing, style, documentation and coverage.
 %
 In the configuration step, the user prepares the set of simulation
 parameters through an initialisation file.
@@ -1405,42 +1373,42 @@ and made public in the read-the-docs service
 \footnote{https://hearsay.readthedocs.io/en/latest/}.
 
 
-%Quality assurance
-%
-Regarding the quality assurance of the software, we endorse the PEP-8 style
-guide for python (van Rossum et al. 2001) throughout the entire project, which
-improves the code maintainability and helps to minimise the so called
-``code-entropy'' of future versions.
-%
-The deviations in style were analysed with the flake8 tool, which improves the
-readability and consistency of the code.
-%
-Testing and code coverage have been applied to the package and the development
-process as standard qualitative and quantitative metrics.
-%
-The different parts and functions can be validated to assert if they return the
-expected results on specific test cases and testing scenarios
-\citep{jazayeri_engeneering_2007}.
-%
-On the other hand, code coverage measures the fraction visited and executed in
-the code by the testing procedure \citep{miller_testing_1963}.
-%
-The advantage of an exhaustive code-coverage is that it ensures that most of
-the sources of errors have been considered.
-%
-In the \hs{} project we provide test tools for the distinct parts of the
-simulation setup and run, reaching a 99\% of code coverage in the version used
-for this work.
-%
-For every new version of the code, all these quality assurance methods and
-metrics are run automatically by a continuous-integration service.
-%
-It is possible to reproduce the experiments performed in this work using the
-\hs{} package.
-%
-The installation is available through a git repository and also on the Python
-Package Index (PyPI).
-%
+% %Quality assurance
+% %
+% Regarding the quality assurance of the software, we endorse the PEP-8 style
+% guide for python (van Rossum et al. 2001) throughout the entire project, which
+% improves the code maintainability and helps to minimise the so called
+% ``code-entropy'' of future versions.
+% %
+% The deviations in style were analysed with the flake8 tool, which improves the
+% readability and consistency of the code.
+% %
+% Testing and code coverage have been applied to the package and the development
+% process as standard qualitative and quantitative metrics.
+% %
+% The different parts and functions can be validated to assert if they return the
+% expected results on specific test cases and testing scenarios
+% \citep{jazayeri_engeneering_2007}.
+% %
+% On the other hand, code coverage measures the fraction visited and executed in
+% the code by the testing procedure \citep{miller_testing_1963}.
+% %
+% The advantage of an exhaustive code-coverage is that it ensures that most of
+% the sources of errors have been considered.
+% %
+% In the \hs{} project we provide test tools for the distinct parts of the
+% simulation setup and run, reaching a 99\% of code coverage in the version used
+% for this work.
+% %
+% For every new version of the code, all these quality assurance methods and
+% metrics are run automatically by a continuous-integration service.
+% %
+% It is possible to reproduce the experiments performed in this work using the
+% \hs{} package.
+% %
+% The installation is available through a git repository and also on the Python
+% Package Index (PyPI).
+% %
 Since the simulation setup is configurable, the time required for a simulation
 to complete depends on the simulation parameters.
 %
@@ -1544,7 +1512,7 @@ first contact or the distributions of waiting times until the next contact.
 The following properties of the population of \cetis{} can also be derived:
 %
 the fraction of the lifetime a node is listening to at least another node
-(i.e., in their causal cone),
+(i.e., within their light cone),
 %
 the age of contacted \cetis{} at first contact,
 %
@@ -1572,10 +1540,6 @@ contacts.
 %
 All these quantities can be analyzed as a function of the simulation
 parameters.
-%
-
-
-
 
 
 
@@ -1620,9 +1584,11 @@ This is considerably larger than any model with a shorter lifetime,
 which produce a number of contacts of at most the order of ten
 contacts per \ceti{}.
 %
-A couple of comments are worth to mention about this plot, namely, it
+We should point out that this plot 
 has a logarithmic scale on the x-axis, and it is the cumulative, not
-differential, empirical distribution, so that the differences in the
+differential, empirical distribution.
+%
+Therefore, the differences in the
 number of contacts for different models are relatively large.
 %
 Another interesting feature observed in the Fig.~\ref{F_number_of_contacts}, is that for the
@@ -1749,7 +1715,7 @@ That is, for a short period of time the initial moment is the most promising
 for making a (causal) contact, for a given technology.
 %
 This allows to consider the fact that for the nearly 50 years SETI
-programs have been active, no contact event has been reported.
+programs have been active, no contact event has been reported yet.
 %
 This offers a new approach to SETI programs, where the
 search for new communication technologies or the exploration of
@@ -1757,17 +1723,16 @@ new communication channels has a fundamental role.
 %
 Moreover, as it can be seen in the Fig.~\ref{F_waiting_for_1C}, there
 is a maximum probability of making the first causal contact at nearly
-100000 years.
+10$^5$ years.
 %
 The probability of such a contact does not grows linearly
 with the observing time, but is greater during the first 100
 millennia.
 
 
-%%% S E C T I O N - - - - - - - - - - - - - - - - - - - - - - -
 \section{Discussion}\label{S_discussion}
 
-We presented a stochastic model (SC3Net) to analyse the network of
+We have presented a stochastic model (SC3Net) to analyse the network of
 constrained causally connected nodes in a simplified Galaxy.
 %
 It represents an idealised scenario of perfectly efficient emitters and
@@ -1831,8 +1796,8 @@ Thus, we take advantage of the simplicity of the model to explore
 the parameter space in order to gain insight on the consequences of
 different scenarios for the search of intelligent life.
 %
-Our analysis is not centered in obtaining the odds for the Earth
-to make contact with another intelligent civilization.
+Our analysis is not centred in obtaining the odds for the Earth
+to make contact with another civilization.
 %
 Instead, we focus on obtaining a statistical, parameter dependent
 description of the possible properties of the communication networks
@@ -1886,7 +1851,7 @@ although they would be too slow to make a significant impact on the
 communication network among intelligent civilizations.
 %
 Our results are also consistent with those presented by
-\citet{grimaldi_signal_2017}, who estimate an upper bound for the mean
+\citet{grimaldi_signal_2017}, who estimates an upper limit for the mean
 number of extraterrestrial civilizations that could contact Earth
 using Monte Carlo simulations, from a statistical model where the width
 of the Galactic disk is not negligible.
@@ -1913,7 +1878,8 @@ Ours is an alternative to the method proposed by
 \citet{balbi_impact_2018}, who perform an analysis based on the Earth
 and use a different model, although our results agree in general.
 
-We also fond that there 
+
+We have also fond that there 
 is a balance between the density of \cetis{} and the mean
 lifetime since, as expected, a lower density can be compensated by a
 longer active time period.
@@ -1935,12 +1901,12 @@ Then, if a contact is produced for the first time, the origin of the
 signal is more likely to be very old.
 %
 Also, the chances of entering the causal connected zone of a \ceti{}
-does not grow linearly, but favours the first period of 100000 years.
+does not grow linearly, but favours the first period of 10$^5$ years.
 
 
 In the approach of this work, we have used computer simulations to address
 the problem of the probabilities of causal contacts between locations
-in the galaxy with the possibility of sending and receiving messages.
+in the Galaxy with the possibility of sending and receiving messages.
 %
 Instead of making a number of assumptions, we have explored the
 parameter space, reducing the problem to only three parameters and a
