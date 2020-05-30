@@ -40,57 +40,19 @@ The documentation has guided tutorials to make simple runs of the simulations
 with a few lines of code, and to have a sense on the time required for a suite
 of simulations on any hardware setting.
 
-The new results were obtained using the Clemente cluster at the Instituto de Astronomía
-Teórica y Experimental (IATE), on a batch job comprising 50 cores, after four days.
-
-More details on this cluster can be found in
-https://wiki.oac.uncor.edu/doku.php?id=wiki:infraestructura_computo#computo.
-
 
 Experimental setting
 --------------------
 
 We have expanded the range of the parameters with respect to the previous
-version. The new region of the parameter that has been explored comprise the
-following grid:
+version.  For a better organization of the results, we show different regions
+of the parameter space on the different Figures.
 
-tau_awakening:
-21 bins in the range 500 a to 40500 a, plus 51 bins in the 
-range 5.e5 a to 1.e6 a.
+In particular, we have changed the region defined as the 
+Galactic Habitable Zone in some experiments.
 
-By extension, these values are (in years):
-
-500.,  2500.,  4500.,  6500.,  8500., 10500., 12500., 14500.,
-16500., 18500., 20500., 22500., 24500., 26500., 28500., 30500.,
-32500., 34500., 36500., 38500., 40500.,
-50000.,   69000.,   88000.,  107000.,  126000.,  145000.,
-164000.,  183000.,  202000.,  221000.,  240000.,  259000.,
-278000.,  297000.,  316000.,  335000.,  354000.,  373000.,
-392000.,  411000.,  430000.,  449000.,  468000.,  487000.,
-506000.,  525000.,  544000.,  563000.,  582000.,  601000.,
-620000.,  639000.,  658000.,  677000.,  696000.,  715000.,
-734000.,  753000.,  772000.,  791000.,  810000.,  829000.,
-848000.,  867000.,  886000.,  905000.,  924000.,  943000.,
-962000.,  981000., 1000000.
-
-The reason of this choice is that the software is prepared to run on
-linear grids, so that we had to combine a coarse grain grid for large values
-with a finer grid for small values.  We plan to allow for a modification
-of this restriction on future versions of the code.
-
-
-tau_survive:
-The same values of the tau_awakening parameters, namely:
-21 bins in the range 500 a to 40500 a, plus 51 bins in the 
-range 5.e5 a to 1.e6 a.
-
-D_max:
-100 pc, 500 pc, 1 kpc, 5 kpc and 10 kpc.
-
-We have also changed the region defined as the Galactic Habitable Zone,
-in order to follow the values in the bibliography.
-
-
-Finally, we apologize for the delay in this response.
+The Figures are prepared to show different trends in the model.  Given the
+wide range of parameters, we use different ranges to highlight the main
+results of the imlpementation of the model.
 
 

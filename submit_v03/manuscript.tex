@@ -1,41 +1,23 @@
 \documentclass[crop]{CSLB}
 
-%The authors can define any packages after the \documentclass{CSL} command.
-\usepackage{amsmath} %for dealing with mathematics,
-\usepackage{amsthm} %for dealing with theorem environments,
-\usepackage{cite} %%%for dealing with citations
-\usepackage{hyperref} %for linking the cross references
-\usepackage{graphics} %for dealing with figures.
-\usepackage{algorithmic} %for describing algorithms
-\usepackage{subfig} %for getting the subfigures e.g., "Figure 1a and 1b" etc.
-\usepackage{url} %It provides better support for handling and breaking URLs.
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{cite}
+\usepackage{hyperref}
+\usepackage{graphics}
+\usepackage{algorithmic}
+\usepackage{subfig}
+\usepackage{url}
 
-%\usepackage{natbib}
 \usepackage{boites}
-
-%\usepackage{graphicx}
-%\usepackage{float}
-%\usepackage{psfig}
-%\usepackage{amsfonts,amssymb}
-%\usepackage{color}
-%\usepackage{textcomp}
-%\usepackage[T1]{fontenc}
-%\usepackage{aecompl}
-%\usepackage{times}
-%\usepackage{txfonts}
-%\usepackage[english]{babel}
-%\usepackage[utf8x]{inputenc}
-%\usepackage{amsmath}
-%\usepackage{caption}
-%\usepackage{siunitx} 
 
 \jname{International Journal of Astrobiology}%
 
 \newtheorem{theorem}{Theorem}
 \newtheorem{condition}{Condition}
  
-\newcommand{\ceti}{C3N}
-\newcommand{\cetis}{C3Ns}
+\newcommand{\ceti}{node}
+\newcommand{\cetis}{nodes}
 \newcommand{\hs}{\textsc{hearsay}}
 
 \newcommand{\awakening}{A event }
@@ -129,14 +111,14 @@ GHZ: Galactic Habitable Zone}
 The Drake equation  \citep{drake_intelligent_1962} provides a truly
 helpful educated guess, a rational set of lenses --the factors in the
 equation-- through which to look at future contacts with
-technologically advanced civilizations in the Milky Way. 
+technologically advanced civilisations in the Milky Way. 
 %
-The equation quantifies the number of civilizations from whom we might
+The equation quantifies the number of civilisations from whom we might
 receive an electromagnetic signal, using a collection of factors that
-have been extensively discussed in the literature and whose estimates
-are revised continually. 
+have been extensively discussed in the literature and whose estimated
+values are revised continually. 
 %
-A comprehensive review and analysis of each term of the equation are
+A comprehensive review and an analysis of each term of the equation are
 presented in \citet{vakoch_drake_2015}.
 %
 Optimistic estimates from the Drake equation contrast with the
@@ -168,13 +150,13 @@ alternative scenarios have also been discussed
 conway_three_2018, forgan_galactic_2017}.
 %
 The large distances in the Galaxy and the likely limited lifetime of
-civilizations may play an important role in determining how difficult it
+civilisations may play an important role in determining how difficult it
 would be to obtain evidence for other inhabited worlds.
 %
 The analysis of these scenarios is difficult due to the lack of data
 about the hypothetical extraterrestrial intelligences.
 %
-Indeed, as \citep{tarter_search_2001} pointed out, according to our
+Indeed, as \citet{tarter_search_2001} pointed out, according to our
 current technical capabilities for the search of extraterrestrial
 intelligence (SETI), we have not received any signal yet.
 %
@@ -191,23 +173,22 @@ forgan_possibility_2013, forgan_galactic_2017, funes_searching_2019}.
 \Fpagebreak
 
 
-The discussion about the problem of the unknown
-abundance of civilisations in the Galaxy has been organised around the
-factors in the Drake equation \citep{hinkel_interdisciplinary_2019}.
+The discussion about the problem of the unknown abundance of
+civilisations in the Galaxy has been organised around the factors in
+the Drake equation \citep{hinkel_interdisciplinary_2019}.
 %
 However, the uncertainties in these factors, specially the ones
-representing biological processes, make it
-less suitable to a formal study with the purpose of defining
-searching strategies or
-computing the estimated number of extraterrestrial intelligences.
+representing biological processes, make it less suitable to a formal
+study with the purpose of defining searching strategies or computing
+the estimated number of extraterrestrial intelligences.
 %
-A number of studies propose alternative formalisms for the estimation of the
-likelihood of detecting intelligent signals from space.
+A number of studies propose alternative formalisms for the estimation
+of the likelihood of detecting intelligent signals from space.
 %
-\citet{prantzos_joint_2013}, for example, proposes a unified framework for a joint
-analysis of the Drake equation and the Fermi paradox, concluding that
-for sufficiently long-lived civilisations, colonisation
-is the most promising strategy to find other life forms.
+\citet{prantzos_joint_2013}, for example, proposes a unified framework
+for a joint analysis of the Drake equation and the Fermi paradox,
+concluding that for sufficiently long-lived civilisations,
+colonisation is the most promising strategy to find other life forms.
 %
 \citet{haqq-misra_drake_2017} discuss the dependence of the Drake
 equation parameters on the spectral type of the host stars and the
@@ -215,8 +196,7 @@ time since the Galaxy formed, and examine trajectories for the
 emergence of communicative civilisations.
 %
 Some modifications to the original idea of the Drake equation have
-been proposed, in order to
-integrate a temporal structure, to
+been proposed, in order to integrate a temporal structure, to
 reformulate it as a stochastic process or to propose alternative
 probabilistic expressions.
 %
@@ -226,23 +206,8 @@ and their contacts have been explored by several authors
 balbi_impact_2018, balb_spatiotemporal_2018, horvat_impact_2011}, as
 well as efforts on considering the stochastic nature of the Drake
 equation \citep{glade_stochastic_2011}.
-%
-On this topic a number of works consider
-numerical simulations \citep{forgan_evaluating_2015,
-vukotic_grandeur_2016, murante_simulating_2015, forgan_numerical_2009,
-forgan_galactic_2017, ramirez_new_2017}.
-%
-Although this approach does not rely on values that can be measured
-from observations
-(like the fraction of stars with planets), 
-it depends on the definition of
-unknown or uncertain parameters required to carry out
-a the simulations.
-%
-\citet{grimaldi_signal_2017} considers a statistical model for the
-probability of the Earth contacting other intelligent civilisations,
-taking into account the finite lifetime of signal emitters, and based
-on the fractional volume occupied by all signals reaching our planet.
+
+
 
 
 Several authors raise the distinction between causal contacts and
@@ -265,6 +230,48 @@ might be in causal contact with an observer on the Earth.
 structure in the Drake equation and, in particular, the limitations
 of this expression to estimate the required timescale of a SETI
 program to succeed in the detection of intelligent signals.
+% 
+\citet{balbi_impact_2018} also investigates the chance of
+communicating civilisations making causal contact within a volume
+surrounding the location of the Earth.
+%
+The author argues that the causal contact requirement involves mainly
+the distance between civilisations, their lifespan and their times of
+appearance.
+%
+This is important since the time the light takes to travel across the
+Galaxy might be much lesser than the lifetime of the emitter.
+%
+\citet{balbi_impact_2018} fixes the total number of civilisations and
+explores the parametric space that comprises three variables, namely,
+the distance to the Earth, the time of appearance and the lifespan of
+the communicating civilisations.
+%
+Each of these three variables are drawn from a random distribution.
+%
+The distances are drawn from a uniform model 
+for the
+positions of civilisations within the plane of the Galaxy.
+%
+For the distribution of the characteristic time of appearance, the
+author explores exponential and truncated Gaussian functions,
+while for the lifespans chooses an exponential behaviour.
+%
+It is important to point out that the estimation of the number of
+communicating civilisations vary with the choice of the statistical
+model for the time of appearance, as shown by
+\citet{balbi_impact_2018}.
+%
+For all analysed distributions, the author concludes that the
+fraction of emitters that are listened is low if they are spreaded in
+time and with limited lifetimes.
+%
+An analytical explanation of these concepts are presented 
+in \citet{grimaldi_signal_2017}, who considers a statistical model for the
+probability of the Earth contacting other intelligent civilisations,
+taking into account the finite lifetime of signal emitters, and based
+on the fractional volume occupied by all signals reaching our planet.
+
 
 
 
@@ -295,41 +302,15 @@ come into play to produce the possible network of connections.
 
 
 
-A notable example of statistical modeling is the work by
-\citet{balbi_impact_2018}, who investigates the chance of
-communicating civilisations making causal contact within a volume
-surrounding the location of the Earth.
+On this topic a number of works consider numerical simulations
+\citep{forgan_evaluating_2015, vukotic_grandeur_2016,
+murante_simulating_2015, forgan_numerical_2009, forgan_galactic_2017,
+ramirez_new_2017}.
 %
-The author argues that the causal contact requirement involves mainly
-the distance between civilisations, their lifespan and their times of
-appearance.
-%
-This is important since the time the light takes to travel across the
-Galaxy might be much lesser than the lifetime of the emitter.
-%
-\citet{balbi_impact_2018} fixes the total number of civilisations and
-explores the parametric space that comprises three parameters, namely,
-the distance to the Earth, the time of appearance and the lifespan of
-the communicating civilization.
-%
-Each of these three variables are drawn from a random distribution.
-%
-The distribution of the distances results from a uniform model for the
-positions of civilizations within the plane of the Galaxy.
-%
-For the distribution of the characteristic time of appearance, the
-author explores exponential and truncated Gaussian distributions,
-while for the distribution of the lifespans chooses an exponential
-distribution.
-%
-It is important to consider that the estimation of the number of
-communicating civilisations vary with the choice of the statistical
-distribution for the time of appearance, as shown by
-\citet{balbi_impact_2018}.
-%
-For all analysed distributions, the author concludes that, the
-fraction of emitters that are listened is low if they are spreaded in
-time and with limited lifetimes.
+Although this approach does not rely on values that can be measured
+from observations (like the fraction of stars with planets), it
+depends on the definition of unknown or uncertain parameters required
+to carry out the simulations.
 %
 In another numerical approach, \citet{vukotic_astrobiological_2012}
 propose a probabilistic cellular automata modelling. 
@@ -339,15 +320,15 @@ which evolve at discrete time steps, according to transition rules
 that take into account the neighbour cells.
 %
 The authors implement this model to a network of cells which represent
-life complexity on a 2-dimensional region resembling the Galactic
+life complexity on a two--dimensional region resembling the Galactic
 Habitable Zone (GHZ), an annular ring set between a minimal radius of
-6 kpc and a peak radius of 10 kpc.
+6~kpc and a peak radius of 10~kpc.
 %
-These simulations represent the spread if intelligence as an
+These simulations represent the spread of intelligence as an
 implementation of panspermia theories.
 %
 Within this framework, \citet{vukotic_astrobiological_2012} also make
-several Monte Carlo simulations and analyse ensemble-averaged results.
+Monte Carlo simulations and analyse ensemble-averaged results.
 %
 Their work aims at analysing the evolution of life, and although it
 does not account for the network of causal contacts among
@@ -362,123 +343,154 @@ from a novel point of view.
 This study is conceived as an introduction to a simple probabilistic
 model and a numerical exploration of its parameter space.
 %
-With these tools, we address the problem of the temporal and spatial structure of
-the distribution of communicating civilisations.
+With these tools, we address the problem of the temporal and spatial
+structure of the distribution of communicating civilisations.
 %
-This approach does not require asumptions about, e.g., the origin of life, the development of
-intelligence or the formation of habitable planets according to stellar type.
+This approach does not require asumptions about, e.g., the origin of
+life, the development of intelligence or the formation of habitable
+planets according to stellar type.
 %
-Instead, we assume monoparametric function families to model the appearance of
-points in the disk of the Galaxy and over the time, which we call
-\textit{nodes}.
+Instead, we assume monoparametric function families to model the
+appearance of points in the disk of the Galaxy and over the time,
+which we call \textit{nodes}.
 %
-These nodes represent the locations of ideal intelligent agents that are able
-to receive and emit signals with perfect efficiency in all directions.
+These nodes represent the locations of ideal intelligent agents that
+are able to receive and emit signals with perfect efficiency in all
+directions.
 %
-Then we analyse the network of causally connected nodes limited to have a
-maximum separation representing the maximum distance a signal can travel with
-an intensity above a fixed threshold.
+Then we analyse the network of causally connected nodes limited to
+have a maximum separation representing the maximum distance a signal
+can travel with an intensity above a fixed threshold.
 %
-A node is causally connected to other node if it is within their light cone.
+A node is causally connected to other node if it is within their light
+cone.
 %
-We adopt as a definition that a light cone is the region in spacetime within
-the surface generated by the light emanating from a given point in space in a
-given period of time.
+We adopt as a definition that a light cone is the region in spacetime
+within the surface generated by the light emanating from a given point
+in space in a given period of time.
 %
-For example, two nodes separated by 100 light years which appear with a
-difference in time of 80 years and last 50 years each, will be causally
-connected for 30 years.
+For example, two nodes separated by 100 light years which appear with
+a difference in time of 80 years and last 50 years each, will be
+causally connected for 30 years.
 %
 This connection is not, though, bidirectional.
 %
-In fact, the second node will see the first one for 30 years, but the first
-node will never acknowledge the existence of the second.
+In fact, the second node will see the first one for 30 years, but the
+first node will never acknowledge the existence of the second.
 %
-This simple tought experiment exemplify the importance of the time variable to
-analyse the structure of connections.
+An scheme of this example is shown if Fig.~\ref{F_example}.
 %
-The model can be described with three parameters, namely, the mean separation
-between the appearance of nodes, the mean lifetime of the nodes, and the
-maximum separation to allow an effective causal contact.
+This simple tought experiment exemplify the importance of the time
+variable to analyse the structure of connections.
 %
-The model presented here comprises the stochastic networks of constrained
-causally connected nodes, together with the three parameters and additional
-hypotheses.
+The model can be described with three parameters, namely, the mean
+separation between the appearance of nodes, the mean lifetime of the
+nodes, and the maximum separation to allow an effective causal
+contact.
+%
+The model presented here comprises the stochastic networks of
+constrained causally connected nodes, together with the three
+parameters and additional hypotheses.
 %
 Hereafter, we refer to this model as the SC3Net model, standing for
 ''Stochastic Constrained Causally Connected Network``.
 
 
+\begin{figure}[h]
+%
+\centering
+%
+\includegraphics[width=\columnwidth]{F_example.pdf}
+%
+\caption{Example of a configuration of an emitter and a receiver 
+   to produce a causal contact.
+   %
+   The observers are separated by 100~light years and appear with a
+   difference in time of 80~years. One observer is active between
+   $t=$0~yr and $t=$50~yr.  The other observer is also active for
+   50~yr, between $t=$80~yr and $t=$130~yr. 
+   %
+   The causal connection occurs between $t=$100~yr and $t=$130~yr
+   %
+   Meaningfull times are marked with vertical dashed lines.
+   }
+%
+\label{F_example}
+%
+\end{figure}
 
 
 
-We provide a framework to explore, through a suite of numerical simulations,
-the parameter space of three unknown observables.
+
+We provide a framework to explore, through a suite of
+numerical simulations, the parameter space of three unknown
+observables.
 %
-This allows to discuss possible scenarios and their consequences in terms of
-the probability of making contacts.
+This allows to discuss possible scenarios and their consequences in
+terms of the probability of making contacts.
 %
-The method we use for simulating a stochastic process is an approximation that
-allows to study the behaviour of complex systems, by considering a sequence of
-well defined discrete events.
+The method we use for simulating a stochastic process is an
+approximation that allows to study the behaviour of complex systems,
+by considering a sequence of well defined discrete events.
 %
-The simulation is carried out by following all the variables that describe and
-constitute the state of the system.
+The simulation is carried out by following all the variables that
+describe and constitute the state of the system.
 %
-The evolution of the process is then
-described as the set of changes in those variables. 
+The evolution of the process is then described as the set of changes
+in those variables. 
 %
-In this context, an event produces a specific change in the state that can be
-triggered by random variables that encode the stochastic nature of the physical
-phenomenon.
+In this context, an event produces a specific change in the state that
+can be triggered by random variables that encode the stochastic nature
+of the physical phenomenon.
 %
-For example, when a new contact is produced between two entities in the
-simulated galaxy, the number of active communication lines is increased by one.
+For example, when a new contact is produced between two entities in
+the simulated galaxy, the number of active communication lines is
+increased by one.
 %
-Also, if it is the first contact for that nodes, 
-then the number of communicated nodes increases by two.
+Also, if it is the first contact for that nodes, then the number of
+communicated nodes increases by two.
 %
-When a new node becomes active, the sistem has an increase of one
-in the number of nodes, although the number of communcations does not
+When a new node becomes active, the sistem has an increase of one in
+the number of nodes, although the number of communcations does not
 necessarily change.
 %
-The process then involves following the changes on the state of the system, defining
-the initial and final states.
+The process then involves following the changes on the state of the
+system, defining the initial and final states.
 %
-This is done by defining a method that allows to keep track of the time
-progress in steps and maintaining a list of relevant events, i.e., the events
-that produce a change in the vriables of interest.
+This is done by defining a method that allows to keep track of the
+time progress in steps and maintaining a list of relevant events,
+i.e., the events that produce a change in the vriables of interest.
 %
-With this method we abandon the frequentist approach of the Drake equation to
-compute the number of civilisations, providing instead its statistical
-distribution.
+With this method we abandon the frequentist approach of the Drake
+equation to compute the number of civilisations, providing instead its
+statistical distribution.
 %
-More importantly, we are interested on the probability of contacts, which
-depend critically on the time variable.
+More importantly, we are interested on the probability of contacts,
+which depend critically on the time variable.
 %
-This is an exploratory analysis that aims at developing a numerical tool to
-discuss the different scenarios based on statistical heuristics.
+This is an exploratory analysis that aims at developing a numerical
+tool to discuss the different scenarios based on statistical
+heuristics.
 %
-The approach proposed here should be considered as a compromise between the
-uncertainties of the frequentist estimations and the detailed recipes required
-on the numerical simulations.
+The approach proposed here should be considered as a compromise
+between the uncertainties of the frequentist estimations and the
+detailed recipes required on the numerical simulations.
 %
-It is worth noticing that the SC3Net model is not intended for a formal fit at this
-stage due to the lack of data, but it can help to understand how unusual it
-would be to actively search for intelligent signals for 50 years without
-possitive detections.
+It is worth noticing that the SC3Net model is not intended for a
+formal fit at this stage due to the lack of data, but it can help to
+understand how unusual it would be to actively search for intelligent
+signals for 50 years without possitive detections.
 
 
 This paper is organized as follows.
 %
-In Sec.~\ref{S_methods} we introduce the methods and discuss the candidate
-distributions for the statistical aspects of the times involved in the
-communication process.
+In Sec.~\ref{S_methods} we introduce the methods and discuss the
+candidate distributions for the statistical aspects of the times
+involved in the communication process.
 %
-We present our results in Sec~\ref{S_results}, with special emphasis on the
-statistical distributions of the duration of causal contacts in one or both
-directions and the distribution of time intervals for the waiting of the first
-contact.
+We present our results in Sec~\ref{S_results}, with special emphasis
+on the statistical distributions of the duration of causal contacts in
+and the distribution of time intervals of waiting for the first contact.
 %
 This quantities are considered as a function of the three simulation
 parameters.
@@ -496,7 +508,7 @@ directions.   
    \caption{
    %
 Space--time diagrams showing a schematic representation of the different stages
-in the development of a constrained causal contact node (\ceti{}).
+in the development of a constrained causal contact node.
 %
 Panel (a) represents the region $R$ in space and time which is causally
 connected to the emitter (E, left vertex), following an ``A'' type
@@ -507,7 +519,7 @@ The sphere of first contact (SFC) is the sphere centred on the emitter that
 grows until its radius reaches the D$_{\rm max}$ distance, in which the
 power of the signal would equal the detectability threshold.
 %
-In the Figure this sphere is represented by the left triangle of the region
+This sphere is represented by the left triangle of the region
 $R$.
 %
 The surface of last contact (SLC) is another sphere that grows from a ``D''
@@ -520,12 +532,12 @@ depending on the time.
 The temporal intervals for the communication between two \cetis{} are
 represented in the panel (b).
 %
-The receiver node E$_1$ can listen signals from the emitter node E$_2$, from
+The node E$_1$ can listen signals from the node E$_2$, since
 the ``Contact'' event (t=C$_{12}$) up to the ``Blackout'' event
 (t=B$_{12}$).
 %
-Similarly, the receiver node E$_2$ can listen signals from the emitter
-node E$_1$, from t=C$_{21}$ up to t=B$_{21}$. 
+Similarly, the node E$_2$ is in causal contact from the
+   node E$_1$, in the time interval (C$_{21}$, B$_{21}$).
 %
 } \label{F_scheme}
 %
@@ -618,20 +630,22 @@ In what follows, we outline the experimental setup adopted to estimate the
 probabilities of causal contacts and several derived quantities.
 %
 This is done in terms of three independent parameters, namely, the mean time
-span between the appearance of consecutive \cetis{}, $\left<\tau_a\right>$,
-their mean lifetime $\left<\tau_s\right>$, and the maximum distance a signal
+span between the appearance of consecutive \cetis{}, $\left<\tau_{\rm
+a}\right>$,
+their mean lifetime $\left<\tau_{\rm s}\right>$, and the maximum distance a signal
 can be detected by another \ceti{} ($D_{\rm max}$).
 %
 Intuitively, the probability of the existence of causal contacts between pairs
-of \cetis{} would be larger for smaller $\tau_a$ parameters, higher $\tau_s$ or
+of \cetis{} would be larger for smaller $\tau_{\rm a}$ parameters,
+higher $\tau_{\rm s}$ or
 higher $D_{\rm max}$ parameter values.
 %
 We also propose theoretical distribution functions for both the lifespans
-($\tau_s$) and the number of \cetis{} per unit time
+($\tau_{\rm s}$) and the number of \cetis{} per unit time
 \citep{maccone_evolution_2014, Sotos_biotechnology_2019}.
 %
 The later is related to the time span between the appearance of consecutive
-\cetis{} (since when $\left<\tau_a\right>$ is shorter, it produces a greater
+\cetis{} (since when $\left<\tau_{\rm a}\right>$ is shorter, it produces a greater
 density of \cetis{}).
 %
 The analytical expresions for these distributions are set to a fixed law, as
@@ -639,7 +653,7 @@ discussed in Sec.~\ref{SS_PDF_shape}.  
     
      
 
-\ffn{1} Space—time diagrams, where time and space are represented on
+\ffn{1} Space--time diagrams, where time and space are represented on
 the horizontal and vertical axes, respectively, are suitable tools to
 describe the causal connections among different nodes.
 %
@@ -912,7 +926,7 @@ However, we assume
 that these events are sufficiently numerous in the Galaxy so that a
 statistical model is plausible. The failure of this hypothesis would
 imply extreme values for the parameters that represent the density of
-the nodes (i.e., $\left< \tau_a \right>$).
+the nodes (i.e., $\left< \tau_{\rm a} \right>$).
 
 
 
@@ -923,35 +937,28 @@ the nodes (i.e., $\left< \tau_a \right>$).
 \hline
    \multicolumn{2}{l}{independent variables (parameter space)}
    &min. value&max. value&Nbins\\
-%\hline
-%   $\tau_{a}$ & Mean temporal separation between consecutive awakenings 
-%	      & 500~a & 40500~a & 21\\ 
-%	    & & 5$\cdot$10$^5$~a & 10$^6$~a & 51\\ 
-%   $\tau_{s}$ & Mean lifetime of a \ceti{}
-%	      & 500~a & 40500~a & 21\\ 
-%	    & & 5$\cdot$10$^5$~a & 10$^6$~a & 51\\ 
-%	D$_{\rm max}$ & Maximum reach of a message  & \multicolumn{3}{c}{100 pc, 500 pc, 1 kpc, 5 kpc, 10 kpc} \\
 \hline
-
-   $\tau_{a}$ & Mean temporal separation between consecutive
-   awakenings & 4 kyr & 200 kyr & 50\\ 
+   $\tau_{a}$ & Mean temporal separation between consecutive awakenings 
+	      & 5$\cdot10^2$~yr & 40500~yr & 21\\ 
+	    & & 5$\cdot$10$^5$~yr & 10$^6$~yr & 51\\ 
    $\tau_{s}$ & Mean lifetime of a \ceti{}
-   & 10 kyr & 500 kyr& 50\\ 
-   D$_{max}$ & Maximum reach of a message  &  \multicolumn{2}{l}{3 kpc, 12 kpc, 25 kpc} & 3\\
-\hline 
-
+	      & 5$\cdot10^2$~yr & 40500~yr & 21\\ 
+	    & & 5$\cdot$10$^5$~yr & 10$^6$~yr & 51\\ 
+	D$_{\rm max}$ & Maximum reach of a message  & \multicolumn{3}{c}{100 pc, 500 pc, 1 kpc, 5 kpc, 10 kpc} \\
+\hline
    \multicolumn{2}{l}{fixed variables} & \multicolumn{2}{c}{assumptions} &value \\
 \hline
    & statistical properties of all \cetis{} &equally distributed&&\\
    & Point process for the distribution in time & homogeneous &&\\
    f$_s$ & The scan of the sky & fully efficient&&1\\
    f$_p$ & panspermia or colonization &absent&&0\\
-   & shape of the Galactic Habitable Zone & 2--dimensional ring &&\\
+   & shape of the Galactic Habitable Zone & two-dimensional ring &&\\
 	R$_{GHZ}^{\rm min}$   & Inner radius of the GHZ  & \citet{lineweaver_galactic_2004} & & 7~kpc\\
    R$_{GHZ}^{\rm max}$   & Outer radius of the GHZ       & \citet{lineweaver_galactic_2004} & & 9~kpc\\
-	t$_{\rm max}$ & Time span of the simulation  & & \multicolumn{2}{r}{10$^6$~yr} \\
+	t$_{\rm max}$ & Time span of the simulation  & &
+   \multicolumn{2}{r}{10$^5$~yr - 10$^9$~yr} \\
     & \multicolumn{3}{l}{number of random realizations for each point
-    in the parameter space} & 50 \\
+    in the parameter space} & 1 - 50 \\
 \hline
    \multicolumn{2}{l}{discrete events} &
    \multicolumn{3}{l}{affected variables}\\
@@ -992,7 +999,7 @@ the temporal distributions also determine the spatial properties, since the
 density of active \cetis{} in the galaxy depend on these two parameters.
 %
 For
-example, small $\tau_a$ and a large $\tau_s$ will produce a densely
+example, small $\tau_{\rm a}$ and a large $\tau_{\rm s}$ will produce a densely
 populated galaxy (in this context, a galaxy is an element in a 
 statistical ensemble, not the Milky Way).
 %
@@ -1109,22 +1116,24 @@ parameters on the results.
    \caption{
    %
 Empirical cumulative distributions of the number contacts
-   for \cetis in different samples and with D$_{\rm max}$=10~kpc.
+   for \cetis{} in different samples and with D$_{\rm max}$=10~kpc.
 %
-The upper panel shows the variation of the probability distribution
-   estimation as a function of the $\tau_a$ parameter.  All the curves
+The upper panel shows the variation of the distribution
+   as a function of the $\tau_{\rm a}$ parameter, including the values 
+   0.1, 0.5, 1, 2, and 5~kyr. All the curves
    correspond to models with 
-   $\tau_s=40~kyr$ and D$_{\rm max}=10\,kpc$.
+   $\tau_{\rm s}=$40~kyr and \mbox{D$_{\rm max}=10$~kpc}.
 %
-The bottom panel corresponds to several values of $\tau_s$, with
-   $\tau_a=1~kyr$ and D$_{\rm max}=10\,kpc$.
+   The bottom panel corresponds to values of $\tau_{\rm s}$
+   5, 10, 20 and 50~kyr,
+   $\tau_{\rm a}=1$~kyr and D$_{\rm max}=10$~kpc.
 %
    Cumulative distributions can be used to visualise the probability
-   of a random node in a model of having more than M contacts.  For
+   of a random node of having more than M contacts in a given model.  For
    example, in the upper panel the probability of a random node having
    more than 10 contacts is nearly one for the model with the
-   smallest $\tau_a$ value, and nearly zero for the model with the
-   largest $\tau_a$ value.
+   smallest $\tau_{\rm a}$ value, and nearly zero for the model with the
+   largest $\tau_{\rm a}$ value.
    %
    } \label{F_number_of_contacts}
 \end{figure}
@@ -1206,7 +1215,7 @@ simulation, as described in detail in the next Section.
 \subsection{Discrete event process}
 
 A discrete event simulation is performed for a given model, in this
-work $M(\tau_a, \tau_s,
+work $M(\tau_{\rm a}, \tau_{\rm s},
 D_{\rm max})$, by keeping track of a set of variables that change each time an
 event happens. 
 %
@@ -1234,10 +1243,10 @@ occurs.   
    \caption{
    %
 Rate of nodes that never make contact (listening) as a
-function of $\tau_a$ and $\tau_s$, for 
-$D_{\rm max}$=3~kpc (left panel),
-$D_{\rm max}$=12~kpc (middle panel), and
-$D_{\rm max}$=25~kpc (right panel)
+   function of $\tau_{\rm a}$ and $\tau_{\rm s}$, for 
+$D_{\rm max}$=1~kpc (left panel),
+$D_{\rm max}$=5~kpc (middle panel), and
+$D_{\rm max}$=10~kpc (right panel)
 %
    }
    \label{F_never_contact}
@@ -1249,10 +1258,10 @@ $D_{\rm max}$=25~kpc (right panel)
    \caption{
    %
 Rate of nodes that listen at the moment of the
-awakening, as a funcion of $\tau_a$ and $\tau_s$, for
-$D_{\rm max}$=3~kpc (left panel),
-$D_{\rm max}$=12~kpc (middle panel), and
-$D_{\rm max}$=25~kpc (right panel)
+   awakening, as a funcion of $\tau_{\rm a}$ and $\tau_{\rm s}$, for
+$D_{\rm max}$=1~kpc (left panel),
+$D_{\rm max}$=5~kpc (middle panel), and
+$D_{\rm max}$=10~kpc (right panel)
 %
    }
    \label{F_C_at_A}
@@ -1314,19 +1323,8 @@ The time marks for each event (A and D for each \ceti{} and C and B
 for each constrained causal contact) are stored as a result of the simulation.
 %
 Also, the list of active \cetis{} is obtained as a function of time.
-%
-%Some fixed variables must be set in order to carry out the simulation:
-%the size of the Galactic Habitable Zone, the mean lifetime of a
-%\ceti{}, $\tau_s$, the mean waiting time for the appearance of another
-%\ceti{}, $\tau_a$, and the maximum distance a message can be detected.
-%
-% The Galactic Habitable Zone is set at fixed values of the inner and outer
-% radii, radial symmetry is assumed, and the with of the galactic disk
-% is neglected compared to the radial size.
-% %
-% The two radii are measured in light years, with the aim to maintain a
-% single and comprehensive unit for both space and time coordinates. 
-%
+
+
 
 
 \subsection{Model implementation}
@@ -1346,14 +1344,6 @@ The project is in the process of registration with the ‘’Astrophysics
 Source Code Library’’ \citep[ASCL, ][]{2015JORS....3E..15A,
 2020ASPC..522..731A}
 %
-% In order to achieve high performance we made use of vectorised methods
-% and array broadcasting properties provided by the NumPy package
-% \citep{oliphant_numpy_2006, vanderwalt_numpy_2011}
-% %
-% The combination of C-compiled Numpy routines for numerical
-% computations with a high-level language allows to obtain an easily
-% comprehensible and maintainable code.
-% %
 From the viewpoint of a user, \hs{} is an object-oriented package that
 exposes the main functionalities as classes and methods.
 %
@@ -1371,44 +1361,7 @@ An in-depth description of the methods can be found in the
 documentation, which is automatically generated from \hs{} docstrings
 and made public in the read-the-docs service
 \footnote{https://hearsay.readthedocs.io/en/latest/}.
-
-
-% %Quality assurance
-% %
-% Regarding the quality assurance of the software, we endorse the PEP-8 style
-% guide for python (van Rossum et al. 2001) throughout the entire project, which
-% improves the code maintainability and helps to minimise the so called
-% ``code-entropy'' of future versions.
-% %
-% The deviations in style were analysed with the flake8 tool, which improves the
-% readability and consistency of the code.
-% %
-% Testing and code coverage have been applied to the package and the development
-% process as standard qualitative and quantitative metrics.
-% %
-% The different parts and functions can be validated to assert if they return the
-% expected results on specific test cases and testing scenarios
-% \citep{jazayeri_engeneering_2007}.
-% %
-% On the other hand, code coverage measures the fraction visited and executed in
-% the code by the testing procedure \citep{miller_testing_1963}.
-% %
-% The advantage of an exhaustive code-coverage is that it ensures that most of
-% the sources of errors have been considered.
-% %
-% In the \hs{} project we provide test tools for the distinct parts of the
-% simulation setup and run, reaching a 99\% of code coverage in the version used
-% for this work.
-% %
-% For every new version of the code, all these quality assurance methods and
-% metrics are run automatically by a continuous-integration service.
-% %
-% It is possible to reproduce the experiments performed in this work using the
-% \hs{} package.
-% %
-% The installation is available through a git repository and also on the Python
-% Package Index (PyPI).
-% %
+%
 Since the simulation setup is configurable, the time required for a simulation
 to complete depends on the simulation parameters.
 %
@@ -1430,14 +1383,15 @@ More information on this can be found on the documentation of the software.
 Histograms of the mean waiting times for the first contact, for
 several models.
 %
-Left panel shows the histograms for several values of $\tau_a$, and
-$\tau_s$ in the range 17000-24000~yr.
+   Left panel shows the histograms for several values of $\tau_{\rm a}$, and
+   $\tau_{\rm s}$ in the range 17000-24000~yr.
 %
-Right panel shows the histograms for several values of $\tau_s$, and
-$\tau_a$ in the range 68000-100000~yr.
+   Right panel shows the histograms for several values of $\tau_{\rm
+   s}$, and
+   $\tau_{\rm a}$ in the range 68000-100000~yr.
 %
-The shape of the histograms does not change when $\tau_a$ is
-modified, but significantly changes when $\tau_s$ is modified. 
+   The shape of the histograms does not change when $\tau_{\rm a}$ is
+   modified, but significantly changes when $\tau_{\rm s}$ is modified. 
 %
    }
    \label{F_waiting_for_1C}
@@ -1445,7 +1399,6 @@ modified, but significantly changes when $\tau_s$ is modified.
 
 
 
-%%% S E C T I O N - - - - - - - - - - - - - - - - - - - - - - -
 \section{Results: exploring the parameter space}\label{S_results}
 
 We implemented the simulation of a regular grid of models varying over
@@ -1458,15 +1411,16 @@ The number of random realzations varies from one (for the densel populated model
 up to 20 (for the sparsely populated models).
 %
 The parameters for the temporal aspects of the simulation (the mean
-waiting time for the next awakening, $\left<\tau_a\right>$, and the
-mean lifetime, $\left<\tau_s\right>$) cover the ranges
+waiting time for the next awakening, $\left<\tau_{\rm a}\right>$, and the
+mean lifetime, $\left<\tau_{\rm s}\right>$) cover the ranges
 10$^2$-10$^6$~yr, with 
 two linear partitions of 21 values (10$^2$-40500~yr) and 51 values
 ($5\cdot10^5$-10$^6$~yr)
 for each parameter.
 %
 This partition was chosen after the requirement of the software to take linear bins, 
-aiming at a better sampling of the low $\tau_a$ and low $\tau_s$ region of the parameter space.
+aiming at a better sampling of the low $\tau_{\rm a}$ and low
+$\tau_{\rm s}$ region of the parameter space.
 %
 For the D$_{\rm max}$ parameter, we take the 
 values 100~pc, 500~pc, 1~kpc, 5~kpc and 10~kpc.
@@ -1488,40 +1442,46 @@ their values and the hypotheses that they represent.
 
 As a product of the simulations, several quantities can be obtained.
 %
-Some of them are directly derived from the discrete events, namely, the ID of
-emitting and receiving \cetis{} and the position in the galaxy.
+Some of them are directly derived from the discrete events, namely,
+the ID of emitting and receiving \cetis{} and the position in the
+galaxy.
 %
-We also save the times of each of the events that are relevant to keep track of
-the number of \cetis{} for each simulation, i.e., the times of the four types
-of events.
+We also save the times of each of the events that are relevant to keep
+track of the number of \cetis{} for each simulation, i.e., the times
+of the four types of events.
 %
 The times of C-type and B-type events are used to derive the number of
 contacts.
 %
-We also obtain quantities that represent the properties of the \cetis{}, for
-example the total time elapsed between the A-type and the D-type of each node,
-which represent their corresponding lifetimes.
+We also obtain quantities that represent the properties of the
+\cetis{}, for example the total time elapsed between the A-type and
+the D-type of each node, which represent their corresponding
+lifetimes.
 %
-The time span of a \ceti{} listening another or being listened by another node
-can also be derived by keepig track of the times of the events in a simulation.
+The time span of a \ceti{} listening another or being listened by
+another node can also be derived by keepig track of the times of the
+events in a simulation.
 %
-This way we can also compute the distribution in the simulated galaxy of
-\cetis{} that reach contact, the distributions of the waiting times until the
-first contact or the distributions of waiting times until the next contact.
+This way we can also compute the distribution in the simulated galaxy
+of \cetis{} that reach contact, the distributions of the waiting times
+until the first contact or the distributions of waiting times until
+the next contact.
 %
-The following properties of the population of \cetis{} can also be derived:
+The following properties of the population of \cetis{} can also be
+derived:
 %
-the fraction of the lifetime a node is listening to at least another node
-(i.e., within their light cone),
+the fraction of the lifetime a node is listening to at least another
+node (i.e., within their light cone),
 %
 the age of contacted \cetis{} at first contact,
 %
-the fraction of \cetis{} where the first contact is given at the awakening,
+the fraction of \cetis{} where the first contact is given at the
+awakening,
 %
 the distribution of the number of contacts for each \ceti{},
 %
-the distribution of the number of contacts as a function of the age of the
-node,
+the distribution of the number of contacts as a function of the age of
+the node,
 %
 the number of contacts as a function of time in the galaxy,
 %
@@ -1529,14 +1489,15 @@ the fractions of nodes that succeed in making contact,
 %
 and the distribution of distances between contacted nodes.
 %
-Another useful derived quantity is the duration of two-way communication
-channels or the fraction of contacts that admit a response.
+Another useful derived quantity is the duration of two-way
+communication channels or the fraction of contacts that admit a
+response.
 % 
-It is also possible to analyze the relations between the distance to \ceti{}
-vs. the time of two-way communications, the distance to \ceti{} vs. the age of
-contacted node, the age of a node and the maximum number of contacted nodes
-before the D--type event, or the lifespan of a node vs. the maximum number of
-contacts.
+It is also possible to analyze the relations between the distance to
+\ceti{} vs. the time of two-way communications, the distance to
+\ceti{} vs. the age of contacted node, the age of a node and the
+maximum number of contacted nodes before the D--type event, or the
+lifespan of a node vs. the maximum number of contacts.
 %
 All these quantities can be analyzed as a function of the simulation
 parameters.
@@ -1550,55 +1511,51 @@ parameters.
 In Fig.~\ref{F_number_of_contacts} we show the empirical cumulative
 distributions of the number contacts for \cetis{} in six different
 samples, including short and long lifetimes
-$\left(\,\left<\tau_s\right>=\right.$10000~yr and
-$\left<\tau_s\right>$=100000~yr, respectively$\left.\right)$, dense
+$\left(\,\left<\tau_{\rm s}\right>=\right.$10000~yr and
+$\left<\tau_{\rm s}\right>$=100000~yr, respectively$\left.\right)$, dense
 and sparse spatial distribution
-$\left(\,\left<\tau_a\right>=\right.$10000~yr and
-$\left<\tau_a\right>$= 100000~yr, respectively$\left.\right)$, and two
-different signal reach ranges (D$_{\rm max}$=12~kpc and
-D$_{\rm max}$=25~kpc).
-%
-The models M1 and M5 are not shown, since in both cases the total
-number of contacts is different from zero for less than the five per
-cent of the \cetis{}.
+$\left(\,\left<\tau_{\rm a}\right>=\right.$10000~yr and
+$\left<\tau_{\rm a}\right>$= 100000~yr, respectively$\left.\right)$, and two
+different signal reach ranges (D$_{\rm max}$=12~kpc and D$_{\rm
+max}$=25~kpc).
 %
 The areas between models with the same mean lifetime and mean
 awakening time are shaded for visualization purposes.
 %
-As it can be seen, the mean lifetime is more
-determinant than the mean awakening rate (dense and sparse,
-represented by a different shade) for the number of contacts.
+As it can be seen, the mean lifetime is more determinant than the mean
+awakening rate (dense and sparse, represented by a different shade)
+for the number of contacts.
 %
-As expected, of the samples with the longest $D_{\rm max}$ the model with
-a dense awakening in the timeline (low $\left<\tau_a\right>$) and a
-long lifetime (high $\left<\tau_s\right>$), is the model that
+As expected, of the samples with the longest $D_{\rm max}$ the model
+with a dense awakening in the timeline (low $\left<\tau_{\rm a}\right>$) and
+a long lifetime (high $\left<\tau_{\rm s}\right>$), is the model that
 maximizes the number of contacts, reaching a maximum of order 20
 contacts for a single \ceti{}.
 %
-Similarly, for the models with long signal range
-($D_{\rm max}=25$~kpc), the one which is dense and with long lifetime
-has the maximum number of contacts, reaching nearly 100 contacts for
-each \ceti{} in its entire lifetime.
+Similarly, for the models with long signal range ($D_{\rm
+max}=25$~kpc), the one which is dense and with long lifetime has the
+maximum number of contacts, reaching nearly 100 contacts for each
+\ceti{} in its entire lifetime.
 %
 This is considerably larger than any model with a shorter lifetime,
 which produce a number of contacts of at most the order of ten
 contacts per \ceti{}.
 %
-We should point out that this plot 
-has a logarithmic scale on the x-axis, and it is the cumulative, not
-differential, empirical distribution.
+We should point out that this plot has a logarithmic scale on the
+x-axis, and it is the cumulative, not differential, empirical
+distribution.
 %
-Therefore, the differences in the
-number of contacts for different models are relatively large.
+Therefore, the differences in the number of contacts for different
+models are relatively large.
 %
-Another interesting feature observed in the Fig.~\ref{F_number_of_contacts}, is that for the
-models analyzed, there are \cetis{} that have no causal contacts with
-any other \ceti{} during their whole lifetime.
+Another interesting feature observed in the
+Fig.~\ref{F_number_of_contacts}, is that for the models analyzed,
+there are \cetis{} that have no causal contacts with any other \ceti{}
+during their whole lifetime.
 %
 The fraction of \cetis{} with no contact ranges from nearly 20\% up to
-nearly 90\% (models M1 and M5, not shown), except for the dense and
-long lifetime models, for which almost all \cetis{} make at least one
-contact.
+nearly 90\%, except for the dense and long lifetime models, for which
+almost all \cetis{} make at least one contact.
 %
 Since these results depend on just eight models, we analyze the
 properties of the frequency of contacts as a function of both the mean
@@ -1609,17 +1566,17 @@ lifetime and the mean awakening time.
 On Fig.~\ref{F_never_contact} we show 2D color maps with the fraction
 of \cetis{} in the simulations that never make contact (i.e., never
 listen to another \ceti{}), as a function of the mean lifetime
-($\left<\tau_s\right>$, in the range 0--500 a) and the mean awakening
-time ($\left<\tau_a\right>$, in the range 0--200 a), for three
-different values of the maximum signal range, $D_{\rm max}$=3~kpc (left
-panel), $D_{\rm max}=12$~kpc (middle panel), and $D_{\rm max}=25$~kpc
-(right panel).
+($\left<\tau_{\rm s}\right>$, in the range 0--500 a) and the mean awakening
+time ($\left<\tau_{\rm a}\right>$, in the range 0--200 a), for three
+different values of the maximum signal range, $D_{\rm max}$=3~kpc
+(left panel), $D_{\rm max}=12$~kpc (middle panel), and $D_{\rm
+max}=25$~kpc (right panel).
 %
-A clear pattern emerges, showing that the probability
-for a \ceti{} of making causal contact with at least another \ceti{}
-during their entire lifetime, increases with increasing $D_{\rm max}$,
-increasing $\left<\tau_s\right>$ and decreasing $\left<\tau_a\right>$,
-following a roughly linear dependence with the three parameters.
+A clear pattern emerges, showing that the probability for a \ceti{} of
+making causal contact with at least another \ceti{} during their
+entire lifetime, increases with increasing $D_{\rm max}$, increasing
+$\left<\tau_{\rm s}\right>$ and decreasing $\left<\tau_{\rm a}\right>$, following
+a roughly linear dependence with the three parameters.
 
 
 The number of \cetis{} that do not succeed in reaching the
@@ -1636,8 +1593,8 @@ at the time of their A-type events.
 The fraction of \cetis{} that make the first contact at the awakening
 event is shown in the Fig.~\ref{F_C_at_A}, 
 as a function of the mean lifetime
-($\left<\tau_s\right>$, in the range 0--500 a) and the mean awakening
-time ($\left<\tau_a\right>$, in the range 0--200 a).
+($\left<\tau_{\rm s}\right>$, in the range 0--500 a) and the mean awakening
+time ($\left<\tau_{\rm a}\right>$, in the range 0--200 a).
 %
 The three panels correspond to different values of the maximum signal
 range ($D_{\rm max}$):
@@ -1648,8 +1605,7 @@ panel), $D_{\rm max}=12$~kpc (middle panel), and $D_{\rm max}=25$~kpc
 %
 Although they are not complementary, it is clear that the dependence
 with the three parameters is roughly linear in both cases.
-%
-%% DISCUTIR ESTOS RESUOLTADOS SEGUN LA LITERATURA
+
 
 
 \subsection{Waiting time for a first contact}\label{SS_waiting}
@@ -1667,22 +1623,24 @@ In the Fig.~\ref{F_waiting_for_1C} we show the histograms of the mean
 waiting times for the first contact, for several models.
 %
 Upper panel (a) panel shows the histograms for several values of the
-mean survival time $\tau_s$, with the mean awakening time $\tau_a$ in
+mean survival time $\tau_{\rm s}$, with the mean awakening time $\tau_{\rm
+a}$ in
 the range 68000-100000 a.
 %
-Lower panel (b) shows the histograms for several values of $\tau_a$,
-with $\tau_s$ in the range 17000-24000 a.
+Lower panel (b) shows the histograms for several values of $\tau_{\rm
+a}$,
+with $\tau_{\rm s}$ in the range 17000-24000 a.
 %
 As it can be seen, the shape of the histograms is almost the same when
-$\tau_a$ is modified (panel (b)), but significantly changes when
-$\tau_s$ is modified (panel (a)). 
+$\tau_{\rm a}$ is modified (panel (b)), but significantly changes when
+$\tau_{\rm s}$ is modified (panel (a)). 
 %
-For different values of $\tau_a$, the shape of the distribution is
+For different values of $\tau_{\rm a}$, the shape of the distribution is
 similar, and the main difference is given by the variation on the number of
 contacts on the different models.
 %
-Conversely, for different values of $\tau_s$ (at a fixed range for
-$\tau_a$), the shape of the
+Conversely, for different values of $\tau_{\rm s}$ (at a fixed range for
+$\tau_{\rm a}$), the shape of the
 distribution varies significantly.
 
  
@@ -1690,57 +1648,54 @@ distribution varies significantly.
 The fraction of the \cetis{} that have made at least one contact, as a
 function of the elapsed time since the awakening, is computed with
 respect to the total number of nodes that make causal contact at least
-one time in the time range from the A--type up to the D--type
-events.
+one time in the time range from the A--type up to the D--type events.
 %
-From a frequentist approach, the cumulative fraction of contacts
-from the awakening
-($t=$0~yr) up to a given time are related to the estimation of the
-probability of listening during that time interval and reaching to
-causal contact region of at least another node.
+From a frequentist approach, the cumulative fraction of contacts from
+the awakening ($t=$0~yr) up to a given time are related to the
+estimation of the probability of listening during that time interval
+and reaching to causal contact region of at least another node.
 %
 The complement of this value is the probability of observing in a time
 interval with no success, i.e., without ever happening a C--type
 event.
 %
 Clearly, this probability diminishes with time and tends to zero for
-large time periods, meaning the a \ceti{} will eventually enter into 
+large time periods, meaning the a \ceti{} will eventually enter into
 the light cone of other \cetis{}
 
 
-Remarkably, the differential probability of making a causal contact reach its
-maximum at the awakening event for all models.
+Remarkably, the differential probability of making a causal contact
+reach its maximum at the awakening event for all models.
 %
-That is, for a short period of time the initial moment is the most promising
-for making a (causal) contact, for a given technology.
+That is, for a short period of time the initial moment is the most
+promising for making a (causal) contact, for a given technology.
 %
 This allows to consider the fact that for the nearly 50 years SETI
 programs have been active, no contact event has been reported yet.
 %
-This offers a new approach to SETI programs, where the
-search for new communication technologies or the exploration of
-new communication channels has a fundamental role.
+This offers a new approach to SETI programs, where the search for new
+communication technologies or the exploration of new communication
+channels has a fundamental role.
 %
 Moreover, as it can be seen in the Fig.~\ref{F_waiting_for_1C}, there
 is a maximum probability of making the first causal contact at nearly
 10$^5$ years.
 %
-The probability of such a contact does not grows linearly
-with the observing time, but is greater during the first 100
-millennia.
+The probability of such a contact does not grows linearly with the
+observing time, but is greater during the first 100 millennia.
 
 
 \section{Discussion}\label{S_discussion}
 
-We have presented a stochastic model (SC3Net) to analyse the network of
-constrained causally connected nodes in a simplified Galaxy.
+We have presented a stochastic model (SC3Net) to analyse the network
+of constrained causally connected nodes in a simplified Galaxy.
 %
-It represents an idealised scenario of perfectly efficient emitters and
-receivers with the restriction of a maximum distance separation.
+It represents an idealised scenario of perfectly efficient emitters
+and receivers with the restriction of a maximum distance separation.
 %
 These emitters and receivers correspond to nodes that form a
-communication network whose properties depend on their density
-and mean survival time.
+communication network whose properties depend on their density and
+mean survival time.
 %
 The statistical analysis of the model allows to estimate the
 probabilities for a random node and for a given model instance of
@@ -1749,12 +1704,12 @@ durations of such contacts.
 %
 Using numerical simulations, we implemented this model to explore the
 three-dimensional parameter space, considering a grid of mean time
-separations between the activation of new nodes
-in the range 500--10$^6$~yr.
+separations between the activation of new nodes in the range
+500--10$^6$~yr.
 %
-Additionally, we explore a grid of the mean survival times between 
-500~yr and 10$^6$~yr, and values for the maximum distance range of signals 
-of 100~pc, 500~pc, 1~kpc, 5~kpc and 10~kpc.
+Additionally, we explore a grid of the mean survival times between
+500~yr and 10$^6$~yr, and values for the maximum distance range of
+signals of 100~pc, 500~pc, 1~kpc, 5~kpc and 10~kpc.
 %
 The simulation of each parameter point was performed several times
 with different random seeds in order to improve the confidence of the
@@ -1765,39 +1720,20 @@ unique points in the parameter space.
 
 
 
-% We have implemented a suite of simulations, following a stochastic
-% approach, to explore a three dimensional hypothesis space of a simple
-% model that accounts for the causal connections between
-% communicating civilisations in the Galaxy. The different models can be
-% generated with a minimal number of assumptions. We argue that three
-% parameters can describe a variety of situations, ranging from a galaxy
-% model where an intelligent civilization is very rare, to a galaxy
-% model populated with plenty of civilisations in causal contact. With
-% this approach, we can estimate several quantities as a function of the
-% parameters on the hypothesis space, so we explored the outcomes of
-% different models that can be derived from the simulations. For
-% instance, it is possible to estimate the timescale for an
-% uninterrupted SETI-equivalent effort to reach success, in terms of
-% different model parameters that reflect different, so far unknown,
-% scenarios for the appearance of intelligent life on the Galaxy.
-
-
-
-Although the simulations use several hypotheses, we
-argue that the model is not worthy of further complexity,
-given the limited knowledge about the origin and persistence of
-life in the Galaxy.
+Although the simulations use several hypotheses, we argue that the
+model is not worthy of further complexity, given the limited knowledge
+about the origin and persistence of life in the Galaxy.
 %
-The implementation of more detailed or sophisticated models
-would increase the number of free parameters without any 
-improvement in their predictive power.
+The implementation of more detailed or sophisticated models would
+increase the number of free parameters without any improvement in
+their predictive power.
 %
-Thus, we take advantage of the simplicity of the model to explore
-the parameter space in order to gain insight on the consequences of
+Thus, we take advantage of the simplicity of the model to explore the
+parameter space in order to gain insight on the consequences of
 different scenarios for the search of intelligent life.
 %
-Our analysis is not centred in obtaining the odds for the Earth
-to make contact with another civilization.
+Our analysis is not centred in obtaining the odds for the Earth to
+make contact with another civilisation.
 %
 Instead, we focus on obtaining a statistical, parameter dependent
 description of the possible properties of the communication networks
@@ -1805,22 +1741,22 @@ that comprise sets of nodes with broadcasting and reception
 capabilities.
 %
 This causally connected nodes are sparsely distributed in both space
-and time, making analytical treatments difficult and justifying
-the simulation approach.
+and time, making analytical treatments difficult and justifying the
+simulation approach.
 
 
 Under the hypotheses of our experiments, we conclude that a causal
 contact is extremely unlikely unless the galaxy is densely populated
-by intelligent civilizations with large average lifetimes.
+by intelligent civilisations with large average lifetimes.
 %
-On average, in order to have at least one contact in the entire lifetime
-of the \ceti{}, there must appear a mean of at least one \ceti{}
-every $\sim$20000 a, with a mean active period of at least
+On average, in order to have at least one contact in the entire
+lifetime of the \ceti{}, there must appear a mean of at least one
+\ceti{} every $\sim$20000 a, with a mean active period of at least
 $\sim$30000 a.
 %
 This result is qualitatively similar to the results presented by
 several authors, which state that a contact between the Earth and
-another intelligent civilization in the Galaxy is quite unlikely,
+another intelligent civilisation in the Galaxy is quite unlikely,
 provided the maximum distance of the signal and the lifetime of the
 emitter are not large enough.
 %
@@ -1842,33 +1778,31 @@ Fermi paradox.
 %
 Although our work does not take into account the colonization
 hypothesis, it does consider catastrophic events implicitly in the
-mean value and distribution of the lifetime, $\left<\tau_s\right>$.
+mean value and distribution of the lifetime, $\left<\tau_{\rm s}\right>$.
 %
 Other strategies could also increase the probability of contacts, for
 example panspermia \citep[e.g.,][]{starling_virulence_2013} or
 self--replicating probes \citep[e.g.,][]{barlow_galactic_2013},
 although they would be too slow to make a significant impact on the
-communication network among intelligent civilizations.
+communication network among intelligent civilisations.
 %
 Our results are also consistent with those presented by
-\citet{grimaldi_signal_2017}, who estimates an upper limit for the mean
-number of extraterrestrial civilizations that could contact Earth
-using Monte Carlo simulations, from a statistical model where the width
-of the Galactic disk is not negligible.
+\citet{grimaldi_signal_2017}, who estimates an upper limit for the
+mean number of extraterrestrial civilisations that could contact Earth
+using Monte Carlo simulations, from a statistical model where the
+width of the Galactic disk is not negligible.
 %
 On the other hand, taking into account the probability of contact with
 radio signals not sent intentionally \citep{horvat_calculating_2007},
 our analysis would imply a highly populated solar neighborhood.
 %
-Unlike most 
-of the studies that make use of statistical models or
+Unlike most of the studies that make use of statistical models or
 simulations \citep{cirkovic_temporal_2004, smith_broadcasting_2009,
 bloetscher_using_2019}, our approach does not relay on the Drake
 equation.
 %
-Thus, it does not need
-a detailed description or modeling of physical processes that give rise to
-intelligent life.
+Thus, it does not need a detailed description or modeling of physical
+processes that give rise to intelligent life.
 %
 However, we argue that it is a valid empirical formulation to discuss
 the probabilities of contact, and the time scales involed in the
@@ -1879,15 +1813,14 @@ Ours is an alternative to the method proposed by
 and use a different model, although our results agree in general.
 
 
-We have also fond that there 
-is a balance between the density of \cetis{} and the mean
-lifetime since, as expected, a lower density can be compensated by a
-longer active time period.
+We have also fond that there is a balance between the density of
+\cetis{} and the mean lifetime since, as expected, a lower density can
+be compensated by a longer active time period.
 %
 However, a large number of nodes does not easily compensate their
 short lives to reach the same probability of causal contact than in
 the case of a less populated galaxy but with very ancient
-civilizations.
+civilisations.
 %
 In all cases, for a short period of time (for instance, the time SETI
 programs have been active on Earth), the maximum probability of making
@@ -1918,7 +1851,7 @@ to propose an alternative treatment for the number of intelligent
 emitter/receivers.
 %
 The short time interval between the
-rise and fall of civilizations, compared to the age and extension of
+rise and fall of civilisations, compared to the age and extension of
 our Galaxy, is a fundamental limitation for the number of contacts.
 %
 Thus, the temporal dimension, which is missing in the Drake
@@ -1937,7 +1870,12 @@ Argentina.
 This research has made use of NASA's Astrophysics Data System.
 %
 Plots and simulations were made with software developed by the authors
-using R and python languages. Plots were postprocessed with inkscape.
+the python language. 
+%
+Plots were postprocessed with inkscape.
+%
+Simulations were run on the Clemente cluster at the Instituto de
+Astronomía Teórica y Experimental (IATE).
 %
 }
 
