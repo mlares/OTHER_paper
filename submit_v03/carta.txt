@@ -6,10 +6,14 @@ reformulation of both the text and the experiment.
 
 After the changes we made following your suggestions, we expect it is more
 clear and better presented.  In summary, this new version is focused on the
-formal description and a clear presentation of the model, the experiment 
-and the conclusions. We have also developed an
-updated version of our code, which allowed us to perform a more complete
-experimental setting where we can explore new regions in the parameter space.
+formal description and a clear presentation of the model, the experiment and
+the conclusions. We have also developed an updated version of our code, which
+allowed us to perform a more complete experimental setting where we can
+explore new regions in the parameter space.
+
+We have also modified the Figures and the arrangement of the sections in order
+to stregthen the description of the model.
+
 
 In what follows we detail the changes with respect to the former version of
 the manuscript:
@@ -78,7 +82,6 @@ linear grids, so that we had to combine a coarse grain grid for large values
 with a finer grid for small values.  We plan to allow for a modification
 of this restriction on future versions of the code.
 
-
 tau_survive:
 The same values of the tau_awakening parameters, namely:
 21 bins in the range 500 a to 40500 a, plus 51 bins in the 
@@ -87,10 +90,14 @@ range 5.e5 a to 1.e6 a.
 D_max:
 100 pc, 500 pc, 1 kpc, 5 kpc and 10 kpc.
 
+
+Given the wide range of values for the analysed parameters, 
+we do not show the full range in all the figures, but only sample models that
+clearly exhibit relevant trends.
+
+
 We have also changed the region defined as the Galactic Habitable Zone,
 in order to follow the values in the bibliography.
 
-
-Finally, we apologize for the delay in this response.
 
 

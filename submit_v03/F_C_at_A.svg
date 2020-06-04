@@ -20,7 +20,7 @@
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"><metadata
      id="metadata8"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
      id="defs6"><clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath244"><path
@@ -874,19 +874,18 @@
      inkscape:window-height="1030"
      id="namedview4"
      showgrid="false"
-     inkscape:zoom="0.82201163"
-     inkscape:cx="944.88842"
-     inkscape:cy="228.11697"
+     inkscape:zoom="1.1625"
+     inkscape:cx="430.95486"
+     inkscape:cy="78.08628"
      inkscape:window-x="0"
      inkscape:window-y="29"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer5"
+     inkscape:current-layer="g10"
      units="pt" /><g
      id="g10"
      inkscape:groupmode="layer"
      inkscape:label="base"
      transform="matrix(1.3333333,0,0,-1.3333333,0,600)"
-     sodipodi:insensitive="true"
      style="display:inline"><g
    transform="matrix(0,-10.474413,319.70567,0,500.51447,52.448363)"
    id="g576"><image
@@ -1039,12 +1038,13 @@
      id="tspan2792"
      x="468.01782"
      y="-50.409851"
-     style="text-align:end;text-anchor:end;stroke-width:0.75">fraction of CCNs that</tspan><tspan
+     style="text-align:end;text-anchor:end;stroke-width:0.75">fraction of nodes that</tspan><tspan
      sodipodi:role="line"
      x="468.01782"
      y="-30.409851"
      style="text-align:end;text-anchor:end;stroke-width:0.75"
      id="tspan2796">make contact at awakening</tspan></text>
+
 
 
 
@@ -1066,7 +1066,8 @@
      x="43.119694"
      y="43.030006"
      style="line-height:97.00001478%;stroke-width:0.75"
-     id="tspan2802">CCNs [Myr]</tspan></text>
+     id="tspan2802">nodes [Myr]</tspan></text>
+
 
 
 
@@ -1095,6 +1096,7 @@
 
 
 
+
 <text
    id="text2786-7"
    y="501.40302"
@@ -1106,6 +1108,7 @@
      x="555.93182"
      id="tspan2784-5"
      sodipodi:role="line">awakening rate [Myr]</tspan></text>
+
 
 
 
@@ -1123,6 +1126,7 @@
 
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;line-height:1000%;font-family:'Nimbus Roman No9 L';-inkscape-font-specification:'Nimbus Roman No9 L, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1"
@@ -1134,6 +1138,7 @@
      x="107.58394"
      y="467.11249"
      style="stroke-width:1">0.2</tspan></text>
+
 
 
 
@@ -1151,6 +1156,7 @@
 
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;line-height:1000%;font-family:'Nimbus Roman No9 L';-inkscape-font-specification:'Nimbus Roman No9 L, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1"
@@ -1162,6 +1168,7 @@
      x="268.72299"
      y="467.2085"
      style="stroke-width:1">0.6</tspan></text>
+
 
 
 
@@ -1179,6 +1186,7 @@
 
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;line-height:1000%;font-family:'Nimbus Roman No9 L';-inkscape-font-specification:'Nimbus Roman No9 L, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1"
@@ -1190,6 +1198,7 @@
      x="428.63803"
      y="467.11249"
      style="stroke-width:1">1.0</tspan></text>
+
 
 
 
@@ -1207,6 +1216,7 @@
 
 
 
+
 <text
    id="text10680"
    y="467.11249"
@@ -1218,6 +1228,7 @@
      x="604.22894"
      id="tspan10678"
      sodipodi:role="line">0.4</tspan></text>
+
 
 
 
@@ -1235,6 +1246,7 @@
 
 
 
+
 <text
    id="text10688"
    y="467.11249"
@@ -1246,6 +1258,7 @@
      x="765.60797"
      id="tspan10686"
      sodipodi:role="line">0.8</tspan></text>
+
 
 
 
@@ -1263,6 +1276,7 @@
 
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;line-height:1000%;font-family:'Nimbus Roman No9 L';-inkscape-font-specification:'Nimbus Roman No9 L, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1"
@@ -1274,6 +1288,7 @@
      x="933.23285"
      y="467.11249"
      style="stroke-width:1">0.2</tspan></text>
+
 
 
 
@@ -1291,6 +1306,7 @@
 
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;line-height:1000%;font-family:'Nimbus Roman No9 L';-inkscape-font-specification:'Nimbus Roman No9 L, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1"
@@ -1302,6 +1318,7 @@
      x="1094.3718"
      y="467.2085"
      style="stroke-width:1">0.6</tspan></text>
+
 
 
 
@@ -1319,6 +1336,7 @@
 
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;line-height:1000%;font-family:'Nimbus Roman No9 L';-inkscape-font-specification:'Nimbus Roman No9 L, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1"
@@ -1330,6 +1348,7 @@
      x="1248.287"
      y="467.11249"
      style="stroke-width:1">1.0</tspan></text>
+
 
 
 
@@ -1364,6 +1383,7 @@
      y="382.75232"
      style="line-height:80.77000427px;stroke-width:1"
      id="tspan10724">0.2</tspan></text>
+
 
 
 
@@ -1663,6 +1683,7 @@
 
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.66666603px;line-height:1000%;font-family:'Nimbus Roman No9 L';-inkscape-font-specification:'Nimbus Roman No9 L, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:0.69801983;stroke:none"
@@ -1673,6 +1694,7 @@
      id="tspan3605"
      x="1078.3884"
      y="343.25562">0.7</tspan></text>
+
 
 
 
@@ -1689,6 +1711,7 @@
 
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.66666603px;line-height:1000%;font-family:'Nimbus Roman No9 L';-inkscape-font-specification:'Nimbus Roman No9 L, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:0.69801983;stroke:none"
@@ -1699,6 +1722,7 @@
      id="tspan3613"
      x="1167.7247"
      y="408.05423">0.9</tspan></text>
+
 
 
 
@@ -1715,6 +1739,7 @@
 
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.66666603px;line-height:1000%;font-family:'Nimbus Roman No9 L';-inkscape-font-specification:'Nimbus Roman No9 L, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#f9f9f9;fill-opacity:0.7425743;stroke:none"
@@ -1728,6 +1753,7 @@
 
 
 
+
 <text
    xml:space="preserve"
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.66666603px;line-height:1000%;font-family:'Nimbus Roman No9 L';-inkscape-font-specification:'Nimbus Roman No9 L, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#f9f9f9;fill-opacity:0.7425743;stroke:none"
@@ -1738,6 +1764,7 @@
      id="tspan3629"
      x="806.4516"
      y="410.32257">0.8</tspan></text>
+
 
 
 
@@ -1872,39 +1899,42 @@
      inkscape:groupmode="layer"
      id="layer5"
      inkscape:label="legends"><text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.66666603px;line-height:1000%;font-family:'Nimbus Roman No9 L';-inkscape-font-specification:'Nimbus Roman No9 L, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-       x="102.66946"
-       y="364.54562"
-       id="text1389"><tspan
-         sodipodi:role="line"
-         id="tspan1387"
-         x="102.66946"
-         y="364.54562">D<tspan
+   xml:space="preserve"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.66666603px;line-height:1000%;font-family:'Nimbus Roman No9 L';-inkscape-font-specification:'Nimbus Roman No9 L, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+   x="102.66946"
+   y="364.54562"
+   id="text1389"><tspan
+     sodipodi:role="line"
+     id="tspan1387"
+     x="102.66946"
+     y="364.54562">D<tspan
    style="font-size:64.99999762%;baseline-shift:sub"
    id="tspan1391">max</tspan> = 1 kpc</tspan></text>
+
 <text
-       id="text1397"
-       y="364.54562"
-       x="491.95834"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.66666603px;line-height:1000%;font-family:'Nimbus Roman No9 L';-inkscape-font-specification:'Nimbus Roman No9 L, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-       xml:space="preserve"><tspan
-         y="364.54562"
-         x="491.95834"
-         id="tspan1395"
-         sodipodi:role="line">D<tspan
+   id="text1397"
+   y="364.54562"
+   x="491.95834"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.66666603px;line-height:1000%;font-family:'Nimbus Roman No9 L';-inkscape-font-specification:'Nimbus Roman No9 L, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+   xml:space="preserve"><tspan
+     y="364.54562"
+     x="491.95834"
+     id="tspan1395"
+     sodipodi:role="line">D<tspan
    id="tspan1393"
    style="font-size:64.99999762%;baseline-shift:sub">max</tspan> = 5 kpc</tspan></text>
+
 <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.66666603px;line-height:1000%;font-family:'Nimbus Roman No9 L';-inkscape-font-specification:'Nimbus Roman No9 L, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-       x="904.36127"
-       y="364.54562"
-       id="text1403"><tspan
-         sodipodi:role="line"
-         id="tspan1401"
-         x="904.36127"
-         y="364.54562">D<tspan
+   xml:space="preserve"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.66666603px;line-height:1000%;font-family:'Nimbus Roman No9 L';-inkscape-font-specification:'Nimbus Roman No9 L, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+   x="904.36127"
+   y="364.54562"
+   id="text1403"><tspan
+     sodipodi:role="line"
+     id="tspan1401"
+     x="904.36127"
+     y="364.54562">D<tspan
    style="font-size:64.99999762%;baseline-shift:sub"
    id="tspan1399">max</tspan> = 10 kpc</tspan></text>
+
 </g></svg>
